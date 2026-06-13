@@ -54,21 +54,71 @@ jobs:
           chmod 700 ~/.ssh
           printf '%s\n' "$VPS_SSH_PRIVATE_KEY" > ~/.ssh/deploy_key
           chmod 600 ~/.ssh/deploy_key
-          ssh-keyscan -p "$VPS_PORT" "$VPS_HOST" >> ~/.ssh/known_hosts
+          cat > ~/.ssh/config <<EOF
+          Host greenfit-vps
+            HostName $VPS_HOST
+            User $VPS_USER
+            Port $VPS_PORT
+            IdentityFile ~/.ssh/deploy_key
+            BatchMode yes
+            ConnectTimeout 30
+            ServerAliveInterval 30
+            ServerAliveCountMax 4
+            StrictHostKeyChecking no
+            UserKnownHostsFile /dev/null
+          EOF
+          chmod 600 ~/.ssh/config
+          retry() {
+            local attempt=1
+            local max_attempts=4
+            local delay=10
+
+            until "$@"; do
+              if [ "$attempt" -ge "$max_attempts" ]; then
+                return 1
+              fi
+
+              echo "Attempt ${attempt} failed. Retrying in ${delay}s..."
+              sleep "$delay"
+              attempt=$((attempt + 1))
+              delay=$((delay * 2))
+            done
+          }
+
+          retry ssh greenfit-vps "echo SSH connection ok"
 
       - name: Upload release
         env:
           VPS_HOST: ${{ vars.VPS_HOST }}
           VPS_USER: ${{ vars.VPS_USER }}
         run: |
-          scp -i ~/.ssh/deploy_key -P "$VPS_PORT" greenfit-${GITHUB_SHA}.tar.gz "$VPS_USER@$VPS_HOST:/tmp/greenfit-${GITHUB_SHA}.tar.gz"
+          retry() {
+            local attempt=1
+            local max_attempts=4
+            local delay=10
+
+            until "$@"; do
+              if [ "$attempt" -ge "$max_attempts" ]; then
+                return 1
+              fi
+
+              echo "Attempt ${attempt} failed. Retrying in ${delay}s..."
+              sleep "$delay"
+              attempt=$((attempt + 1))
+              delay=$((delay * 2))
+            done
+          }
+
+          ls -lh greenfit-${GITHUB_SHA}.tar.gz
+          retry timeout 600s ssh greenfit-vps "cat > /tmp/greenfit-${GITHUB_SHA}.tar.gz" < greenfit-${GITHUB_SHA}.tar.gz
+          retry ssh greenfit-vps "ls -lh /tmp/greenfit-${GITHUB_SHA}.tar.gz && test -s /tmp/greenfit-${GITHUB_SHA}.tar.gz"
 
       - name: Activate release
         env:
           VPS_HOST: ${{ vars.VPS_HOST }}
           VPS_USER: ${{ vars.VPS_USER }}
         run: |
-          ssh -i ~/.ssh/deploy_key -p "$VPS_PORT" "$VPS_USER@$VPS_HOST" \
+          ssh greenfit-vps \
             "GITHUB_SHA='$GITHUB_SHA' DEPLOY_PATH='$DEPLOY_PATH' PM2_APP_NAME='$PM2_APP_NAME' APP_PORT='$APP_PORT' APP_HOSTNAME='$APP_HOSTNAME' bash -s" <<'EOF'
           set -euo pipefail
 
