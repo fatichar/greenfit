@@ -1,0 +1,22 @@
+[
+  { "name": "Kala chana", "category": "Legume", "serving": "100g cooked", "calories": 164, "protein": 9, "carbs": 27, "fat": 3, "fiber": 8, "notes": "Approximate values. Vary by preparation." },
+  { "name": "Kabuli chana", "category": "Legume", "serving": "100g cooked", "calories": 164, "protein": 9, "carbs": 27, "fat": 3, "fiber": 8, "notes": "Approximate values. Vary by preparation." },
+  { "name": "Rajma", "category": "Legume", "serving": "100g cooked", "calories": 127, "protein": 9, "carbs": 23, "fat": 1, "fiber": 6, "notes": "Approximate values. Vary by preparation." },
+  { "name": "Moong dal", "category": "Dal", "serving": "100g cooked", "calories": 105, "protein": 7, "carbs": 19, "fat": 0.4, "fiber": 8, "notes": "Approximate values. Vary by preparation." },
+  { "name": "Masoor dal", "category": "Dal", "serving": "100g cooked", "calories": 116, "protein": 9, "carbs": 20, "fat": 0.4, "fiber": 8, "notes": "Approximate values. Vary by preparation." },
+  { "name": "Toor dal", "category": "Dal", "serving": "100g cooked", "calories": 120, "protein": 7, "carbs": 22, "fat": 0.6, "fiber": 7, "notes": "Approximate values. Vary by preparation." },
+  { "name": "Soy chunks", "category": "Soy food", "serving": "50g dry", "calories": 170, "protein": 26, "carbs": 16, "fat": 0.5, "fiber": 7, "notes": "Approximate values. Check brand label." },
+  { "name": "Tofu", "category": "Soy food", "serving": "100g", "calories": 80, "protein": 8, "carbs": 2, "fat": 5, "fiber": 1, "notes": "Approximate values. Firmness changes nutrition." },
+  { "name": "Tempeh", "category": "Soy food", "serving": "100g", "calories": 190, "protein": 19, "carbs": 9, "fat": 11, "fiber": 5, "notes": "Approximate values. Check brand label." },
+  { "name": "Besan", "category": "Pulse flour", "serving": "50g dry", "calories": 190, "protein": 11, "carbs": 29, "fat": 3, "fiber": 5, "notes": "Approximate values. Vary by brand." },
+  { "name": "Peanuts", "category": "Nut/seed", "serving": "30g", "calories": 170, "protein": 7, "carbs": 5, "fat": 14, "fiber": 3, "notes": "Approximate values. Energy dense." },
+  { "name": "Almonds", "category": "Nut/seed", "serving": "30g", "calories": 174, "protein": 6, "carbs": 6, "fat": 15, "fiber": 4, "notes": "Approximate values. Energy dense." },
+  { "name": "Oats", "category": "Grain", "serving": "50g dry", "calories": 190, "protein": 6, "carbs": 32, "fat": 4, "fiber": 5, "notes": "Approximate values. Vary by brand." },
+  { "name": "Sprouts", "category": "Legume", "serving": "100g", "calories": 100, "protein": 7, "carbs": 18, "fat": 1, "fiber": 4, "notes": "Approximate values. Depends on bean and sprouting stage." },
+  { "name": "Ragi", "category": "Millet", "serving": "50g flour", "calories": 165, "protein": 4, "carbs": 36, "fat": 1, "fiber": 6, "notes": "Approximate values. Useful for calcium but not high protein." },
+  { "name": "Jowar", "category": "Millet", "serving": "50g flour", "calories": 175, "protein": 5, "carbs": 36, "fat": 2, "fiber": 5, "notes": "Approximate values. Vary by flour." },
+  { "name": "Bajra", "category": "Millet", "serving": "50g flour", "calories": 180, "protein": 6, "carbs": 34, "fat": 3, "fiber": 6, "notes": "Approximate values. Vary by flour." },
+  { "name": "Brown rice", "category": "Grain", "serving": "100g cooked", "calories": 123, "protein": 3, "carbs": 26, "fat": 1, "fiber": 2, "notes": "Approximate values. Not a primary protein source." },
+  { "name": "Rice", "category": "Grain", "serving": "100g cooked", "calories": 130, "protein": 2.7, "carbs": 28, "fat": 0.3, "fiber": 0.4, "notes": "Approximate values. Not a primary protein source." },
+  { "name": "Wheat roti", "category": "Grain", "serving": "1 medium", "calories": 110, "protein": 3, "carbs": 22, "fat": 1, "fiber": 3, "notes": "Approximate values. Depends on size and oil." }
+]

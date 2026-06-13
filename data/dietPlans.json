@@ -1,0 +1,169 @@
+[
+  {
+    "slug": "high-protein-diet",
+    "title": "High-Protein Diet",
+    "goal": "Muscle gain / high protein",
+    "calories": 2200,
+    "protein": 120,
+    "difficulty": "Medium",
+    "cuisineStyle": "Flexible",
+    "mealCount": 4,
+    "affordability": "Moderate",
+    "whoThisIsFor": "Active adults who struggle to reach protein targets using everyday foods.",
+    "meals": [
+      { "name": "Breakfast", "items": ["Besan chilla", "Soy curd", "Fruit"], "protein": 30 },
+      { "name": "Lunch", "items": ["Dal", "Rice", "Tofu sabzi", "Salad"], "protein": 35 },
+      { "name": "Snack", "items": ["Sprouts chaat", "Peanuts"], "protein": 20 },
+      { "name": "Dinner", "items": ["Soy chunks curry", "Roti", "Vegetables"], "protein": 35 }
+    ],
+    "proteinSources": ["Besan", "Soy curd", "Dal", "Tofu", "Sprouts", "Soy chunks"],
+    "substitutions": ["Paneer -> tofu", "Curd -> soy curd", "Whey -> plant protein"],
+    "notes": "Adjust portions based on body weight and goals."
+  },
+  {
+    "slug": "weight-loss-diet",
+    "title": "Weight Loss Diet",
+    "goal": "Fat loss with adequate protein",
+    "calories": 1600,
+    "protein": 90,
+    "difficulty": "Easy",
+    "cuisineStyle": "Indian flexible",
+    "mealCount": 4,
+    "affordability": "Budget-friendly",
+    "whoThisIsFor": "People who want a simple calorie-aware pattern without extreme restrictions.",
+    "meals": [
+      { "name": "Breakfast", "items": ["Oats", "Soy milk", "Chia or peanuts"], "protein": 22 },
+      { "name": "Lunch", "items": ["Rajma", "Small rice portion", "Salad"], "protein": 28 },
+      { "name": "Snack", "items": ["Roasted chana", "Tea without sugar"], "protein": 14 },
+      { "name": "Dinner", "items": ["Moong dal soup", "Vegetables", "Roti"], "protein": 26 }
+    ],
+    "proteinSources": ["Soy milk", "Rajma", "Roasted chana", "Moong dal"],
+    "substitutions": ["Rice -> more vegetables when needed", "Fried snacks -> roasted chana"],
+    "notes": "Keep the deficit moderate and monitor energy, hunger, and training recovery."
+  },
+  {
+    "slug": "muscle-gain-diet",
+    "title": "Muscle Gain Diet",
+    "goal": "Calorie surplus for training",
+    "calories": 2800,
+    "protein": 140,
+    "difficulty": "Medium",
+    "cuisineStyle": "Flexible",
+    "mealCount": 5,
+    "affordability": "Moderate",
+    "whoThisIsFor": "Lifters who need higher calories without relying only on shakes.",
+    "meals": [
+      { "name": "Breakfast", "items": ["Peanut butter oats", "Soy milk", "Banana"], "protein": 32 },
+      { "name": "Lunch", "items": ["Chana masala", "Rice", "Tofu"], "protein": 38 },
+      { "name": "Pre-workout", "items": ["Fruit", "Roasted peanuts"], "protein": 10 },
+      { "name": "Post-workout", "items": ["Plant protein shake"], "protein": 25 },
+      { "name": "Dinner", "items": ["Dal", "Roti", "Tempeh or soy chunks"], "protein": 35 }
+    ],
+    "proteinSources": ["Soy milk", "Chana", "Tofu", "Plant protein", "Tempeh", "Soy chunks"],
+    "substitutions": ["Tempeh -> tofu", "Plant shake -> soy chunks meal"],
+    "notes": "Increase calories gradually if body weight is not moving."
+  },
+  {
+    "slug": "budget-diet",
+    "title": "Budget Diet",
+    "goal": "Affordable balanced eating",
+    "calories": 2000,
+    "protein": 85,
+    "difficulty": "Easy",
+    "cuisineStyle": "Indian staples",
+    "mealCount": 3,
+    "affordability": "Low cost",
+    "whoThisIsFor": "Students and families prioritizing low-cost, repeatable meals.",
+    "meals": [
+      { "name": "Breakfast", "items": ["Besan chilla", "Chutney"], "protein": 22 },
+      { "name": "Lunch", "items": ["Kala chana", "Rice", "Cabbage sabzi"], "protein": 32 },
+      { "name": "Dinner", "items": ["Masoor dal", "Roti", "Seasonal vegetables"], "protein": 31 }
+    ],
+    "proteinSources": ["Besan", "Kala chana", "Masoor dal"],
+    "substitutions": ["Kala chana -> rajma", "Masoor dal -> moong dal"],
+    "notes": "Batch cooking legumes makes the plan easier and cheaper."
+  },
+  {
+    "slug": "simple-beginner-plan",
+    "title": "Simple Beginner Plan",
+    "goal": "Build consistent eating habits",
+    "calories": 1900,
+    "protein": 75,
+    "difficulty": "Easy",
+    "cuisineStyle": "Flexible",
+    "mealCount": 3,
+    "affordability": "Budget-friendly",
+    "whoThisIsFor": "Beginners who want a simple structure before tracking macros.",
+    "meals": [
+      { "name": "Breakfast", "items": ["Oats", "Soy milk", "Fruit"], "protein": 20 },
+      { "name": "Lunch", "items": ["Dal", "Rice", "Vegetable sabzi"], "protein": 28 },
+      { "name": "Dinner", "items": ["Tofu bhurji", "Roti", "Salad"], "protein": 27 }
+    ],
+    "proteinSources": ["Oats", "Soy milk", "Dal", "Tofu"],
+    "substitutions": ["Tofu -> soy chunks", "Soy milk -> peanut curd"],
+    "notes": "Start with consistency, then adjust portions."
+  },
+  {
+    "slug": "south-indian-plan",
+    "title": "South Indian Plan",
+    "goal": "Regional meals with better protein",
+    "calories": 2100,
+    "protein": 95,
+    "difficulty": "Medium",
+    "cuisineStyle": "South Indian",
+    "mealCount": 4,
+    "affordability": "Moderate",
+    "whoThisIsFor": "People who prefer idli, dosa, rice, sambar, and familiar South Indian meals.",
+    "meals": [
+      { "name": "Breakfast", "items": ["Dosa", "Sambar", "Peanut chutney"], "protein": 24 },
+      { "name": "Lunch", "items": ["Rice", "Rasam", "Tofu poriyal", "Kootu"], "protein": 34 },
+      { "name": "Snack", "items": ["Sprouts sundal"], "protein": 15 },
+      { "name": "Dinner", "items": ["Adai", "Vegetable sambar"], "protein": 22 }
+    ],
+    "proteinSources": ["Sambar dal", "Peanuts", "Tofu", "Sprouts", "Adai"],
+    "substitutions": ["Curd rice -> peanut curd rice", "Paneer -> tofu"],
+    "notes": "Use dal-heavy batters and sambar to improve protein density."
+  },
+  {
+    "slug": "north-indian-plan",
+    "title": "North Indian Plan",
+    "goal": "North Indian staples with protein focus",
+    "calories": 2150,
+    "protein": 100,
+    "difficulty": "Medium",
+    "cuisineStyle": "North Indian",
+    "mealCount": 4,
+    "affordability": "Moderate",
+    "whoThisIsFor": "People who prefer roti, dal, chana, rajma, and sabzi meals.",
+    "meals": [
+      { "name": "Breakfast", "items": ["Besan cheela", "Mint chutney"], "protein": 24 },
+      { "name": "Lunch", "items": ["Rajma", "Rice", "Salad"], "protein": 34 },
+      { "name": "Snack", "items": ["Roasted chana", "Fruit"], "protein": 14 },
+      { "name": "Dinner", "items": ["Tofu tikka", "Roti", "Dal"], "protein": 28 }
+    ],
+    "proteinSources": ["Besan", "Rajma", "Roasted chana", "Tofu", "Dal"],
+    "substitutions": ["Paneer tikka -> tofu tikka", "Curd -> soy curd"],
+    "notes": "Keep oil moderate and make dal portions meaningful."
+  },
+  {
+    "slug": "no-onion-no-garlic-plan",
+    "title": "No Onion/No Garlic Plan",
+    "goal": "Simple sattvic-style protein meals",
+    "calories": 2000,
+    "protein": 90,
+    "difficulty": "Medium",
+    "cuisineStyle": "No onion/no garlic",
+    "mealCount": 4,
+    "affordability": "Budget-friendly",
+    "whoThisIsFor": "People avoiding onion and garlic while keeping protein practical.",
+    "meals": [
+      { "name": "Breakfast", "items": ["Moong dal chilla", "Coconut chutney"], "protein": 26 },
+      { "name": "Lunch", "items": ["Toor dal", "Rice", "Pumpkin sabzi"], "protein": 28 },
+      { "name": "Snack", "items": ["Peanut curd bowl"], "protein": 14 },
+      { "name": "Dinner", "items": ["Tofu curry", "Roti", "Salad"], "protein": 22 }
+    ],
+    "proteinSources": ["Moong dal", "Toor dal", "Peanut curd", "Tofu"],
+    "substitutions": ["Paneer -> tofu", "Curd -> peanut curd"],
+    "notes": "Use hing, ginger, cumin, and tomato for flavor without onion or garlic."
+  }
+]

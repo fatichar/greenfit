@@ -1,0 +1,67 @@
+[
+  {
+    "slug": "sample-plant-protein",
+    "name": "Sample Plant Protein",
+    "brand": "Sample Brand",
+    "category": "Protein Powder",
+    "status": "Suitable",
+    "confidence": "High",
+    "ingredients": ["Pea Protein Isolate", "Rice Protein", "Cocoa", "Stevia"],
+    "ingredientsOfConcern": [],
+    "notes": "Uses non-dairy protein sources. No dairy ingredients listed.",
+    "verificationSource": "Label review",
+    "lastReviewed": "2026-06-12"
+  },
+  {
+    "slug": "fortified-soy-milk",
+    "name": "Fortified Soy Milk",
+    "brand": "Everyday Foods",
+    "category": "Milk Alternative",
+    "status": "Likely suitable",
+    "confidence": "Medium",
+    "ingredients": ["Water", "Soybean Extract", "Calcium Carbonate", "Vitamin B12", "Stabilizer"],
+    "ingredientsOfConcern": ["Stabilizer source-dependent"],
+    "notes": "Useful dairy replacement when fortified. Confirm stabilizer source for strict dietary needs.",
+    "verificationSource": "Label review",
+    "lastReviewed": "2026-06-12"
+  },
+  {
+    "slug": "masala-oats-pack",
+    "name": "Masala Oats Pack",
+    "brand": "Quick Bowl",
+    "category": "Ready Meal",
+    "status": "Unclear",
+    "confidence": "Low",
+    "ingredients": ["Oats", "Dehydrated Vegetables", "Spice Mix", "Flavour Enhancer", "Edible Vegetable Oil"],
+    "ingredientsOfConcern": ["Flavour enhancer source not specified", "Generic edible vegetable oil"],
+    "notes": "The base food is practical, but additives and vague oil declarations need source confirmation.",
+    "verificationSource": "Public label snapshot",
+    "lastReviewed": "2026-06-12"
+  },
+  {
+    "slug": "dairy-whey-isolate",
+    "name": "Dairy Whey Isolate",
+    "brand": "Gym Lab",
+    "category": "Protein Powder",
+    "status": "Unsuitable",
+    "confidence": "High",
+    "ingredients": ["Whey Protein Isolate", "Cocoa", "Sucralose", "Lecithin"],
+    "ingredientsOfConcern": ["Whey protein is dairy-derived"],
+    "notes": "Not suitable for dairy-free requirements because whey is milk-derived.",
+    "verificationSource": "Label review",
+    "lastReviewed": "2026-06-12"
+  },
+  {
+    "slug": "peanut-curd-culture",
+    "name": "Peanut Curd Culture",
+    "brand": "Home Starter",
+    "category": "Curd Alternative",
+    "status": "Likely suitable",
+    "confidence": "Medium",
+    "ingredients": ["Peanuts", "Starter Culture"],
+    "ingredientsOfConcern": ["Starter culture source-dependent"],
+    "notes": "A practical curd replacement if the culture source is confirmed.",
+    "verificationSource": "Ingredient review",
+    "lastReviewed": "2026-06-12"
+  }
+]

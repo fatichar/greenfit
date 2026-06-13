@@ -1,0 +1,10 @@
+[
+  { "name": "Whey", "category": "Dairy protein", "concern": "Dairy-derived", "defaultStatus": "Unsuitable", "notes": "Avoid when dairy-free suitability is required." },
+  { "name": "Casein", "category": "Dairy protein", "concern": "Dairy-derived", "defaultStatus": "Unsuitable", "notes": "Often appears in protein blends and creamers." },
+  { "name": "Lecithin", "category": "Emulsifier", "concern": "Source-dependent", "defaultStatus": "Unclear", "notes": "Soy or sunflower is common, but source may need confirmation." },
+  { "name": "Vitamin D3", "category": "Vitamin", "concern": "Source-dependent", "defaultStatus": "Unclear", "notes": "May be lanolin-derived or lichen-derived." },
+  { "name": "Natural flavour", "category": "Flavouring", "concern": "Source-dependent", "defaultStatus": "Unclear", "notes": "Ask brand for source when strict suitability matters." },
+  { "name": "Gelatin capsule", "category": "Capsule", "concern": "Animal-derived", "defaultStatus": "Unsuitable", "notes": "Look for HPMC or pullulan alternatives." },
+  { "name": "Pea protein", "category": "Plant protein", "concern": "Usually suitable", "defaultStatus": "Suitable", "notes": "Check allergen and manufacturing statements." },
+  { "name": "Soy isolate", "category": "Plant protein", "concern": "Usually suitable", "defaultStatus": "Suitable", "notes": "Useful high-protein dairy replacement." }
+]

@@ -1,0 +1,86 @@
+import type { Metadata } from "next";
+import Image from "next/image";
+import { notFound } from "next/navigation";
+import { DisclaimerBox } from "@/components/disclaimer-box";
+import { MacroSummary } from "@/components/macro-summary";
+import { MealPlanTable } from "@/components/meal-plan-table";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { dietPlans, getDietPlan } from "@/lib/data";
+import { getDietPlanImage } from "@/lib/images";
+
+export function generateStaticParams() {
+  return dietPlans.map((plan) => ({ slug: plan.slug }));
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const plan = getDietPlan(slug);
+
+  return {
+    title: plan?.title ?? "Diet plan",
+    description: plan?.goal,
+  };
+}
+
+export default async function DietPlanDetailPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const plan = getDietPlan(slug);
+
+  if (!plan) notFound();
+
+  return (
+    <section className="mx-auto flex max-w-5xl flex-col gap-6 px-4 py-12 sm:px-6 lg:px-8">
+      <div>
+        <h1 className="font-heading text-4xl font-semibold">{plan.title}</h1>
+        <p className="mt-3 text-lg text-muted-foreground">{plan.goal}</p>
+      </div>
+      <Image
+        src={getDietPlanImage(plan.slug)}
+        alt=""
+        width={1200}
+        height={900}
+        className="aspect-[16/7] w-full rounded-xl border border-olive-200 object-cover shadow-sm"
+        priority
+      />
+      <MacroSummary calories={plan.calories} protein={plan.protein} />
+      <Card>
+        <CardHeader>
+          <CardTitle>Overview</CardTitle>
+        </CardHeader>
+        <CardContent className="grid gap-3 text-sm leading-7 text-muted-foreground">
+          <p>{plan.whoThisIsFor}</p>
+          <p>
+            Difficulty: {plan.difficulty}. Cuisine: {plan.cuisineStyle}. Affordability: {plan.affordability}.
+          </p>
+        </CardContent>
+      </Card>
+      <MealPlanTable meals={plan.meals} />
+      <TextList title="Protein sources" items={plan.proteinSources} />
+      <TextList title="Substitutions" items={plan.substitutions} />
+      <Card>
+        <CardHeader>
+          <CardTitle>Notes</CardTitle>
+        </CardHeader>
+        <CardContent className="text-sm text-muted-foreground">{plan.notes}</CardContent>
+      </Card>
+      <DisclaimerBox />
+    </section>
+  );
+}
+
+function TextList({ title, items }: { title: string; items: string[] }) {
+  return (
+    <Card>
+      <CardHeader>
+        <CardTitle>{title}</CardTitle>
+      </CardHeader>
+      <CardContent>
+        <ul className="flex flex-col gap-2 text-sm text-muted-foreground">
+          {items.map((item) => (
+            <li key={item}>{item}</li>
+          ))}
+        </ul>
+      </CardContent>
+    </Card>
+  );
+}
