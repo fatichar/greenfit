@@ -64,7 +64,7 @@ export default function Home() {
           <div className="grid min-w-0 gap-4">
             <div className="w-full max-w-full overflow-hidden rounded-xl border border-olive-200 bg-white shadow-sm">
               <Image
-                src="/images/greenfit-hero.png"
+                src="/images/greenfit-hero.jpg"
                 alt="Practical nutrition foods and product label checking"
                 width={1200}
                 height={900}
@@ -96,19 +96,19 @@ export default function Home() {
       <section className="mx-auto grid max-w-7xl gap-4 px-4 py-4 sm:px-6 lg:grid-cols-3 lg:px-8">
         <VisualLink
           href="/diet-plans"
-          image="/images/diet-plans-preview.png"
+          image="/images/diet-plans-preview.jpg"
           title="Diet plans built around real meals"
           description="High-protein plates, budget options, substitutions, and simple macros."
         />
         <VisualLink
           href="/products"
-          image="/images/product-checker-preview.png"
+          image="/images/product-checker-preview.jpg"
           title="Product checks with ingredient context"
           description="Status, confidence, source-dependent flags, and label review notes."
         />
         <VisualLink
           href="/supplements"
-          image="/images/supplements-preview.png"
+          image="/images/supplements-preview.jpg"
           title="Supplement comparisons with clear caveats"
           description="Dose, form, testing status, lab report placeholders, and practical notes."
         />
