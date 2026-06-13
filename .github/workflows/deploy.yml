@@ -2,7 +2,7 @@ name: Deploy to VPS
 
 on:
   push:
-    branches: [main]
+    branches: [master]
   workflow_dispatch:
 
 permissions:
@@ -10,15 +10,16 @@ permissions:
 
 env:
   NODE_VERSION: 22
-  DEPLOY_PATH: ${{ vars.DEPLOY_PATH || '/var/www/greenfit' }}
+  DEPLOY_PATH: ${{ vars.DEPLOY_PATH || '/opt/greenfit' }}
   PM2_APP_NAME: ${{ vars.PM2_APP_NAME || 'greenfit' }}
   APP_PORT: ${{ vars.APP_PORT || '3000' }}
   APP_HOSTNAME: ${{ vars.APP_HOSTNAME || '127.0.0.1' }}
-  VPS_PORT: ${{ secrets.VPS_PORT || '22' }}
+  VPS_PORT: ${{ vars.VPS_PORT || '22' }}
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    environment: Prod
 
     steps:
       - uses: actions/checkout@v4
@@ -42,8 +43,8 @@ jobs:
 
       - name: Configure SSH
         env:
-          VPS_HOST: ${{ secrets.VPS_HOST }}
-          VPS_USER: ${{ secrets.VPS_USER }}
+          VPS_HOST: ${{ vars.VPS_HOST }}
+          VPS_USER: ${{ vars.VPS_USER }}
           VPS_SSH_PRIVATE_KEY: ${{ secrets.VPS_SSH_PRIVATE_KEY }}
         run: |
           test -n "$VPS_HOST"
@@ -57,15 +58,15 @@ jobs:
 
       - name: Upload release
         env:
-          VPS_HOST: ${{ secrets.VPS_HOST }}
-          VPS_USER: ${{ secrets.VPS_USER }}
+          VPS_HOST: ${{ vars.VPS_HOST }}
+          VPS_USER: ${{ vars.VPS_USER }}
         run: |
           scp -i ~/.ssh/deploy_key -P "$VPS_PORT" greenfit-${GITHUB_SHA}.tar.gz "$VPS_USER@$VPS_HOST:/tmp/greenfit-${GITHUB_SHA}.tar.gz"
 
       - name: Activate release
         env:
-          VPS_HOST: ${{ secrets.VPS_HOST }}
-          VPS_USER: ${{ secrets.VPS_USER }}
+          VPS_HOST: ${{ vars.VPS_HOST }}
+          VPS_USER: ${{ vars.VPS_USER }}
         run: |
           ssh -i ~/.ssh/deploy_key -p "$VPS_PORT" "$VPS_USER@$VPS_HOST" \
             "GITHUB_SHA='$GITHUB_SHA' DEPLOY_PATH='$DEPLOY_PATH' PM2_APP_NAME='$PM2_APP_NAME' APP_PORT='$APP_PORT' APP_HOSTNAME='$APP_HOSTNAME' bash -s" <<'EOF'
@@ -78,7 +79,7 @@ jobs:
           tar -xzf "/tmp/greenfit-$GITHUB_SHA.tar.gz" -C "$RELEASE_DIR"
           ln -sfn "$RELEASE_DIR" "$DEPLOY_PATH/current"
 
-          cat > "$DEPLOY_PATH/ecosystem.config.cjs" <<PM2EOF
+          cat > "$DEPLOY_PATH/ecosystem.config.cjs" <<PM2_CONFIG
           module.exports = {
             apps: [
               {
@@ -93,7 +94,12 @@ jobs:
               }
             ]
           };
-          PM2EOF
+          PM2_CONFIG
+
+          command -v pm2 >/dev/null 2>&1 || {
+            echo "pm2 was not found on the VPS PATH. Install it with: npm install -g pm2"
+            exit 1
+          }
 
           pm2 startOrReload "$DEPLOY_PATH/ecosystem.config.cjs" --update-env
           pm2 save
