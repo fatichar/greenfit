@@ -1,11 +1,12 @@
-export function MarkdownContent({ content }: { content: string }) {
-  const paragraphs = content.split(/\n\n+/);
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 
+export function MarkdownContent({ content }: { content: string }) {
   return (
-    <div className="flex flex-col gap-4 text-base leading-8 text-muted-foreground">
-      {paragraphs.map((paragraph) => (
-        <p key={paragraph}>{paragraph}</p>
-      ))}
+    <div className="prose prose-olive dark:prose-invert max-w-none text-base leading-8 text-muted-foreground">
+      <ReactMarkdown remarkPlugins={[remarkGfm]}>
+        {content}
+      </ReactMarkdown>
     </div>
   );
 }

@@ -45,13 +45,15 @@ export default async function GuideDetailPage({ params }: { params: Promise<{ sl
       <Card>
         <CardContent className="grid gap-3 text-sm text-muted-foreground sm:grid-cols-2">
           <p>Author: {guide.author}</p>
-          <p>Reviewer: {guide.reviewer}</p>
+          {guide.reviewer && <p>Reviewer: {guide.reviewer}</p>}
           <p>Last updated: {guide.lastUpdated}</p>
           <p>Reading time: {guide.readingTime}</p>
         </CardContent>
       </Card>
       <MarkdownContent content={guide.body} />
-      <ReferenceList references={guide.references} />
+      {guide.references && guide.references.length > 0 && (
+        <ReferenceList references={guide.references} />
+      )}
       <DisclaimerBox />
     </article>
   );
