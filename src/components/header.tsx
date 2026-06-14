@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Leaf, Menu } from "lucide-react";
+import Image from "next/image";
+import { Menu } from "lucide-react";
 import { buttonVariants } from "@/components/ui/button";
 import {
   Sheet,
@@ -24,11 +25,15 @@ export function Header() {
   return (
     <header className="sticky top-0 z-40 border-b bg-background/95 backdrop-blur">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-5 px-4 py-4 sm:px-6 lg:px-8">
-        <Link href="/" className="flex items-center gap-2 font-heading text-lg font-semibold">
-          <span className="flex size-9 items-center justify-center rounded-lg bg-primary text-primary-foreground">
-            <Leaf className="size-4" />
-          </span>
-          GreenFit
+        <Link href="/" className="flex items-center" aria-label="GreenFit home">
+          <Image
+            src="/logos/greenfit-logo-header.png"
+            alt="greenfit.in"
+            width={260}
+            height={64}
+            priority
+            className="h-9 w-auto object-contain"
+          />
         </Link>
         <nav className="hidden items-center gap-5 text-sm text-muted-foreground lg:flex">
           {navItems.map(([label, href]) => (
@@ -49,11 +54,14 @@ export function Header() {
             <SheetContent side="right" className="w-80">
               <SheetHeader className="border-b pb-4">
                 <SheetTitle>
-                  <Link href="/" className="flex items-center gap-2 font-heading text-lg font-semibold">
-                    <span className="flex size-9 items-center justify-center rounded-lg bg-primary text-primary-foreground">
-                      <Leaf className="size-4" />
-                    </span>
-                    GreenFit
+                  <Link href="/" className="flex items-center" aria-label="GreenFit home">
+                    <Image
+                      src="/logos/greenfit-logo-header.png"
+                      alt="greenfit.in"
+                      width={260}
+                      height={64}
+                      className="h-9 w-auto object-contain"
+                    />
                   </Link>
                 </SheetTitle>
               </SheetHeader>
