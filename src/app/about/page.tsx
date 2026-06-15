@@ -4,7 +4,14 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "About",
-  description: "GreenFit helps people adopt practical nutrition using evidence, accessible foods, and transparent product checks.",
+  description: "GreenFit helps people adopt practical plant-based nutrition using evidence, accessible vegan foods, and transparent product checks for WFPB eating.",
+  keywords: [
+    "about GreenFit",
+    "plant based nutrition mission",
+    "vegan education",
+    "WFPB evidence",
+    "vegan diet planning",
+  ],
 };
 
 export default function AboutPage() {

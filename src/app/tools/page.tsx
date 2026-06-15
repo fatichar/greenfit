@@ -3,7 +3,15 @@ import { ToolsCalculators } from "@/components/tools-calculators";
 
 export const metadata: Metadata = {
   title: "Nutrition Tools",
-  description: "Simple client-side protein, calorie, and macro estimate calculators.",
+  description: "Simple client-side plant-based protein, calorie, and macro estimate calculators for vegan nutrition.",
+  keywords: [
+    "vegan nutrition tools",
+    "plant based calculators",
+    "vegan macros",
+    "plant based protein calculator",
+    "vegetarian nutrition tools",
+    "WFPB macro calculator",
+  ],
 };
 
 export default function ToolsPage() {

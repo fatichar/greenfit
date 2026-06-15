@@ -4,7 +4,16 @@ import { getGuides } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "Nutrition Guides",
-  description: "Evidence-based practical guides for protein, B12, calcium, dairy replacements, omega-3, iron, and zinc.",
+  description: "Evidence-based practical guides for plant-based nutrition, vegan protein, B12, calcium, dairy replacements, omega-3, iron, and zinc.",
+  keywords: [
+    "vegan nutrition guides",
+    "plant based evidence",
+    "vegetarian health",
+    "vegan protein",
+    "plant based B12",
+    "WFPB nutrition",
+    "vegan dairy replacements",
+  ],
 };
 
 export default function GuidesPage() {

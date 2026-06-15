@@ -4,7 +4,15 @@ import { products } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "Product Checker",
-  description: "Search static product checks with suitability status, confidence, notes, and ingredient concerns.",
+  description: "Search vegan product checks with plant-based suitability status, confidence, notes, and WFPB ingredient concerns.",
+  keywords: [
+    "vegan products",
+    "plant based groceries",
+    "WFPB food checks",
+    "vegan product checker",
+    "plant based shopping",
+    "vegetarian products",
+  ],
 };
 
 export default function ProductsPage() {

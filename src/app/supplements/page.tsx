@@ -4,7 +4,16 @@ import { supplements } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "Supplement Reviews",
-  description: "Static supplement directory with status, form, dose, third-party testing, and heavy metal report fields.",
+  description: "Vegan supplement directory with status, form, dose, third-party testing, and heavy metal report fields for plant-based nutrition.",
+  keywords: [
+    "vegan supplements",
+    "plant based protein",
+    "vegan B12",
+    "vegan omega 3",
+    "plant based supplements",
+    "vegan D3",
+    "vegetarian supplements",
+  ],
 };
 
 export default function SupplementsPage() {
