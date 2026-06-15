@@ -4,7 +4,16 @@ import { dietPlans } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "Diet Plans",
-  description: "Static diet plan library with calories, protein targets, cuisine style, difficulty, and affordability.",
+  description: "Plant-based and vegan diet plan library with calories, protein targets, cuisine style, difficulty, and affordability for WFPB eating.",
+  keywords: [
+    "vegan diet plans",
+    "plant based diet plans",
+    "WFPB meal plans",
+    "vegan meal planning",
+    "vegetarian diet",
+    "plant based protein targets",
+    "vegan nutrition",
+  ],
 };
 
 export default function DietPlansPage() {

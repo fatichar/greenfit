@@ -17,11 +17,24 @@ export const metadata: Metadata = {
     template: "%s | GreenFit",
   },
   description:
-    "Practical nutrition guidance with diet plans, product checks, supplement comparisons, and evidence-based guides.",
+    "Practical nutrition guidance with plant-based diet plans, vegan product checks, supplement comparisons, and evidence-based WFPB guides.",
+  keywords: [
+    "vegan diet",
+    "plant based diet",
+    "WFPB",
+    "whole food plant based",
+    "diet plans",
+    "veganism",
+    "vegetarian",
+    "nutrition",
+    "protein",
+    "vegan health",
+    "plant based nutrition",
+  ],
   openGraph: {
     title: "GreenFit",
     description:
-      "Practical nutrition guidance with diet plans, product checks, supplement comparisons, and evidence-based guides.",
+      "Practical nutrition guidance with plant-based diet plans, vegan product checks, supplement comparisons, and evidence-based WFPB guides.",
     url: "https://greenfit.in",
     siteName: "GreenFit",
     type: "website",

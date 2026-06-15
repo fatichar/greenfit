@@ -9,11 +9,20 @@ import { cn } from "@/lib/utils";
 export const metadata: Metadata = {
   title: "GreenFit | Nutrition, made practical",
   description:
-    "Diet plans, supplement reviews, product checks, and evidence-based guides for everyday eating.",
+    "Plant-based diet plans, vegan supplement reviews, product checks, and evidence-based WFPB guides for everyday eating.",
+  keywords: [
+    "practical nutrition",
+    "vegan diet plans",
+    "WFPB",
+    "plant based diet",
+    "vegan products",
+    "nutrition guides",
+    "veganism",
+  ],
   openGraph: {
     title: "GreenFit | Nutrition, made practical",
     description:
-      "Diet plans, supplement reviews, product checks, and evidence-based guides for everyday eating.",
+      "Plant-based diet plans, vegan supplement reviews, product checks, and evidence-based WFPB guides for everyday eating.",
     url: "https://greenfit.in",
     siteName: "GreenFit",
     type: "website",
