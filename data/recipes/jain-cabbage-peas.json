@@ -1,0 +1,27 @@
+{
+  "slug": "jain-cabbage-peas",
+  "title": "Jain-Style Cabbage and Peas Subzi",
+  "description": "A simple, light, and low-calorie Jain-friendly dish made without onions or garlic.",
+  "ingredients": [
+    "2 cups Cabbage, finely chopped",
+    "1/2 cup Green Peas",
+    "1/2 tsp Mustard Seeds",
+    "1/2 tsp Cumin Seeds",
+    "1/4 tsp Asafoetida (Hing)",
+    "1/2 tsp Turmeric",
+    "1 tbsp Oil",
+    "Salt to taste"
+  ],
+  "instructions": [
+    "Heat oil in a pan. Add mustard seeds and let them pop. Add cumin seeds and hing.",
+    "Add chopped cabbage and green peas. Sauté for 2 minutes.",
+    "Add turmeric and salt. Mix well.",
+    "Cover and cook on low heat for 8-10 minutes, stirring occasionally, until vegetables are tender.",
+    "Serve hot with phulkas."
+  ],
+  "tags": ["easy", "low-calorie", "Jain", "frugal", "WFPB", "high fiber"],
+  "prepTime": "10 mins",
+  "cookTime": "15 mins",
+  "cost": "Rs 30 for 2 people",
+  "image": "/images/recipes/blank.png"
+}

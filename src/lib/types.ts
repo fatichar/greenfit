@@ -91,3 +91,16 @@ export type Guide = {
   references: string[];
   body: string;
 };
+
+export type Recipe = {
+  slug: string;
+  title: string;
+  description: string;
+  ingredients: string[];
+  instructions: string[];
+  tags: string[];
+  prepTime: string;
+  cookTime: string;
+  cost: string;
+  image: string;
+};

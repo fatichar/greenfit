@@ -1,0 +1,27 @@
+{
+  "slug": "chickpea-salad",
+  "title": "Zesty Chickpea Salad",
+  "description": "A refreshing, high-fiber, and high-protein salad requiring no cooking at all.",
+  "ingredients": [
+    "1.5 cups Boiled Chickpeas (Kala Chana or Kabuli)",
+    "1 Cucumber, diced",
+    "1 Tomato, diced",
+    "1/2 Red Onion, finely chopped",
+    "Juice of 1 Lemon",
+    "1/2 tsp Chaat Masala",
+    "Salt and Pepper to taste",
+    "Fresh coriander"
+  ],
+  "instructions": [
+    "In a large bowl, combine the boiled chickpeas, diced cucumber, tomato, and onion.",
+    "Add lemon juice, chaat masala, salt, and pepper.",
+    "Toss everything together until well mixed.",
+    "Garnish with fresh coriander.",
+    "Serve chilled or at room temperature as a snack or light meal."
+  ],
+  "tags": ["easy", "protein", "high fiber", "low-calorie", "WFPB"],
+  "prepTime": "10 mins",
+  "cookTime": "0 mins",
+  "cost": "Rs 50 for 2 people",
+  "image": "/images/recipes/blank.png"
+}
