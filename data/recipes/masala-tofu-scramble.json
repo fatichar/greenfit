@@ -21,9 +21,23 @@
     "Cook for 3-4 minutes until the tofu is heated through.",
     "Garnish with fresh coriander and serve hot with bread or chapati."
   ],
-  "tags": ["breakfast", "easy", "protein", "WFPB", "low-calorie"],
+  "tags": [
+    "breakfast",
+    "easy",
+    "protein",
+    "WFPB",
+    "low-calorie"
+  ],
   "prepTime": "10 mins",
   "cookTime": "10 mins",
   "cost": "Rs 80 for 2 people",
-  "image": "/images/recipes/blank.png"
+  "image": "/images/recipes/masala-tofu-scramble.svg",
+  "nutrition": {
+    "servingSize": "1 plate (about half recipe)",
+    "calories": 230,
+    "protein": "15 g",
+    "carbs": "10 g",
+    "fat": "16 g",
+    "fiber": "3 g"
+  }
 }

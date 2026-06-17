@@ -19,9 +19,22 @@
     "Pour this tadka (tempering) over the cooked dal.",
     "Garnish with coriander leaves and serve with rice or roti."
   ],
-  "tags": ["easy", "frugal", "protein", "WFPB"],
+  "tags": [
+    "easy",
+    "frugal",
+    "protein",
+    "WFPB"
+  ],
   "prepTime": "5 mins",
   "cookTime": "20 mins",
   "cost": "Rs 40 for 3 people",
-  "image": "/images/recipes/blank.png"
+  "image": "/images/recipes/simple-dal-tadka.svg",
+  "nutrition": {
+    "servingSize": "1 bowl (about one-third recipe)",
+    "calories": 210,
+    "protein": "11 g",
+    "carbs": "32 g",
+    "fat": "5 g",
+    "fiber": "6 g"
+  }
 }

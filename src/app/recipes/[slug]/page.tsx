@@ -3,7 +3,7 @@ import path from "path";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowLeft, Clock, Banknote, Tag } from "lucide-react";
+import { ArrowLeft, Clock, Banknote, Flame, Leaf, Tag } from "lucide-react";
 import type { Recipe } from "@/lib/types";
 import { Badge } from "@/components/ui/badge";
 
@@ -77,6 +77,10 @@ export default async function RecipePage({ params }: { params: Promise<{ slug: s
             <Banknote className="mr-2 h-4 w-4" />
             <span className="font-medium">Cost:</span> <span className="ml-1">{recipe.cost}</span>
           </div>
+          <div className="flex items-center">
+            <Flame className="mr-2 h-4 w-4" />
+            <span className="font-medium">Nutrition:</span> <span className="ml-1">{recipe.nutrition.calories} kcal · {recipe.nutrition.protein} protein</span>
+          </div>
         </div>
 
         <div className="mt-6 flex flex-wrap items-center gap-2">
@@ -100,9 +104,32 @@ export default async function RecipePage({ params }: { params: Promise<{ slug: s
       </div>
 
       <div className="grid grid-cols-1 gap-12 md:grid-cols-3">
-        <div className="md:col-span-1">
-          <h2 className="text-2xl font-bold tracking-tight mb-6">Ingredients</h2>
-          <ul className="space-y-3">
+        <div className="md:col-span-1 space-y-8">
+          <section className="rounded-2xl border bg-card p-5 shadow-sm">
+            <div className="mb-4 flex items-center gap-2">
+              <Leaf className="h-5 w-5 text-primary" />
+              <h2 className="text-xl font-bold tracking-tight">Nutrition</h2>
+            </div>
+            <p className="mb-4 text-sm text-muted-foreground">Per {recipe.nutrition.servingSize}</p>
+            <dl className="grid grid-cols-2 gap-3 text-sm">
+              {[
+                ["Calories", `${recipe.nutrition.calories} kcal`],
+                ["Protein", recipe.nutrition.protein],
+                ["Carbs", recipe.nutrition.carbs],
+                ["Fat", recipe.nutrition.fat],
+                ["Fiber", recipe.nutrition.fiber],
+              ].map(([label, value]) => (
+                <div key={label} className="rounded-xl bg-muted/60 p-3">
+                  <dt className="text-muted-foreground">{label}</dt>
+                  <dd className="mt-1 font-semibold text-foreground">{value}</dd>
+                </div>
+              ))}
+            </dl>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold tracking-tight mb-6">Ingredients</h2>
+            <ul className="space-y-3">
             {recipe.ingredients.map((ingredient, i) => (
               <li key={i} className="flex items-start">
                 <span className="mr-3 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary text-xs font-medium">
@@ -111,7 +138,8 @@ export default async function RecipePage({ params }: { params: Promise<{ slug: s
                 <span className="text-foreground pt-0.5">{ingredient}</span>
               </li>
             ))}
-          </ul>
+            </ul>
+          </section>
         </div>
 
         <div className="md:col-span-2">

@@ -86,9 +86,14 @@ export function RecipesClient({ recipes, allTags }: { recipes: Recipe[]; allTags
                   <p className="mt-1 text-sm text-muted-foreground line-clamp-2">
                     {recipe.description}
                   </p>
-                  <p className="mt-3 text-sm font-medium text-foreground">
-                    {recipe.cost}
-                  </p>
+                  <div className="mt-3 grid grid-cols-2 gap-2 text-xs">
+                    <p className="rounded-lg bg-muted/70 px-2 py-1 font-medium text-foreground">
+                      {recipe.cost}
+                    </p>
+                    <p className="rounded-lg bg-primary/10 px-2 py-1 font-medium text-primary">
+                      {recipe.nutrition.calories} kcal · {recipe.nutrition.protein} protein
+                    </p>
+                  </div>
                   <div className="mt-auto pt-4 flex flex-wrap gap-1.5">
                     {recipe.tags.slice(0, 3).map((tag) => (
                       <Badge key={tag} variant="secondary" className="text-xs">

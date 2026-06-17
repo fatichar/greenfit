@@ -92,6 +92,15 @@ export type Guide = {
   body: string;
 };
 
+export type NutritionInfo = {
+  servingSize: string;
+  calories: number;
+  protein: string;
+  carbs: string;
+  fat: string;
+  fiber: string;
+};
+
 export type Recipe = {
   slug: string;
   title: string;
@@ -103,4 +112,5 @@ export type Recipe = {
   cookTime: string;
   cost: string;
   image: string;
+  nutrition: NutritionInfo;
 };

@@ -19,9 +19,23 @@
     "Garnish with fresh coriander.",
     "Serve chilled or at room temperature as a snack or light meal."
   ],
-  "tags": ["easy", "protein", "high fiber", "low-calorie", "WFPB"],
+  "tags": [
+    "easy",
+    "protein",
+    "high fiber",
+    "low-calorie",
+    "WFPB"
+  ],
   "prepTime": "10 mins",
   "cookTime": "0 mins",
   "cost": "Rs 50 for 2 people",
-  "image": "/images/recipes/blank.png"
+  "image": "/images/recipes/chickpea-salad.svg",
+  "nutrition": {
+    "servingSize": "1 bowl (about half recipe)",
+    "calories": 245,
+    "protein": "11 g",
+    "carbs": "42 g",
+    "fat": "4 g",
+    "fiber": "11 g"
+  }
 }
