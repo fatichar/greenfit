@@ -12,20 +12,17 @@ const dietPlanImages: Record<string, string> = {
 };
 
 const productImages: Record<string, string> = {
-  "sample-plant-protein": "/images/items/products/sample-plant-protein.jpg",
   "fortified-soy-milk": "/images/items/products/fortified-soy-milk.jpg",
-  "masala-oats-pack": "/images/items/products/masala-oats-pack.jpg",
-  "dairy-whey-isolate": "/images/items/products/dairy-whey-isolate.jpg",
-  "peanut-curd-culture": "/images/items/products/peanut-curd-culture.jpg",
+  "plant-protein-powder": "/images/items/products/sample-plant-protein.jpg",
+  "masala-oats": "/images/items/products/masala-oats-pack.jpg",
+  "peanut-curd": "/images/items/products/peanut-curd-culture.jpg",
 };
 
 const supplementImages: Record<string, string> = {
-  "sample-b12": "/images/items/supplements/sample-b12.jpg",
-  "vegan-d3": "/images/items/supplements/vegan-d3.jpg",
+  "vitamin-b12": "/images/items/supplements/sample-b12.jpg",
+  "vitamin-d3": "/images/items/supplements/vegan-d3.jpg",
   "algal-omega-3": "/images/items/supplements/algal-omega-3.jpg",
   "creatine-monohydrate": "/images/items/supplements/creatine-monohydrate.jpg",
-  "basic-multivitamin": "/images/items/supplements/basic-multivitamin.jpg",
-  "plant-protein-blend": "/images/items/supplements/plant-protein-blend.jpg",
 };
 
 const guideImages: Record<string, string> = {

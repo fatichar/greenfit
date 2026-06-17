@@ -3,13 +3,13 @@ import { ProductDirectory } from "@/components/product-directory";
 import { products } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Product Checker",
-  description: "Search vegan product checks with plant-based suitability status, confidence, notes, and WFPB ingredient concerns.",
+  title: "Plant-Based Product Guides",
+  description: "Browse practical plant-based product guides with nutrition notes, recipe ideas, and popular brands.",
   keywords: [
     "vegan products",
     "plant based groceries",
     "WFPB food checks",
-    "vegan product checker",
+    "plant based product guide",
     "plant based shopping",
     "vegetarian products",
   ],
@@ -18,12 +18,9 @@ export const metadata: Metadata = {
 export default function ProductsPage() {
   return (
     <PageShell
-      title="Product checker"
-      description="Review product suitability using label notes, confidence levels, and source-dependent ingredient flags."
+      title="Product guides"
+      description="Explore practical plant-based staples with nutrition snapshots, recipe ideas, buying tips, and popular brand examples."
     >
-      <p className="rounded-xl border bg-card p-4 text-sm text-muted-foreground">
-        Barcode scan coming later. This MVP uses static label reviews and local sample data.
-      </p>
       <ProductDirectory products={products} />
     </PageShell>
   );

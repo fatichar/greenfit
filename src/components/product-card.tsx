@@ -1,7 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ConfidenceBadge } from "@/components/confidence-badge";
-import { StatusBadge } from "@/components/status-badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { getProductImage } from "@/lib/images";
 import type { Product } from "@/lib/types";
@@ -18,20 +16,13 @@ export function ProductCard({ product }: { product: Product }) {
           className="aspect-[16/9] w-full object-cover"
         />
         <CardHeader>
-          <div className="flex flex-wrap gap-2">
-            <StatusBadge status={product.status} />
-            <ConfidenceBadge confidence={product.confidence} />
-          </div>
+          <p className="text-xs font-medium uppercase tracking-wide text-primary">{product.category}</p>
           <CardTitle>{product.name}</CardTitle>
-          <p className="text-sm text-muted-foreground">
-            {product.brand} - {product.category}
-          </p>
+          <p className="text-sm text-muted-foreground">{product.bestFor}</p>
         </CardHeader>
-        <CardContent className="flex flex-col gap-3">
-          <p className="text-sm text-muted-foreground">{product.notes}</p>
-          <p className="text-xs text-muted-foreground">
-            Concern: {product.ingredientsOfConcern.length ? product.ingredientsOfConcern.join(", ") : "None listed"}
-          </p>
+        <CardContent className="flex flex-col gap-3 text-sm text-muted-foreground">
+          <p>{product.nutrition}</p>
+          <p className="text-xs">Popular brands: {product.popularBrands.slice(0, 3).join(", ")}</p>
         </CardContent>
       </Card>
     </Link>
