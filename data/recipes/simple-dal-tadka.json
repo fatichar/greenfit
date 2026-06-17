@@ -1,0 +1,27 @@
+{
+  "slug": "simple-dal-tadka",
+  "title": "Simple Dal Tadka",
+  "description": "A classic, comforting, and frugal Indian lentil soup. Easy to make and very nutritious.",
+  "ingredients": [
+    "1 cup Yellow Moong Dal (split yellow lentils)",
+    "3 cups Water",
+    "1/2 tsp Turmeric",
+    "1 tsp Cumin Seeds",
+    "2 Garlic cloves, minced (optional)",
+    "1 tbsp Oil or Vegan Butter",
+    "Salt to taste",
+    "Coriander leaves"
+  ],
+  "instructions": [
+    "Wash the dal thoroughly. Boil the dal in water with turmeric and salt until soft and mushy (about 15-20 minutes).",
+    "In a small pan, heat oil. Add cumin seeds and let them splutter.",
+    "Add minced garlic (if using) and sauté until golden.",
+    "Pour this tadka (tempering) over the cooked dal.",
+    "Garnish with coriander leaves and serve with rice or roti."
+  ],
+  "tags": ["easy", "frugal", "protein", "WFPB"],
+  "prepTime": "5 mins",
+  "cookTime": "20 mins",
+  "cost": "Rs 40 for 3 people",
+  "image": "/images/recipes/blank.png"
+}

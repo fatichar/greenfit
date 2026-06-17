@@ -1,0 +1,29 @@
+{
+  "slug": "masala-tofu-scramble",
+  "title": "Masala Tofu Scramble",
+  "description": "A spicy and high-protein Indian-style scramble using tofu. Perfect for a quick and hearty breakfast.",
+  "ingredients": [
+    "200g Firm Tofu, crumbled",
+    "1 Onion, finely chopped",
+    "1 Tomato, chopped",
+    "1 Green Chilli, chopped",
+    "1/2 tsp Turmeric powder",
+    "1/2 tsp Garam Masala",
+    "1 tbsp Oil",
+    "Salt to taste",
+    "Fresh coriander for garnish"
+  ],
+  "instructions": [
+    "Heat oil in a pan and sauté the onions and green chilli until onions are translucent.",
+    "Add tomatoes and cook until soft and mushy.",
+    "Stir in turmeric powder, garam masala, and salt. Cook for a minute.",
+    "Add the crumbled tofu and mix well so the spices coat the tofu evenly.",
+    "Cook for 3-4 minutes until the tofu is heated through.",
+    "Garnish with fresh coriander and serve hot with bread or chapati."
+  ],
+  "tags": ["breakfast", "easy", "protein", "WFPB", "low-calorie"],
+  "prepTime": "10 mins",
+  "cookTime": "10 mins",
+  "cost": "Rs 80 for 2 people",
+  "image": "/images/recipes/blank.png"
+}

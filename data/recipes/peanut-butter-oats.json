@@ -1,0 +1,25 @@
+{
+  "slug": "peanut-butter-oats",
+  "title": "Creamy Peanut Butter Oats",
+  "description": "A high-calorie, energy-packed breakfast ready in minutes. Great for quick mornings.",
+  "ingredients": [
+    "1/2 cup Rolled Oats",
+    "1 cup Plant Milk (Soy or Almond)",
+    "2 tbsp Peanut Butter",
+    "1 tbsp Chia Seeds",
+    "1 Banana, sliced",
+    "1 tsp Jaggery or Maple Syrup (optional)"
+  ],
+  "instructions": [
+    "In a small pot, bring the plant milk to a gentle boil.",
+    "Add rolled oats and chia seeds. Reduce heat to low and simmer for 5-7 minutes, stirring occasionally until thick.",
+    "Stir in the peanut butter and jaggery until well combined and creamy.",
+    "Pour into a bowl and top with sliced bananas.",
+    "Serve immediately."
+  ],
+  "tags": ["breakfast", "easy", "high-calorie", "protein", "high fiber"],
+  "prepTime": "5 mins",
+  "cookTime": "10 mins",
+  "cost": "Rs 60 for 1 person",
+  "image": "/images/recipes/blank.png"
+}
