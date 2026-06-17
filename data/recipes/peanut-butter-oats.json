@@ -17,9 +17,23 @@
     "Pour into a bowl and top with sliced bananas.",
     "Serve immediately."
   ],
-  "tags": ["breakfast", "easy", "high-calorie", "protein", "high fiber"],
+  "tags": [
+    "breakfast",
+    "easy",
+    "high-calorie",
+    "protein",
+    "high fiber"
+  ],
   "prepTime": "5 mins",
   "cookTime": "10 mins",
   "cost": "Rs 60 for 1 person",
-  "image": "/images/recipes/blank.png"
+  "image": "/images/recipes/peanut-butter-oats.svg",
+  "nutrition": {
+    "servingSize": "1 bowl",
+    "calories": 560,
+    "protein": "19 g",
+    "carbs": "66 g",
+    "fat": "27 g",
+    "fiber": "13 g"
+  }
 }
