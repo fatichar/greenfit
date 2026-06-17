@@ -26,7 +26,7 @@ export function FilterPanel({
   onStatusChange: (value: string) => void;
 }) {
   return (
-    <div className="grid gap-3 rounded-xl border bg-card p-4 md:grid-cols-2">
+    <div className={`grid gap-3 rounded-xl border bg-card p-4 ${statuses.length ? "md:grid-cols-2" : ""}`}>
       <div className="flex flex-col gap-2">
         <Label>Category</Label>
         <Select value={category} onValueChange={(value) => onCategoryChange(value ?? "All")}>
@@ -45,24 +45,26 @@ export function FilterPanel({
           </SelectContent>
         </Select>
       </div>
-      <div className="flex flex-col gap-2">
-        <Label>Status</Label>
-        <Select value={status} onValueChange={(value) => onStatusChange(value ?? "All")}>
-          <SelectTrigger className="w-full">
-            <SelectValue placeholder="All statuses" />
-          </SelectTrigger>
-          <SelectContent>
-            <SelectGroup>
-              <SelectItem value="All">All statuses</SelectItem>
-              {statuses.map((item) => (
-                <SelectItem key={item} value={item}>
-                  {item}
-                </SelectItem>
-              ))}
-            </SelectGroup>
-          </SelectContent>
-        </Select>
-      </div>
+      {statuses.length ? (
+        <div className="flex flex-col gap-2">
+          <Label>Status</Label>
+          <Select value={status} onValueChange={(value) => onStatusChange(value ?? "All")}>
+            <SelectTrigger className="w-full">
+              <SelectValue placeholder="All statuses" />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectGroup>
+                <SelectItem value="All">All statuses</SelectItem>
+                {statuses.map((item) => (
+                  <SelectItem key={item} value={item}>
+                    {item}
+                  </SelectItem>
+                ))}
+              </SelectGroup>
+            </SelectContent>
+          </Select>
+        </div>
+      ) : null}
     </div>
   );
 }

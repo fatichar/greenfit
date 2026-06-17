@@ -10,30 +10,30 @@ export type Confidence = "High" | "Medium" | "Low";
 export type Product = {
   slug: string;
   name: string;
-  brand: string;
   category: string;
-  status: Status;
-  confidence: Confidence;
+  bestFor: string;
+  serving: string;
+  nutrition: string;
   ingredients: string[];
-  ingredientsOfConcern: string[];
+  recipes: string[];
+  popularBrands: string[];
+  buyingTips: string;
   notes: string;
-  verificationSource: string;
   lastReviewed: string;
 };
 
 export type Supplement = {
   slug: string;
   name: string;
-  brand: string;
   category: string;
-  status: Status;
-  confidence: Confidence;
   form: string;
   dose: string;
-  thirdPartyTested: "Yes" | "No" | "Unknown";
-  heavyMetalReport: "Available" | "Not available";
-  costPerServing: string;
+  whenToTake: string;
+  toxicity: string;
+  popularBrands: string[];
+  testingNotes: string;
   notes: string;
+  relatedGuide: string | null;
   lastReviewed: string;
 };
 
