@@ -161,6 +161,7 @@ jobs:
           };
           PM2_CONFIG
 
-          pm2 startOrReload "$DEPLOY_PATH/ecosystem.config.cjs" --update-env
+          pm2 delete "$PM2_APP_NAME" >/dev/null 2>&1 || true
+          pm2 start "$DEPLOY_PATH/ecosystem.config.cjs" --update-env
           pm2 save
           EOF
