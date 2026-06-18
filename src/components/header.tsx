@@ -64,7 +64,7 @@ export function Header() {
             alt="greenfit.in"
             width={260}
             height={64}
-            priority
+            loading="eager"
             className={cn(
               "w-auto object-contain transition-[height] duration-300 ease-out",
               isScrolled ? "h-9" : "h-14 sm:h-18"

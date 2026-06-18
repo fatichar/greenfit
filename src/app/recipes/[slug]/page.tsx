@@ -98,7 +98,8 @@ export default async function RecipePage({ params }: { params: Promise<{ slug: s
           src={recipe.image}
           alt={recipe.title}
           fill
-          priority
+          loading="eager"
+          sizes="(max-width: 896px) 100vw, 896px"
           className="object-cover"
         />
       </div>

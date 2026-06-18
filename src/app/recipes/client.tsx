@@ -69,13 +69,15 @@ export function RecipesClient({ recipes, allTags }: { recipes: Recipe[]; allTags
 
         {filteredRecipes.length > 0 ? (
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {filteredRecipes.map((recipe) => (
+            {filteredRecipes.map((recipe, index) => (
               <Link key={recipe.slug} href={`/recipes/${recipe.slug}`} className="group relative flex flex-col overflow-hidden rounded-xl border bg-background shadow-sm transition-all hover:shadow-md">
                 <div className="aspect-[4/3] w-full bg-muted relative">
                   <Image
                     src={recipe.image}
                     alt={recipe.title}
                     fill
+                    loading={index < 3 ? "eager" : "lazy"}
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     className="object-cover"
                   />
                 </div>

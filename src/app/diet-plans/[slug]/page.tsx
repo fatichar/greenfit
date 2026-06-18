@@ -40,7 +40,7 @@ export default async function DietPlanDetailPage({ params }: { params: Promise<{
         width={1200}
         height={900}
         className="aspect-[16/7] w-full rounded-xl border border-olive-200 object-cover shadow-sm"
-        priority
+        loading="eager"
       />
       <MacroSummary calories={plan.calories} protein={plan.protein} />
       <Card>

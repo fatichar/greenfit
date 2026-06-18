@@ -27,7 +27,7 @@ export default async function SupplementDetailPage({ params }: { params: Promise
         <h1 className="font-heading text-4xl font-semibold">{supplement.name}</h1>
         <p className="text-muted-foreground">{supplement.notes}</p>
       </div>
-      <Image src={getSupplementImage(supplement.slug)} alt="" width={1200} height={900} className="aspect-[16/7] w-full rounded-xl border border-olive-200 object-cover shadow-sm" priority />
+      <Image src={getSupplementImage(supplement.slug)} alt="" width={1200} height={900} className="aspect-[16/7] w-full rounded-xl border border-olive-200 object-cover shadow-sm" loading="eager" />
       <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
         {[["Form", supplement.form], ["Dose", supplement.dose], ["When to take", supplement.whenToTake], ["Last reviewed", supplement.lastReviewed]].map(([label, value]) => (
           <Card key={label} size="sm"><CardContent><p className="text-xs font-medium uppercase text-muted-foreground">{label}</p><p className="mt-1 font-medium">{value}</p></CardContent></Card>

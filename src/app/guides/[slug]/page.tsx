@@ -40,7 +40,7 @@ export default async function GuideDetailPage({ params }: { params: Promise<{ sl
         width={1200}
         height={900}
         className="aspect-[16/7] w-full rounded-xl border border-olive-200 object-cover shadow-sm"
-        priority
+        loading="eager"
       />
       <Card>
         <CardContent className="grid gap-3 text-sm text-muted-foreground sm:grid-cols-2">

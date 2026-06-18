@@ -39,7 +39,7 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
         width={1200}
         height={900}
         className="aspect-[16/7] w-full rounded-xl border border-olive-200 object-cover shadow-sm"
-        priority
+        loading="eager"
       />
       <InfoGrid
         items={[

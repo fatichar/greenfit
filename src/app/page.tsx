@@ -102,7 +102,7 @@ export default function Home() {
                 alt="Prepared practical meals with grains, dal, salad, and tofu"
                 width={1200}
                 height={900}
-                priority
+                loading="eager"
                 className="aspect-[16/11] w-full object-cover"
               />
             </div>
