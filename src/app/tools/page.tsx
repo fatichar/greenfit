@@ -23,13 +23,6 @@ export default function ToolsPage() {
           Simple estimates for planning. Use them as starting points, not prescriptions.
         </p>
       </div>
-      <section hidden aria-hidden="true">
-        <h2>Product suitability checker</h2>
-        <p>
-          Placeholder for a future ingredient and suitability tagging tool. This is intentionally hidden until the
-          checker is implemented.
-        </p>
-      </section>
       <ToolsCalculators />
     </section>
   );

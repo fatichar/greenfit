@@ -26,7 +26,7 @@ export default function AboutPage() {
       </div>
       <div className="grid gap-4 md:grid-cols-3">
         {[
-          ["Evidence", "Guides include references and reviewer placeholders so claims can improve over time."],
+          ["Evidence", "Guides include references, review notes, and practical context so claims stay grounded."],
           ["Accessible foods", "Plans emphasize dals, chana, soy foods, grains, nuts, and practical dairy swaps."],
           ["Transparent checks", "Products use status and confidence instead of overconfident binary claims."],
         ].map(([title, description]) => (

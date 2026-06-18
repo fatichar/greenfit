@@ -13,13 +13,13 @@ const dietPlanImages: Record<string, string> = {
 
 const productImages: Record<string, string> = {
   "fortified-soy-milk": "/images/items/products/fortified-soy-milk.jpg",
-  "plant-protein-powder": "/images/items/products/sample-plant-protein.jpg",
+  "plant-protein-powder": "/images/items/products/plant-protein-powder.jpg",
   "masala-oats": "/images/items/products/masala-oats-pack.jpg",
   "peanut-curd": "/images/items/products/peanut-curd-culture.jpg",
 };
 
 const supplementImages: Record<string, string> = {
-  "vitamin-b12": "/images/items/supplements/sample-b12.jpg",
+  "vitamin-b12": "/images/items/supplements/vitamin-b12.jpg",
   "vitamin-d3": "/images/items/supplements/vegan-d3.jpg",
   "algal-omega-3": "/images/items/supplements/algal-omega-3.jpg",
   "creatine-monohydrate": "/images/items/supplements/creatine-monohydrate.jpg",

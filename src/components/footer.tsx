@@ -14,7 +14,7 @@ export function Footer() {
             className="h-9 w-auto object-contain"
           />
           <p className="mt-2 max-w-2xl">
-            Practical nutrition guidance, transparent product checks, and static-first resources for everyday eating.
+            Practical nutrition guidance, transparent product checks, and useful resources for everyday eating.
           </p>
         </div>
         <div className="flex flex-wrap gap-4">
