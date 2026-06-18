@@ -6,7 +6,7 @@ import foodsData from "../../data/foods.json";
 import ingredientsData from "../../data/ingredients.json";
 import productsData from "../../data/products.json";
 import supplementsData from "../../data/supplements.json";
-import type { DietPlan, Food, Guide, Ingredient, Product, Supplement } from "./types";
+import type { DietPlan, Food, Guide, Ingredient, Product, Recipe, Supplement } from "./types";
 
 export const products = productsData as Product[];
 export const supplements = supplementsData as Supplement[];
@@ -15,6 +15,7 @@ export const foods = foodsData as Food[];
 export const ingredients = ingredientsData as Ingredient[];
 
 const guidesDirectory = path.join(process.cwd(), "content", "guides");
+const recipesDirectory = path.join(process.cwd(), "data", "recipes");
 
 function parseFrontmatter(file: string) {
   const match = file.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n([\s\S]*)$/);
@@ -77,6 +78,22 @@ export function getGuides(): Guide[] {
 
 export function getGuide(slug: string) {
   return getGuides().find((guide) => guide.slug === slug);
+}
+
+export function getRecipes(): Recipe[] {
+  if (!fs.existsSync(recipesDirectory)) return [];
+
+  return fs
+    .readdirSync(recipesDirectory)
+    .filter((file) => file.endsWith(".json"))
+    .map((file) => {
+      const raw = fs.readFileSync(path.join(recipesDirectory, file), "utf8");
+      return JSON.parse(raw) as Recipe;
+    });
+}
+
+export function getRecipe(slug: string) {
+  return getRecipes().find((recipe) => recipe.slug === slug);
 }
 
 export function getProduct(slug: string) {

@@ -1,6 +1,8 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export function ReferenceList({ references }: { references: string[] }) {
+  if (references.length === 0) return null;
+
   return (
     <Card>
       <CardHeader>

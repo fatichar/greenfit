@@ -26,7 +26,7 @@ const supplementImages: Record<string, string> = {
 };
 
 const guideImages: Record<string, string> = {
-  "protein-sources": "/images/items/guides/protein-sources.jpg",
+  "protein-guide": "/images/items/guides/protein-sources.jpg",
   "b12-guide": "/images/items/guides/b12-guide.jpg",
   "bone-health-guide": "/images/items/guides/bone-health-guide.jpg",
   "replacing-paneer-curd-ghee-milk": "/images/items/guides/replacing-paneer-curd-ghee-milk.jpg",
