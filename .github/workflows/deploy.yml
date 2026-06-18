@@ -40,6 +40,8 @@ jobs:
           cp -a .next/static deploy/.next/static
           cp -a public deploy/public
           tar -czf greenfit-${GITHUB_SHA}.tar.gz -C deploy .
+          ls -lh greenfit-${GITHUB_SHA}.tar.gz
+          gzip -t greenfit-${GITHUB_SHA}.tar.gz
 
       - name: Configure SSH
         env:
@@ -61,30 +63,45 @@ jobs:
             Port $VPS_PORT
             IdentityFile ~/.ssh/deploy_key
             BatchMode yes
-            ConnectTimeout 30
+            ConnectTimeout 20
             ServerAliveInterval 30
             ServerAliveCountMax 4
             StrictHostKeyChecking no
             UserKnownHostsFile /dev/null
           EOF
           chmod 600 ~/.ssh/config
+
+          echo "Runner public IP:"
+          curl -fsS https://api.ipify.org || true
+          echo
+          echo "Target: ${VPS_USER}@${VPS_HOST}:${VPS_PORT}"
+          echo "DNS resolution:"
+          getent hosts "$VPS_HOST" || true
+
+          tcp_probe() {
+            timeout 25s bash -c ": > /dev/tcp/${VPS_HOST}/${VPS_PORT}"
+          }
+
           retry() {
             local attempt=1
-            local max_attempts=4
-            local delay=10
+            local max_attempts=8
+            local delay=15
 
             until "$@"; do
               if [ "$attempt" -ge "$max_attempts" ]; then
                 return 1
               fi
 
-              echo "Attempt ${attempt} failed. Retrying in ${delay}s..."
+              echo "Attempt ${attempt} failed at $(date -u +'%Y-%m-%dT%H:%M:%SZ'). Retrying in ${delay}s..."
               sleep "$delay"
               attempt=$((attempt + 1))
-              delay=$((delay * 2))
+              if [ "$delay" -lt 120 ]; then
+                delay=$((delay * 2))
+              fi
             done
           }
 
+          retry tcp_probe
           retry ssh greenfit-vps "echo SSH connection ok"
 
       - name: Upload release
@@ -94,24 +111,40 @@ jobs:
         run: |
           retry() {
             local attempt=1
-            local max_attempts=4
-            local delay=10
+            local max_attempts=5
+            local delay=20
 
             until "$@"; do
               if [ "$attempt" -ge "$max_attempts" ]; then
                 return 1
               fi
 
-              echo "Attempt ${attempt} failed. Retrying in ${delay}s..."
+              echo "Attempt ${attempt} failed at $(date -u +'%Y-%m-%dT%H:%M:%SZ'). Retrying in ${delay}s..."
               sleep "$delay"
               attempt=$((attempt + 1))
-              delay=$((delay * 2))
+              if [ "$delay" -lt 120 ]; then
+                delay=$((delay * 2))
+              fi
             done
           }
 
-          ls -lh greenfit-${GITHUB_SHA}.tar.gz
-          retry timeout 600s ssh greenfit-vps "cat > /tmp/greenfit-${GITHUB_SHA}.tar.gz" < greenfit-${GITHUB_SHA}.tar.gz
-          retry ssh greenfit-vps "ls -lh /tmp/greenfit-${GITHUB_SHA}.tar.gz && test -s /tmp/greenfit-${GITHUB_SHA}.tar.gz"
+          archive="greenfit-${GITHUB_SHA}.tar.gz"
+          remote_archive="/tmp/${archive}"
+          local_sha="$(sha256sum "$archive" | cut -d ' ' -f1)"
+
+          ls -lh "$archive"
+          echo "Local SHA256: $local_sha"
+
+          upload_archive() {
+            timeout 600s ssh greenfit-vps "rm -f '$remote_archive' && cat > '$remote_archive'" < "$archive"
+          }
+
+          retry upload_archive
+
+          remote_sha="$(ssh greenfit-vps "sha256sum '$remote_archive' | cut -d ' ' -f1")"
+          echo "Remote SHA256: $remote_sha"
+          test "$local_sha" = "$remote_sha"
+          ssh greenfit-vps "ls -lh '$remote_archive' && gzip -t '$remote_archive'"
 
       - name: Activate release
         env:
