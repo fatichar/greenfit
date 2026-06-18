@@ -15,6 +15,7 @@ env:
   APP_PORT: ${{ vars.APP_PORT || '3000' }}
   APP_HOSTNAME: ${{ vars.APP_HOSTNAME || '127.0.0.1' }}
   VPS_PORT: ${{ vars.VPS_PORT || '22' }}
+  REPO_URL: ${{ vars.REPO_URL || format('{0}/{1}.git', github.server_url, github.repository) }}
 
 jobs:
   deploy:
@@ -32,16 +33,6 @@ jobs:
       - run: npm ci
       - run: npm run lint
       - run: npm run build
-
-      - name: Package standalone app
-        run: |
-          mkdir -p deploy/.next
-          cp -a .next/standalone/. deploy/
-          cp -a .next/static deploy/.next/static
-          cp -a public deploy/public
-          tar -czf greenfit-${GITHUB_SHA}.tar.gz -C deploy .
-          ls -lh greenfit-${GITHUB_SHA}.tar.gz
-          gzip -t greenfit-${GITHUB_SHA}.tar.gz
 
       - name: Configure SSH
         env:
@@ -104,62 +95,53 @@ jobs:
           retry tcp_probe
           retry ssh greenfit-vps "echo SSH connection ok"
 
-      - name: Upload release
-        env:
-          VPS_HOST: ${{ vars.VPS_HOST }}
-          VPS_USER: ${{ vars.VPS_USER }}
-        run: |
-          retry() {
-            local attempt=1
-            local max_attempts=5
-            local delay=20
-
-            until "$@"; do
-              if [ "$attempt" -ge "$max_attempts" ]; then
-                return 1
-              fi
-
-              echo "Attempt ${attempt} failed at $(date -u +'%Y-%m-%dT%H:%M:%SZ'). Retrying in ${delay}s..."
-              sleep "$delay"
-              attempt=$((attempt + 1))
-              if [ "$delay" -lt 120 ]; then
-                delay=$((delay * 2))
-              fi
-            done
-          }
-
-          archive="greenfit-${GITHUB_SHA}.tar.gz"
-          remote_archive="/tmp/${archive}"
-          local_sha="$(sha256sum "$archive" | cut -d ' ' -f1)"
-
-          ls -lh "$archive"
-          echo "Local SHA256: $local_sha"
-
-          upload_archive() {
-            timeout 600s ssh greenfit-vps "rm -f '$remote_archive' && cat > '$remote_archive'" < "$archive"
-          }
-
-          retry upload_archive
-
-          remote_sha="$(ssh greenfit-vps "sha256sum '$remote_archive' | cut -d ' ' -f1")"
-          echo "Remote SHA256: $remote_sha"
-          test "$local_sha" = "$remote_sha"
-          ssh greenfit-vps "ls -lh '$remote_archive' && gzip -t '$remote_archive'"
-
       - name: Activate release
         env:
           VPS_HOST: ${{ vars.VPS_HOST }}
           VPS_USER: ${{ vars.VPS_USER }}
         run: |
           ssh greenfit-vps \
-            "GITHUB_SHA='$GITHUB_SHA' DEPLOY_PATH='$DEPLOY_PATH' PM2_APP_NAME='$PM2_APP_NAME' APP_PORT='$APP_PORT' APP_HOSTNAME='$APP_HOSTNAME' bash -s" <<'EOF'
+            "GITHUB_SHA='$GITHUB_SHA' GITHUB_REF_NAME='$GITHUB_REF_NAME' REPO_URL='$REPO_URL' DEPLOY_PATH='$DEPLOY_PATH' PM2_APP_NAME='$PM2_APP_NAME' APP_PORT='$APP_PORT' APP_HOSTNAME='$APP_HOSTNAME' bash -s" <<'EOF'
           set -euo pipefail
 
+          command -v git >/dev/null 2>&1 || {
+            echo "git was not found on the VPS PATH. Install it with: sudo apt-get install -y git"
+            exit 1
+          }
+
+          command -v npm >/dev/null 2>&1 || {
+            echo "npm was not found on the VPS PATH. Install Node.js 22 on the VPS."
+            exit 1
+          }
+
+          command -v pm2 >/dev/null 2>&1 || {
+            echo "pm2 was not found on the VPS PATH. Install it with: npm install -g pm2"
+            exit 1
+          }
+
+          REPO_DIR="$DEPLOY_PATH/repo"
           RELEASE_DIR="$DEPLOY_PATH/releases/$GITHUB_SHA"
-          mkdir -p "$DEPLOY_PATH/releases"
+          mkdir -p "$DEPLOY_PATH/releases" "$REPO_DIR"
+
+          if [ ! -d "$REPO_DIR/.git" ]; then
+            rm -rf "$REPO_DIR"
+            git clone --no-checkout "$REPO_URL" "$REPO_DIR"
+          fi
+
+          git -C "$REPO_DIR" remote set-url origin "$REPO_URL"
+          git -C "$REPO_DIR" fetch --prune origin "$GITHUB_REF_NAME"
+          git -C "$REPO_DIR" cat-file -e "$GITHUB_SHA^{commit}"
+
           rm -rf "$RELEASE_DIR"
           mkdir -p "$RELEASE_DIR"
-          tar -xzf "/tmp/greenfit-$GITHUB_SHA.tar.gz" -C "$RELEASE_DIR"
+          git -C "$REPO_DIR" archive "$GITHUB_SHA" | tar -x -C "$RELEASE_DIR"
+
+          cd "$RELEASE_DIR"
+          npm ci
+          npm run build
+          cp -a public .next/standalone/public
+          mkdir -p .next/standalone/.next
+          cp -a .next/static .next/standalone/.next/static
           ln -sfn "$RELEASE_DIR" "$DEPLOY_PATH/current"
 
           cat > "$DEPLOY_PATH/ecosystem.config.cjs" <<PM2_CONFIG
@@ -167,7 +149,7 @@ jobs:
             apps: [
               {
                 name: "$PM2_APP_NAME",
-                cwd: "$DEPLOY_PATH/current",
+                cwd: "$DEPLOY_PATH/current/.next/standalone",
                 script: "server.js",
                 env: {
                   NODE_ENV: "production",
@@ -179,12 +161,6 @@ jobs:
           };
           PM2_CONFIG
 
-          command -v pm2 >/dev/null 2>&1 || {
-            echo "pm2 was not found on the VPS PATH. Install it with: npm install -g pm2"
-            exit 1
-          }
-
           pm2 startOrReload "$DEPLOY_PATH/ecosystem.config.cjs" --update-env
           pm2 save
-          rm -f "/tmp/greenfit-$GITHUB_SHA.tar.gz"
           EOF
