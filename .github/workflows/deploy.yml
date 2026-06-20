@@ -32,7 +32,11 @@ jobs:
 
       - run: npm ci
       - run: npm run lint
-      - run: npm run build
+      - name: Build app
+        run: npm run build
+        env:
+          NEXT_PUBLIC_UMAMI_SCRIPT_URL: ${{ vars.NEXT_PUBLIC_UMAMI_SCRIPT_URL }}
+          NEXT_PUBLIC_UMAMI_WEBSITE_ID: ${{ vars.NEXT_PUBLIC_UMAMI_WEBSITE_ID }}
 
       - name: Configure SSH
         env:
@@ -99,9 +103,11 @@ jobs:
         env:
           VPS_HOST: ${{ vars.VPS_HOST }}
           VPS_USER: ${{ vars.VPS_USER }}
+          NEXT_PUBLIC_UMAMI_SCRIPT_URL: ${{ vars.NEXT_PUBLIC_UMAMI_SCRIPT_URL }}
+          NEXT_PUBLIC_UMAMI_WEBSITE_ID: ${{ vars.NEXT_PUBLIC_UMAMI_WEBSITE_ID }}
         run: |
           ssh greenfit-vps \
-            "GITHUB_SHA='$GITHUB_SHA' GITHUB_REF_NAME='$GITHUB_REF_NAME' REPO_URL='$REPO_URL' DEPLOY_PATH='$DEPLOY_PATH' PM2_APP_NAME='$PM2_APP_NAME' APP_PORT='$APP_PORT' APP_HOSTNAME='$APP_HOSTNAME' bash -s" <<'EOF'
+            "GITHUB_SHA='$GITHUB_SHA' GITHUB_REF_NAME='$GITHUB_REF_NAME' REPO_URL='$REPO_URL' DEPLOY_PATH='$DEPLOY_PATH' PM2_APP_NAME='$PM2_APP_NAME' APP_PORT='$APP_PORT' APP_HOSTNAME='$APP_HOSTNAME' NEXT_PUBLIC_UMAMI_SCRIPT_URL='$NEXT_PUBLIC_UMAMI_SCRIPT_URL' NEXT_PUBLIC_UMAMI_WEBSITE_ID='$NEXT_PUBLIC_UMAMI_WEBSITE_ID' bash -s" <<'EOF'
           set -euo pipefail
 
           command -v git >/dev/null 2>&1 || {
@@ -154,7 +160,9 @@ jobs:
                 env: {
                   NODE_ENV: "production",
                   PORT: "$APP_PORT",
-                  HOSTNAME: "$APP_HOSTNAME"
+                  HOSTNAME: "$APP_HOSTNAME",
+                  NEXT_PUBLIC_UMAMI_SCRIPT_URL: "$NEXT_PUBLIC_UMAMI_SCRIPT_URL",
+                  NEXT_PUBLIC_UMAMI_WEBSITE_ID: "$NEXT_PUBLIC_UMAMI_WEBSITE_ID"
                 }
               }
             ]
