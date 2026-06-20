@@ -1,16 +1,27 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { EmptyState } from "@/components/empty-state";
 import { FilterPanel } from "@/components/filter-panel";
 import { ProductCard } from "@/components/product-card";
 import { SearchBar } from "@/components/search-bar";
+import { trackEvent } from "@/lib/analytics";
 import type { Product } from "@/lib/types";
 
 export function ProductDirectory({ products }: { products: Product[] }) {
   const [query, setQuery] = useState("");
   const [category, setCategory] = useState("All");
   const categories = [...new Set(products.map((product) => product.category))];
+
+  useEffect(() => {
+    if (!query) return;
+
+    const timeout = setTimeout(() => {
+      trackEvent("Product Checker Used");
+    }, 1000);
+
+    return () => clearTimeout(timeout);
+  }, [query]);
 
   const filteredProducts = useMemo(() => {
     const normalizedQuery = query.trim().toLowerCase();

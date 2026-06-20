@@ -1,11 +1,12 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { DisclaimerBox } from "@/components/disclaimer-box";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { trackEvent } from "@/lib/analytics";
 
 function NumberField({
   label,
@@ -36,6 +37,18 @@ export function ToolsCalculators() {
   const [age, setAge] = useState(30);
   const [activity, setActivity] = useState(1.45);
   const [goalCalories, setGoalCalories] = useState(2200);
+
+  const hasTracked = useRef(false);
+
+  useEffect(() => {
+    if (
+      !hasTracked.current &&
+      (weight !== 70 || fatFreeMass !== 55 || height !== 170 || age !== 30 || activity !== 1.45 || goalCalories !== 2200)
+    ) {
+      hasTracked.current = true;
+      trackEvent("Calculator Used");
+    }
+  }, [weight, fatFreeMass, height, age, activity, goalCalories]);
 
   const results = useMemo(() => {
     const proteinGeneral = Math.round(weight * 0.8);

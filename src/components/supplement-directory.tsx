@@ -1,16 +1,27 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { EmptyState } from "@/components/empty-state";
 import { FilterPanel } from "@/components/filter-panel";
 import { SearchBar } from "@/components/search-bar";
 import { SupplementCard } from "@/components/supplement-card";
+import { trackEvent } from "@/lib/analytics";
 import type { Supplement } from "@/lib/types";
 
 export function SupplementDirectory({ supplements }: { supplements: Supplement[] }) {
   const [query, setQuery] = useState("");
   const [category, setCategory] = useState("All");
   const categories = [...new Set(supplements.map((supplement) => supplement.category))];
+
+  useEffect(() => {
+    if (!query) return;
+
+    const timeout = setTimeout(() => {
+      trackEvent("Search Used", { type: "supplement" });
+    }, 1000);
+
+    return () => clearTimeout(timeout);
+  }, [query]);
 
   const filteredSupplements = useMemo(() => {
     const normalizedQuery = query.trim().toLowerCase();

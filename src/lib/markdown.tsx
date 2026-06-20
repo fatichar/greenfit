@@ -131,6 +131,8 @@ function renderInline(content: string): ReactNode[] {
             target="_blank"
             rel="noreferrer"
             className="font-medium text-primary underline decoration-primary/40 underline-offset-4 transition hover:decoration-primary"
+            data-umami-event="Outbound Product Click"
+            data-umami-event-url={match[3]}
           >
             {match[2]}
           </a>

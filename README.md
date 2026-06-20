@@ -32,7 +32,22 @@ By default, `npm start` runs the Next.js server on port `3000`.
 
 ## Environment Variables
 
-No environment variables are required for this MVP.
+No environment variables are required for local development.
+
+To enable Umami analytics in production, set both:
+
+- `NEXT_PUBLIC_UMAMI_SCRIPT_URL` (e.g., `https://eu.umami.is/script.js`)
+- `NEXT_PUBLIC_UMAMI_WEBSITE_ID`
+
+Analytics only load when `NODE_ENV=production` and both variables are present.
+
+### Verification Checklist
+
+- [ ] Ensure the script loads in production builds when variables are set.
+- [ ] Confirm no analytics script is loaded in development builds.
+- [ ] Ensure variables use the `NEXT_PUBLIC_` prefix to work on the client side.
+- [ ] Verify Umami automatic page view tracking works.
+- [ ] Ensure no personal data is collected in custom events.
 
 ## Content Editing
 
