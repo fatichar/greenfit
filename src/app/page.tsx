@@ -79,17 +79,29 @@ export default function Home() {
               </p>
             </div>
             <div className="flex flex-col gap-3 sm:flex-row">
-              <Link href="/diet-plans" className={cn(buttonVariants({ size: "lg" }), "w-full sm:w-auto")}>
+              <Link
+                href="/diet-plans"
+                className={cn(buttonVariants({ size: "lg" }), "w-full sm:w-auto")}
+                data-umami-event="CTA Click"
+                data-umami-event-cta="Explore Diet Plans (Hero)"
+              >
                 Explore Diet Plans
                 <ArrowRight data-icon="inline-end" />
               </Link>
-              <Link href="/products" className={cn(buttonVariants({ variant: "outline", size: "lg" }), "w-full sm:w-auto")}>
+              <Link
+                href="/products"
+                className={cn(buttonVariants({ variant: "outline", size: "lg" }), "w-full sm:w-auto")}
+                data-umami-event="CTA Click"
+                data-umami-event-cta="Check Products (Hero)"
+              >
                 Check Products
               </Link>
             </div>
             <Link
               href="/products"
               className="flex min-h-14 w-full max-w-xl min-w-0 items-center gap-3 rounded-lg border border-olive-200 bg-white px-4 text-sm font-medium text-muted-foreground shadow-sm transition hover:border-primary/50 hover:text-foreground"
+              data-umami-event="CTA Click"
+              data-umami-event-cta="Search Directory (Hero)"
             >
               <Search className="size-4" />
               <span className="truncate">Search products, supplements, ingredients, or guides</span>
@@ -117,7 +129,12 @@ export default function Home() {
               </div>
             ))}
           </div>
-          <Link href="/tools" className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:underline">
+          <Link
+            href="/tools"
+            className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:underline"
+            data-umami-event="CTA Click"
+            data-umami-event-cta="Try nutrition tools (Trust Banner)"
+          >
             <Calculator className="size-4" />
             Try nutrition tools
           </Link>
@@ -166,7 +183,12 @@ export default function Home() {
               Start with the diet plans, then use guides and product checks only when you need the detail.
             </p>
           </div>
-          <Link href="/diet-plans" className={cn(buttonVariants({ size: "lg" }), "w-full sm:w-auto")}>
+          <Link
+            href="/diet-plans"
+            className={cn(buttonVariants({ size: "lg" }), "w-full sm:w-auto")}
+            data-umami-event="CTA Click"
+            data-umami-event-cta="Explore Diet Plans (Footer)"
+          >
             Explore Diet Plans
             <ArrowRight data-icon="inline-end" />
           </Link>
@@ -188,7 +210,12 @@ function PathwayLink({
   icon: LucideIcon;
 }) {
   return (
-    <Link href={href} className="group grid gap-4 py-6 transition hover:bg-muted/40 sm:grid-cols-[2.5rem_1fr_auto] sm:px-4">
+    <Link
+      href={href}
+      className="group grid gap-4 py-6 transition hover:bg-muted/40 sm:grid-cols-[2.5rem_1fr_auto] sm:px-4"
+      data-umami-event="CTA Click"
+      data-umami-event-cta={title}
+    >
       <div className="flex size-10 items-center justify-center rounded-lg bg-mint-100 text-primary">
         <Icon className="size-5" />
       </div>
