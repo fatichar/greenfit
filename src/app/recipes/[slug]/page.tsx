@@ -5,7 +5,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, Clock, Banknote, Flame, Leaf, Tag } from "lucide-react";
 import type { Recipe } from "@/lib/types";
+import { JsonLd } from "@/components/json-ld";
 import { Badge } from "@/components/ui/badge";
+import { SITE_NAME, siteUrl } from "@/lib/site";
 
 export async function generateStaticParams() {
   const recipesDir = path.join(process.cwd(), "data", "recipes");
@@ -38,6 +40,11 @@ function getRecipe(slug: string): Recipe | null {
   }
 }
 
+function durationToIsoDuration(duration: string) {
+  const minutes = Number(duration.match(/\d+/)?.[0]);
+  return Number.isFinite(minutes) ? `PT${minutes}M` : undefined;
+}
+
 export default async function RecipePage({ params }: { params: Promise<{ slug: string }> }) {
   const resolvedParams = await params;
   const recipe = getRecipe(resolvedParams.slug);
@@ -46,8 +53,39 @@ export default async function RecipePage({ params }: { params: Promise<{ slug: s
     notFound();
   }
 
+  const recipeJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Recipe",
+    name: recipe.title,
+    description: recipe.description,
+    image: siteUrl(recipe.image),
+    author: {
+      "@type": "Organization",
+      name: SITE_NAME,
+    },
+    prepTime: durationToIsoDuration(recipe.prepTime),
+    cookTime: durationToIsoDuration(recipe.cookTime),
+    recipeIngredient: recipe.ingredients,
+    recipeInstructions: recipe.instructions.map((instruction) => ({
+      "@type": "HowToStep",
+      text: instruction,
+    })),
+    keywords: recipe.tags.join(", "),
+    nutrition: {
+      "@type": "NutritionInformation",
+      servingSize: recipe.nutrition.servingSize,
+      calories: `${recipe.nutrition.calories} calories`,
+      proteinContent: recipe.nutrition.protein,
+      carbohydrateContent: recipe.nutrition.carbs,
+      fatContent: recipe.nutrition.fat,
+      fiberContent: recipe.nutrition.fiber,
+    },
+    mainEntityOfPage: siteUrl(`/recipes/${recipe.slug}`),
+  };
+
   return (
     <article className="mx-auto max-w-4xl px-4 py-12 sm:px-6 lg:px-8">
+      <JsonLd data={recipeJsonLd} />
       <Link
         href="/recipes"
         className="mb-8 inline-flex items-center text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
