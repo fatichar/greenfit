@@ -4,8 +4,10 @@ import Link from "next/link";
 import { ArrowLeft, Clock, Banknote, Flame, Leaf, Tag } from "lucide-react";
 import { dietPlans, getRecipe, getRecipes } from "@/lib/data";
 import { findDietPlansForRecipe } from "@/lib/recipe-match";
+import { JsonLd } from "@/components/json-ld";
 import { Badge } from "@/components/ui/badge";
 import { InfoDisclosureList } from "@/components/info-disclosure";
+import { SITE_NAME, siteUrl } from "@/lib/site";
 
 export async function generateStaticParams() {
   return getRecipes().map((recipe) => ({
@@ -24,6 +26,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   };
 }
 
+function durationToIsoDuration(duration: string) {
+  const minutes = Number(duration.match(/\d+/)?.[0]);
+  return Number.isFinite(minutes) ? `PT${minutes}M` : undefined;
+}
+
 export default async function RecipePage({ params }: { params: Promise<{ slug: string }> }) {
   const resolvedParams = await params;
   const recipe = getRecipe(resolvedParams.slug);
@@ -32,10 +39,41 @@ export default async function RecipePage({ params }: { params: Promise<{ slug: s
     notFound();
   }
 
+  const recipeJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Recipe",
+    name: recipe.title,
+    description: recipe.description,
+    image: siteUrl(recipe.image),
+    author: {
+      "@type": "Organization",
+      name: SITE_NAME,
+    },
+    prepTime: durationToIsoDuration(recipe.prepTime),
+    cookTime: durationToIsoDuration(recipe.cookTime),
+    recipeIngredient: recipe.ingredients,
+    recipeInstructions: recipe.instructions.map((instruction) => ({
+      "@type": "HowToStep",
+      text: instruction,
+    })),
+    keywords: recipe.tags.join(", "),
+    nutrition: {
+      "@type": "NutritionInformation",
+      servingSize: recipe.nutrition.servingSize,
+      calories: `${recipe.nutrition.calories} calories`,
+      proteinContent: `${recipe.nutrition.proteinG} g`,
+      carbohydrateContent: `${recipe.nutrition.carbsG} g`,
+      fatContent: `${recipe.nutrition.fatG} g`,
+      fiberContent: `${recipe.nutrition.fiberG} g`,
+    },
+    mainEntityOfPage: siteUrl(`/recipes/${recipe.slug}`),
+  };
+
   const relatedPlans = findDietPlansForRecipe(recipe.slug, dietPlans, getRecipes());
 
   return (
     <article className="mx-auto max-w-4xl px-4 py-12 sm:px-6 lg:px-8">
+      <JsonLd data={recipeJsonLd} />
       <Link
         href="/recipes"
         className="mb-8 inline-flex items-center text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"

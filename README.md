@@ -41,13 +41,28 @@ To enable Umami analytics in production, set both:
 
 Analytics only load when `NODE_ENV=production` and both variables are present.
 
-### Verification Checklist
+For webmaster verification in production, set these optional variables where the production build runs:
+
+- `GOOGLE_SITE_VERIFICATION`
+- `BING_SITE_VERIFICATION`
+
+The GitHub Actions deploy workflow reads them from the `Prod` environment variables and forwards them to the VPS build. The app renders the verification meta tags only when the corresponding variables are present.
+
+### Analytics Verification Checklist
 
 - [ ] Ensure the script loads in production builds when variables are set.
 - [ ] Confirm no analytics script is loaded in development builds.
 - [ ] Ensure variables use the `NEXT_PUBLIC_` prefix to work on the client side.
 - [ ] Verify Umami automatic page view tracking works.
 - [ ] Ensure no personal data is collected in custom events.
+
+### SEO / Webmaster Validation Checklist
+
+- [ ] Check `https://greenfit.in/sitemap.xml`.
+- [ ] Check `https://greenfit.in/robots.txt`.
+- [ ] View page source for `google-site-verification` and `msvalidate.01` meta tags when verification variables are set.
+- [ ] Test structured data using Google Rich Results Test or Schema Markup Validator.
+- [ ] Submit `https://greenfit.in/sitemap.xml` in Google Search Console and Bing Webmaster Tools.
 
 ## Content Editing
 
