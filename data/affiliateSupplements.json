@@ -1,0 +1,311 @@
+[
+  {
+    "id": "himalayan-organics-plant-based-b12",
+    "nutrient": "vitamin-b12",
+    "title": "Himalayan Organics Plant Based Vitamin B12",
+    "brand": "Himalayan Organics",
+    "form": "Capsule",
+    "doseText": "1.1 mcg vitamin B12 per capsule",
+    "amazonUrl": "https://www.amazon.in/dp/B07Y7P2S5T",
+    "asin": "B07Y7P2S5T",
+    "imageUrl": "https://m.media-amazon.com/images/I/71kf+zcU5mL._AC_UL320_.jpg",
+    "veganEvidence": "Amazon product name identifies the formulation as plant-based.",
+    "sourceVerifiedAt": "2026-07-24"
+  },
+  {
+    "id": "wellbeing-nutrition-vegan-b12",
+    "nutrient": "vitamin-b12",
+    "title": "Wellbeing Nutrition Melts Vegan Vitamin B12",
+    "brand": "Wellbeing Nutrition",
+    "form": "Oral strip",
+    "doseText": "2.2 mcg vitamin B12 and 300 mcg vitamin B9 per strip",
+    "amazonUrl": "https://www.amazon.in/dp/B095LQW7KB",
+    "asin": "B095LQW7KB",
+    "veganEvidence": "Amazon product name identifies the formulation as vegan and plant-based.",
+    "sourceVerifiedAt": "2026-07-24",
+    "unboxHealth": {
+      "result": "A+",
+      "status": "expired",
+      "resultUrl": "https://www.unboxhealth.in/explore/product/wellbeing-nutrition-vegan-vitamin-b12/a6111d21-7a10-4fe6-8426-c5441b29bbbe",
+      "testedAt": "2024-08-14",
+      "expiresAt": "2025-08-14",
+      "batch": "BJB2402"
+    }
+  },
+  {
+    "id": "unived-d3-k2-90",
+    "nutrient": "vitamin-d3",
+    "title": "Unived D3 + K2 (MK-7)",
+    "brand": "Unived",
+    "form": "Vegan capsule",
+    "doseText": "600 IU vitamin D3 and 55 mcg vitamin K2",
+    "amazonUrl": "https://www.amazon.in/dp/B09P8MD5TW",
+    "asin": "B09P8MD5TW",
+    "imageUrl": "https://m.media-amazon.com/images/I/41wMuWYdBOL._AC_UL320_.jpg",
+    "veganEvidence": "Amazon product name identifies the product as plant-based and vegan.",
+    "sourceVerifiedAt": "2026-07-24"
+  },
+  {
+    "id": "inlife-plant-based-d3-k2",
+    "nutrient": "vitamin-d3",
+    "title": "INLIFE Plant Based Vitamin D3 + K2",
+    "brand": "INLIFE",
+    "form": "Vegetarian capsule",
+    "doseText": "600 IU vitamin D3 per capsule",
+    "amazonUrl": "https://www.amazon.in/dp/B09S3HDGVS",
+    "asin": "B09S3HDGVS",
+    "imageUrl": "https://m.media-amazon.com/images/I/71yKzFgh75L._AC_UL320_.jpg",
+    "veganEvidence": "Amazon product name identifies lichen as the vitamin D3 source; verify the current capsule label.",
+    "sourceVerifiedAt": "2026-07-24"
+  },
+  {
+    "id": "nutrazee-vegan-d3",
+    "nutrient": "vitamin-d3",
+    "title": "Nutrazee Vegan Vitamin D3",
+    "brand": "Nutrazee",
+    "form": "Liquid-filled capsule",
+    "doseText": "600 IU (15 mcg) vitamin D3 from lichen per capsule",
+    "amazonUrl": "https://www.amazon.in/dp/B09WDMQTWV",
+    "asin": "B09WDMQTWV",
+    "veganEvidence": "Amazon product name identifies plant-based lichen-sourced vitamin D3 with organic coconut oil.",
+    "sourceVerifiedAt": "2026-07-24",
+    "unboxHealth": {
+      "result": "A+",
+      "status": "expired",
+      "resultUrl": "https://www.unboxhealth.in/explore/product/nutrazee-vegan-vitamin-d3/1598534b-095d-44b9-8a8e-9098576bdbd4",
+      "testedAt": "2024-04-12",
+      "expiresAt": "2025-04-12",
+      "batch": "V6D3-102"
+    }
+  },
+  {
+    "id": "wellbeing-nutrition-natural-d3",
+    "nutrient": "vitamin-d3",
+    "title": "Wellbeing Nutrition Natural Vitamin D3",
+    "brand": "Wellbeing Nutrition",
+    "form": "Oral strip",
+    "doseText": "600 IU (15 mcg) vitamin D and 55 mcg vitamin K2 per strip",
+    "amazonUrl": "https://www.amazon.in/dp/B095S82KLD",
+    "asin": "B095S82KLD",
+    "veganEvidence": "Unbox Health lists this formulation as plant-based; verify the current Amazon label before purchase.",
+    "sourceVerifiedAt": "2026-07-24",
+    "unboxHealth": {
+      "result": "A+",
+      "status": "expired",
+      "resultUrl": "https://www.unboxhealth.in/explore/product/wellbeing-nutrition-natural-vitamin-d3/46d62e1f-2886-4d54-8d57-3139472c6541",
+      "testedAt": "2024-08-14",
+      "expiresAt": "2025-08-14",
+      "batch": "BFB2402"
+    }
+  },
+  {
+    "id": "swisse-vegan-calcium-d3",
+    "nutrient": "calcium",
+    "title": "Swisse Ultiboost Vegan Calcium + Vitamin D",
+    "brand": "Swisse",
+    "form": "Vegan tablet",
+    "doseText": "See current Amazon product label for calcium and vitamin D per tablet",
+    "amazonUrl": "https://www.amazon.in/dp/B0843TZH8Q",
+    "asin": "B0843TZH8Q",
+    "veganEvidence": "Amazon listing describes vegan calcium with lichen-derived vitamin D3 and vegan tablets.",
+    "sourceVerifiedAt": "2026-07-24"
+  },
+  {
+    "id": "origins-nutra-bone-alga",
+    "nutrient": "calcium",
+    "title": "Origins Nutra Bone Alga Plant-Based Calcium",
+    "brand": "Origins Nutra",
+    "form": "Veg capsule",
+    "doseText": "Plant-based calcium with magnesium; see current Amazon label for dose",
+    "amazonUrl": "https://www.amazon.in/dp/B08SW7HLH4",
+    "asin": "B08SW7HLH4",
+    "veganEvidence": "Amazon product name identifies plant-based algae calcium bone support.",
+    "sourceVerifiedAt": "2026-07-24"
+  },
+  {
+    "id": "zyrocal-algae-calcium",
+    "nutrient": "calcium",
+    "title": "Zyrocal Plant Based Organic Algae Calcium D3 K2",
+    "brand": "Zyrocal",
+    "form": "Veg tablet",
+    "doseText": "Algae calcium with D3, K2, zinc, and magnesium; see current label",
+    "amazonUrl": "https://www.amazon.in/dp/B0951PRVYJ",
+    "asin": "B0951PRVYJ",
+    "veganEvidence": "Amazon product name identifies plant-based organic algae calcium.",
+    "sourceVerifiedAt": "2026-07-24"
+  },
+  {
+    "id": "unived-ovegha-vegan-omega-3",
+    "nutrient": "algal-omega-3",
+    "title": "Unived Ovegha Vegan Omega-3 DHA",
+    "brand": "Unived",
+    "form": "Vegan capsule",
+    "doseText": "500 mg DHA per serving",
+    "amazonUrl": "https://www.amazon.in/Unived-Ovegha-Omega-3-Unflavoured-Capsules/dp/B00HH5GECE",
+    "asin": "B00HH5GECE",
+    "imageUrl": "https://m.media-amazon.com/images/I/41FnKrWolHL._AC_UL320_.jpg",
+    "veganEvidence": "Amazon product name identifies algae oil and vegan capsules.",
+    "sourceVerifiedAt": "2026-07-24",
+    "trustified": {
+      "result": "Passed",
+      "status": "historical",
+      "resultUrl": "https://www.trustified.in/passandfail/plantbasedovegha",
+      "testedAt": "2025-02-01",
+      "batch": "FWE.18.17"
+    },
+    "unboxHealth": {
+      "result": "A+",
+      "status": "expired",
+      "resultUrl": "https://www.unboxhealth.in/explore/product/unived-ovegha-vegan-omega-3-dha/4f1aa3c1-5519-46b7-89a2-5505d7fa0257",
+      "testedAt": "2025-04-25",
+      "expiresAt": "2026-04-25"
+    }
+  },
+  {
+    "id": "vito-daily-iron-19",
+    "nutrient": "iron",
+    "title": "Vito Daily Iron Plant Based Tablet",
+    "brand": "Vito Daily",
+    "form": "Tablet",
+    "doseText": "19 mg iron per tablet",
+    "amazonUrl": "https://www.amazon.in/dp/B0CKTH4KB4",
+    "asin": "B0CKTH4KB4",
+    "imageUrl": "https://m.media-amazon.com/images/I/51Orkmt56rL._SL1000_.jpg",
+    "veganEvidence": "Product name identifies the formulation as plant-based; verify the current Amazon label.",
+    "sourceVerifiedAt": "2026-07-24",
+    "unboxHealth": {
+      "result": "B",
+      "status": "expired",
+      "resultUrl": "https://www.unboxhealth.in/explore/product/vito-daily-iron-tablet-19-mg-plant-based-tablet/97c54930-2f01-4e0e-bc24-8e3abb7555bb",
+      "testedAt": "2025-02-28",
+      "expiresAt": "2026-02-28"
+    }
+  },
+  {
+    "id": "himalayan-organics-plant-based-zinc-c",
+    "nutrient": "zinc",
+    "title": "Himalayan Organics Plant Based Zinc with Vitamin C",
+    "brand": "Himalayan Organics",
+    "form": "Veg capsule",
+    "doseText": "See current Amazon product label",
+    "amazonUrl": "https://www.amazon.in/dp/B0968L29V6",
+    "asin": "B0968L29V6",
+    "imageUrl": "https://m.media-amazon.com/images/I/61Y9G3XXnLL._AC_UL320_.jpg",
+    "veganEvidence": "Amazon product name identifies the formulation as plant-based and the capsules as vegetarian.",
+    "sourceVerifiedAt": "2026-07-24"
+  },
+  {
+    "id": "nakpro-plant-protein",
+    "nutrient": "plant-protein",
+    "title": "NAKPRO Plant Protein (Pea & Brown Rice)",
+    "brand": "NAKPRO",
+    "form": "Powder",
+    "doseText": "About 25 g plant protein per scoop",
+    "amazonUrl": "https://www.amazon.in/dp/B0BLHF4HVG",
+    "asin": "B0BLHF4HVG",
+    "veganEvidence": "Amazon product name identifies pea and brown rice plant protein with no dairy ingredients listed in the title.",
+    "sourceVerifiedAt": "2026-07-24",
+    "trustified": {
+      "result": "Passed",
+      "status": "historical",
+      "resultUrl": "https://www.trustified.in/passandfail/nakproplantprotein",
+      "testedAt": "2024-05-05",
+      "batch": "PPCH0224"
+    }
+  },
+  {
+    "id": "nutrabay-pea-protein-isolate",
+    "nutrient": "plant-protein",
+    "title": "Nutrabay Pure Pea Protein Isolate",
+    "brand": "Nutrabay",
+    "form": "Powder",
+    "doseText": "About 25 g pea protein per serving",
+    "amazonUrl": "https://www.amazon.in/dp/B09BD14TNJ",
+    "asin": "B09BD14TNJ",
+    "veganEvidence": "Amazon listing describes 100% vegetarian plant-based pea protein isolate.",
+    "sourceVerifiedAt": "2026-07-24",
+    "trustified": {
+      "result": "Passed",
+      "status": "active",
+      "resultUrl": "https://www.trustified.in/passandfail/nutrabaypeaprotein",
+      "testedAt": "2026-06-16",
+      "batch": "3SNBP1-003"
+    }
+  },
+  {
+    "id": "naturaltein-plant-protein",
+    "nutrient": "plant-protein",
+    "title": "NATURALTEIN Plant Protein",
+    "brand": "NATURALTEIN",
+    "form": "Powder",
+    "doseText": "About 22 g clean plant protein per serving",
+    "amazonUrl": "https://www.amazon.in/dp/B0FG2W98TD",
+    "asin": "B0FG2W98TD",
+    "veganEvidence": "Amazon product name identifies the powder as 100% natural and vegan plant protein.",
+    "sourceVerifiedAt": "2026-07-24",
+    "trustified": {
+      "result": "Passed",
+      "status": "historical",
+      "resultUrl": "https://www.trustified.in/passandfail/naturaltein-plant-protein",
+      "testedAt": "2024-05-02",
+      "batch": "NPPC240101"
+    }
+  },
+  {
+    "id": "mille-plant-protein-25g",
+    "nutrient": "plant-protein",
+    "title": "Mille Plant Protein 25g",
+    "brand": "Mille",
+    "form": "Powder",
+    "doseText": "25 g fermented yeast protein per scoop",
+    "amazonUrl": "https://www.amazon.in/dp/B0FLK3P3SM",
+    "asin": "B0FLK3P3SM",
+    "veganEvidence": "Amazon product name identifies fermented yeast plant protein as vegan with no dairy.",
+    "sourceVerifiedAt": "2026-07-24",
+    "trustified": {
+      "result": "Passed",
+      "status": "active",
+      "resultUrl": "https://www.trustified.in/passandfail/milleplantprotein25g",
+      "testedAt": "2026-02-20",
+      "batch": "FPPCH1609"
+    }
+  },
+  {
+    "id": "alpino-supernatural-peanut-protein",
+    "nutrient": "plant-protein",
+    "title": "Alpino Supernatural Peanut Protein",
+    "brand": "Alpino",
+    "form": "Powder",
+    "doseText": "About 24 g peanut protein per serve",
+    "amazonUrl": "https://www.amazon.in/dp/B0D3QQYV26",
+    "asin": "B0D3QQYV26",
+    "veganEvidence": "Amazon listing describes 100% plant-based peanut protein powder.",
+    "sourceVerifiedAt": "2026-07-24",
+    "trustified": {
+      "result": "Passed",
+      "status": "active",
+      "resultUrl": "https://www.trustified.in/passandfail/alpinopeanutprotein",
+      "testedAt": "2026-06-13",
+      "batch": "R26177"
+    }
+  },
+  {
+    "id": "asitis-soy-protein-isolate",
+    "nutrient": "plant-protein",
+    "title": "AS-IT-IS Soy Protein Isolate",
+    "brand": "AS-IT-IS Nutrition",
+    "form": "Powder",
+    "doseText": "See current Amazon product label for protein per scoop",
+    "amazonUrl": "https://www.amazon.in/dp/B07ZM7CW2Z",
+    "asin": "B07ZM7CW2Z",
+    "veganEvidence": "Amazon listing describes plant-based soy protein isolate suitable for vegan diets.",
+    "sourceVerifiedAt": "2026-07-24",
+    "trustified": {
+      "result": "Passed",
+      "status": "active",
+      "resultUrl": "https://www.trustified.in/passandfail/asitissoyisolate",
+      "testedAt": "2026-05-27",
+      "batch": "AS 6035"
+    }
+  }
+]

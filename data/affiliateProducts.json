@@ -1,0 +1,42 @@
+[
+  {
+    "id": "placeholder-b12-supplement",
+    "title": "Vitamin B12 Supplement",
+    "category": "Supplement",
+    "shortDescription": "Placeholder product slot for a B12 supplement option. Replace with a specific product only after editorial review.",
+    "imagePath": "/images/items/supplements/vitamin-b12.jpg",
+    "amazonUrl": "https://www.amazon.com/s?k=vitamin+b12+supplement",
+    "tags": ["supplement", "vitamin-b12", "b12-guide"],
+    "notes": "Placeholder only; verify ingredients, form, dose, and suitability before publishing a specific recommendation."
+  },
+  {
+    "id": "placeholder-algal-omega-3",
+    "title": "Algal Omega-3 Supplement",
+    "category": "Supplement",
+    "shortDescription": "Placeholder product slot for an algal DHA/EPA supplement option. Replace with a specific product only after editorial review.",
+    "imagePath": "/images/items/supplements/algal-omega-3.jpg",
+    "amazonUrl": "https://www.amazon.com/s?k=algal+omega+3+supplement",
+    "tags": ["supplement", "algal-omega-3", "omega-3-guide"],
+    "notes": "Placeholder only; verify DHA/EPA amounts, capsule ingredients, and testing information before publishing."
+  },
+  {
+    "id": "placeholder-plant-protein",
+    "title": "Plant Protein Powder",
+    "category": "Protein Powder",
+    "shortDescription": "Placeholder product slot for a plant protein powder option. Replace with a specific product only after editorial review.",
+    "imagePath": "/images/items/products/plant-protein-powder.jpg",
+    "amazonUrl": "https://www.amazon.com/s?k=plant+protein+powder",
+    "tags": ["product", "supplement", "plant-protein-powder", "protein-guide"],
+    "notes": "Placeholder only; verify protein per serving, allergen labeling, sweeteners, and testing information before publishing."
+  },
+  {
+    "id": "placeholder-creatine-monohydrate",
+    "title": "Creatine Monohydrate",
+    "category": "Performance",
+    "shortDescription": "Placeholder product slot for a plain creatine monohydrate option. Replace with a specific product only after editorial review.",
+    "imagePath": "/images/items/supplements/creatine-monohydrate.jpg",
+    "amazonUrl": "https://www.amazon.com/s?k=creatine+monohydrate",
+    "tags": ["supplement", "creatine-monohydrate"],
+    "notes": "Placeholder only; verify ingredient list, serving size, and third-party testing before publishing."
+  }
+]

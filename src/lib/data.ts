@@ -2,14 +2,25 @@ import fs from "node:fs";
 import path from "node:path";
 
 import dietPlansData from "../../data/dietPlans.json";
+import affiliateSupplementsData from "../../data/affiliateSupplements.json";
 import foodsData from "../../data/foods.json";
 import ingredientsData from "../../data/ingredients.json";
 import productsData from "../../data/products.json";
 import supplementsData from "../../data/supplements.json";
-import type { DietPlan, Food, Guide, Ingredient, Product, Recipe, Supplement } from "./types";
+import type {
+  AffiliateSupplement,
+  DietPlan,
+  Food,
+  Guide,
+  Ingredient,
+  Product,
+  Recipe,
+  Supplement,
+} from "./types";
 
 export const products = productsData as Product[];
 export const supplements = supplementsData as Supplement[];
+export const affiliateSupplements = affiliateSupplementsData as AffiliateSupplement[];
 export const dietPlans = dietPlansData as DietPlan[];
 export const foods = foodsData as Food[];
 export const ingredients = ingredientsData as Ingredient[];

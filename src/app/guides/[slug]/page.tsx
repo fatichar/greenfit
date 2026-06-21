@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { notFound } from "next/navigation";
+import { AffiliateProductsSection } from "@/components/affiliate-products";
 import { DisclaimerBox } from "@/components/disclaimer-box";
 import { JsonLd } from "@/components/json-ld";
 import { ReferenceList } from "@/components/reference-list";
 import { Card, CardContent } from "@/components/ui/card";
+import { getAffiliateProductsByTags } from "@/lib/affiliate";
 import { getGuide, getGuides } from "@/lib/data";
 import { getGuideImage } from "@/lib/images";
 import { MarkdownContent } from "@/lib/markdown";
@@ -29,6 +31,8 @@ export default async function GuideDetailPage({ params }: { params: Promise<{ sl
   const guide = getGuide(slug);
 
   if (!guide) notFound();
+
+  const affiliateProducts = getAffiliateProductsByTags([guide.slug]);
 
   const guideUrl = siteUrl(`/guides/${guide.slug}`);
   const guideImage = siteUrl(getGuideImage(guide.slug));
@@ -78,6 +82,7 @@ export default async function GuideDetailPage({ params }: { params: Promise<{ sl
         </CardContent>
       </Card>
       <MarkdownContent content={guide.body} />
+      <AffiliateProductsSection products={affiliateProducts} sourcePage={`/guides/${guide.slug}`} />
       <ReferenceList references={guide.references} />
       <DisclaimerBox />
     </article>

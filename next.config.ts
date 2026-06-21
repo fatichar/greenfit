@@ -3,6 +3,13 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   output: "standalone",
   images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "m.media-amazon.com",
+        pathname: "/images/I/**",
+      },
+    ],
     localPatterns: [
       // Item photos use ?v=<mtime> cache-busting when files are replaced in place.
       // Omitting `search` allows any query string on these paths only.

@@ -2,8 +2,10 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { AffiliateProductsSection } from "@/components/affiliate-products";
 import { DisclaimerBox } from "@/components/disclaimer-box";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { getAffiliateProductsByTags } from "@/lib/affiliate";
 import { getSupplement, supplements } from "@/lib/data";
 import { getSupplementImage } from "@/lib/images";
 
@@ -19,6 +21,7 @@ export default async function SupplementDetailPage({ params }: { params: Promise
   const { slug } = await params;
   const supplement = getSupplement(slug);
   if (!supplement) notFound();
+  const affiliateProducts = getAffiliateProductsByTags([supplement.slug, supplement.category]);
 
   return (
     <section className="mx-auto flex max-w-5xl flex-col gap-6 px-4 py-12 sm:px-6 lg:px-8">
@@ -36,6 +39,7 @@ export default async function SupplementDetailPage({ params }: { params: Promise
       <Card><CardHeader><CardTitle>Toxicity and cautions</CardTitle></CardHeader><CardContent className="text-sm leading-7 text-muted-foreground">{supplement.toxicity}</CardContent></Card>
       <Card><CardHeader><CardTitle>Quality checks</CardTitle></CardHeader><CardContent className="text-sm leading-7 text-muted-foreground">{supplement.testingNotes}</CardContent></Card>
       <Card><CardHeader><CardTitle>Popular brands</CardTitle></CardHeader><CardContent><ul className="ml-5 list-disc space-y-2 text-sm text-muted-foreground">{supplement.popularBrands.map((brand) => <li key={brand}>{brand}</li>)}</ul></CardContent></Card>
+      <AffiliateProductsSection products={affiliateProducts} sourcePage={`/supplements/${supplement.slug}`} />
       {supplement.relatedGuide ? <p className="text-sm text-muted-foreground">Related guide: <Link href={supplement.relatedGuide} className="font-medium text-primary underline underline-offset-4">read the full nutrition guide</Link>.</p> : null}
       <DisclaimerBox />
     </section>

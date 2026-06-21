@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { notFound } from "next/navigation";
+import { AffiliateProductsSection } from "@/components/affiliate-products";
 import { DisclaimerBox } from "@/components/disclaimer-box";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { getAffiliateProductsByTags } from "@/lib/affiliate";
 import { getProduct, products } from "@/lib/data";
 import { getProductImage } from "@/lib/images";
 
@@ -25,6 +27,7 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
   const product = getProduct(slug);
 
   if (!product) notFound();
+  const affiliateProducts = getAffiliateProductsByTags([product.slug, product.category]);
 
   return (
     <section className="mx-auto flex max-w-5xl flex-col gap-6 px-4 py-12 sm:px-6 lg:px-8">
@@ -60,6 +63,7 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
         <CardHeader><CardTitle>Buying tips</CardTitle></CardHeader>
         <CardContent className="text-sm leading-7 text-muted-foreground">{product.buyingTips}</CardContent>
       </Card>
+      <AffiliateProductsSection products={affiliateProducts} sourcePage={`/products/${product.slug}`} />
       <Card>
         <CardHeader><CardTitle>Notes</CardTitle></CardHeader>
         <CardContent className="text-sm leading-7 text-muted-foreground">{product.notes}</CardContent>

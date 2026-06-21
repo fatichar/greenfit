@@ -22,6 +22,45 @@ export type Product = {
   lastReviewed: string;
 };
 
+export type AffiliateProduct = {
+  id: string;
+  title: string;
+  category: string;
+  shortDescription: string;
+  imageUrl?: string;
+  imagePath?: string;
+  amazonUrl: string;
+  tags: string[];
+  priceText?: string;
+  notes?: string;
+};
+
+export type ThirdPartyTestResult = {
+  result: string;
+  status: "active" | "expired" | "historical";
+  resultUrl: string;
+  testedAt?: string;
+  expiresAt?: string;
+  batch?: string;
+};
+
+export type AffiliateSupplement = {
+  id: string;
+  nutrient: string;
+  title: string;
+  brand: string;
+  form: string;
+  doseText: string;
+  amazonUrl: string;
+  asin?: string;
+  imageUrl?: string;
+  imagePath?: string;
+  veganEvidence: string;
+  sourceVerifiedAt: string;
+  trustified?: ThirdPartyTestResult;
+  unboxHealth?: ThirdPartyTestResult;
+};
+
 export type Supplement = {
   slug: string;
   name: string;

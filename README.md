@@ -41,6 +41,13 @@ To enable Umami analytics in production, set both:
 
 Analytics only load when `NODE_ENV=production` and both variables are present.
 
+To enable Amazon Associates tagging for affiliate product links, set:
+
+- `NEXT_PUBLIC_AMAZON_ASSOCIATES_TAG`
+
+Do not commit the Associates tag to source code. Because this is a `NEXT_PUBLIC_` variable, set it before running `npm run build`; Next.js inlines public environment values at build time.
+
+### Verification Checklist
 For webmaster verification in production, set these optional variables where the production build runs:
 
 - `GOOGLE_SITE_VERIFICATION`
@@ -55,6 +62,7 @@ The GitHub Actions deploy workflow reads them from the `Prod` environment variab
 - [ ] Ensure variables use the `NEXT_PUBLIC_` prefix to work on the client side.
 - [ ] Verify Umami automatic page view tracking works.
 - [ ] Ensure no personal data is collected in custom events.
+- [ ] Confirm Amazon affiliate links include the configured `tag` query parameter in production.
 
 ### SEO / Webmaster Validation Checklist
 
@@ -71,9 +79,17 @@ The GitHub Actions deploy workflow reads them from the `Prod` environment variab
 - Diet plans: `data/dietPlans.json`
 - Foods: `data/foods.json`
 - Ingredients: `data/ingredients.json`
+- Affiliate products: `data/affiliateProducts.json`
+- Affiliate supplement comparisons: `data/affiliateSupplements.json`
 - Guides: `content/guides/*.mdx`
 
 Keep the existing data shapes stable. Add fields intentionally and update the corresponding TypeScript types in `src/lib/types.ts`.
+
+Affiliate products support `id`, `title`, `category`, `shortDescription`, `imageUrl` or `imagePath`, `amazonUrl`, `tags`, and optional `priceText` and `notes`. Use tags such as guide slugs, product slugs, supplement slugs, or broad categories to place products in relevant sections. The reusable affiliate section adds the Amazon Associates tag from `NEXT_PUBLIC_AMAZON_ASSOCIATES_TAG`, opens Amazon links in a new tab, and tracks Umami `Outbound Product Click` events with non-personal product/source metadata.
+
+Supplement comparison products additionally record the nutrient, brand, labelled form and dose, vegan evidence, an Amazon product image, Amazon India source verification date, and optional Trustified or Unbox Health results. Use an exact Amazon product URL with an ASIN, never a search-results URL. Add a test result only when the exact product and formulation can be matched to the public source. Record expired results as expired rather than presenting them as current, and use `Not tested` in the UI when no match is available.
+
+Every page or component that shows affiliate products or links must include the disclosure near the links: “As an Amazon Associate, we may earn from qualifying purchases.”
 
 ## VPS / Nginx Notes
 
