@@ -22,6 +22,19 @@ export type Product = {
   lastReviewed: string;
 };
 
+export type AffiliateProduct = {
+  id: string;
+  title: string;
+  category: string;
+  shortDescription: string;
+  imageUrl?: string;
+  imagePath?: string;
+  amazonUrl: string;
+  tags: string[];
+  priceText?: string;
+  notes?: string;
+};
+
 export type Supplement = {
   slug: string;
   name: string;
