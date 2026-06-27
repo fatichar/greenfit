@@ -14,11 +14,10 @@ export function Footer() {
             className="h-9 w-auto object-contain"
           />
           <p className="mt-2 max-w-2xl">
-            Practical nutrition guidance, transparent product checks, and useful resources for everyday eating.
+            Practical nutrition guidance, evidence-based guides, and useful resources for everyday eating.
           </p>
         </div>
         <div className="flex flex-wrap gap-4">
-          <Link href="/products">Products</Link>
           <Link href="/diet-plans">Diet Plans</Link>
           <Link href="/guides">Guides</Link>
           <Link href="/supplements">Supplements</Link>

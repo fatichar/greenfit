@@ -16,7 +16,6 @@ import {
 import { cn } from "@/lib/utils";
 
 const navItems = [
-  ["Products", "/products"],
   ["Diet Plans", "/diet-plans"],
   ["Guides", "/guides"],
   ["Recipes", "/recipes"],

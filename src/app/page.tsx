@@ -2,14 +2,14 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import type { LucideIcon } from "lucide-react";
-import { ArrowRight, BookOpen, Calculator, CheckCircle2, ClipboardList, Search } from "lucide-react";
+import { ArrowRight, BookOpen, Calculator, CheckCircle2, ClipboardList } from "lucide-react";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
   title: "GreenFit | Nutrition, made practical",
   description:
-    "Plant-based diet plans, vegan supplement reviews, product checks, and evidence-based WFPB guides for everyday eating.",
+    "Plant-based diet plans and evidence-based WFPB guides for everyday eating.",
   keywords: [
     "practical nutrition",
     "vegan diet plans",
@@ -22,14 +22,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: "GreenFit | Nutrition, made practical",
     description:
-      "Plant-based diet plans, vegan supplement reviews, product checks, and evidence-based WFPB guides for everyday eating.",
+      "Plant-based diet plans and evidence-based WFPB guides for everyday eating.",
     url: "https://greenfit.in",
     siteName: "GreenFit",
     type: "website",
   },
 };
 
-const trustItems = ["Evidence-based", "Practical foods", "Clear product status"];
+const trustItems = ["Evidence-based", "Practical foods", "Everyday planning"];
 
 const pathways: Array<{
   href: string;
@@ -39,15 +39,9 @@ const pathways: Array<{
 }> = [
   {
     href: "/diet-plans",
-    title: "Build a diet plan",
-    description: "Start with real meals, macros, substitutions, and budget-friendly options.",
+    title: "Browse diet plans",
+    description: "Explore real meals, macros, substitutions, and budget-friendly options.",
     icon: ClipboardList,
-  },
-  {
-    href: "/products",
-    title: "Check a product",
-    description: "Review ingredient context and status notes without the noisy label guessing.",
-    icon: Search,
   },
   {
     href: "/guides",
@@ -75,7 +69,7 @@ export default function Home() {
                 <span className="block">practical</span>
               </h1>
               <p className="max-w-full break-words text-base leading-8 text-muted-foreground sm:max-w-xl sm:text-lg">
-                Diet plans, supplement reviews, product checks, and evidence-based guides for everyday eating.
+                Diet plans and evidence-based guides for everyday eating.
               </p>
             </div>
             <div className="flex flex-col gap-3 sm:flex-row">
@@ -88,24 +82,7 @@ export default function Home() {
                 Explore Diet Plans
                 <ArrowRight data-icon="inline-end" />
               </Link>
-              <Link
-                href="/products"
-                className={cn(buttonVariants({ variant: "outline", size: "lg" }), "w-full sm:w-auto")}
-                data-umami-event="CTA Click"
-                data-umami-event-cta="Check Products (Hero)"
-              >
-                Check Products
-              </Link>
             </div>
-            <Link
-              href="/products"
-              className="flex min-h-14 w-full max-w-xl min-w-0 items-center gap-3 rounded-lg border border-olive-200 bg-white px-4 text-sm font-medium text-muted-foreground shadow-sm transition hover:border-primary/50 hover:text-foreground"
-              data-umami-event="CTA Click"
-              data-umami-event-cta="Search Directory (Hero)"
-            >
-              <Search className="size-4" />
-              <span className="truncate">Search products, supplements, ingredients, or guides</span>
-            </Link>
           </div>
           <div className="min-w-0 md:pl-2 lg:pl-6">
             <div className="w-full max-w-full overflow-hidden rounded-lg border border-olive-200 bg-white shadow-sm">
@@ -180,7 +157,7 @@ export default function Home() {
           <div>
             <h2 className="font-heading text-2xl font-semibold">Ready to plan a meal?</h2>
             <p className="mt-2 text-sm leading-6 text-muted-foreground">
-              Start with the diet plans, then use guides and product checks only when you need the detail.
+              Start with the diet plans, then use guides only when you need the detail.
             </p>
           </div>
           <Link
