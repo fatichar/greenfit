@@ -42,6 +42,34 @@
     "lastReviewed": "2026-06-17"
   },
   {
+    "slug": "iron",
+    "name": "Iron",
+    "category": "Conditional",
+    "form": "Ferrous bisglycinate, ferrous sulfate, ferrous fumarate, or clinician-recommended forms",
+    "dose": "Use only when labs or a clinician indicate a need; dose depends on ferritin, hemoglobin, symptoms, and tolerance.",
+    "whenToTake": "Often taken away from calcium, tea, and coffee; vitamin C may improve absorption. Follow clinician guidance if prescribed.",
+    "toxicity": "Iron can accumulate and cause harm. Overdose is dangerous, especially for children, and some people should avoid supplemental iron.",
+    "popularBrands": ["Solgar Gentle Iron", "NOW Iron", "Thorne Iron Bisglycinate", "Nature Made Iron", "Doctor's Best High Absorption Iron"],
+    "testingNotes": "Review ferritin, hemoglobin, transferrin saturation, serum iron, and TIBC before supplementing. Do not rely on fatigue alone.",
+    "notes": "Useful when iron deficiency or low stores are confirmed; not a just-in-case supplement for plant-based diets.",
+    "relatedGuide": "/guides/iron-and-zinc-guide",
+    "lastReviewed": "2026-06-27"
+  },
+  {
+    "slug": "zinc",
+    "name": "Zinc",
+    "category": "Conditional",
+    "form": "Zinc citrate, picolinate, gluconate, or bisglycinate",
+    "dose": "Use targeted doses when intake is low or labs and symptoms support it; avoid chronic high-dose use unless supervised.",
+    "whenToTake": "Take with a small meal if it causes nausea. Keep high-dose zinc separate from iron or copper plans unless guided.",
+    "toxicity": "Long-term high-dose zinc can cause nausea and copper deficiency, which may lead to anemia or neurological symptoms.",
+    "popularBrands": ["NOW Zinc", "Thorne Zinc Picolinate", "Solgar Zinc", "Nature's Bounty Zinc", "Garden of Life Zinc"],
+    "testingNotes": "Serum zinc can help but is imperfect. Interpret with diet pattern, symptoms, inflammation, and clinician advice.",
+    "notes": "Most useful when dietary zinc is consistently low, symptoms fit, or testing and clinical context support supplementation.",
+    "relatedGuide": "/guides/iron-and-zinc-guide",
+    "lastReviewed": "2026-06-27"
+  },
+  {
     "slug": "creatine-monohydrate",
     "name": "Creatine Monohydrate",
     "category": "Performance",

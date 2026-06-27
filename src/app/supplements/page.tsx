@@ -3,7 +3,7 @@ import { SupplementDirectory } from "@/components/supplement-directory";
 import { supplements } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Supplement Reviews",
+  title: "Supplement Guides",
   description: "Plant-based supplement type guides with dosage, timing, toxicity cautions, quality checks, and popular brands.",
   keywords: [
     "vegan supplements",
@@ -22,7 +22,7 @@ export default function SupplementsPage() {
       <div className="max-w-3xl">
         <h1 className="font-heading text-4xl font-semibold">Supplements</h1>
         <p className="mt-3 text-lg leading-8 text-muted-foreground">
-          Review supplement types such as B12, D3, algal omega-3, and creatine with dosage, timing, toxicity, and brand examples.
+          Review supplement types such as B12, D3, algal omega-3, iron, zinc, and creatine with dosage, timing, toxicity, and brand examples.
         </p>
       </div>
       <SupplementDirectory supplements={supplements} />
