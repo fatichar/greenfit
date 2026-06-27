@@ -2,6 +2,10 @@
   "slug": "masala-tofu-scramble",
   "title": "Masala Tofu Scramble",
   "description": "A spicy and high-protein Indian-style scramble using tofu. Perfect for a quick and hearty breakfast.",
+  "explanation": [
+    "Think of this as a paneer bhurji-style breakfast built around tofu. The tofu gives structure and protein, while onion, tomato, chilli, and masala make it taste familiar.",
+    "The recipe is forgiving: use the vegetables and spices you have, then cook off excess moisture so the scramble stays flavorful instead of watery."
+  ],
   "ingredients": [
     "200g Firm Tofu, crumbled",
     "1 Onion, finely chopped",
@@ -14,12 +18,38 @@
     "Fresh coriander for garnish"
   ],
   "instructions": [
-    "Heat oil in a pan and sauté the onions and green chilli until onions are translucent.",
+    "Heat oil in a pan and saute the onions and green chilli until onions are translucent.",
     "Add tomatoes and cook until soft and mushy.",
     "Stir in turmeric powder, garam masala, and salt. Cook for a minute.",
     "Add the crumbled tofu and mix well so the spices coat the tofu evenly.",
     "Cook for 3-4 minutes until the tofu is heated through.",
     "Garnish with fresh coriander and serve hot with bread or chapati."
+  ],
+  "stepNotes": [
+    "If you avoid onion, start with cumin, ginger, tomato, and hing instead. If you like more heat, add extra chilli or crushed pepper here.",
+    "Cook the tomato until it stops tasting raw. If tomatoes are not good that day, use a spoon of tomato puree or skip them and add lemon at the end.",
+    "This short spice bloom is what makes the tofu taste seasoned rather than plain. Add pav bhaji masala, kitchen king, or sambar powder if that is what you have.",
+    "Firm tofu gives a paneer-like bite; softer tofu gives a creamier scramble. Press watery tofu for a few minutes if it releases too much liquid.",
+    "Cook longer for a drier filling that works in wraps. Stop earlier if you want a softer breakfast bowl.",
+    "Serve with roti, toast, dosa, rice, or as a sandwich filling. Add salad or fruit if this is your main breakfast."
+  ],
+  "variationSections": [
+    {
+      "title": "Taste and texture variations",
+      "items": [
+        "For a richer version, add a spoon of peanut curd, cashew paste, or unsweetened soy yogurt near the end.",
+        "For a drier wrap filling, cook until the tomato moisture evaporates and finish with lemon.",
+        "For a softer bhurji texture, crumble the tofu finer and add a splash of plant milk while cooking."
+      ]
+    },
+    {
+      "title": "Ingredient swaps",
+      "items": [
+        "Tofu can be replaced with tempeh, soy chunks, or mashed chickpeas, but the protein and texture will change.",
+        "Onion can be replaced with cabbage, capsicum, grated carrot, or skipped for a no-onion version.",
+        "Fresh coriander can be replaced with kasuri methi, spring onion greens, mint, or a squeeze of lemon."
+      ]
+    }
   ],
   "tags": [
     "breakfast",

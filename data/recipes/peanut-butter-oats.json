@@ -2,6 +2,10 @@
   "slug": "peanut-butter-oats",
   "title": "Creamy Peanut Butter Oats",
   "description": "A high-calorie, energy-packed breakfast ready in minutes. Great for quick mornings.",
+  "explanation": [
+    "This is a dense breakfast for busy mornings, higher-calorie needs, or pre-planned snacks. Oats and chia make it filling, peanut butter adds richness, and plant milk helps with creaminess.",
+    "You can cook it as porridge or prepare it as overnight oats. The base is flexible as long as you keep enough liquid and give the oats time to soften."
+  ],
   "ingredients": [
     "1/2 cup Rolled Oats",
     "1 cup Plant Milk (Soy or Almond)",
@@ -16,6 +20,31 @@
     "Stir in the peanut butter and jaggery until well combined and creamy.",
     "Pour into a bowl and top with sliced bananas.",
     "Serve immediately."
+  ],
+  "stepNotes": [
+    "Soy milk gives more protein; almond milk is lighter. Use water plus a splash of plant milk if you want it less rich.",
+    "Chia thickens the oats as it sits. Add extra liquid if the pot becomes too thick.",
+    "Add peanut butter after the oats soften so it blends smoothly instead of sticking to the pan.",
+    "Banana adds sweetness and calories. Use apple, dates, raisins, or berries if banana is not available.",
+    "If making overnight oats, chill after mixing and eat cold or warmed the next morning."
+  ],
+  "variationSections": [
+    {
+      "title": "Adjust calories and protein",
+      "items": [
+        "For fewer calories, use 1 tablespoon peanut butter and skip jaggery.",
+        "For more protein, use soy milk and add a scoop of plant protein after cooking.",
+        "For more calories, add extra peanut butter, dates, nuts, or a second banana."
+      ]
+    },
+    {
+      "title": "Flavor variations",
+      "items": [
+        "Chocolate: add cocoa powder and a little jaggery or dates.",
+        "Masala chai: simmer the milk with cardamom, cinnamon, and ginger before adding oats.",
+        "Fruit bowl: use apple, mango, berries, or seasonal fruit instead of banana."
+      ]
+    }
   ],
   "tags": [
     "breakfast",

@@ -2,6 +2,10 @@
   "slug": "jain-cabbage-peas",
   "title": "Jain-Style Cabbage and Peas Subzi",
   "description": "A simple, light, and low-calorie Jain-friendly dish made without onions or garlic.",
+  "explanation": [
+    "This is a light no-onion/no-garlic sabzi that works with roti, dal, rice, or as a side in a larger thali. Cabbage gives volume, peas add sweetness, and the tempering carries most of the flavor.",
+    "Because the ingredient list is short, cooking texture matters. Keep the cabbage slightly tender rather than mushy unless you prefer a softer homestyle sabzi."
+  ],
   "ingredients": [
     "2 cups Cabbage, finely chopped",
     "1/2 cup Green Peas",
@@ -14,10 +18,35 @@
   ],
   "instructions": [
     "Heat oil in a pan. Add mustard seeds and let them pop. Add cumin seeds and hing.",
-    "Add chopped cabbage and green peas. Sauté for 2 minutes.",
+    "Add chopped cabbage and green peas. Saute for 2 minutes.",
     "Add turmeric and salt. Mix well.",
     "Cover and cook on low heat for 8-10 minutes, stirring occasionally, until vegetables are tender.",
     "Serve hot with phulkas."
+  ],
+  "stepNotes": [
+    "Keep the heat moderate so the spices bloom without burning. Curry leaves or grated ginger can be added here if you use them.",
+    "A short saute helps the cabbage lose its raw smell before steaming.",
+    "Add chilli powder, coriander powder, or black pepper if you want more heat.",
+    "Cook less for crunch and longer for a softer sabzi. If the pan dries out, sprinkle a little water instead of adding more oil.",
+    "Pair with dal, tofu, chana, or peanut curd if this needs to become a higher-protein meal."
+  ],
+  "variationSections": [
+    {
+      "title": "Vegetable swaps",
+      "items": [
+        "Use carrot, beans, capsicum, cauliflower, or bottle gourd with the same basic tempering.",
+        "Replace peas with sprouts, edamame, or boiled chana if you want more protein.",
+        "Add grated coconut at the end for a South Indian-style finish."
+      ]
+    },
+    {
+      "title": "No-onion flavor boosters",
+      "items": [
+        "Use hing, ginger, curry leaves, lemon, roasted cumin, or coriander to keep the sabzi lively.",
+        "A small spoon of peanut powder or sesame powder can add richness.",
+        "Finish with lemon only after turning off the heat so the flavor stays fresh."
+      ]
+    }
   ],
   "tags": [
     "easy",

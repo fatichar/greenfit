@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { DisclaimerBox } from "@/components/disclaimer-box";
+import { InfoDisclosureList } from "@/components/info-disclosure";
 import { MacroSummary } from "@/components/macro-summary";
 import { MealPlanTable } from "@/components/meal-plan-table";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -54,9 +55,24 @@ export default async function DietPlanDetailPage({ params }: { params: Promise<{
           </p>
         </CardContent>
       </Card>
+      {plan.explanation?.length ? (
+        <Card>
+          <CardHeader>
+            <CardTitle>How to read this plan</CardTitle>
+          </CardHeader>
+          <CardContent className="grid gap-3 text-sm leading-7 text-muted-foreground">
+            {plan.explanation.map((paragraph) => (
+              <p key={paragraph}>{paragraph}</p>
+            ))}
+          </CardContent>
+        </Card>
+      ) : null}
       <MealPlanTable meals={plan.meals} />
       <TextList title="Protein sources" items={plan.proteinSources} />
       <TextList title="Substitutions" items={plan.substitutions} />
+      {plan.detailSections?.map((section) => (
+        <InfoDisclosureList key={section.title} title={section.title} items={section.items} />
+      ))}
       <Card>
         <CardHeader>
           <CardTitle>Notes</CardTitle>

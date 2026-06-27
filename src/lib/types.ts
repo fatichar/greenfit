@@ -57,6 +57,11 @@ export type DietPlan = {
   meals: DietMeal[];
   proteinSources: string[];
   substitutions: string[];
+  explanation?: string[];
+  detailSections?: Array<{
+    title: string;
+    items: string[];
+  }>;
   notes: string;
 };
 
@@ -105,8 +110,14 @@ export type Recipe = {
   slug: string;
   title: string;
   description: string;
+  explanation?: string[];
   ingredients: string[];
   instructions: string[];
+  stepNotes?: string[];
+  variationSections?: Array<{
+    title: string;
+    items: string[];
+  }>;
   tags: string[];
   prepTime: string;
   cookTime: string;

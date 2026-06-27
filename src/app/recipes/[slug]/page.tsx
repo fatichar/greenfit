@@ -6,6 +6,7 @@ import Link from "next/link";
 import { ArrowLeft, Clock, Banknote, Flame, Leaf, Tag } from "lucide-react";
 import type { Recipe } from "@/lib/types";
 import { Badge } from "@/components/ui/badge";
+import { InfoDisclosureList } from "@/components/info-disclosure";
 
 export async function generateStaticParams() {
   const recipesDir = path.join(process.cwd(), "data", "recipes");
@@ -63,6 +64,13 @@ export default async function RecipePage({ params }: { params: Promise<{ slug: s
         <p className="mt-4 text-xl text-muted-foreground">
           {recipe.description}
         </p>
+        {recipe.explanation?.length ? (
+          <div className="mt-5 grid gap-3 text-base leading-7 text-muted-foreground">
+            {recipe.explanation.map((paragraph) => (
+              <p key={paragraph}>{paragraph}</p>
+            ))}
+          </div>
+        ) : null}
 
         <div className="mt-6 flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
           <div className="flex items-center">
@@ -151,10 +159,22 @@ export default async function RecipePage({ params }: { params: Promise<{ slug: s
                 <span className="mr-4 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary text-primary-foreground text-sm font-bold shadow-sm">
                   {i + 1}
                 </span>
-                <p className="text-foreground pt-1 leading-relaxed">{step}</p>
+                <div className="pt-1">
+                  <p className="text-foreground leading-relaxed">{step}</p>
+                  {recipe.stepNotes?.[i] ? (
+                    <p className="mt-2 text-sm leading-6 text-muted-foreground">{recipe.stepNotes[i]}</p>
+                  ) : null}
+                </div>
               </li>
             ))}
           </ol>
+          {recipe.variationSections?.length ? (
+            <div className="mt-10 grid gap-4">
+              {recipe.variationSections.map((section) => (
+                <InfoDisclosureList key={section.title} title={section.title} items={section.items} />
+              ))}
+            </div>
+          ) : null}
         </div>
       </div>
     </article>

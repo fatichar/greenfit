@@ -2,6 +2,10 @@
   "slug": "simple-dal-tadka",
   "title": "Simple Dal Tadka",
   "description": "A classic, comforting, and frugal Indian lentil soup. Easy to make and very nutritious.",
+  "explanation": [
+    "Dal tadka is a base recipe more than a single fixed dish. Once the dal is soft, the final taste comes from the tempering, the thickness, and what you serve it with.",
+    "Use this as a dependable protein-and-fiber side. Make it thinner for rice, thicker for roti, and more vegetable-heavy when you want a fuller bowl."
+  ],
   "ingredients": [
     "1 cup Yellow Moong Dal (split yellow lentils)",
     "3 cups Water",
@@ -15,9 +19,34 @@
   "instructions": [
     "Wash the dal thoroughly. Boil the dal in water with turmeric and salt until soft and mushy (about 15-20 minutes).",
     "In a small pan, heat oil. Add cumin seeds and let them splutter.",
-    "Add minced garlic (if using) and sauté until golden.",
+    "Add minced garlic (if using) and saute until golden.",
     "Pour this tadka (tempering) over the cooked dal.",
     "Garnish with coriander leaves and serve with rice or roti."
+  ],
+  "stepNotes": [
+    "Moong dal cooks quickly and feels light. Masoor, toor, or mixed dal also work; just adjust water and cooking time.",
+    "Use mustard seeds, curry leaves, dried red chilli, or hing here if that suits your kitchen.",
+    "Skip garlic for a Jain-style or no-onion/no-garlic version. Ginger, hing, cumin, and tomato can still give plenty of flavor.",
+    "Simmer for a minute after adding tadka if you want the flavor to blend through the dal.",
+    "For a complete meal, pair with rice or roti plus a vegetable sabzi, salad, or pickle."
+  ],
+  "variationSections": [
+    {
+      "title": "Thickness and serving style",
+      "items": [
+        "For rice, keep the dal pourable and slightly thinner.",
+        "For roti, simmer longer so the dal is thicker and easier to scoop.",
+        "For soup, add more water, vegetables, lemon, and black pepper."
+      ]
+    },
+    {
+      "title": "Flavor variations",
+      "items": [
+        "Tomato dal: cook chopped tomato with the tadka before adding it to dal.",
+        "Spinach dal: add chopped spinach in the last few minutes of simmering.",
+        "Richer dal: finish with tahini, cashew paste, or a small amount of coconut milk instead of ghee."
+      ]
+    }
   ],
   "tags": [
     "easy",

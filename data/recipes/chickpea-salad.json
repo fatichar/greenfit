@@ -2,6 +2,10 @@
   "slug": "chickpea-salad",
   "title": "Zesty Chickpea Salad",
   "description": "A refreshing, high-fiber, and high-protein salad requiring no cooking at all.",
+  "explanation": [
+    "This is a no-cook meal or snack for days when you already have boiled chickpeas. The lemon, chaat masala, onion, tomato, and cucumber make it bright enough to eat without a heavy dressing.",
+    "The salad is flexible. Keep the chickpeas as the anchor, then change the crunchy vegetables, herbs, and spice mix based on taste and availability."
+  ],
   "ingredients": [
     "1.5 cups Boiled Chickpeas (Kala Chana or Kabuli)",
     "1 Cucumber, diced",
@@ -18,6 +22,31 @@
     "Toss everything together until well mixed.",
     "Garnish with fresh coriander.",
     "Serve chilled or at room temperature as a snack or light meal."
+  ],
+  "stepNotes": [
+    "Kala chana is chewier and more earthy; kabuli chana is softer and creamier. Canned chickpeas work if rinsed well.",
+    "Add lemon gradually if your tomato is already sour. Chaat masala can be salty, so taste before adding extra salt.",
+    "Let it sit for 5 minutes if possible so the chickpeas absorb the seasoning.",
+    "Mint, coriander, spring onion greens, or roasted cumin powder all work here.",
+    "For a fuller meal, serve with roti, toast, millet crackers, or a bowl of soup."
+  ],
+  "variationSections": [
+    {
+      "title": "Vegetable swaps",
+      "items": [
+        "Use capsicum, grated carrot, cabbage, raw mango, pomegranate, or boiled potato depending on season.",
+        "Skip onion for a Jain-style version and add extra cucumber, coriander, ginger, or hing-based chaat masala.",
+        "If tomatoes are watery, remove the seeds or use lemon and cucumber as the fresh element instead."
+      ]
+    },
+    {
+      "title": "Make it more filling",
+      "items": [
+        "Add roasted peanuts, tofu cubes, sprouts, or boiled sweet potato.",
+        "Mix in cooked millet, brown rice, or quinoa if you want a lunch bowl.",
+        "Add tahini-lemon dressing or peanut curd if you need more calories."
+      ]
+    }
   ],
   "tags": [
     "easy",

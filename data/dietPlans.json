@@ -10,6 +10,10 @@
     "mealCount": 4,
     "affordability": "Moderate",
     "whoThisIsFor": "Active adults who struggle to reach protein targets using everyday foods.",
+    "explanation": [
+      "Use this as a high-protein day template, not a fixed prescription. The meals are built around familiar foods so you can repeat the structure while changing the sabzi, dal, fruit, or grain based on what is available.",
+      "The main idea is to place a protein anchor in every meal. Besan, tofu, dal, sprouts, soy curd, and soy chunks do the heavy lifting; rice, roti, fruit, and vegetables make the day easier to eat."
+    ],
     "meals": [
       { "name": "Breakfast", "items": ["Besan chilla", "Soy curd", "Fruit"], "protein": 30 },
       { "name": "Lunch", "items": ["Dal", "Rice", "Tofu sabzi", "Salad"], "protein": 35 },
@@ -18,6 +22,24 @@
     ],
     "proteinSources": ["Besan", "Soy curd", "Dal", "Tofu", "Sprouts", "Soy chunks"],
     "substitutions": ["Paneer -> tofu", "Curd -> soy curd", "Whey -> plant protein"],
+    "detailSections": [
+      {
+        "title": "Adjust for taste and availability",
+        "items": [
+          "If soy chunks are hard to enjoy, use tofu, tempeh, seitan, or an extra dal-and-sprouts meal instead.",
+          "Use any dal you digest well. Moong is lighter; chana dal, masoor, and toor are more filling.",
+          "Change the seasoning freely: tikka masala, sambar powder, pav bhaji masala, or simple cumin-turmeric all work as long as the protein food stays in the meal."
+        ]
+      },
+      {
+        "title": "Adjust portions",
+        "items": [
+          "If body weight is not increasing and that is your goal, add one extra roti, more rice, or a peanut/banana snack.",
+          "If digestion feels heavy, split soy chunks or tofu across two meals instead of forcing a large serving at dinner.",
+          "If you need fewer calories, keep the protein portions and reduce oil, peanuts, rice, or roti first."
+        ]
+      }
+    ],
     "notes": "Adjust portions based on body weight and goals."
   },
   {
@@ -31,6 +53,10 @@
     "mealCount": 4,
     "affordability": "Budget-friendly",
     "whoThisIsFor": "People who want a simple calorie-aware pattern without extreme restrictions.",
+    "explanation": [
+      "This plan keeps the day filling by using legumes, soup-style meals, salad, and a planned snack instead of relying on willpower. The goal is a modest calorie deficit with enough protein to protect energy and training.",
+      "Treat the rice and roti portions as adjustable. The dal, rajma, chana, soy milk, and vegetables should stay consistent because they make the plan easier to follow."
+    ],
     "meals": [
       { "name": "Breakfast", "items": ["Oats", "Soy milk", "Chia or peanuts"], "protein": 22 },
       { "name": "Lunch", "items": ["Rajma", "Small rice portion", "Salad"], "protein": 28 },
@@ -39,6 +65,24 @@
     ],
     "proteinSources": ["Soy milk", "Rajma", "Roasted chana", "Moong dal"],
     "substitutions": ["Rice -> more vegetables when needed", "Fried snacks -> roasted chana"],
+    "detailSections": [
+      {
+        "title": "Adjust for hunger",
+        "items": [
+          "If hunger is high, add more cucumber, tomato, cabbage, lauki, beans, or leafy vegetables before cutting calories further.",
+          "Keep roasted chana or fruit as the planned snack so evening hunger does not turn into fried snacks.",
+          "If dinner feels too light, make the moong dal thicker or add tofu cubes while keeping oil modest."
+        ]
+      },
+      {
+        "title": "Adjust for taste and routine",
+        "items": [
+          "Rajma can be swapped with chole, kala chana, or masoor dal if that is what is cooked at home.",
+          "Tea or coffee is fine; the bigger difference is avoiding sugar-heavy biscuits and namkeen alongside it.",
+          "Use spices, lemon, coriander, pickle in small amounts, and chutneys to keep the plan satisfying."
+        ]
+      }
+    ],
     "notes": "Keep the deficit moderate and monitor energy, hunger, and training recovery."
   },
   {
@@ -52,6 +96,10 @@
     "mealCount": 5,
     "affordability": "Moderate",
     "whoThisIsFor": "Lifters who need higher calories without relying only on shakes.",
+    "explanation": [
+      "This is a higher-calorie template for people training hard and trying to gain weight slowly. The food volume can feel high, so the plan uses calorie-dense helpers like peanut butter, soy milk, rice, peanuts, and shakes.",
+      "Use the workout meals as flexible timing markers. If you train in the morning, move the fruit and peanuts before training and keep the shake or soy chunk meal afterward."
+    ],
     "meals": [
       { "name": "Breakfast", "items": ["Peanut butter oats", "Soy milk", "Banana"], "protein": 32 },
       { "name": "Lunch", "items": ["Chana masala", "Rice", "Tofu"], "protein": 38 },
@@ -61,6 +109,24 @@
     ],
     "proteinSources": ["Soy milk", "Chana", "Tofu", "Plant protein", "Tempeh", "Soy chunks"],
     "substitutions": ["Tempeh -> tofu", "Plant shake -> soy chunks meal"],
+    "detailSections": [
+      {
+        "title": "Adjust for appetite",
+        "items": [
+          "If you struggle to eat enough, use smoothies, oats, nut butters, banana, and rice because they are easier than very large salads.",
+          "If you feel too full, spread the same food across five smaller meals instead of three large meals.",
+          "If weight gain is too fast, reduce added fats first before reducing the main protein foods."
+        ]
+      },
+      {
+        "title": "Protein options",
+        "items": [
+          "A plant protein shake is convenient, but it is not mandatory if soy chunks, tofu, tempeh, dal, and chana already cover your target.",
+          "Tempeh can be replaced with tofu, soy chunks, seitan, or extra chana depending on budget and availability.",
+          "Keep one reliable post-workout option ready so the plan does not depend on cooking immediately after training."
+        ]
+      }
+    ],
     "notes": "Increase calories gradually if body weight is not moving."
   },
   {
@@ -74,6 +140,10 @@
     "mealCount": 3,
     "affordability": "Low cost",
     "whoThisIsFor": "Students and families prioritizing low-cost, repeatable meals.",
+    "explanation": [
+      "This plan is built around low-cost staples that can be cooked in batches: besan, kala chana, masoor dal, rice, roti, and seasonal vegetables. It is intentionally simple so the same base can work across many weeks.",
+      "The plan becomes easier when legumes are soaked, boiled, and stored ahead. Then each meal is mostly assembly, reheating, and adding fresh vegetables or chutney."
+    ],
     "meals": [
       { "name": "Breakfast", "items": ["Besan chilla", "Chutney"], "protein": 22 },
       { "name": "Lunch", "items": ["Kala chana", "Rice", "Cabbage sabzi"], "protein": 32 },
@@ -81,6 +151,24 @@
     ],
     "proteinSources": ["Besan", "Kala chana", "Masoor dal"],
     "substitutions": ["Kala chana -> rajma", "Masoor dal -> moong dal"],
+    "detailSections": [
+      {
+        "title": "Adjust for budget and availability",
+        "items": [
+          "Use the cheapest seasonal vegetable rather than chasing a specific sabzi.",
+          "Swap kala chana with rajma, chole, lobia, or whole moong based on local price.",
+          "If tofu or soy milk is outside budget, keep the plan legume-heavy and use peanuts or roasted chana for snacks."
+        ]
+      },
+      {
+        "title": "Batch-cooking notes",
+        "items": [
+          "Soak and boil chana or rajma once, then use it for curry, salad, or chaat across two to three meals.",
+          "Cook extra dal and change the tadka or vegetables to avoid the meal feeling repetitive.",
+          "Keep chutney, lemon, onions, coriander, or pickle available so basic meals still taste complete."
+        ]
+      }
+    ],
     "notes": "Batch cooking legumes makes the plan easier and cheaper."
   },
   {
@@ -94,6 +182,10 @@
     "mealCount": 3,
     "affordability": "Budget-friendly",
     "whoThisIsFor": "Beginners who want a simple structure before tracking macros.",
+    "explanation": [
+      "This is a starting pattern for people who want less decision-making. It gives you three familiar meals and enough structure to notice what keeps you full, energetic, and consistent.",
+      "Do not worry about perfect macros on day one. First make the meals repeatable, then adjust portions or protein foods once the routine feels normal."
+    ],
     "meals": [
       { "name": "Breakfast", "items": ["Oats", "Soy milk", "Fruit"], "protein": 20 },
       { "name": "Lunch", "items": ["Dal", "Rice", "Vegetable sabzi"], "protein": 28 },
@@ -101,6 +193,24 @@
     ],
     "proteinSources": ["Oats", "Soy milk", "Dal", "Tofu"],
     "substitutions": ["Tofu -> soy chunks", "Soy milk -> peanut curd"],
+    "detailSections": [
+      {
+        "title": "Easy swaps",
+        "items": [
+          "Oats can become poha, upma, idli, or chilla if breakfast needs to be savory; add soy milk, dal, tofu, or sprouts elsewhere to keep protein up.",
+          "Tofu bhurji can be swapped with soy chunks, chana, rajma, or dal if tofu is not available.",
+          "Use any cooked vegetable sabzi at lunch; the habit matters more than the exact vegetable."
+        ]
+      },
+      {
+        "title": "How to progress",
+        "items": [
+          "After one consistent week, increase protein first if meals feel light or hunger returns quickly.",
+          "If digestion is uncomfortable, increase legumes gradually and drink enough water.",
+          "If you miss a meal, return to the next planned meal instead of trying to compensate perfectly."
+        ]
+      }
+    ],
     "notes": "Start with consistency, then adjust portions."
   },
   {
@@ -114,6 +224,10 @@
     "mealCount": 4,
     "affordability": "Moderate",
     "whoThisIsFor": "People who prefer idli, dosa, rice, sambar, and familiar South Indian meals.",
+    "explanation": [
+      "This plan keeps South Indian staples but nudges them toward more protein. Sambar, adai, sprouts, tofu poriyal, peanut chutney, and dal-heavy batters make the familiar pattern more filling.",
+      "Use the meal names as anchors. The exact vegetables, chutney, and spice level can change with season, household cooking, and personal taste."
+    ],
     "meals": [
       { "name": "Breakfast", "items": ["Dosa", "Sambar", "Peanut chutney"], "protein": 24 },
       { "name": "Lunch", "items": ["Rice", "Rasam", "Tofu poriyal", "Kootu"], "protein": 34 },
@@ -122,6 +236,24 @@
     ],
     "proteinSources": ["Sambar dal", "Peanuts", "Tofu", "Sprouts", "Adai"],
     "substitutions": ["Curd rice -> peanut curd rice", "Paneer -> tofu"],
+    "detailSections": [
+      {
+        "title": "Adjust for local foods",
+        "items": [
+          "Use idli, dosa, pesarattu, adai, or upma depending on what is available; pair lower-protein breakfasts with sambar or sprouts.",
+          "Tofu poriyal can be replaced with chana sundal, soy chunks, tempeh, or extra kootu.",
+          "Peanut chutney, podi, and sambar can make a simple meal more satisfying without needing expensive ingredients."
+        ]
+      },
+      {
+        "title": "Protein upgrades",
+        "items": [
+          "Make sambar dal-heavy rather than watery when it is the main protein in the meal.",
+          "Use adai or pesarattu when dosa alone leaves you hungry.",
+          "Add sprouts sundal or roasted chana as a snack if the day is short on protein."
+        ]
+      }
+    ],
     "notes": "Use dal-heavy batters and sambar to improve protein density."
   },
   {
@@ -135,6 +267,10 @@
     "mealCount": 4,
     "affordability": "Moderate",
     "whoThisIsFor": "People who prefer roti, dal, chana, rajma, and sabzi meals.",
+    "explanation": [
+      "This plan keeps the North Indian meal shape: roti or rice with dal, rajma, chana, tofu, and sabzi. The upgrade is making the protein portion meaningful instead of treating dal as a thin side.",
+      "Use the plan as a weekly rotation. Rajma, chole, dal, tofu tikka, and besan cheela can rotate based on what is already cooked at home."
+    ],
     "meals": [
       { "name": "Breakfast", "items": ["Besan cheela", "Mint chutney"], "protein": 24 },
       { "name": "Lunch", "items": ["Rajma", "Rice", "Salad"], "protein": 34 },
@@ -143,6 +279,24 @@
     ],
     "proteinSources": ["Besan", "Rajma", "Roasted chana", "Tofu", "Dal"],
     "substitutions": ["Paneer tikka -> tofu tikka", "Curd -> soy curd"],
+    "detailSections": [
+      {
+        "title": "Adjust for taste",
+        "items": [
+          "Use the same masalas you already like for paneer, chole, rajma, or tikka; swap the protein base rather than changing the whole meal.",
+          "If tofu feels bland, press it, marinate it, and cook it on high heat before adding gravy.",
+          "If dal feels boring, change the tadka, add spinach, or use lemon and coriander at the end."
+        ]
+      },
+      {
+        "title": "Availability swaps",
+        "items": [
+          "Rajma can be swapped with chole, lobia, kala chana, or whole moong.",
+          "Besan cheela can be swapped with moong dal cheela, tofu bhurji, or sprouts chaat.",
+          "Soy curd is optional; use peanut curd, fortified soy milk, or a non-curd side depending on what you can reliably buy."
+        ]
+      }
+    ],
     "notes": "Keep oil moderate and make dal portions meaningful."
   },
   {
@@ -156,6 +310,10 @@
     "mealCount": 4,
     "affordability": "Budget-friendly",
     "whoThisIsFor": "People avoiding onion and garlic while keeping protein practical.",
+    "explanation": [
+      "This plan avoids onion and garlic without reducing the day to plain starches. Protein still comes from moong dal, toor dal, peanut curd, tofu, and legumes.",
+      "Flavor has to come from other places: hing, cumin, ginger, tomato, curry leaves, coriander, lemon, coconut, sesame, and roasted spices."
+    ],
     "meals": [
       { "name": "Breakfast", "items": ["Moong dal chilla", "Coconut chutney"], "protein": 26 },
       { "name": "Lunch", "items": ["Toor dal", "Rice", "Pumpkin sabzi"], "protein": 28 },
@@ -164,6 +322,24 @@
     ],
     "proteinSources": ["Moong dal", "Toor dal", "Peanut curd", "Tofu"],
     "substitutions": ["Paneer -> tofu", "Curd -> peanut curd"],
+    "detailSections": [
+      {
+        "title": "Flavor without onion or garlic",
+        "items": [
+          "Use hing, ginger, cumin, mustard seeds, curry leaves, tomato, and coriander to build a base.",
+          "For richness, use peanut curd, sesame, coconut, cashew paste, or a small amount of ground peanuts.",
+          "Lemon juice or amchur at the end often makes no-onion/no-garlic dishes taste brighter."
+        ]
+      },
+      {
+        "title": "Protein swaps",
+        "items": [
+          "Moong dal chilla can be swapped with besan chilla, adai, or sprouted moong chaat.",
+          "Tofu curry can be swapped with soy chunks, chana, rajma, or dal if tofu is unavailable.",
+          "Peanut curd can be replaced with soy curd or a peanut chutney bowl if fermentation is not practical."
+        ]
+      }
+    ],
     "notes": "Use hing, ginger, cumin, and tomato for flavor without onion or garlic."
   }
 ]
