@@ -89,6 +89,7 @@ export type Guide = {
   slug: string;
   title: string;
   summary: string;
+  priority: number;
   author: string;
   reviewer: string;
   lastUpdated: string;

@@ -66,6 +66,7 @@ export function getGuides(): Guide[] {
         slug,
         title: String(metadata.title),
         summary: String(metadata.summary),
+        priority: Number(metadata.priority ?? Number.MAX_SAFE_INTEGER),
         author: String(metadata.author),
         reviewer: String(metadata.reviewer),
         lastUpdated: String(metadata.lastUpdated),
@@ -73,7 +74,8 @@ export function getGuides(): Guide[] {
         references: (metadata.references as string[]) ?? [],
         body,
       };
-    });
+    })
+    .toSorted((a, b) => a.priority - b.priority || a.title.localeCompare(b.title));
 }
 
 export function getGuide(slug: string) {
