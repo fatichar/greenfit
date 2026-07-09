@@ -22,6 +22,8 @@ const supplementImages: Record<string, string> = {
   "vitamin-b12": "/images/items/supplements/vitamin-b12.jpg",
   "vitamin-d3": "/images/items/supplements/vegan-d3.jpg",
   "algal-omega-3": "/images/items/supplements/algal-omega-3.jpg",
+  "iron": "/images/items/supplements/iron.jpg",
+  "zinc": "/images/items/supplements/zinc.jpg",
   "creatine-monohydrate": "/images/items/supplements/creatine-monohydrate.jpg",
 };
 
