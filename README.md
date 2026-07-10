@@ -41,6 +41,12 @@ To enable Umami analytics in production, set both:
 
 Analytics only load when `NODE_ENV=production` and both variables are present.
 
+To enable Amazon Associates tagging for affiliate product links, set:
+
+- `NEXT_PUBLIC_AMAZON_ASSOCIATES_TAG`
+
+Do not commit the Associates tag to source code. Because this is a `NEXT_PUBLIC_` variable, set it before running `npm run build`; Next.js inlines public environment values at build time.
+
 ### Verification Checklist
 
 - [ ] Ensure the script loads in production builds when variables are set.
@@ -48,6 +54,7 @@ Analytics only load when `NODE_ENV=production` and both variables are present.
 - [ ] Ensure variables use the `NEXT_PUBLIC_` prefix to work on the client side.
 - [ ] Verify Umami automatic page view tracking works.
 - [ ] Ensure no personal data is collected in custom events.
+- [ ] Confirm Amazon affiliate links include the configured `tag` query parameter in production.
 
 ## Content Editing
 
@@ -56,9 +63,14 @@ Analytics only load when `NODE_ENV=production` and both variables are present.
 - Diet plans: `data/dietPlans.json`
 - Foods: `data/foods.json`
 - Ingredients: `data/ingredients.json`
+- Affiliate products: `data/affiliateProducts.json`
 - Guides: `content/guides/*.mdx`
 
 Keep the existing data shapes stable. Add fields intentionally and update the corresponding TypeScript types in `src/lib/types.ts`.
+
+Affiliate products support `id`, `title`, `category`, `shortDescription`, `imageUrl` or `imagePath`, `amazonUrl`, `tags`, and optional `priceText` and `notes`. Use tags such as guide slugs, product slugs, supplement slugs, or broad categories to place products in relevant sections. The reusable affiliate section adds the Amazon Associates tag from `NEXT_PUBLIC_AMAZON_ASSOCIATES_TAG`, opens Amazon links in a new tab, and tracks Umami `Outbound Product Click` events with non-personal product/source metadata.
+
+Every page or component that shows affiliate products or links must include the disclosure near the links: “As an Amazon Associate, we may earn from qualifying purchases.”
 
 ## VPS / Nginx Notes
 
