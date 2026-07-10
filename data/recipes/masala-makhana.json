@@ -1,0 +1,81 @@
+{
+  "slug": "masala-makhana",
+  "title": "Masala Makhana",
+  "description": "Crispy spiced fox nuts (lotus seeds). A light tea-time and travel snack that beats namkeen.",
+  "explanation": [
+    "Makhana is naturally light and becomes addictive when roasted with a little oil and spice. It is a smart swap for fried chips when you want something crunchy with chai or on a train journey.",
+    "Roast until they sound hollow and crisp—under-roasted makhana tastes chewy."
+  ],
+  "ingredients": [
+    "4 cups Makhana (fox nuts / lotus seeds)",
+    "1 tbsp Oil or 1 tsp for lighter version",
+    "1/2 tsp Turmeric",
+    "1/2 tsp Red Chilli powder",
+    "1/2 tsp Chaat Masala",
+    "1/4 tsp Black Pepper",
+    "Salt to taste",
+    "Pinch of Amchur (optional)"
+  ],
+  "instructions": [
+    "Dry-roast makhana in a wide pan on medium heat for 6–8 minutes, stirring, until crisp.",
+    "Push makhana aside, add oil and spices to the pan, and bloom for a few seconds.",
+    "Toss makhana until evenly coated. Adjust salt.",
+    "Cool completely before storing in an airtight jar."
+  ],
+  "stepNotes": [
+    "Cooling fully is required for lasting crunch.",
+    "If spices stick poorly, mist with a few drops of water or lemon before tossing.",
+    "Air fryer: 160°C for about 6–8 minutes, shaking once, then toss with spices.",
+    "Skip oil and use a non-stick pan for a lighter batch—spices cling a bit less.",
+    "Stays crisp 5–7 days in an airtight container."
+  ],
+  "variationSections": [
+    {
+      "title": "Flavor profiles",
+      "items": [
+        "Peri-peri or pizza seasoning for kids and cravings.",
+        "Jaggery + cinnamon for a sweet snack.",
+        "Curry leaves and mustard seeds for a South Indian tempering feel."
+      ]
+    },
+    {
+      "title": "Snack pairings",
+      "items": [
+        "Evening chai.",
+        "Mixed with roasted peanuts for more calories.",
+        "Packed in a small pouch for flights and long drives."
+      ]
+    }
+  ],
+  "tags": [
+    "tea-time",
+    "evening-snack",
+    "travel-snack",
+    "low-calorie",
+    "easy",
+    "portable",
+    "craving",
+    "gluten-free"
+  ],
+  "mealTypes": ["tea-time", "evening-snack", "travel-snack", "craving"],
+  "servings": 4,
+  "prepTime": "5 mins",
+  "cookTime": "12 mins",
+  "prepMinutes": 5,
+  "cookMinutes": 12,
+  "cost": "Rs 60 for 4 people",
+  "costInr": 60,
+  "image": "/images/items/recipes/masala-makhana.jpg",
+  "nutrition": {
+    "servingSize": "1 large handful (about 1 cup)",
+    "calories": 120,
+    "proteinG": 4,
+    "carbsG": 18,
+    "fatG": 4,
+    "fiberG": 2
+  },
+  "dietary": ["plant-based", "gluten-free", "jain", "no-onion-no-garlic"],
+  "proteinSources": ["makhana"],
+  "portable": true,
+  "makeAhead": true
+}

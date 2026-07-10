@@ -1,0 +1,81 @@
+{
+  "slug": "roasted-chana-trail-mix",
+  "title": "Roasted Chana Trail Mix",
+  "description": "Savory-sweet jar mix of roasted chana, nuts, and dried fruit. Built for bags, desks, and long travel days.",
+  "explanation": [
+    "Roasted chana (bhuna chana) is one of the cheapest high-protein portable snacks in India. Mixed with a few nuts and raisins, it becomes a balanced trail mix that replaces chips and biscuits.",
+    "Make a weekly jar and pre-portion into small boxes so travel and office snacking stays intentional."
+  ],
+  "ingredients": [
+    "1.5 cups Roasted Chana (bhuna chana)",
+    "1/4 cup Roasted Peanuts",
+    "2 tbsp Pumpkin or Sunflower Seeds",
+    "2 tbsp Raisins or Dried Cranberries",
+    "1 tbsp Coconut flakes (optional)",
+    "1/2 tsp Chaat Masala",
+    "Pinch of Salt",
+    "Pinch of Chilli powder (optional)"
+  ],
+  "instructions": [
+    "If chana or peanuts are soft, re-crisp them in a dry pan for 2–3 minutes. Cool.",
+    "Combine all ingredients in a bowl. Toss with chaat masala, salt, and chilli.",
+    "Store in an airtight jar. Shake before portioning."
+  ],
+  "stepNotes": [
+    "Cool completely before sealing or moisture softens the mix.",
+    "Keep dried fruit moderate so the mix does not become candy.",
+    "For strict savory, skip raisins and add more seeds and spices.",
+    "Office tip: 1/3 cup portions in reusable boxes.",
+    "Airport-friendly if packed in clear small bags without liquids."
+  ],
+  "variationSections": [
+    {
+      "title": "Mix formulas",
+      "items": [
+        "Sweet: dates chopped + cinnamon + coconut.",
+        "Spicy: curry leaves powder + pepper + amchur.",
+        "Premium: almonds, walnuts, and dark chocolate chips (occasional)."
+      ]
+    },
+    {
+      "title": "Diet roles",
+      "items": [
+        "Travel snack between meals.",
+        "Evening snack with tea.",
+        "Post-workout handful with a banana."
+      ]
+    }
+  ],
+  "tags": [
+    "travel-snack",
+    "evening-snack",
+    "tea-time",
+    "portable",
+    "protein",
+    "frugal",
+    "make-ahead",
+    "no-cook",
+    "budget"
+  ],
+  "mealTypes": ["travel-snack", "evening-snack", "tea-time"],
+  "servings": 8,
+  "prepTime": "10 mins",
+  "cookTime": "0 mins",
+  "prepMinutes": 10,
+  "cookMinutes": 0,
+  "cost": "Rs 60 for 8 servings",
+  "costInr": 60,
+  "image": "/images/items/recipes/roasted-chana-trail-mix.jpg",
+  "nutrition": {
+    "servingSize": "1/3 cup",
+    "calories": 140,
+    "proteinG": 7,
+    "carbsG": 16,
+    "fatG": 5,
+    "fiberG": 5
+  },
+  "dietary": ["plant-based", "gluten-free", "jain", "no-onion-no-garlic"],
+  "proteinSources": ["roasted chana", "peanuts", "seeds"],
+  "portable": true,
+  "makeAhead": true
+}

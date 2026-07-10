@@ -56,18 +56,28 @@
     "easy",
     "protein",
     "WFPB",
-    "low-calorie"
+    "low-calorie",
+    "high-protein"
   ],
+  "mealTypes": ["breakfast", "lunch"],
+  "servings": 2,
   "prepTime": "10 mins",
   "cookTime": "10 mins",
+  "prepMinutes": 10,
+  "cookMinutes": 10,
   "cost": "Rs 80 for 2 people",
+  "costInr": 80,
   "image": "/images/items/recipes/masala-tofu-scramble.jpg",
   "nutrition": {
     "servingSize": "1 plate (about half recipe)",
     "calories": 230,
-    "protein": "15 g",
-    "carbs": "10 g",
-    "fat": "16 g",
-    "fiber": "3 g"
-  }
+    "proteinG": 15,
+    "carbsG": 10,
+    "fatG": 16,
+    "fiberG": 3
+  },
+  "dietary": ["plant-based"],
+  "proteinSources": ["tofu"],
+  "portable": false,
+  "makeAhead": true
 }

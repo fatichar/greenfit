@@ -1,0 +1,81 @@
+{
+  "slug": "plant-milk-kheer",
+  "title": "Plant-Milk Rice Kheer",
+  "description": "Creamy festive rice pudding with soy or oat milk, cardamom, and nuts. Dairy-free celebration dessert.",
+  "explanation": [
+    "Kheer is a festival and Sunday staple. Soy milk gives more protein and body; oat milk is naturally sweeter; a splash of coconut milk at the end adds richness without dairy.",
+    "Slow simmering reduces the milk and softens rice into the classic texture—do not rush on high heat."
+  ],
+  "ingredients": [
+    "1/4 cup Short-grain Rice",
+    "1 liter Soy Milk or Oat Milk (unsweetened)",
+    "1/4 cup Jaggery or Sugar (adjust)",
+    "4–5 Green Cardamom pods, crushed",
+    "2 tbsp Chopped Almonds and Cashews",
+    "1 tbsp Raisins (optional)",
+    "Pinch of Saffron (optional)",
+    "1/4 cup Coconut Milk to finish (optional)"
+  ],
+  "instructions": [
+    "Wash rice and soak 15 minutes. Drain.",
+    "Bring plant milk to a gentle simmer. Add rice and cardamom.",
+    "Cook on low, stirring often, 30–40 minutes until rice is soft and kheer thickens.",
+    "Add jaggery after turning heat very low (or off briefly) so milk does not split.",
+    "Stir in nuts, raisins, saffron, and coconut milk. Serve warm or chilled."
+  ],
+  "stepNotes": [
+    "Jaggery can curdle some plant milks if boiled hard—melt it in at the end.",
+    "Stir frequently so rice does not stick to the bottom.",
+    "Kheer thickens more as it cools; keep it slightly looser than your final target.",
+    "Saffron soaked in 1 tbsp warm milk gives better color.",
+    "Chilled kheer is excellent the next day for festival prep."
+  ],
+  "variationSections": [
+    {
+      "title": "Grain swaps",
+      "items": [
+        "Sabudana kheer with soaked tapioca pearls.",
+        "Vermicelli (seviyan) for a faster festival sweet.",
+        "Quinoa or millets for a modern twist."
+      ]
+    },
+    {
+      "title": "Sweetener and richness",
+      "items": [
+        "Dates blended into the milk instead of sugar.",
+        "More coconut milk for a richer Diwali bowl.",
+        "Less sweetener and more cardamom if serving after a heavy meal."
+      ]
+    }
+  ],
+  "tags": [
+    "festival",
+    "dessert",
+    "sweet",
+    "comfort",
+    "Indian sweets",
+    "make-ahead",
+    "gluten-free"
+  ],
+  "mealTypes": ["festival", "craving"],
+  "servings": 4,
+  "prepTime": "15 mins",
+  "cookTime": "40 mins",
+  "prepMinutes": 15,
+  "cookMinutes": 40,
+  "cost": "Rs 90 for 4 people",
+  "costInr": 90,
+  "image": "/images/items/recipes/plant-milk-kheer.jpg",
+  "nutrition": {
+    "servingSize": "1 bowl (one-fourth recipe)",
+    "calories": 260,
+    "proteinG": 9,
+    "carbsG": 38,
+    "fatG": 8,
+    "fiberG": 2
+  },
+  "dietary": ["plant-based", "gluten-free", "no-onion-no-garlic"],
+  "proteinSources": ["soy milk", "nuts", "rice"],
+  "portable": false,
+  "makeAhead": true
+}

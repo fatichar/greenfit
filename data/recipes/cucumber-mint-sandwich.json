@@ -1,0 +1,80 @@
+{
+  "slug": "cucumber-mint-sandwich",
+  "title": "Cucumber Mint Tea Sandwich",
+  "description": "Cool, herby cucumber sandwiches with plant cream or hummus. Classic tea-time plate, light and fresh.",
+  "explanation": [
+    "Tea-time food does not have to mean biscuits and fried snacks. Thin cucumber sandwiches with mint and a creamy plant spread feel special enough for guests and light enough for afternoons.",
+    "Use soft sandwich bread or whole-wheat; crusts optional. Hummus, mashed avocado, or thick plant yogurt all work as the base."
+  ],
+  "ingredients": [
+    "6 slices Soft Bread (whole wheat preferred)",
+    "1 Cucumber, thinly sliced",
+    "3 tbsp Hummus or thick Plant Yogurt",
+    "1 tbsp Mint leaves, finely chopped",
+    "1/2 tsp Lemon juice",
+    "Black Pepper and Salt to taste",
+    "Optional: thin tomato slices or chaat masala dust"
+  ],
+  "instructions": [
+    "Stir mint, lemon, salt, and pepper into hummus or plant yogurt.",
+    "Spread the mixture on bread slices.",
+    "Layer cucumber evenly. Sprinkle a pinch of chaat masala if using.",
+    "Close sandwiches, trim crusts if desired, and cut into triangles or fingers.",
+    "Serve immediately with tea, or wrap for a short carry."
+  ],
+  "stepNotes": [
+    "Pat cucumber dry so bread stays soft, not wet.",
+    "Salt cucumbers lightly and wait 2 minutes, then pat dry for extra moisture control.",
+    "Assemble close to serving time for best texture.",
+    "Toasted bread holds up better if packing for later.",
+    "Whole-wheat or multigrain raises fiber; white bread feels more party-classic."
+  ],
+  "variationSections": [
+    {
+      "title": "Spread ideas",
+      "items": [
+        "Peanut chutney for a spicier Indian tea-time.",
+        "Avocado mash with lemon and chilli flakes.",
+        "Tofu cream cheese style spread blended with herbs."
+      ]
+    },
+    {
+      "title": "Make it more filling",
+      "items": [
+        "Add tofu slices or leftover chana mash.",
+        "Use a thicker focaccia-style bread.",
+        "Serve with roasted chana or fruit on the side."
+      ]
+    }
+  ],
+  "tags": [
+    "tea-time",
+    "evening-snack",
+    "easy",
+    "light",
+    "party",
+    "no-cook",
+    "summer"
+  ],
+  "mealTypes": ["tea-time", "evening-snack"],
+  "servings": 3,
+  "prepTime": "15 mins",
+  "cookTime": "0 mins",
+  "prepMinutes": 15,
+  "cookMinutes": 0,
+  "cost": "Rs 50 for 3 people",
+  "costInr": 50,
+  "image": "/images/items/recipes/cucumber-mint-sandwich.jpg",
+  "nutrition": {
+    "servingSize": "2 small sandwiches (2 slices bread)",
+    "calories": 210,
+    "proteinG": 7,
+    "carbsG": 32,
+    "fatG": 6,
+    "fiberG": 4
+  },
+  "dietary": ["plant-based"],
+  "proteinSources": ["hummus", "bread"],
+  "portable": true,
+  "makeAhead": false
+}

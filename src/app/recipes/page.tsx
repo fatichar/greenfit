@@ -1,24 +1,10 @@
-import fs from "fs";
-import path from "path";
-import type { Recipe } from "@/lib/types";
+import { getRecipes } from "@/lib/data";
 import { RecipesClient } from "./client";
 
 export const metadata = {
   title: "Recipes",
   description: "Easy and frugal plant-based recipes.",
 };
-
-function getRecipes(): Recipe[] {
-  const recipesDir = path.join(process.cwd(), "data", "recipes");
-  const fileNames = fs.readdirSync(recipesDir);
-  return fileNames
-    .filter((fileName) => fileName.endsWith(".json"))
-    .map((fileName) => {
-      const fullPath = path.join(recipesDir, fileName);
-      const fileContents = fs.readFileSync(fullPath, "utf8");
-      return JSON.parse(fileContents) as Recipe;
-    });
-}
 
 export default function RecipesPage() {
   const recipes = getRecipes();
@@ -31,7 +17,8 @@ export default function RecipesPage() {
       <div className="mb-12">
         <h1 className="text-4xl font-bold tracking-tight text-foreground">Recipes</h1>
         <p className="mt-4 text-lg text-muted-foreground">
-          Easy, affordable, and nutritious plant-based recipes with readily available ingredients.
+          Easy, affordable plant-based recipes for breakfast, snacks, travel, tea time, cravings,
+          and festivals — tagged for search and ready for day-plan building.
         </p>
       </div>
 

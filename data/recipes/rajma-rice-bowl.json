@@ -1,0 +1,88 @@
+{
+  "slug": "rajma-rice-bowl",
+  "title": "Rajma Rice Bowl",
+  "description": "Hearty North Indian kidney-bean curry over rice. High fiber, high satisfaction, meal-prep friendly.",
+  "explanation": [
+    "Rajma-chawal is a complete comfort plate: beans for protein and fiber, rice for energy, onion-tomato masala for depth. This version is fully plant-based with no cream or ghee.",
+    "Soaking beans overnight is ideal. Canned or pre-boiled rajma works for weeknights."
+  ],
+  "ingredients": [
+    "1 cup Dried Rajma (kidney beans), soaked overnight — or 2.5 cups boiled",
+    "1 Onion, finely chopped",
+    "2 Tomatoes, pureed or finely chopped",
+    "1 tbsp Ginger-garlic paste (or grated)",
+    "1 tsp Cumin Seeds",
+    "1 tsp Coriander powder",
+    "1/2 tsp Turmeric",
+    "1 tsp Kashmiri chilli powder",
+    "1/2 tsp Garam Masala",
+    "1.5 tbsp Oil",
+    "Salt to taste",
+    "2 cups Cooked Rice for serving",
+    "Coriander and onion rings to garnish"
+  ],
+  "instructions": [
+    "Pressure-cook soaked rajma with water and salt until soft (usually 4–5 whistles).",
+    "Heat oil, crackle cumin, saute onion until golden.",
+    "Add ginger-garlic; cook until raw smell goes. Add tomato and cook until oil separates.",
+    "Add turmeric, coriander, chilli powder, and salt. Cook 1–2 minutes.",
+    "Add boiled rajma with enough cooking liquid for a thick gravy. Simmer 10–15 minutes.",
+    "Finish with garam masala and coriander. Serve over rice."
+  ],
+  "stepNotes": [
+    "Undercooked beans ruin the dish—beans should mash easily between fingers.",
+    "Mash a few beans into the gravy for restaurant-style body without cream.",
+    "Kashmiri chilli gives color with moderate heat.",
+    "A longer simmer deepens flavor more than extra oil.",
+    "Day-old rajma often tastes better after flavors settle."
+  ],
+  "variationSections": [
+    {
+      "title": "Diet adjustments",
+      "items": [
+        "Lower calorie: use less oil and more gravy liquid; serve with less rice and more salad.",
+        "Higher protein: add extra beans or a side of tofu.",
+        "No-onion/no-garlic: use hing, ginger, tomato, and kasuri methi."
+      ]
+    },
+    {
+      "title": "Bowl toppings",
+      "items": [
+        "Lemon, raw onion, cucumber salad, or pickled chilli.",
+        "Brown rice or millets instead of white rice.",
+        "A spoon of peanut curd on the side."
+      ]
+    }
+  ],
+  "tags": [
+    "lunch",
+    "dinner",
+    "protein",
+    "high fiber",
+    "comfort",
+    "batch-cook",
+    "North Indian",
+    "meal-prep"
+  ],
+  "mealTypes": ["lunch", "dinner"],
+  "servings": 3,
+  "prepTime": "15 mins",
+  "cookTime": "40 mins",
+  "prepMinutes": 15,
+  "cookMinutes": 40,
+  "cost": "Rs 70 for 3 people",
+  "costInr": 70,
+  "image": "/images/items/recipes/rajma-rice-bowl.jpg",
+  "nutrition": {
+    "servingSize": "1 bowl with rice (one-third recipe)",
+    "calories": 420,
+    "proteinG": 16,
+    "carbsG": 72,
+    "fatG": 8,
+    "fiberG": 14
+  },
+  "dietary": ["plant-based", "gluten-free"],
+  "proteinSources": ["rajma", "rice"],
+  "portable": false,
+  "makeAhead": true
+}

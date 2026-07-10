@@ -1,0 +1,84 @@
+{
+  "slug": "vegetable-poha",
+  "title": "Vegetable Poha",
+  "description": "Light, tangy flattened-rice breakfast with peanuts, turmeric, and everyday vegetables.",
+  "explanation": [
+    "Poha is a classic Indian breakfast that cooks fast, stays light, and takes well to whatever vegetables you have. Peanuts add crunch and a little protein; lemon and coriander finish it bright.",
+    "Rinse the poha just enough to soften it—over-soaking makes it mushy. Medium-thick (medium) poha is the most forgiving."
+  ],
+  "ingredients": [
+    "2 cups Thick Poha (flattened rice)",
+    "1 small Onion, chopped (optional)",
+    "1 Potato, small diced (optional)",
+    "1/4 cup Roasted Peanuts",
+    "1/2 tsp Mustard Seeds",
+    "1/2 tsp Turmeric",
+    "8–10 Curry Leaves",
+    "1 Green Chilli, slit",
+    "1 tbsp Oil",
+    "Salt to taste",
+    "Juice of 1/2 Lemon",
+    "Coriander leaves"
+  ],
+  "instructions": [
+    "Place poha in a colander, rinse under water, drain, and fluff with a fork. Sprinkle salt and turmeric; set aside.",
+    "Heat oil. Add mustard seeds, curry leaves, chilli, and peanuts. Saute until peanuts are fragrant.",
+    "Add onion and potato if using; cook until potato is tender.",
+    "Add the softened poha and mix gently on low heat for 2–3 minutes.",
+    "Turn off heat, squeeze lemon, add coriander, and serve."
+  ],
+  "stepNotes": [
+    "Poha should feel soft but separate after rinsing—not wet and clumpy.",
+    "Skip onion/potato for a faster Jain-friendly version with peas and grated carrot.",
+    "Roast raw peanuts in the tempering if you do not have pre-roasted ones.",
+    "Keep heat low once poha is in so it does not dry out or break.",
+    "Lemon at the end keeps the flavor fresh."
+  ],
+  "variationSections": [
+    {
+      "title": "Regional twists",
+      "items": [
+        "Indori style: add sev and a pinch of sugar.",
+        "Maharashtrian style: more lemon, green chilli, and coriander.",
+        "South-leaning: add grated coconut and a pinch of hing."
+      ]
+    },
+    {
+      "title": "Make it more filling",
+      "items": [
+        "Add boiled green peas or crumbled tofu.",
+        "Top with sprouts for extra protein.",
+        "Serve with a glass of soy milk or plant curd on the side."
+      ]
+    }
+  ],
+  "tags": [
+    "breakfast",
+    "easy",
+    "frugal",
+    "comfort",
+    "Indian",
+    "quick"
+  ],
+  "mealTypes": ["breakfast", "tea-time"],
+  "servings": 2,
+  "prepTime": "10 mins",
+  "cookTime": "15 mins",
+  "prepMinutes": 10,
+  "cookMinutes": 15,
+  "cost": "Rs 40 for 2 people",
+  "costInr": 40,
+  "image": "/images/items/recipes/vegetable-poha.jpg",
+  "nutrition": {
+    "servingSize": "1 plate (half recipe)",
+    "calories": 320,
+    "proteinG": 8,
+    "carbsG": 52,
+    "fatG": 10,
+    "fiberG": 4
+  },
+  "dietary": ["plant-based", "gluten-free"],
+  "proteinSources": ["peanuts", "poha"],
+  "portable": true,
+  "makeAhead": false
+}

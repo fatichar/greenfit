@@ -53,18 +53,30 @@
     "protein",
     "high fiber",
     "low-calorie",
-    "WFPB"
+    "WFPB",
+    "no-cook",
+    "portable",
+    "weight-loss"
   ],
+  "mealTypes": ["lunch", "evening-snack", "travel-snack"],
+  "servings": 2,
   "prepTime": "10 mins",
   "cookTime": "0 mins",
+  "prepMinutes": 10,
+  "cookMinutes": 0,
   "cost": "Rs 50 for 2 people",
+  "costInr": 50,
   "image": "/images/items/recipes/chickpea-salad.jpg",
   "nutrition": {
     "servingSize": "1 bowl (about half recipe)",
     "calories": 245,
-    "protein": "11 g",
-    "carbs": "42 g",
-    "fat": "4 g",
-    "fiber": "11 g"
-  }
+    "proteinG": 11,
+    "carbsG": 42,
+    "fatG": 4,
+    "fiberG": 11
+  },
+  "dietary": ["plant-based", "oil-free"],
+  "proteinSources": ["chickpeas"],
+  "portable": true,
+  "makeAhead": true
 }

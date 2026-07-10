@@ -54,18 +54,29 @@
     "Jain",
     "frugal",
     "WFPB",
-    "high fiber"
+    "high fiber",
+    "side-dish",
+    "weight-loss"
   ],
+  "mealTypes": ["lunch", "dinner"],
+  "servings": 2,
   "prepTime": "10 mins",
   "cookTime": "15 mins",
+  "prepMinutes": 10,
+  "cookMinutes": 15,
   "cost": "Rs 30 for 2 people",
+  "costInr": 30,
   "image": "/images/items/recipes/jain-cabbage-peas.jpg",
   "nutrition": {
     "servingSize": "1 serving (about half recipe)",
     "calories": 145,
-    "protein": "5 g",
-    "carbs": "18 g",
-    "fat": "7 g",
-    "fiber": "7 g"
-  }
+    "proteinG": 5,
+    "carbsG": 18,
+    "fatG": 7,
+    "fiberG": 7
+  },
+  "dietary": ["plant-based", "jain", "no-onion-no-garlic", "gluten-free"],
+  "proteinSources": ["peas"],
+  "portable": false,
+  "makeAhead": true
 }

@@ -1,0 +1,83 @@
+{
+  "slug": "thandai-smoothie",
+  "title": "Thandai Smoothie",
+  "description": "Cool Holi-inspired almond-spice smoothie with plant milk. Festive, refreshing, and caffeine-free.",
+  "explanation": [
+    "Traditional thandai is a spiced nut drink for Holi and warm afternoons. This smoothie version uses soaked nuts, fennel, cardamom, pepper, and plant milk—fully plant-based and blender-friendly.",
+    "Serve cold over ice for festivals, or as a weekend craving drink. Adjust pepper for a gentle heat."
+  ],
+  "ingredients": [
+    "2 cups Cold Soy or Almond Milk",
+    "12 Almonds, soaked",
+    "1 tbsp Melon Seeds or Cashews",
+    "1 tsp Fennel Seeds",
+    "4 Green Cardamom pods",
+    "1/2 tsp Black Pepper",
+    "1 tbsp Jaggery or Maple Syrup",
+    "Pinch of Saffron (optional)",
+    "Ice cubes",
+    "Rose petals or extra nuts to garnish (optional)"
+  ],
+  "instructions": [
+    "Blend soaked almonds, seeds, fennel, cardamom seeds, pepper, sweetener, and 1/2 cup milk to a smooth paste.",
+    "Add remaining cold milk, saffron, and ice. Blend until frothy.",
+    "Taste for sweetness and spice. Strain for a silkier drink if desired.",
+    "Pour into glasses and garnish."
+  ],
+  "stepNotes": [
+    "Soaking almonds 2–4 hours (or overnight) improves creaminess.",
+    "Freshly cracked cardamom and pepper taste brighter than old ground spices.",
+    "Straining is optional—unstrained is more filling and higher fiber.",
+    "Keep pepper mild for kids; adults often like a noticeable kick.",
+    "Chill glasses for a festival presentation."
+  ],
+  "variationSections": [
+    {
+      "title": "Festival service",
+      "items": [
+        "Make a thandai paste concentrate ahead; thin with milk when guests arrive.",
+        "Offer a sugar-free version sweetened only with dates.",
+        "Add a tiny pinch of dried ginger for winter evenings."
+      ]
+    },
+    {
+      "title": "Protein boost",
+      "items": [
+        "Use soy milk as the base.",
+        "Add a scoop of unflavored or vanilla plant protein.",
+        "Include hemp seeds in the blend."
+      ]
+    }
+  ],
+  "tags": [
+    "festival",
+    "craving",
+    "drink",
+    "Holi",
+    "summer",
+    "easy",
+    "gluten-free",
+    "sweet"
+  ],
+  "mealTypes": ["festival", "craving", "tea-time"],
+  "servings": 2,
+  "prepTime": "15 mins",
+  "cookTime": "0 mins",
+  "prepMinutes": 15,
+  "cookMinutes": 0,
+  "cost": "Rs 70 for 2 people",
+  "costInr": 70,
+  "image": "/images/items/recipes/thandai-smoothie.jpg",
+  "nutrition": {
+    "servingSize": "1 glass (half recipe)",
+    "calories": 220,
+    "proteinG": 10,
+    "carbsG": 18,
+    "fatG": 12,
+    "fiberG": 3
+  },
+  "dietary": ["plant-based", "gluten-free", "no-onion-no-garlic"],
+  "proteinSources": ["soy milk", "almonds", "seeds"],
+  "portable": true,
+  "makeAhead": true
+}

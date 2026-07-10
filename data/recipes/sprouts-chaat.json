@@ -1,0 +1,84 @@
+{
+  "slug": "sprouts-chaat",
+  "title": "Sprouts Chaat",
+  "description": "Zingy evening snack of mung sprouts, onion, tomato, lemon, and chaat masala. High protein, low fuss.",
+  "explanation": [
+    "Sprouts chaat is the default healthy Indian snack when you want something crunchy and spicy without deep frying. Homegrown or store-bought mung sprouts both work.",
+    "Steam sprouts lightly if raw sprouts are hard to digest for you; keep them raw for maximum crunch if your stomach tolerates them."
+  ],
+  "ingredients": [
+    "2 cups Mung Bean Sprouts",
+    "1 small Onion, finely chopped (optional)",
+    "1 Tomato, diced",
+    "1/2 Cucumber, diced",
+    "1 Green Chilli, minced (optional)",
+    "Juice of 1 Lemon",
+    "1 tsp Chaat Masala",
+    "1/2 tsp Roasted Cumin powder",
+    "Salt to taste",
+    "Coriander and optional pomegranate"
+  ],
+  "instructions": [
+    "Rinse sprouts. Optionally steam 2–3 minutes and cool.",
+    "Combine sprouts with onion, tomato, cucumber, and chilli.",
+    "Add lemon, chaat masala, roasted cumin, and salt. Toss well.",
+    "Garnish with coriander and pomegranate. Serve immediately."
+  ],
+  "stepNotes": [
+    "Light steaming makes sprouts easier to digest without killing all the bite.",
+    "Chaat masala is salty—taste before adding more salt.",
+    "Skip onion for Jain; add extra cucumber, tomato, and hing-based seasoning.",
+    "Best eaten fresh; assemble just before serving for crunch.",
+    "A handful of crushed roasted peanuts adds calories and texture."
+  ],
+  "variationSections": [
+    {
+      "title": "Chaat upgrades",
+      "items": [
+        "Add boiled potato cubes for a fuller snack.",
+        "Drizzle thin mint chutney and tamarind chutney.",
+        "Mix in boiled kabuli chana for extra protein."
+      ]
+    },
+    {
+      "title": "Meal roles",
+      "items": [
+        "Evening snack with tea.",
+        "Light lunch with a roti on the side.",
+        "Travel box without chutney (add lemon packets instead)."
+      ]
+    }
+  ],
+  "tags": [
+    "evening-snack",
+    "tea-time",
+    "protein",
+    "high fiber",
+    "low-calorie",
+    "easy",
+    "WFPB",
+    "weight-loss",
+    "no-cook"
+  ],
+  "mealTypes": ["evening-snack", "tea-time", "lunch"],
+  "servings": 2,
+  "prepTime": "10 mins",
+  "cookTime": "0 mins",
+  "prepMinutes": 10,
+  "cookMinutes": 0,
+  "cost": "Rs 40 for 2 people",
+  "costInr": 40,
+  "image": "/images/items/recipes/sprouts-chaat.jpg",
+  "nutrition": {
+    "servingSize": "1 bowl (half recipe)",
+    "calories": 150,
+    "proteinG": 10,
+    "carbsG": 24,
+    "fatG": 1,
+    "fiberG": 7
+  },
+  "dietary": ["plant-based", "oil-free", "gluten-free"],
+  "proteinSources": ["mung sprouts"],
+  "portable": true,
+  "makeAhead": false
+}

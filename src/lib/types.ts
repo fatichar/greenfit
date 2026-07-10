@@ -98,14 +98,29 @@ export type Guide = {
   body: string;
 };
 
+/**
+ * Nutrition per single serving. Numeric grams support diet-plan math;
+ * UI formats them as display strings.
+ */
 export type NutritionInfo = {
   servingSize: string;
   calories: number;
-  protein: string;
-  carbs: string;
-  fat: string;
-  fiber: string;
+  proteinG: number;
+  carbsG: number;
+  fatG: number;
+  fiberG: number;
 };
+
+/** Meal slots a recipe can fill in a day plan / picker. */
+export type MealType =
+  | "breakfast"
+  | "lunch"
+  | "dinner"
+  | "evening-snack"
+  | "travel-snack"
+  | "tea-time"
+  | "craving"
+  | "festival";
 
 export type Recipe = {
   slug: string;
@@ -119,10 +134,34 @@ export type Recipe = {
     title: string;
     items: string[];
   }>;
+  /** Free-form searchable tags (cuisine, diet style, goals, texture, etc.). */
   tags: string[];
+  /**
+   * Structured meal slots for "build my diet plan" pickers.
+   * A recipe may fit more than one slot (e.g. salad as lunch + evening-snack).
+   */
+  mealTypes: MealType[];
+  /** Number of servings the ingredients list makes. */
+  servings: number;
   prepTime: string;
   cookTime: string;
+  /** Minutes for sorting/filtering in a plan builder. */
+  prepMinutes: number;
+  cookMinutes: number;
   cost: string;
+  /** Approximate cost in INR for the whole batch (ingredients as listed). */
+  costInr?: number;
   image: string;
   nutrition: NutritionInfo;
+  /**
+   * Dietary flags for plan filters (e.g. jain, no-onion-no-garlic,
+   * gluten-free, nut-free, soy-free, oil-free).
+   */
+  dietary: string[];
+  /** Main protein-contributing foods for plan matching. */
+  proteinSources: string[];
+  /** Safe to pack for travel / desk without reheating. */
+  portable: boolean;
+  /** Can be prepped ahead and stored. */
+  makeAhead: boolean;
 };

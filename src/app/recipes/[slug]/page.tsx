@@ -1,21 +1,15 @@
-import fs from "fs";
-import path from "path";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, Clock, Banknote, Flame, Leaf, Tag } from "lucide-react";
-import type { Recipe } from "@/lib/types";
+import { getRecipe, getRecipes } from "@/lib/data";
 import { Badge } from "@/components/ui/badge";
 import { InfoDisclosureList } from "@/components/info-disclosure";
 
 export async function generateStaticParams() {
-  const recipesDir = path.join(process.cwd(), "data", "recipes");
-  const fileNames = fs.readdirSync(recipesDir);
-  return fileNames
-    .filter((fileName) => fileName.endsWith(".json"))
-    .map((fileName) => ({
-      slug: fileName.replace(/\.json$/, ""),
-    }));
+  return getRecipes().map((recipe) => ({
+    slug: recipe.slug,
+  }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
@@ -27,16 +21,6 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     title: recipe.title,
     description: recipe.description,
   };
-}
-
-function getRecipe(slug: string): Recipe | null {
-  try {
-    const filePath = path.join(process.cwd(), "data", "recipes", `${slug}.json`);
-    const fileContents = fs.readFileSync(filePath, "utf8");
-    return JSON.parse(fileContents) as Recipe;
-  } catch {
-    return null;
-  }
 }
 
 export default async function RecipePage({ params }: { params: Promise<{ slug: string }> }) {
@@ -87,12 +71,25 @@ export default async function RecipePage({ params }: { params: Promise<{ slug: s
           </div>
           <div className="flex items-center">
             <Flame className="mr-2 h-4 w-4" />
-            <span className="font-medium">Nutrition:</span> <span className="ml-1">{recipe.nutrition.calories} kcal · {recipe.nutrition.protein} protein</span>
+            <span className="font-medium">Nutrition:</span>{" "}
+            <span className="ml-1">
+              {recipe.nutrition.calories} kcal · {recipe.nutrition.proteinG} g protein
+            </span>
+          </div>
+          <div className="flex items-center">
+            <Leaf className="mr-2 h-4 w-4" />
+            <span className="font-medium">Servings:</span>{" "}
+            <span className="ml-1">{recipe.servings}</span>
           </div>
         </div>
 
         <div className="mt-6 flex flex-wrap items-center gap-2">
           <Tag className="mr-2 h-4 w-4 text-muted-foreground" />
+          {recipe.mealTypes.map((mealType) => (
+            <Badge key={mealType} variant="outline" className="capitalize">
+              {mealType.replace(/-/g, " ")}
+            </Badge>
+          ))}
           {recipe.tags.map((tag) => (
             <Badge key={tag} variant="secondary">
               {tag}
@@ -123,10 +120,10 @@ export default async function RecipePage({ params }: { params: Promise<{ slug: s
             <dl className="grid grid-cols-2 gap-3 text-sm">
               {[
                 ["Calories", `${recipe.nutrition.calories} kcal`],
-                ["Protein", recipe.nutrition.protein],
-                ["Carbs", recipe.nutrition.carbs],
-                ["Fat", recipe.nutrition.fat],
-                ["Fiber", recipe.nutrition.fiber],
+                ["Protein", `${recipe.nutrition.proteinG} g`],
+                ["Carbs", `${recipe.nutrition.carbsG} g`],
+                ["Fat", `${recipe.nutrition.fatG} g`],
+                ["Fiber", `${recipe.nutrition.fiberG} g`],
               ].map(([label, value]) => (
                 <div key={label} className="rounded-xl bg-muted/60 p-3">
                   <dt className="text-muted-foreground">{label}</dt>
@@ -134,6 +131,38 @@ export default async function RecipePage({ params }: { params: Promise<{ slug: s
                 </div>
               ))}
             </dl>
+            {(recipe.dietary?.length > 0 || recipe.proteinSources?.length > 0) && (
+              <div className="mt-4 space-y-3 text-sm">
+                {recipe.dietary?.length > 0 && (
+                  <div>
+                    <p className="text-muted-foreground">Dietary</p>
+                    <p className="mt-1 font-medium capitalize">
+                      {recipe.dietary.map((d) => d.replace(/-/g, " ")).join(" · ")}
+                    </p>
+                  </div>
+                )}
+                {recipe.proteinSources?.length > 0 && (
+                  <div>
+                    <p className="text-muted-foreground">Protein sources</p>
+                    <p className="mt-1 font-medium capitalize">
+                      {recipe.proteinSources.join(" · ")}
+                    </p>
+                  </div>
+                )}
+                <div className="flex flex-wrap gap-2 pt-1">
+                  {recipe.portable && (
+                    <Badge variant="secondary" className="text-xs">
+                      Portable
+                    </Badge>
+                  )}
+                  {recipe.makeAhead && (
+                    <Badge variant="secondary" className="text-xs">
+                      Make-ahead
+                    </Badge>
+                  )}
+                </div>
+              </div>
+            )}
           </section>
 
           <section>

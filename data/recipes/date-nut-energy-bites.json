@@ -1,0 +1,82 @@
+{
+  "slug": "date-nut-energy-bites",
+  "title": "Date-Nut Energy Bites",
+  "description": "No-bake sweet bites of dates, peanuts, and seeds. Perfect travel fuel and dessert-level craving fix.",
+  "explanation": [
+    "These are the plant-based answer to packaged energy bars: sticky dates bind nuts and seeds into bite-sized snacks that travel well without refrigeration for a day.",
+    "Use soft dates; if dry, soak 10 minutes in warm water and drain well before blending."
+  ],
+  "ingredients": [
+    "1 cup Soft Dates, pitted",
+    "1/2 cup Roasted Peanuts",
+    "2 tbsp Seeds (pumpkin, sunflower, or sesame)",
+    "1 tbsp Cocoa powder (optional)",
+    "1/4 tsp Cardamom powder",
+    "Pinch of Salt",
+    "1–2 tsp Water only if needed to bind"
+  ],
+  "instructions": [
+    "Pulse peanuts and seeds in a mixer to a coarse meal—not a fine flour.",
+    "Add dates, cocoa, cardamom, and salt. Blend to a sticky dough.",
+    "If too dry, add water a few drops at a time.",
+    "Roll into 10–12 small balls. Optional: roll in sesame or cocoa.",
+    "Chill 20 minutes to firm up, then store in a jar."
+  ],
+  "stepNotes": [
+    "A sticky dough that holds when pressed is the goal.",
+    "Oily peanut butter texture means you over-blended—pulse in shorter bursts.",
+    "For travel, wrap individually in parchment.",
+    "Refrigerate up to a week; freeze up to a month.",
+    "Cocoa makes them taste like chocolate truffles."
+  ],
+  "variationSections": [
+    {
+      "title": "Mix-in ideas",
+      "items": [
+        "Oats for a chewier bar texture (press into a pan and cut).",
+        "Coconut for ladoo vibes.",
+        "Espresso powder for a coffee kick."
+      ]
+    },
+    {
+      "title": "Allergy swaps",
+      "items": [
+        "Use roasted chana or sunflower seeds instead of peanuts.",
+        "Skip cocoa if you want a pure date-cardamom taste.",
+        "Add a scoop of plant protein for higher-protein bites (may need extra date)."
+      ]
+    }
+  ],
+  "tags": [
+    "travel-snack",
+    "craving",
+    "tea-time",
+    "no-cook",
+    "portable",
+    "high-calorie",
+    "easy",
+    "make-ahead",
+    "sweet"
+  ],
+  "mealTypes": ["travel-snack", "craving", "tea-time", "evening-snack"],
+  "servings": 6,
+  "prepTime": "15 mins",
+  "cookTime": "0 mins",
+  "prepMinutes": 15,
+  "cookMinutes": 0,
+  "cost": "Rs 80 for 6 servings",
+  "costInr": 80,
+  "image": "/images/items/recipes/date-nut-energy-bites.jpg",
+  "nutrition": {
+    "servingSize": "2 bites",
+    "calories": 180,
+    "proteinG": 5,
+    "carbsG": 24,
+    "fatG": 8,
+    "fiberG": 4
+  },
+  "dietary": ["plant-based", "gluten-free", "no-onion-no-garlic"],
+  "proteinSources": ["peanuts", "seeds", "dates"],
+  "portable": true,
+  "makeAhead": true
+}

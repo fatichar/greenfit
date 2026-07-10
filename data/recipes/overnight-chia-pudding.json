@@ -1,0 +1,79 @@
+{
+  "slug": "overnight-chia-pudding",
+  "title": "Overnight Chia Pudding",
+  "description": "No-cook make-ahead breakfast or snack with chia, plant milk, and fruit. Ready when you wake up.",
+  "explanation": [
+    "Chia seeds gel in liquid overnight into a tapioca-like pudding. It is ideal for busy mornings, travel prep, and anyone who wants breakfast without cooking.",
+    "Soy milk raises protein; oat or almond milk keeps it lighter. Sweeten with fruit or a little jaggery rather than lots of sugar."
+  ],
+  "ingredients": [
+    "3 tbsp Chia Seeds",
+    "1 cup Plant Milk (preferably soy)",
+    "1 tsp Maple Syrup or Jaggery powder (optional)",
+    "1/4 tsp Vanilla or Cardamom (optional)",
+    "1/2 cup Seasonal Fruit for topping",
+    "1 tbsp Nuts or Seeds for topping"
+  ],
+  "instructions": [
+    "In a jar, whisk plant milk, chia seeds, sweetener, and vanilla or cardamom.",
+    "Wait 5 minutes, stir again so seeds do not clump at the bottom.",
+    "Cover and refrigerate at least 4 hours or overnight.",
+    "In the morning, stir, add fruit and nuts, and eat cold—or warm gently if preferred."
+  ],
+  "stepNotes": [
+    "A second stir after 5 minutes is the difference between smooth pudding and seed clumps.",
+    "If too thick in the morning, loosen with a splash of plant milk.",
+    "Use a jar with a lid for grab-and-go mornings.",
+    "Cardamom gives an Indian dessert feel; cocoa powder makes a chocolate version.",
+    "Keeps 2–3 days in the fridge."
+  ],
+  "variationSections": [
+    {
+      "title": "Flavor ideas",
+      "items": [
+        "Mango cardamom with chopped mango.",
+        "Cocoa peanut with cocoa powder and a swirl of peanut butter.",
+        "Apple cinnamon with grated apple and cinnamon."
+      ]
+    },
+    {
+      "title": "Protein upgrades",
+      "items": [
+        "Use fortified soy milk as the base.",
+        "Stir in a scoop of plant protein after chilling (thin with milk if needed).",
+        "Top with hemp seeds or crushed roasted peanuts."
+      ]
+    }
+  ],
+  "tags": [
+    "breakfast",
+    "easy",
+    "no-cook",
+    "make-ahead",
+    "portable",
+    "high fiber",
+    "protein",
+    "meal-prep"
+  ],
+  "mealTypes": ["breakfast", "evening-snack", "travel-snack"],
+  "servings": 1,
+  "prepTime": "5 mins",
+  "cookTime": "0 mins",
+  "prepMinutes": 5,
+  "cookMinutes": 0,
+  "cost": "Rs 45 for 1 person",
+  "costInr": 45,
+  "image": "/images/items/recipes/overnight-chia-pudding.jpg",
+  "nutrition": {
+    "servingSize": "1 jar",
+    "calories": 310,
+    "proteinG": 14,
+    "carbsG": 28,
+    "fatG": 16,
+    "fiberG": 14
+  },
+  "dietary": ["plant-based", "gluten-free"],
+  "proteinSources": ["chia", "soy milk"],
+  "portable": true,
+  "makeAhead": true
+}

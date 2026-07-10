@@ -51,18 +51,29 @@
     "easy",
     "high-calorie",
     "protein",
-    "high fiber"
+    "high fiber",
+    "make-ahead",
+    "muscle-gain"
   ],
+  "mealTypes": ["breakfast", "evening-snack"],
+  "servings": 1,
   "prepTime": "5 mins",
   "cookTime": "10 mins",
+  "prepMinutes": 5,
+  "cookMinutes": 10,
   "cost": "Rs 60 for 1 person",
+  "costInr": 60,
   "image": "/images/items/recipes/peanut-butter-oats.jpg",
   "nutrition": {
     "servingSize": "1 bowl",
     "calories": 560,
-    "protein": "19 g",
-    "carbs": "66 g",
-    "fat": "27 g",
-    "fiber": "13 g"
-  }
+    "proteinG": 19,
+    "carbsG": 66,
+    "fatG": 27,
+    "fiberG": 13
+  },
+  "dietary": ["plant-based"],
+  "proteinSources": ["oats", "soy milk", "peanut butter", "chia"],
+  "portable": false,
+  "makeAhead": true
 }

@@ -1,0 +1,77 @@
+{
+  "slug": "banana-nice-cream",
+  "title": "Banana Nice Cream",
+  "description": "Two-ingredient frozen banana soft-serve. A cold craving fix with no dairy and no ice-cream maker.",
+  "explanation": [
+    "Frozen ripe bananas blend into a soft-serve texture that scratches the ice-cream itch. Cocoa, peanut butter, or berries turn it into dessert without refined sugar if the bananas are ripe enough.",
+    "Freeze banana slices flat on a tray first so they do not clump into one ice brick."
+  ],
+  "ingredients": [
+    "3 ripe Bananas, sliced and frozen solid",
+    "2–4 tbsp Plant Milk as needed",
+    "1 tbsp Cocoa powder or Peanut Butter (optional)",
+    "Pinch of Salt",
+    "Toppings: nuts, cacao nibs, or berries"
+  ],
+  "instructions": [
+    "Add frozen banana slices to a strong blender or food processor.",
+    "Blend, scraping sides, adding plant milk a spoon at a time until creamy.",
+    "Add cocoa or peanut butter if using; blend again.",
+    "Serve immediately as soft-serve, or freeze 30–60 minutes for a firmer scoop."
+  ],
+  "stepNotes": [
+    "Bananas must be fully frozen or the texture stays slushy-sweet rather than creamy.",
+    "A food processor often works better than a weak blender.",
+    "Do not add too much liquid or it becomes a smoothie.",
+    "Eat soon—it melts faster than dairy ice cream.",
+    "Very ripe spotted bananas taste sweetest with no added sugar."
+  ],
+  "variationSections": [
+    {
+      "title": "Flavor riffs",
+      "items": [
+        "Mango banana with frozen mango chunks.",
+        "Coffee: add instant coffee powder.",
+        "Strawberry: blend in frozen strawberries."
+      ]
+    },
+    {
+      "title": "Protein dessert",
+      "items": [
+        "Add a scoop of plant protein and extra splash of soy milk.",
+        "Swirl peanut butter and top with crushed roasted peanuts.",
+        "Serve with a side of soy curd for contrast."
+      ]
+    }
+  ],
+  "tags": [
+    "craving",
+    "dessert",
+    "easy",
+    "sweet",
+    "no-cook",
+    "WFPB",
+    "kid-friendly"
+  ],
+  "mealTypes": ["craving", "evening-snack"],
+  "servings": 2,
+  "prepTime": "10 mins",
+  "cookTime": "0 mins",
+  "prepMinutes": 10,
+  "cookMinutes": 0,
+  "cost": "Rs 40 for 2 people",
+  "costInr": 40,
+  "image": "/images/items/recipes/banana-nice-cream.jpg",
+  "nutrition": {
+    "servingSize": "1 bowl (half recipe, plain)",
+    "calories": 160,
+    "proteinG": 2,
+    "carbsG": 40,
+    "fatG": 1,
+    "fiberG": 4
+  },
+  "dietary": ["plant-based", "gluten-free", "oil-free", "nut-free"],
+  "proteinSources": ["banana"],
+  "portable": false,
+  "makeAhead": true
+}

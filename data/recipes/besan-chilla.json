@@ -1,0 +1,86 @@
+{
+  "slug": "besan-chilla",
+  "title": "Besan Chilla",
+  "description": "Savory chickpea-flour pancakes loaded with vegetables. A high-protein Indian breakfast staple.",
+  "explanation": [
+    "Besan chilla is one of the most reliable plant protein breakfasts in an Indian kitchen. The batter is just chickpea flour, water, spices, and finely chopped vegetables.",
+    "Cook it thin like a crepe for a lighter plate, or slightly thicker for a sturdier wrap. Pair with chutney, soy curd, or a fruit side."
+  ],
+  "ingredients": [
+    "1 cup Besan (chickpea flour)",
+    "3/4 to 1 cup Water",
+    "1 small Onion, finely chopped (optional)",
+    "1 Tomato, finely chopped",
+    "1 Green Chilli, minced",
+    "2 tbsp Coriander leaves, chopped",
+    "1/2 tsp Turmeric",
+    "1/2 tsp Cumin powder",
+    "Salt to taste",
+    "1–2 tsp Oil for cooking"
+  ],
+  "instructions": [
+    "Whisk besan with water until smooth and pourable, with no lumps.",
+    "Stir in turmeric, cumin powder, salt, chilli, tomato, onion (if using), and coriander.",
+    "Heat a non-stick or well-seasoned tawa. Lightly oil it.",
+    "Pour a ladle of batter and spread into a thin circle.",
+    "Cook 2–3 minutes until the underside is golden, flip, and cook the other side.",
+    "Serve hot with mint chutney, ketchup, or plant-based curd."
+  ],
+  "stepNotes": [
+    "A slightly thinner batter spreads more easily; add water a spoon at a time.",
+    "Skip onion for Jain or no-onion versions; add grated carrot, cabbage, or zucchini instead.",
+    "Medium heat prevents raw centers and burnt edges.",
+    "Do not spread too thick or the middle stays pasty.",
+    "Make a stack and reheat lightly if cooking for more people.",
+    "Chutney, pickle, or a glass of soy milk turns this into a complete breakfast."
+  ],
+  "variationSections": [
+    {
+      "title": "Protein and calorie boosts",
+      "items": [
+        "Add a spoon of flax or hemp seeds to the batter.",
+        "Serve with peanut chutney or soy curd for more protein.",
+        "Stuff with tofu scramble or leftover sabzi for a heavier meal."
+      ]
+    },
+    {
+      "title": "Vegetable mix-ins",
+      "items": [
+        "Grated carrot, capsicum, spinach, methi, or cabbage all work well.",
+        "Kasuri methi gives a restaurant-style aroma.",
+        "Ajwain (carom seeds) aids digestion and adds a classic chilla flavor."
+      ]
+    }
+  ],
+  "tags": [
+    "breakfast",
+    "easy",
+    "protein",
+    "high fiber",
+    "frugal",
+    "WFPB",
+    "high-protein",
+    "budget"
+  ],
+  "mealTypes": ["breakfast", "tea-time", "evening-snack"],
+  "servings": 2,
+  "prepTime": "10 mins",
+  "cookTime": "15 mins",
+  "prepMinutes": 10,
+  "cookMinutes": 15,
+  "cost": "Rs 35 for 2 people",
+  "costInr": 35,
+  "image": "/images/items/recipes/besan-chilla.jpg",
+  "nutrition": {
+    "servingSize": "2 chillas (half recipe)",
+    "calories": 280,
+    "proteinG": 14,
+    "carbsG": 38,
+    "fatG": 8,
+    "fiberG": 8
+  },
+  "dietary": ["plant-based", "gluten-free"],
+  "proteinSources": ["besan"],
+  "portable": true,
+  "makeAhead": true
+}

@@ -1,0 +1,83 @@
+{
+  "slug": "masala-peanuts",
+  "title": "Crispy Masala Peanuts",
+  "description": "Spiced roasted peanuts with a light besan crust. Classic tea-time muncher and craving snack.",
+  "explanation": [
+    "Masala peanuts hit the salty-spicy craving without a deep fryer if you roast or air-fry carefully. A thin besan coating gives the street-style crunch.",
+    "Portion-aware: peanuts are calorie-dense, so a small bowl with chai is better than endless grazing from a big jar."
+  ],
+  "ingredients": [
+    "1.5 cups Raw Peanuts",
+    "2 tbsp Besan",
+    "1 tbsp Rice flour (for extra crisp)",
+    "1/2 tsp Red Chilli powder",
+    "1/2 tsp Turmeric",
+    "1/2 tsp Chaat Masala",
+    "1/4 tsp Baking soda (optional, for puff)",
+    "1 tbsp Oil",
+    "Salt to taste",
+    "1–2 tbsp Water to bind coating"
+  ],
+  "instructions": [
+    "Mix besan, rice flour, spices, salt, baking soda, oil, and just enough water for a thick paste.",
+    "Coat peanuts evenly in the paste.",
+    "Spread on a tray. Bake at 180°C for 15–20 minutes, stirring once, until golden and crisp—or air-fry at 170°C for 10–12 minutes.",
+    "Cool completely. Store airtight."
+  ],
+  "stepNotes": [
+    "Thin coating crisps better than thick clumps.",
+    "Stir once mid-bake so undersides do not stay soft.",
+    "They crisp further as they cool—do not overbake to dark brown.",
+    "Pan method: roast slowly on low heat with constant stirring (harder but possible).",
+    "Cool before sealing the jar or steam softens them."
+  ],
+  "variationSections": [
+    {
+      "title": "Spice routes",
+      "items": [
+        "Garlic powder and oregano for a pizza note.",
+        "Curry leaves powder and black pepper.",
+        "Jaggery dust for sweet-spicy hankering."
+      ]
+    },
+    {
+      "title": "Lighter option",
+      "items": [
+        "Skip besan and dry-roast peanuts with spices only.",
+        "Mix half peanuts with roasted chana to lower calorie density.",
+        "Pre-portion into small snack bags."
+      ]
+    }
+  ],
+  "tags": [
+    "tea-time",
+    "craving",
+    "travel-snack",
+    "evening-snack",
+    "portable",
+    "high-calorie",
+    "easy",
+    "make-ahead"
+  ],
+  "mealTypes": ["tea-time", "craving", "travel-snack", "evening-snack"],
+  "servings": 6,
+  "prepTime": "10 mins",
+  "cookTime": "20 mins",
+  "prepMinutes": 10,
+  "cookMinutes": 20,
+  "cost": "Rs 50 for 6 servings",
+  "costInr": 50,
+  "image": "/images/items/recipes/masala-peanuts.jpg",
+  "nutrition": {
+    "servingSize": "small handful (~30 g)",
+    "calories": 170,
+    "proteinG": 7,
+    "carbsG": 8,
+    "fatG": 13,
+    "fiberG": 3
+  },
+  "dietary": ["plant-based", "gluten-free", "jain", "no-onion-no-garlic"],
+  "proteinSources": ["peanuts", "besan"],
+  "portable": true,
+  "makeAhead": true
+}

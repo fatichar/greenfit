@@ -1,0 +1,84 @@
+{
+  "slug": "tofu-veggie-wrap",
+  "title": "Spiced Tofu Veggie Wrap",
+  "description": "Portable high-protein wrap with masala tofu, crunchy vegetables, and a tangy sauce. Desk- and travel-friendly.",
+  "explanation": [
+    "This wrap is designed for lunch boxes and travel days when you need something filling that holds up without a full kitchen. The tofu filling can be cooked ahead; assemble just before eating if you want maximum crunch.",
+    "Use any flatbread you have—roti, tortilla, or lavash. A dry filling travels better than a saucy one."
+  ],
+  "ingredients": [
+    "200g Firm Tofu, crumbled or cubed",
+    "1 tsp Oil",
+    "1/2 tsp Turmeric",
+    "1/2 tsp Chaat Masala or Garam Masala",
+    "1/2 tsp Chilli powder",
+    "Salt to taste",
+    "2 large Rotis or Tortillas",
+    "1/2 Cucumber, julienned",
+    "1 Carrot, grated",
+    "Handful Lettuce or Cabbage, shredded",
+    "2 tbsp Mint-coriander chutney or ketchup",
+    "Lemon juice"
+  ],
+  "instructions": [
+    "Saute tofu in oil with turmeric, masala, chilli, and salt until lightly dry and seasoned (5–6 minutes).",
+    "Warm the roti or tortilla so it flexes without cracking.",
+    "Spread chutney, add tofu, then cucumber, carrot, and greens.",
+    "Squeeze lemon, roll tightly, and wrap in paper or foil if packing."
+  ],
+  "stepNotes": [
+    "Press tofu briefly if watery so the wrap does not sog.",
+    "Cook filling drier for travel; keep it softer for home lunch.",
+    "Put sauce in the center, not near edges, to reduce leaks.",
+    "If packing more than 2 hours ahead, keep wet veggies separate.",
+    "A second wrap freezes poorly—make fresh or refrigerate 1 day max."
+  ],
+  "variationSections": [
+    {
+      "title": "Filling swaps",
+      "items": [
+        "Use leftover chana, rajma, or soy chunks instead of tofu.",
+        "Hummus or peanut butter instead of chutney for a different flavor.",
+        "Add roasted peppers or leftover sabzi."
+      ]
+    },
+    {
+      "title": "Travel tips",
+      "items": [
+        "Wrap in foil and keep upright in a lunch bag.",
+        "Skip tomato if packing for long hours—it releases water.",
+        "Carry lemon and salt sachets to refresh before eating."
+      ]
+    }
+  ],
+  "tags": [
+    "lunch",
+    "protein",
+    "portable",
+    "travel",
+    "easy",
+    "high-protein",
+    "meal-prep"
+  ],
+  "mealTypes": ["lunch", "travel-snack", "evening-snack"],
+  "servings": 2,
+  "prepTime": "15 mins",
+  "cookTime": "10 mins",
+  "prepMinutes": 15,
+  "cookMinutes": 10,
+  "cost": "Rs 90 for 2 people",
+  "costInr": 90,
+  "image": "/images/items/recipes/tofu-veggie-wrap.jpg",
+  "nutrition": {
+    "servingSize": "1 wrap",
+    "calories": 340,
+    "proteinG": 18,
+    "carbsG": 36,
+    "fatG": 14,
+    "fiberG": 5
+  },
+  "dietary": ["plant-based"],
+  "proteinSources": ["tofu", "roti"],
+  "portable": true,
+  "makeAhead": true
+}

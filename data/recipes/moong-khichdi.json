@@ -1,0 +1,86 @@
+{
+  "slug": "moong-khichdi",
+  "title": "Comfort Moong Khichdi",
+  "description": "Soft one-pot rice and moong dal comfort bowl. Gentle on the stomach, easy to batch-cook.",
+  "explanation": [
+    "Khichdi is the default recovery and comfort meal for many Indian households. Moong dal digests easily; rice gives energy; ghee is replaced here with oil or skipped for a lighter bowl.",
+    "Adjust water for porridge-soft or grainier textures. Add vegetables for a fuller one-pot dinner."
+  ],
+  "ingredients": [
+    "1/2 cup Rice",
+    "1/2 cup Yellow Moong Dal",
+    "3.5 to 4 cups Water",
+    "1/2 tsp Turmeric",
+    "1 tsp Cumin Seeds",
+    "1/4 tsp Asafoetida (Hing)",
+    "1 tbsp Oil",
+    "1 Green Chilli (optional)",
+    "Salt to taste",
+    "Ginger, grated (optional)",
+    "Coriander and lemon to finish"
+  ],
+  "instructions": [
+    "Wash rice and moong dal together until water runs clearer.",
+    "Heat oil, add cumin, hing, chilli, and ginger. Saute briefly.",
+    "Add rice, dal, turmeric, salt, and water. Bring to a boil.",
+    "Simmer covered on low heat 20–25 minutes until soft, stirring occasionally.",
+    "Adjust consistency with hot water. Finish with coriander and lemon."
+  ],
+  "stepNotes": [
+    "Pressure cooker: about 3–4 whistles on medium heat with slightly less water.",
+    "More water = softer hospital-style khichdi; less water = spoonable grainy texture.",
+    "Skip chilli and ginger for a milder bowl.",
+    "Stir near the end so it does not stick.",
+    "A simple tadka of cumin and dried red chilli on top is optional but excellent."
+  ],
+  "variationSections": [
+    {
+      "title": "Vegetable khichdi",
+      "items": [
+        "Add carrot, peas, beans, spinach, or bottle gourd with the rice and dal.",
+        "Masala khichdi: add a pinch of garam masala and tomato.",
+        "Millet khichdi: swap rice for foxtail or little millet."
+      ]
+    },
+    {
+      "title": "Serving ideas",
+      "items": [
+        "Pair with plant curd, papad, and pickle for a full plate.",
+        "Top with roasted peanuts for crunch and calories.",
+        "Serve thinner as soup when appetite is low."
+      ]
+    }
+  ],
+  "tags": [
+    "lunch",
+    "dinner",
+    "easy",
+    "comfort",
+    "frugal",
+    "WFPB",
+    "batch-cook",
+    "gluten-free",
+    "budget"
+  ],
+  "mealTypes": ["lunch", "dinner"],
+  "servings": 2,
+  "prepTime": "10 mins",
+  "cookTime": "25 mins",
+  "prepMinutes": 10,
+  "cookMinutes": 25,
+  "cost": "Rs 35 for 2 people",
+  "costInr": 35,
+  "image": "/images/items/recipes/moong-khichdi.jpg",
+  "nutrition": {
+    "servingSize": "1 generous bowl (half recipe)",
+    "calories": 340,
+    "proteinG": 14,
+    "carbsG": 58,
+    "fatG": 6,
+    "fiberG": 7
+  },
+  "dietary": ["plant-based", "gluten-free", "no-onion-no-garlic"],
+  "proteinSources": ["moong dal", "rice"],
+  "portable": false,
+  "makeAhead": true
+}

@@ -82,20 +82,47 @@ export function getGuide(slug: string) {
   return getGuides().find((guide) => guide.slug === slug);
 }
 
+/**
+ * Append a version query from the on-disk image mtime so browsers and
+ * Next's `/_next/image` optimizer do not keep serving replaced files at the
+ * same path (common when recipe photos are updated in place).
+ */
+function withImageCacheBust(imagePath: string): string {
+  if (!imagePath.startsWith("/")) return imagePath;
+  const absolute = path.join(process.cwd(), "public", imagePath.replace(/^\//, ""));
+  try {
+    const mtime = fs.statSync(absolute).mtimeMs;
+    const version = Math.floor(mtime).toString(36);
+    const sep = imagePath.includes("?") ? "&" : "?";
+    return `${imagePath}${sep}v=${version}`;
+  } catch {
+    return imagePath;
+  }
+}
+
+function loadRecipeFromFile(filePath: string): Recipe {
+  const raw = fs.readFileSync(filePath, "utf8");
+  const recipe = JSON.parse(raw) as Recipe;
+  return {
+    ...recipe,
+    image: withImageCacheBust(recipe.image),
+  };
+}
+
 export function getRecipes(): Recipe[] {
   if (!fs.existsSync(recipesDirectory)) return [];
 
   return fs
     .readdirSync(recipesDirectory)
     .filter((file) => file.endsWith(".json"))
-    .map((file) => {
-      const raw = fs.readFileSync(path.join(recipesDirectory, file), "utf8");
-      return JSON.parse(raw) as Recipe;
-    });
+    .map((file) => loadRecipeFromFile(path.join(recipesDirectory, file)))
+    .toSorted((a, b) => a.title.localeCompare(b.title));
 }
 
 export function getRecipe(slug: string) {
-  return getRecipes().find((recipe) => recipe.slug === slug);
+  const filePath = path.join(recipesDirectory, `${slug}.json`);
+  if (!fs.existsSync(filePath)) return undefined;
+  return loadRecipeFromFile(filePath);
 }
 
 export function getProduct(slug: string) {

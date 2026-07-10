@@ -52,18 +52,30 @@
     "easy",
     "frugal",
     "protein",
-    "WFPB"
+    "WFPB",
+    "comfort",
+    "batch-cook",
+    "budget"
   ],
+  "mealTypes": ["lunch", "dinner"],
+  "servings": 3,
   "prepTime": "5 mins",
   "cookTime": "20 mins",
+  "prepMinutes": 5,
+  "cookMinutes": 20,
   "cost": "Rs 40 for 3 people",
+  "costInr": 40,
   "image": "/images/items/recipes/simple-dal-tadka.jpg",
   "nutrition": {
     "servingSize": "1 bowl (about one-third recipe)",
     "calories": 210,
-    "protein": "11 g",
-    "carbs": "32 g",
-    "fat": "5 g",
-    "fiber": "6 g"
-  }
+    "proteinG": 11,
+    "carbsG": 32,
+    "fatG": 5,
+    "fiberG": 6
+  },
+  "dietary": ["plant-based", "gluten-free"],
+  "proteinSources": ["moong dal"],
+  "portable": false,
+  "makeAhead": true
 }

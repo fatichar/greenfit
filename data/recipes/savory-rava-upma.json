@@ -1,0 +1,87 @@
+{
+  "slug": "savory-rava-upma",
+  "title": "Savory Rava Upma",
+  "description": "Fluffy semolina upma with tempering, vegetables, and lemon. Reliable breakfast or rainy-day tea-time bowl.",
+  "explanation": [
+    "Upma is the South-Indian-leaning quick meal that uses pantry rava and a simple tadka. Vegetables stretch it into a fuller plate; lemon and coriander keep it lively.",
+    "The main skill is toasting rava and using the right water ratio so it stays fluffy, not sticky."
+  ],
+  "ingredients": [
+    "1 cup Rava (sooji / semolina)",
+    "2.5 cups Water",
+    "1 Onion, chopped (optional)",
+    "1 Carrot, finely chopped",
+    "1/4 cup Green Peas",
+    "1 tsp Mustard Seeds",
+    "1 tsp Urad Dal",
+    "1 tsp Chana Dal",
+    "8 Curry Leaves",
+    "1–2 Green Chillies",
+    "1 tbsp Oil",
+    "Salt to taste",
+    "Lemon and coriander to finish"
+  ],
+  "instructions": [
+    "Dry-roast rava on medium heat until aromatic and light golden. Set aside.",
+    "Heat oil. Add mustard, urad, chana dal, curry leaves, and chilli. Saute until dals turn golden.",
+    "Add onion and vegetables; cook until soft.",
+    "Add water and salt; bring to a rolling boil.",
+    "Lower heat, pour roasted rava in a steady stream while stirring to avoid lumps.",
+    "Cover and cook 2–3 minutes. Fluff, add lemon and coriander, serve hot."
+  ],
+  "stepNotes": [
+    "Roasting rava is non-negotiable for good flavor and non-gummy texture.",
+    "Pour rava slowly into boiling water while stirring continuously.",
+    "Water ratio ~2.5:1 for soft upma; use 2:1 for firmer texture.",
+    "Skip onion for no-onion versions; hing and extra curry leaves help.",
+    "A spoon of grated coconut on top is excellent if you like it."
+  ],
+  "variationSections": [
+    {
+      "title": "Grain alternatives",
+      "items": [
+        "Broken wheat (dalia) upma for more fiber.",
+        "Millet rava upma for a gluten-free direction (use gluten-free rava).",
+        "Oats upma for a modern breakfast twist."
+      ]
+    },
+    {
+      "title": "Protein add-ins",
+      "items": [
+        "Mix in crumbled tofu or cooked moong at the end.",
+        "Top with roasted peanuts.",
+        "Serve with a side of plant curd or sprout salad."
+      ]
+    }
+  ],
+  "tags": [
+    "breakfast",
+    "tea-time",
+    "easy",
+    "comfort",
+    "South Indian",
+    "frugal",
+    "quick"
+  ],
+  "mealTypes": ["breakfast", "tea-time", "evening-snack"],
+  "servings": 2,
+  "prepTime": "10 mins",
+  "cookTime": "15 mins",
+  "prepMinutes": 10,
+  "cookMinutes": 15,
+  "cost": "Rs 35 for 2 people",
+  "costInr": 35,
+  "image": "/images/items/recipes/savory-rava-upma.jpg",
+  "nutrition": {
+    "servingSize": "1 plate (half recipe)",
+    "calories": 300,
+    "proteinG": 8,
+    "carbsG": 52,
+    "fatG": 7,
+    "fiberG": 4
+  },
+  "dietary": ["plant-based"],
+  "proteinSources": ["rava", "peas", "dals in tempering"],
+  "portable": true,
+  "makeAhead": false
+}
