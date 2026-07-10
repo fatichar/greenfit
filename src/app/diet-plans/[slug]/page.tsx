@@ -6,8 +6,9 @@ import { InfoDisclosureList } from "@/components/info-disclosure";
 import { MacroSummary } from "@/components/macro-summary";
 import { MealPlanTable } from "@/components/meal-plan-table";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { dietPlans, getDietPlan } from "@/lib/data";
+import { dietPlans, getDietPlan, getRecipes } from "@/lib/data";
 import { getDietPlanImage } from "@/lib/images";
+import { buildMealItemRecipeMap } from "@/lib/recipe-match";
 
 export function generateStaticParams() {
   return dietPlans.map((plan) => ({ slug: plan.slug }));
@@ -28,6 +29,11 @@ export default async function DietPlanDetailPage({ params }: { params: Promise<{
   const plan = getDietPlan(slug);
 
   if (!plan) notFound();
+
+  const recipes = getRecipes();
+  const mealItems = plan.meals.flatMap((meal) => meal.items);
+  const recipeLinks = buildMealItemRecipeMap(mealItems, recipes);
+  const linkedCount = Object.keys(recipeLinks).length;
 
   return (
     <section className="mx-auto flex max-w-5xl flex-col gap-6 px-4 py-12 sm:px-6 lg:px-8">
@@ -67,7 +73,15 @@ export default async function DietPlanDetailPage({ params }: { params: Promise<{
           </CardContent>
         </Card>
       ) : null}
-      <MealPlanTable meals={plan.meals} />
+      <div className="grid gap-2">
+        <MealPlanTable meals={plan.meals} recipeLinks={recipeLinks} />
+        {linkedCount > 0 ? (
+          <p className="text-sm text-muted-foreground">
+            Highlighted items link to recipes. {linkedCount} meal item
+            {linkedCount === 1 ? "" : "s"} matched.
+          </p>
+        ) : null}
+      </div>
       <TextList title="Protein sources" items={plan.proteinSources} />
       <TextList title="Substitutions" items={plan.substitutions} />
       {plan.detailSections?.map((section) => (

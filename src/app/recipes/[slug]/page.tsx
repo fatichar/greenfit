@@ -2,7 +2,8 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, Clock, Banknote, Flame, Leaf, Tag } from "lucide-react";
-import { getRecipe, getRecipes } from "@/lib/data";
+import { dietPlans, getRecipe, getRecipes } from "@/lib/data";
+import { findDietPlansForRecipe } from "@/lib/recipe-match";
 import { Badge } from "@/components/ui/badge";
 import { InfoDisclosureList } from "@/components/info-disclosure";
 
@@ -30,6 +31,8 @@ export default async function RecipePage({ params }: { params: Promise<{ slug: s
   if (!recipe) {
     notFound();
   }
+
+  const relatedPlans = findDietPlansForRecipe(recipe.slug, dietPlans, getRecipes());
 
   return (
     <article className="mx-auto max-w-4xl px-4 py-12 sm:px-6 lg:px-8">
@@ -203,6 +206,27 @@ export default async function RecipePage({ params }: { params: Promise<{ slug: s
                 <InfoDisclosureList key={section.title} title={section.title} items={section.items} />
               ))}
             </div>
+          ) : null}
+          {relatedPlans.length > 0 ? (
+            <section className="mt-10 rounded-2xl border bg-card p-5 shadow-sm">
+              <h2 className="text-xl font-bold tracking-tight">Used in diet plans</h2>
+              <p className="mt-1 text-sm text-muted-foreground">
+                This recipe can fill a meal slot in these day plans.
+              </p>
+              <ul className="mt-4 flex flex-col gap-2">
+                {relatedPlans.map((plan) => (
+                  <li key={plan.slug}>
+                    <Link
+                      href={`/diet-plans/${plan.slug}`}
+                      className="font-medium text-primary underline decoration-primary/30 underline-offset-4 hover:decoration-primary"
+                    >
+                      {plan.title}
+                    </Link>
+                    <span className="text-sm text-muted-foreground"> — {plan.goal}</span>
+                  </li>
+                ))}
+              </ul>
+            </section>
           ) : null}
         </div>
       </div>
