@@ -1,5 +1,12 @@
 const itemImageFallback = "/images/greenfit-hero.jpg";
 
+/**
+ * Bump this when replacing any public item image in place so browsers and
+ * Next's `/_next/image` optimizer do not keep serving stale optimized files.
+ * Safe for both server and client components (no filesystem access).
+ */
+const IMAGE_ASSET_VERSION = "2026-07-11b";
+
 const dietPlanImages: Record<string, string> = {
   "high-protein-diet": "/images/items/diet-plans/high-protein-diet.jpg",
   "weight-loss-diet": "/images/items/diet-plans/weight-loss-diet.jpg",
@@ -36,18 +43,23 @@ const guideImages: Record<string, string> = {
   "iron-and-zinc-guide": "/images/items/guides/iron-and-zinc-guide.jpg",
 };
 
+function withImageCacheBust(imagePath: string): string {
+  const sep = imagePath.includes("?") ? "&" : "?";
+  return `${imagePath}${sep}v=${IMAGE_ASSET_VERSION}`;
+}
+
 export function getDietPlanImage(slug: string) {
-  return dietPlanImages[slug] ?? itemImageFallback;
+  return withImageCacheBust(dietPlanImages[slug] ?? itemImageFallback);
 }
 
 export function getProductImage(slug: string) {
-  return productImages[slug] ?? itemImageFallback;
+  return withImageCacheBust(productImages[slug] ?? itemImageFallback);
 }
 
 export function getSupplementImage(slug: string) {
-  return supplementImages[slug] ?? itemImageFallback;
+  return withImageCacheBust(supplementImages[slug] ?? itemImageFallback);
 }
 
 export function getGuideImage(slug: string) {
-  return guideImages[slug] ?? itemImageFallback;
+  return withImageCacheBust(guideImages[slug] ?? itemImageFallback);
 }
