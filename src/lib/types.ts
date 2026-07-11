@@ -114,8 +114,11 @@ export type NutritionInfo = {
 /** Meal slots a recipe can fill in a day plan / picker. */
 export type MealType =
   | "breakfast"
+  | "brunch"
   | "lunch"
   | "dinner"
+  | "pre-workout"
+  | "post-workout"
   | "evening-snack"
   | "travel-snack"
   | "tea-time"
@@ -164,4 +167,36 @@ export type Recipe = {
   portable: boolean;
   /** Can be prepped ahead and stored. */
   makeAhead: boolean;
+};
+
+export type DietBuilderGoal = "lose" | "maintain" | "gain" | "fitness" | "muscle";
+export type ServingMode = "household" | "metric";
+
+export type DietBuilderInputs = {
+  heightCm: number;
+  weightKg: number;
+  gender: "female" | "male" | "other";
+  age: number;
+  goal: DietBuilderGoal;
+  targetWeightKg: number | null;
+  durationWeeks: number | null;
+  diet: "plant-based";
+  allergies: string;
+  dislikes: string;
+  workout: boolean;
+  workoutTime: string;
+  dailyBudgetInr: number;
+};
+
+export type DietBuilderTargets = {
+  calories: number;
+  protein: number;
+  fiber: number;
+};
+
+export type SelectedPlanItem = {
+  id: string;
+  recipeSlug: string;
+  mealType: MealType;
+  portionMultiplier: number;
 };

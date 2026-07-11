@@ -10,8 +10,11 @@ import { cn } from "@/lib/utils";
 
 const MEAL_TYPE_LABELS: Record<MealType, string> = {
   breakfast: "Breakfast",
+  brunch: "Brunch",
   lunch: "Lunch",
   dinner: "Dinner",
+  "pre-workout": "Pre-workout",
+  "post-workout": "Post-workout",
   "evening-snack": "Evening snack",
   "travel-snack": "Travel snack",
   "tea-time": "Tea time",
@@ -21,8 +24,11 @@ const MEAL_TYPE_LABELS: Record<MealType, string> = {
 
 const MEAL_TYPE_ORDER: MealType[] = [
   "breakfast",
+  "brunch",
   "lunch",
   "dinner",
+  "pre-workout",
+  "post-workout",
   "evening-snack",
   "tea-time",
   "travel-snack",

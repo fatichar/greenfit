@@ -4,12 +4,13 @@ import { cn } from "@/lib/utils"
 
 function Slider({
   className,
+  indicatorClassName,
   defaultValue,
   value,
   min = 0,
   max = 100,
   ...props
-}: SliderPrimitive.Root.Props) {
+}: SliderPrimitive.Root.Props & { indicatorClassName?: string }) {
   const _values = Array.isArray(value)
     ? value
     : Array.isArray(defaultValue)
@@ -34,7 +35,7 @@ function Slider({
         >
           <SliderPrimitive.Indicator
             data-slot="slider-range"
-            className="bg-primary select-none data-horizontal:h-full data-vertical:w-full"
+            className={cn("bg-primary select-none data-horizontal:h-full data-vertical:w-full", indicatorClassName)}
           />
         </SliderPrimitive.Track>
         {Array.from({ length: _values.length }, (_, index) => (

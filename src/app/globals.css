@@ -138,3 +138,30 @@
     @apply font-sans;
   }
 }
+
+.control {
+  @apply h-10 w-full rounded-lg border border-input bg-background px-3 text-sm outline-none transition focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50;
+}
+
+.choice {
+  @apply rounded-lg border border-border bg-background px-3 py-3 text-left text-sm transition hover:border-primary hover:bg-olive-50;
+}
+
+.choice-active {
+  @apply border-primary bg-olive-100 text-olive-800 ring-1 ring-primary/30;
+}
+
+.print-only { display: none; }
+
+@media print {
+  body { background: white !important; color: #142316 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  header, footer, .print-hidden { display: none !important; }
+  .print-root { padding: 0 !important; }
+  .print-root .card, .print-root [data-slot="card"] { break-inside: avoid; box-shadow: none !important; }
+  .print-root h1, .print-root h2, .print-root h3 { color: #355f18 !important; }
+  .print-root .grid { gap: 0.6rem; }
+  .print-only { display: block !important; }
+  .print-page-break { break-before: page; page-break-before: always; }
+  .print-day { break-inside: avoid; page-break-inside: avoid; border-bottom: 1px solid #d8ebce; padding-bottom: 0.8rem; }
+  @page { margin: 1.2cm; }
+}
