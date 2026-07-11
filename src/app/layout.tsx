@@ -41,6 +41,10 @@ export const metadata: Metadata = {
     siteName: "GreenFit",
     type: "website",
   },
+  icons: {
+    icon: [{ url: "/favicon.png", type: "image/png", sizes: "192x192" }],
+    apple: [{ url: "/favicon.png", type: "image/png", sizes: "180x180" }],
+  },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
