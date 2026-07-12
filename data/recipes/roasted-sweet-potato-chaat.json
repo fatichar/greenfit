@@ -1,0 +1,37 @@
+{
+  "slug": "roasted-sweet-potato-chaat",
+  "title": "Roasted Sweet Potato Chaat",
+  "description": "Warm roasted sweet potato with lemon, cumin, and chaat masala for a satisfying winter snack.",
+  "explanation": ["This is deliberately a seasonal snack rather than a lunch main. Roast the sweet potato until caramelized, then dress it only at the end so it stays crisp at the edges."],
+  "ingredients": [
+    "2 medium Sweet Potatoes, scrubbed and cubed",
+    "1 tsp Oil",
+    "1/2 tsp Roasted Cumin powder",
+    "1/2 tsp Chaat Masala",
+    "Juice of 1/2 Lemon",
+    "1 small Onion, finely chopped (optional)",
+    "Coriander leaves and salt"
+  ],
+  "instructions": [
+    "Toss sweet potato with oil and a pinch of salt. Roast at 220°C until tender and browned, about 25 minutes.",
+    "Transfer to a bowl while warm.",
+    "Add cumin, chaat masala, lemon, optional onion, and coriander.",
+    "Toss gently and serve immediately."
+  ],
+  "tags": ["winter", "evening-snack", "tea-time", "pre-workout", "snack", "seasonal", "gluten-free", "WFPB"],
+  "mealTypes": ["evening-snack", "tea-time", "pre-workout"],
+  "role": "snack",
+  "servings": 2,
+  "prepTime": "10 mins",
+  "cookTime": "25 mins",
+  "prepMinutes": 10,
+  "cookMinutes": 25,
+  "cost": "Rs 35 for 2 people",
+  "costInr": 35,
+  "image": "/images/items/recipes/roasted-sweet-potato-chaat.jpg",
+  "nutrition": {"servingSize": "1 snack bowl (half recipe)", "calories": 190, "proteinG": 3, "carbsG": 38, "fatG": 3, "fiberG": 6},
+  "dietary": ["plant-based", "soy-free", "nut-free", "gluten-free"],
+  "proteinSources": [],
+  "portable": false,
+  "makeAhead": false
+}

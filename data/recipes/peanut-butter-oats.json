@@ -56,6 +56,7 @@
     "muscle-gain"
   ],
   "mealTypes": ["breakfast", "evening-snack"],
+  "role": "main",
   "servings": 1,
   "prepTime": "5 mins",
   "cookTime": "10 mins",

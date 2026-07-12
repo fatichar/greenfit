@@ -1,0 +1,40 @@
+{
+  "slug": "pesarattu-tomato-chutney",
+  "title": "Pesarattu with Tomato Chutney",
+  "description": "Crisp Andhra-style whole-moong crepes with quick tomato chutney for a gluten-free breakfast or brunch.",
+  "explanation": ["Soaking and blending whole green moong makes a naturally protein-rich batter without flour. The chutney stays simple and no-onion/no-garlic by default."],
+  "ingredients": [
+    "1 cup Whole Green Moong, soaked overnight",
+    "1 Green Chilli (optional)",
+    "1 tsp Cumin Seeds",
+    "1/2 tsp Turmeric",
+    "2 Tomatoes, chopped",
+    "1 tsp Mustard Seeds",
+    "8 Curry Leaves",
+    "2 tsp Oil, divided",
+    "Salt and coriander"
+  ],
+  "instructions": [
+    "Drain soaked moong and blend with cumin, turmeric, salt, chilli, and enough water for a pourable batter.",
+    "Spread a ladle of batter thinly on a hot lightly oiled tawa. Cook both sides until crisp; repeat.",
+    "For chutney, cook tomatoes with salt until soft, then blend or mash smooth.",
+    "Temper the chutney with mustard seeds and curry leaves in the remaining oil.",
+    "Serve pesarattu hot with tomato chutney."
+  ],
+  "tags": ["Andhra", "breakfast", "brunch", "main", "gluten-free", "high-protein", "WFPB"],
+  "mealTypes": ["breakfast", "brunch", "lunch"],
+  "role": "main",
+  "servings": 2,
+  "prepTime": "15 mins plus soaking",
+  "cookTime": "20 mins",
+  "prepMinutes": 15,
+  "cookMinutes": 20,
+  "cost": "Rs 45 for 2 people",
+  "costInr": 45,
+  "image": "/images/items/recipes/pesarattu-tomato-chutney.jpg",
+  "nutrition": {"servingSize": "2 pesarattu with chutney (half recipe)", "calories": 340, "proteinG": 16, "carbsG": 52, "fatG": 7, "fiberG": 11},
+  "dietary": ["plant-based", "jain", "no-onion-no-garlic", "soy-free", "nut-free", "gluten-free"],
+  "proteinSources": ["whole green moong"],
+  "portable": false,
+  "makeAhead": true
+}

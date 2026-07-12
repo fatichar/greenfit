@@ -1,0 +1,41 @@
+{
+  "slug": "moong-dal-vegetable-soup",
+  "title": "Moong Dal Vegetable Soup",
+  "description": "A warm, lemony moong dal soup with vegetables for a gentle dinner or soy-free recovery meal.",
+  "explanation": ["Keep the soup brothy for recovery days or reduce it slightly for a more filling light meal. Rice or a millet roti can be added when more energy is needed."],
+  "ingredients": [
+    "3/4 cup Yellow Moong Dal, rinsed",
+    "1 Carrot, diced",
+    "1 cup Beans or Bottle Gourd, chopped",
+    "1 Tomato, chopped",
+    "1/2 tsp Cumin Seeds",
+    "1/2 tsp Turmeric",
+    "1 tsp Black Pepper",
+    "1 tbsp Oil",
+    "5 cups Water or vegetable stock",
+    "Salt, lemon, and coriander"
+  ],
+  "instructions": [
+    "Cook moong dal with turmeric until very soft.",
+    "Heat oil, add cumin, tomato, carrot, and beans. Cook for 2 minutes.",
+    "Add cooked dal, water or stock, salt, and pepper. Simmer until the vegetables are tender.",
+    "Blend a small portion if a thicker soup is preferred, then add lemon and coriander.",
+    "Serve hot; add rice or millet roti if this needs to be a fuller dinner."
+  ],
+  "tags": ["soup", "post-workout", "dinner", "light main", "soy-free", "high fiber", "WFPB"],
+  "mealTypes": ["post-workout", "dinner", "lunch"],
+  "role": "light-main",
+  "servings": 2,
+  "prepTime": "15 mins",
+  "cookTime": "25 mins",
+  "prepMinutes": 15,
+  "cookMinutes": 25,
+  "cost": "Rs 45 for 2 people",
+  "costInr": 45,
+  "image": "/images/items/recipes/moong-dal-vegetable-soup.jpg",
+  "nutrition": {"servingSize": "1 large bowl (half recipe)", "calories": 260, "proteinG": 14, "carbsG": 40, "fatG": 5, "fiberG": 10},
+  "dietary": ["plant-based", "soy-free", "nut-free", "gluten-free"],
+  "proteinSources": ["moong dal"],
+  "portable": false,
+  "makeAhead": true
+}

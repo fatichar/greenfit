@@ -1,0 +1,88 @@
+{
+  "slug": "baingan-bharta-roti",
+  "title": "Baingan Bharta with Roti",
+  "description": "Smoky mashed brinjal cooked with onion-tomato masala, served with rotis as a complete plant-based plate.",
+  "explanation": [
+    "Baingan bharta is a vegetable-forward main when the portion is generous and roti is part of the same recipe. Charring the brinjal is what gives the smoky depth.",
+    "Use large purple baingan when possible. The dish freezes poorly but keeps well for a day in the fridge and reheats with a splash of water."
+  ],
+  "ingredients": [
+    "1 large Baingan (aubergine / brinjal), about 400–450 g",
+    "1 Onion, finely chopped",
+    "2 Tomatoes, finely chopped",
+    "1 tsp Ginger-garlic paste",
+    "1–2 Green Chillies, minced (optional)",
+    "1/2 tsp Cumin Seeds",
+    "1/2 tsp Turmeric",
+    "1 tsp Coriander powder",
+    "1/2 tsp Red chilli powder",
+    "1.5 tbsp Oil",
+    "Salt to taste",
+    "Coriander leaves",
+    "4 Rotis for serving"
+  ],
+  "instructions": [
+    "Roast the whole baingan over an open flame, under a broiler, or on a tawa until the skin is charred and the flesh collapses. Cool, peel, and mash roughly.",
+    "Heat oil. Add cumin, then onion; cook until golden. Add ginger-garlic and green chilli; saute briefly.",
+    "Add tomato, turmeric, coriander, chilli powder, and salt. Cook until the masala thickens and oil begins to separate.",
+    "Stir in mashed baingan. Cook 5–8 minutes, mashing further so the flavors blend.",
+    "Garnish with coriander. Serve hot with rotis."
+  ],
+  "stepNotes": [
+    "Fully soft flesh is essential—undercooked baingan tastes bitter and spongy.",
+    "Leave a little charred skin fleck if you like stronger smoke.",
+    "If the bharta is watery, cook uncovered a few more minutes.",
+    "A pinch of smoked paprika can help if you roasted in an oven without flame.",
+    "Pair with a simple salad or cut fruit when you want more raw produce."
+  ],
+  "variationSections": [
+    {
+      "title": "Regional finishes",
+      "items": [
+        "Punjabi-style: more onion and a touch of garam masala at the end.",
+        "Maharashtrian-style: add crushed roasted peanuts only if nut-free is not required (skip for this default recipe).",
+        "Add green peas for sweetness and extra vegetables."
+      ]
+    },
+    {
+      "title": "Plate adjustments",
+      "items": [
+        "Millet roti for a gluten-free variation.",
+        "Serve with plain dal on the side for more protein.",
+        "Lower oil by dry-roasting spices and using a nonstick pan carefully."
+      ]
+    }
+  ],
+  "tags": [
+    "lunch",
+    "dinner",
+    "main",
+    "North Indian",
+    "vegetable-forward",
+    "comfort",
+    "high fiber",
+    "WFPB"
+  ],
+  "mealTypes": ["lunch", "dinner"],
+  "role": "main",
+  "servings": 2,
+  "prepTime": "10 mins",
+  "cookTime": "35 mins",
+  "prepMinutes": 10,
+  "cookMinutes": 35,
+  "cost": "Rs 60 for 2 people",
+  "costInr": 60,
+  "image": "/images/items/recipes/baingan-bharta-roti.jpg",
+  "nutrition": {
+    "servingSize": "1 plate with 2 rotis (half recipe)",
+    "calories": 360,
+    "proteinG": 10,
+    "carbsG": 54,
+    "fatG": 12,
+    "fiberG": 14
+  },
+  "dietary": ["plant-based", "soy-free", "nut-free"],
+  "proteinSources": ["whole wheat roti"],
+  "portable": false,
+  "makeAhead": true
+}

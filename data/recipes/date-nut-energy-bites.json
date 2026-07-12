@@ -59,6 +59,7 @@
     "sweet"
   ],
   "mealTypes": ["travel-snack", "craving", "tea-time", "evening-snack"],
+  "role": "snack",
   "servings": 6,
   "prepTime": "15 mins",
   "cookTime": "0 mins",

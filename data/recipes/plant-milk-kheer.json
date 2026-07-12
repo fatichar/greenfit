@@ -58,6 +58,7 @@
     "gluten-free"
   ],
   "mealTypes": ["festival", "craving"],
+  "role": "snack",
   "servings": 4,
   "prepTime": "15 mins",
   "cookTime": "40 mins",

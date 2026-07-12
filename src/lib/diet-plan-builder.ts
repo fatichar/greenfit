@@ -4,6 +4,7 @@ import type {
   DietBuilderTargets,
   MealType,
   Recipe,
+  RecipeRole,
   SelectedPlanItem,
   ServingMode,
 } from "./types";
@@ -37,6 +38,9 @@ export const DEFAULT_INPUTS: DietBuilderInputs = {
 };
 
 export const DEFAULT_TARGETS: DietBuilderTargets = { calories: 2200, protein: 70, fiber: 31 };
+
+export const MAIN_RECIPE_ROLES: RecipeRole[] = ["main", "light-main"];
+export const ADD_ON_RECIPE_ROLES: RecipeRole[] = ["side", "snack"];
 
 export function calculateSuggestedTargets(inputs: DietBuilderInputs): DietBuilderTargets {
   const genderAdjustment = inputs.gender === "male" ? 5 : inputs.gender === "female" ? -161 : -78;
@@ -72,12 +76,24 @@ export function mealTypeMatches(recipe: Recipe, mealType: MealType) {
   return false;
 }
 
-export function getMealSuggestions(mealType: MealType, recipes: Recipe[], inputs: DietBuilderInputs): Recipe[] {
+export function isMainMealSlot(mealType: MealType) {
+  return mealType === "lunch" || mealType === "dinner";
+}
+
+type MealSuggestionOptions = {
+  limit?: number;
+  roles?: RecipeRole[];
+};
+
+export function getMealSuggestions(mealType: MealType, recipes: Recipe[], inputs: DietBuilderInputs, options: MealSuggestionOptions = {}): Recipe[] {
+  const { limit = 6, roles = isMainMealSlot(mealType) ? MAIN_RECIPE_ROLES : undefined } = options;
   const matches = recipes.filter((recipe) => recipeFitsPreferences(recipe, inputs) && mealTypeMatches(recipe, mealType));
-  const affordable = matches.filter((recipe) => (recipe.costInr ?? 0) <= inputs.dailyBudgetInr);
-  return [...(affordable.length ? affordable : matches)]
+  const roleMatches = roles ? matches.filter((recipe) => roles.includes(recipe.role)) : matches;
+  const candidates = roleMatches.length ? roleMatches : matches;
+  const affordable = candidates.filter((recipe) => (recipe.costInr ?? 0) <= inputs.dailyBudgetInr);
+  return [...(affordable.length ? affordable : candidates)]
     .toSorted((a, b) => (a.costInr ?? 0) - (b.costInr ?? 0) || b.nutrition.proteinG - a.nutrition.proteinG)
-    .slice(0, 6);
+    .slice(0, limit);
 }
 
 export function metricServingLabel(recipe: Recipe): string {
@@ -143,7 +159,8 @@ export function generateWeekVariations(master: Record<string, SelectedPlanItem[]
     const selections: Record<string, SelectedPlanItem[]> = {};
     Object.entries(master).forEach(([mealType, items]) => {
       selections[mealType] = items.map((item, itemIndex) => {
-        const options = getMealSuggestions(item.mealType, recipes, inputs);
+        const selectedRecipe = recipes.find((recipe) => recipe.slug === item.recipeSlug);
+        const options = getMealSuggestions(item.mealType, recipes, inputs, { limit: 7, roles: selectedRecipe ? [selectedRecipe.role] : undefined });
         const replacement = options[(dayIndex + itemIndex + 1) % Math.max(1, options.length)];
         return { ...item, id: `${dayIndex}-${mealType}-${itemIndex}`, recipeSlug: replacement?.slug ?? item.recipeSlug };
       });

@@ -1,0 +1,90 @@
+{
+  "slug": "gobi-matar-sabzi-roti",
+  "title": "Gobi Matar Sabzi with Roti",
+  "description": "Cauliflower and peas in a classic onion-tomato masala, served with rotis as a complete vegetable main.",
+  "explanation": [
+    "Gobi matar is a familiar North Indian sabzi. Here it is portioned and plated with roti so it counts as a full lunch or dinner main in a diet plan.",
+    "Roasting or dry-sautéing cauliflower first helps it stay less soggy and more flavorful."
+  ],
+  "ingredients": [
+    "3 cups Cauliflower florets",
+    "1 cup Green Peas",
+    "1 Onion, finely chopped",
+    "1 Tomato, chopped",
+    "1 tsp Ginger-garlic paste",
+    "1/2 tsp Cumin Seeds",
+    "1/2 tsp Turmeric",
+    "1 tsp Coriander powder",
+    "1/2 tsp Red chilli powder",
+    "1/2 tsp Garam Masala",
+    "1.5 tbsp Oil",
+    "Salt to taste",
+    "Coriander leaves",
+    "4 Rotis for serving"
+  ],
+  "instructions": [
+    "Heat 1/2 tbsp oil in a wide pan and saute cauliflower florets with a pinch of salt until lightly golden at the edges; set aside.",
+    "In the same pan, heat remaining oil. Add cumin, onion, then ginger-garlic; cook until onion softens.",
+    "Add tomato and dry spices with salt. Cook until the masala thickens.",
+    "Return cauliflower, add peas and a splash of water. Cover and cook until florets are tender but not mushy, 8–10 minutes.",
+    "Finish with garam masala and coriander. Serve with rotis."
+  ],
+  "stepNotes": [
+    "Do not over-steam cauliflower or it collapses into the gravy.",
+    "Frozen peas need only a few minutes; add them later than fresh peas if needed.",
+    "A wide pan helps moisture escape so the sabzi stays semi-dry for roti.",
+    "Kasuri methi at the end is optional for a dhaba-style aroma.",
+    "Prep florets similar in size for even cooking."
+  ],
+  "variationSections": [
+    {
+      "title": "Masala styles",
+      "items": [
+        "Drier sukhi sabzi: skip extra water and cook uncovered.",
+        "Gravy style: add more tomato and a little water for a wetter curry.",
+        "Add capsicum for extra vegetable volume."
+      ]
+    },
+    {
+      "title": "Plate adjustments",
+      "items": [
+        "Millet roti for a gluten-free variation.",
+        "Pair with plain dal when you want more protein.",
+        "Serve with kachumber for crunch."
+      ]
+    }
+  ],
+  "tags": [
+    "lunch",
+    "dinner",
+    "main",
+    "North Indian",
+    "vegetable-forward",
+    "cauliflower",
+    "easy",
+    "high fiber",
+    "WFPB"
+  ],
+  "mealTypes": ["lunch", "dinner"],
+  "role": "main",
+  "servings": 2,
+  "prepTime": "15 mins",
+  "cookTime": "25 mins",
+  "prepMinutes": 15,
+  "cookMinutes": 25,
+  "cost": "Rs 60 for 2 people",
+  "costInr": 60,
+  "image": "/images/items/recipes/gobi-matar-sabzi-roti.jpg",
+  "nutrition": {
+    "servingSize": "1 plate with 2 rotis (half recipe)",
+    "calories": 360,
+    "proteinG": 12,
+    "carbsG": 55,
+    "fatG": 11,
+    "fiberG": 12
+  },
+  "dietary": ["plant-based", "soy-free", "nut-free"],
+  "proteinSources": ["peas", "whole wheat roti"],
+  "portable": false,
+  "makeAhead": true
+}

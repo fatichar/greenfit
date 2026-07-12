@@ -60,6 +60,7 @@
     "high-protein"
   ],
   "mealTypes": ["breakfast", "lunch"],
+  "role": "main",
   "servings": 2,
   "prepTime": "10 mins",
   "cookTime": "10 mins",

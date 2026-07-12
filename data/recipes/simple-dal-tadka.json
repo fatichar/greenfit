@@ -58,6 +58,7 @@
     "budget"
   ],
   "mealTypes": ["lunch", "dinner"],
+  "role": "side",
   "servings": 3,
   "prepTime": "5 mins",
   "cookTime": "20 mins",

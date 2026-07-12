@@ -1,0 +1,86 @@
+{
+  "slug": "seasonal-cut-fruit-bowl",
+  "title": "Seasonal Cut Fruit Bowl",
+  "description": "A simple mixed fruit bowl built from what is in season, brightened with lemon, chaat masala, and mint. First-class fruit course for any main meal slot.",
+  "explanation": [
+    "Fruit should be a deliberate plan item, not an afterthought. This one recipe covers breakfast, lunch finish, dinner side, or evening snack by changing the portion and the seasonal mix.",
+    "Default bowl is nut-free, soy-free, gluten-free, Jain, and no-onion/no-garlic. Optional nuts or seeds stay in variations only."
+  ],
+  "ingredients": [
+    "3 cups Mixed Seasonal Fruit, peeled and cut (see seasonal guide below)",
+    "1 tbsp Lemon or Lime juice",
+    "1/4 tsp Chaat Masala (optional)",
+    "1/4 tsp Roasted Cumin powder (optional)",
+    "Pinch of Black Salt or regular salt (optional)",
+    "Fresh Mint leaves"
+  ],
+  "instructions": [
+    "Wash, peel as needed, and cut fruit into bite-size pieces. Aim for 2–3 different fruits for color and texture.",
+    "Place fruit in a bowl. Add lemon juice and toss gently.",
+    "Sprinkle chaat masala, roasted cumin, and a pinch of salt if using. Toss again.",
+    "Top with torn mint. Serve immediately for best texture."
+  ],
+  "stepNotes": [
+    "Cut fruit just before eating when possible; apples and bananas brown if they sit.",
+    "Chaat masala is salty—start small.",
+    "Keep the bowl mostly fruit; spices are accents, not a coating.",
+    "For lunch or dinner as a side, use a smaller portion than for breakfast.",
+    "If packing ahead, keep lemon and spices separate and toss at serving time."
+  ],
+  "variationSections": [
+    {
+      "title": "Seasonal fruit maps",
+      "items": [
+        "Summer: mango, watermelon, muskmelon, chickoo, banana.",
+        "Monsoon: apple, pear, pomegranate, banana, papaya (ripe).",
+        "Winter: orange, guava, papaya, amla (sliced thin), sweet lime, pomegranate.",
+        "Year-round anchors: banana, apple, papaya when available."
+      ]
+    },
+    {
+      "title": "Optional add-ins (not default)",
+      "items": [
+        "A spoon of pumpkin or sunflower seeds for crunch (still nut-free).",
+        "A few almonds or walnuts only if nut-free is not required.",
+        "A dollop of soy curd turns this toward a breakfast bowl—see Soy Curd Fruit Bowl for the soy path."
+      ]
+    }
+  ],
+  "tags": [
+    "breakfast",
+    "lunch",
+    "dinner",
+    "evening-snack",
+    "tea-time",
+    "fruit",
+    "side",
+    "no-cook",
+    "seasonal",
+    "easy",
+    "WFPB",
+    "high fiber",
+    "Jain"
+  ],
+  "mealTypes": ["breakfast", "lunch", "dinner", "evening-snack", "tea-time"],
+  "role": "side",
+  "servings": 2,
+  "prepTime": "10 mins",
+  "cookTime": "0 mins",
+  "prepMinutes": 10,
+  "cookMinutes": 0,
+  "cost": "Rs 60 for 2 people",
+  "costInr": 60,
+  "image": "/images/items/recipes/seasonal-cut-fruit-bowl.jpg",
+  "nutrition": {
+    "servingSize": "1 bowl (half recipe, about 1.5 cups fruit)",
+    "calories": 120,
+    "proteinG": 2,
+    "carbsG": 30,
+    "fatG": 0,
+    "fiberG": 4
+  },
+  "dietary": ["plant-based", "jain", "no-onion-no-garlic", "soy-free", "nut-free", "gluten-free", "oil-free"],
+  "proteinSources": [],
+  "portable": true,
+  "makeAhead": false
+}

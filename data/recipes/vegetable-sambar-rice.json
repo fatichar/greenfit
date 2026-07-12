@@ -1,0 +1,42 @@
+{
+  "slug": "vegetable-sambar-rice",
+  "title": "Vegetable Sambar with Rice",
+  "description": "Tangy toor dal sambar with everyday vegetables and rice—a comforting South Indian plant-based main.",
+  "explanation": ["Use whichever non-root seasonal vegetables are available. Tamarind, sambar powder, and a mustard-curry-leaf tempering make a modest pot of dal feel complete."],
+  "ingredients": [
+    "3/4 cup Toor Dal, rinsed",
+    "3 cups Mixed Vegetables (drumstick, pumpkin, beans, brinjal, tomato, or okra)",
+    "1 cup Uncooked Rice (or 3 cups cooked)",
+    "1 tbsp Tamarind pulp",
+    "1.5 tbsp Sambar powder",
+    "1 tsp Mustard Seeds",
+    "8 Curry Leaves",
+    "1/2 tsp Turmeric",
+    "1 tbsp Oil",
+    "Salt to taste",
+    "Coriander leaves"
+  ],
+  "instructions": [
+    "Cook rice and keep warm. Pressure-cook or boil toor dal with turmeric until soft; mash lightly.",
+    "Simmer vegetables in water with tomato and salt until nearly tender.",
+    "Add cooked dal, tamarind pulp, and sambar powder. Simmer 8–10 minutes until the vegetables are tender and the broth tastes rounded.",
+    "Heat oil, crackle mustard seeds, then add curry leaves. Pour this tempering over the sambar.",
+    "Finish with coriander and serve hot with rice."
+  ],
+  "tags": ["South Indian", "lunch", "dinner", "main", "dal", "vegetable-forward", "gluten-free", "WFPB"],
+  "mealTypes": ["lunch", "dinner"],
+  "role": "main",
+  "servings": 2,
+  "prepTime": "15 mins",
+  "cookTime": "35 mins",
+  "prepMinutes": 15,
+  "cookMinutes": 35,
+  "cost": "Rs 65 for 2 people",
+  "costInr": 65,
+  "image": "/images/items/recipes/vegetable-sambar-rice.png",
+  "nutrition": {"servingSize": "1 bowl sambar with rice (half recipe)", "calories": 420, "proteinG": 16, "carbsG": 76, "fatG": 7, "fiberG": 13},
+  "dietary": ["plant-based", "soy-free", "nut-free", "gluten-free"],
+  "proteinSources": ["toor dal"],
+  "portable": false,
+  "makeAhead": true
+}

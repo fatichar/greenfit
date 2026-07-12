@@ -1,0 +1,39 @@
+{
+  "slug": "methi-thepla-cucumber",
+  "title": "Methi Thepla with Cucumber",
+  "description": "Gujarati fenugreek flatbreads with cucumber and lemon—a portable savory breakfast or travel meal.",
+  "explanation": ["Thepla brings a practical make-ahead wheat option to balance the catalog’s rice and bowl-heavy meals. Keep the cucumber on the side for travel."],
+  "ingredients": [
+    "2 cups Whole Wheat Flour",
+    "1 packed cup Fresh Methi Leaves, finely chopped",
+    "1/2 tsp Turmeric",
+    "1 tsp Cumin Seeds",
+    "1 tsp Coriander powder",
+    "1 tbsp Oil",
+    "1 Cucumber, sliced",
+    "Lemon wedges and salt"
+  ],
+  "instructions": [
+    "Mix flour, methi, spices, salt, oil, and enough water to make a soft dough. Rest 10 minutes.",
+    "Divide and roll into thin discs, dusting with a little flour only as needed.",
+    "Cook each thepla on a hot tawa, brushing very lightly with oil, until brown spots appear on both sides.",
+    "Season cucumber with lemon and a pinch of salt just before serving.",
+    "Serve warm, or cool fully before packing for travel."
+  ],
+  "tags": ["Gujarati", "breakfast", "brunch", "travel-snack", "main", "make-ahead", "seasonal", "WFPB"],
+  "mealTypes": ["breakfast", "brunch", "travel-snack"],
+  "role": "main",
+  "servings": 2,
+  "prepTime": "20 mins",
+  "cookTime": "20 mins",
+  "prepMinutes": 20,
+  "cookMinutes": 20,
+  "cost": "Rs 45 for 2 people",
+  "costInr": 45,
+  "image": "/images/items/recipes/methi-thepla-cucumber.jpg",
+  "nutrition": {"servingSize": "3 small thepla with cucumber (half recipe)", "calories": 380, "proteinG": 12, "carbsG": 64, "fatG": 9, "fiberG": 10},
+  "dietary": ["plant-based", "jain", "no-onion-no-garlic", "soy-free", "nut-free"],
+  "proteinSources": ["whole wheat"],
+  "portable": true,
+  "makeAhead": true
+}

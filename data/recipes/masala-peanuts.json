@@ -60,6 +60,7 @@
     "make-ahead"
   ],
   "mealTypes": ["tea-time", "craving", "travel-snack", "evening-snack"],
+  "role": "snack",
   "servings": 6,
   "prepTime": "10 mins",
   "cookTime": "20 mins",

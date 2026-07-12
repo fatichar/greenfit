@@ -1,0 +1,40 @@
+{
+  "slug": "matki-usal-jowar-bhakri",
+  "title": "Matki Usal with Jowar Bhakri",
+  "description": "A Maharashtrian moth-bean curry with hearty jowar bhakri for a naturally gluten-free main meal.",
+  "explanation": ["Matki usal brings a different pulse and texture to the catalog, while jowar bhakri adds a robust millet grain option for wheat-free meals."],
+  "ingredients": [
+    "1 cup Matki (moth beans), soaked overnight",
+    "1 Onion, finely chopped",
+    "2 Tomatoes, chopped",
+    "1 tsp Ginger-garlic paste",
+    "1 tsp Goda Masala or Garam Masala",
+    "1/2 tsp Turmeric",
+    "1 tbsp Oil",
+    "2 cups Jowar Flour",
+    "Salt, lemon, and coriander"
+  ],
+  "instructions": [
+    "Pressure-cook soaked matki until tender but holding shape.",
+    "Heat oil; cook onion, ginger-garlic, and tomato until the masala is soft.",
+    "Add turmeric, goda masala, salt, and cooked matki with enough water for a thick curry. Simmer 10 minutes.",
+    "Knead jowar flour with hot water and salt, pat into small bhakris, and cook on a hot tawa until cooked through.",
+    "Finish usal with lemon and coriander; serve with bhakri."
+  ],
+  "tags": ["Maharashtrian", "lunch", "dinner", "main", "millet", "gluten-free", "high-protein", "WFPB"],
+  "mealTypes": ["lunch", "dinner"],
+  "role": "main",
+  "servings": 2,
+  "prepTime": "20 mins plus soaking",
+  "cookTime": "35 mins",
+  "prepMinutes": 20,
+  "cookMinutes": 35,
+  "cost": "Rs 70 for 2 people",
+  "costInr": 70,
+  "image": "/images/items/recipes/matki-usal-jowar-bhakri.jpg",
+  "nutrition": {"servingSize": "1 bowl usal with 1 bhakri (half recipe)", "calories": 440, "proteinG": 18, "carbsG": 76, "fatG": 8, "fiberG": 15},
+  "dietary": ["plant-based", "soy-free", "nut-free", "gluten-free"],
+  "proteinSources": ["matki", "jowar"],
+  "portable": false,
+  "makeAhead": true
+}

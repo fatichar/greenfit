@@ -1,0 +1,88 @@
+{
+  "slug": "bhindi-masala-roti-kachumber",
+  "title": "Bhindi Masala with Roti and Kachumber",
+  "description": "Dry-ish okra masala with soft rotis and a fresh onion-tomato-cucumber salad—a complete everyday Indian plate.",
+  "explanation": [
+    "Bhindi is often cooked as a side; this recipe treats it as the center of a full meal by pairing a generous sabzi portion with roti and kachumber.",
+    "Cooking bhindi uncovered and without excess water helps keep it less slimy. Onion and tomato build the base; salad adds crunch and volume."
+  ],
+  "ingredients": [
+    "300 g Bhindi (okra), washed, dried, and sliced",
+    "1 Onion, sliced",
+    "1 Tomato, chopped",
+    "1 tsp Ginger-garlic paste",
+    "1/2 tsp Cumin Seeds",
+    "1/2 tsp Turmeric",
+    "1 tsp Coriander powder",
+    "1/2 tsp Red chilli powder",
+    "1/2 tsp Amchur or juice of 1/2 Lemon",
+    "1.5 tbsp Oil",
+    "Salt to taste",
+    "4 Rotis (whole wheat) for serving",
+    "For kachumber: 1 Cucumber, 1 Tomato, 1/2 Onion, lemon, salt, coriander"
+  ],
+  "instructions": [
+    "Pat bhindi completely dry after washing. Slice into rounds. Dice kachumber vegetables and toss with lemon, salt, and coriander; set aside.",
+    "Heat oil in a wide pan. Add cumin, then onion; saute until soft and lightly golden. Add ginger-garlic and cook until raw smell fades.",
+    "Add tomato, turmeric, coriander, chilli powder, and salt. Cook until tomato softens.",
+    "Add bhindi. Stir on medium heat 2–3 minutes, then cook uncovered, stirring often, until tender and the sticky strands reduce, 12–15 minutes.",
+    "Finish with amchur or lemon. Serve hot with rotis and a large scoop of kachumber."
+  ],
+  "stepNotes": [
+    "Dry bhindi thoroughly—moisture is the main reason it turns slimy.",
+    "A wide pan is better than a deep pot so steam can escape.",
+    "Do not cover the pan for long once bhindi is in.",
+    "Amchur brightens the dish without making it watery.",
+    "Make rotis while bhindi cooks so the full plate lands together."
+  ],
+  "variationSections": [
+    {
+      "title": "Bhindi style swaps",
+      "items": [
+        "Kurkuri-style: dust bhindi with a spoon of besan and roast drier.",
+        "Add capsicum strips in the last 5 minutes for more vegetables.",
+        "Use mustard oil for a stronger North Indian edge if you like it."
+      ]
+    },
+    {
+      "title": "Diet adjustments",
+      "items": [
+        "Millet or jowar roti instead of wheat for a gluten-free plate (variation only).",
+        "Skip onion in kachumber and use extra cucumber and tomato if needed.",
+        "Add a small bowl of dal on the side when you want more protein."
+      ]
+    }
+  ],
+  "tags": [
+    "lunch",
+    "dinner",
+    "main",
+    "North Indian",
+    "vegetable-forward",
+    "high fiber",
+    "easy",
+    "WFPB"
+  ],
+  "mealTypes": ["lunch", "dinner"],
+  "role": "main",
+  "servings": 2,
+  "prepTime": "15 mins",
+  "cookTime": "25 mins",
+  "prepMinutes": 15,
+  "cookMinutes": 25,
+  "cost": "Rs 70 for 2 people",
+  "costInr": 70,
+  "image": "/images/items/recipes/bhindi-masala-roti-kachumber.jpg",
+  "nutrition": {
+    "servingSize": "1 plate with 2 rotis and kachumber (half recipe)",
+    "calories": 390,
+    "proteinG": 11,
+    "carbsG": 58,
+    "fatG": 13,
+    "fiberG": 12
+  },
+  "dietary": ["plant-based", "soy-free", "nut-free"],
+  "proteinSources": ["whole wheat roti", "bhindi"],
+  "portable": false,
+  "makeAhead": true
+}

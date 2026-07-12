@@ -54,6 +54,7 @@
     "kid-friendly"
   ],
   "mealTypes": ["craving", "evening-snack"],
+  "role": "snack",
   "servings": 2,
   "prepTime": "10 mins",
   "cookTime": "0 mins",

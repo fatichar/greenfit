@@ -125,6 +125,9 @@ export type MealType =
   | "craving"
   | "festival";
 
+/** The recipe's intended role when assembling a meal slot. */
+export type RecipeRole = "main" | "light-main" | "side" | "snack";
+
 export type Recipe = {
   slug: string;
   title: string;
@@ -144,6 +147,8 @@ export type Recipe = {
    * A recipe may fit more than one slot (e.g. salad as lunch + evening-snack).
    */
   mealTypes: MealType[];
+  /** Keeps meal suggestions and weekly rotations comparable within a slot. */
+  role: RecipeRole;
   /** Number of servings the ingredients list makes. */
   servings: number;
   prepTime: string;

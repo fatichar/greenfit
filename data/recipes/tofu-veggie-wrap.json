@@ -61,6 +61,7 @@
     "meal-prep"
   ],
   "mealTypes": ["lunch", "travel-snack", "evening-snack"],
+  "role": "main",
   "servings": 2,
   "prepTime": "15 mins",
   "cookTime": "10 mins",

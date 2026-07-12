@@ -1,0 +1,88 @@
+{
+  "slug": "palak-dal-roti",
+  "title": "Palak Dal with Roti",
+  "description": "Spinach folded into soft dal, served with rotis—a greens-forward complete meal for lunch or dinner.",
+  "explanation": [
+    "Palak dal puts leafy greens at the center of a familiar Indian plate. The dal provides body and protein; spinach supplies volume, iron-friendly foliage, and color.",
+    "Onion and garlic are part of the standard version. The plate is complete with roti so it works as a single main in a diet plan."
+  ],
+  "ingredients": [
+    "1 cup Mixed Dal (moong + masoor or toor), rinsed",
+    "3 cups Palak (spinach), washed and roughly chopped",
+    "1 Onion, chopped",
+    "1 Tomato, chopped",
+    "1 tsp Ginger-garlic paste",
+    "1/2 tsp Cumin Seeds",
+    "1/2 tsp Turmeric",
+    "1/2 tsp Red chilli powder",
+    "1 tbsp Oil",
+    "Salt to taste",
+    "Lemon wedges",
+    "4 Rotis for serving"
+  ],
+  "instructions": [
+    "Cook dal with water, turmeric, and salt until soft and mashable. Keep slightly thick for roti.",
+    "Heat oil, add cumin, then onion; saute until golden. Add ginger-garlic and tomato; cook until soft.",
+    "Add chilli powder, then spinach. Cook until spinach wilts and darkens, 3–4 minutes.",
+    "Stir the spinach mixture into the dal. Simmer 5 minutes so flavors combine. Adjust salt and thickness with water if needed.",
+    "Finish with lemon. Serve hot with rotis."
+  ],
+  "stepNotes": [
+    "Do not overcook spinach into a dull paste—wilted and mixed is enough.",
+    "If using frozen spinach, squeeze out excess water before adding.",
+    "A thicker dal scoops better with roti; thin it only if serving with rice instead.",
+    "Wash spinach thoroughly; grit ruins the bowl.",
+    "Make the tadka in a separate pan if you prefer a cleaner process."
+  ],
+  "variationSections": [
+    {
+      "title": "Greens swaps",
+      "items": [
+        "Use methi leaves for a more bitter, aromatic dal.",
+        "Mix spinach with a little bathua or amaranth when in season.",
+        "Add a handful of chopped dill for a different herbal note."
+      ]
+    },
+    {
+      "title": "Plate adjustments",
+      "items": [
+        "Millet roti for a gluten-free variation.",
+        "Skip onion and garlic and use hing for a no-onion/no-garlic variation (not the default).",
+        "Add a side salad when you want more raw vegetables."
+      ]
+    }
+  ],
+  "tags": [
+    "lunch",
+    "dinner",
+    "main",
+    "greens",
+    "vegetable-forward",
+    "protein",
+    "high fiber",
+    "comfort",
+    "WFPB"
+  ],
+  "mealTypes": ["lunch", "dinner"],
+  "role": "main",
+  "servings": 2,
+  "prepTime": "15 mins",
+  "cookTime": "30 mins",
+  "prepMinutes": 15,
+  "cookMinutes": 30,
+  "cost": "Rs 55 for 2 people",
+  "costInr": 55,
+  "image": "/images/items/recipes/palak-dal-roti.jpg",
+  "nutrition": {
+    "servingSize": "1 plate with 2 rotis (half recipe)",
+    "calories": 400,
+    "proteinG": 16,
+    "carbsG": 62,
+    "fatG": 9,
+    "fiberG": 12
+  },
+  "dietary": ["plant-based", "soy-free", "nut-free"],
+  "proteinSources": ["dal", "whole wheat roti", "spinach"],
+  "portable": false,
+  "makeAhead": true
+}

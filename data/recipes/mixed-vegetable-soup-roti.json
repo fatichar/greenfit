@@ -1,0 +1,92 @@
+{
+  "slug": "mixed-vegetable-soup-roti",
+  "title": "Mixed Vegetable Soup with Roti",
+  "description": "A chunky mixed-veg soup with everyday Indian seasoning, served with rotis for a light but complete dinner plate.",
+  "explanation": [
+    "Soup alone can feel incomplete in an Indian diet plan; pairing it with roti makes a practical evening main that still centers vegetables.",
+    "Keep the vegetables chunky rather than pureed so the bowl eats like a meal. Onion and garlic build the base in the standard version."
+  ],
+  "ingredients": [
+    "1 cup Carrot, diced",
+    "1 cup Beans, chopped",
+    "1 cup Cabbage or Cauliflower, chopped",
+    "1/2 cup Peas",
+    "1 Onion, chopped",
+    "1 Tomato, chopped",
+    "1 tsp Ginger-garlic paste",
+    "1/2 tsp Cumin Seeds",
+    "1/2 tsp Turmeric",
+    "1/2 tsp Black Pepper",
+    "1 tbsp Oil",
+    "4 cups Water or light vegetable stock",
+    "Salt to taste",
+    "Lemon and coriander",
+    "4 Rotis for serving"
+  ],
+  "instructions": [
+    "Heat oil, crackle cumin, saute onion until soft. Add ginger-garlic and tomato; cook 2 minutes.",
+    "Add all vegetables, turmeric, salt, and pepper. Stir 1–2 minutes.",
+    "Pour in water or stock. Bring to a boil, then simmer until vegetables are tender but not mushy, 12–15 minutes.",
+    "Adjust consistency: slightly brothy for a lighter dinner, thicker if you prefer stew-like texture.",
+    "Finish with lemon and coriander. Serve hot with rotis for dipping or on the side."
+  ],
+  "stepNotes": [
+    "Cut vegetables to similar size so they cook evenly.",
+    "Avoid over-blending; texture is part of satiety.",
+    "A leftover roti torn into the soup turns it into a quick one-bowl meal.",
+    "Pepper and lemon matter more than heavy chilli for a clean finish.",
+    "Salt near the end if your stock is already seasoned."
+  ],
+  "variationSections": [
+    {
+      "title": "Vegetable mixes",
+      "items": [
+        "Monsoon: corn, cabbage, carrot, beans.",
+        "Winter: cauliflower, peas, carrot, spinach.",
+        "Add bottle gourd for a milder, lighter soup."
+      ]
+    },
+    {
+      "title": "Plate adjustments",
+      "items": [
+        "Millet roti for a gluten-free variation.",
+        "Stir in cooked moong dal for more protein.",
+        "Skip onion and garlic and use hing for a no-onion/no-garlic variation (not the default)."
+      ]
+    }
+  ],
+  "tags": [
+    "dinner",
+    "lunch",
+    "main",
+    "soup",
+    "vegetable-forward",
+    "light",
+    "easy",
+    "high fiber",
+    "WFPB",
+    "comfort"
+  ],
+  "mealTypes": ["dinner", "lunch"],
+  "role": "main",
+  "servings": 2,
+  "prepTime": "15 mins",
+  "cookTime": "25 mins",
+  "prepMinutes": 15,
+  "cookMinutes": 25,
+  "cost": "Rs 50 for 2 people",
+  "costInr": 50,
+  "image": "/images/items/recipes/mixed-vegetable-soup-roti.jpg",
+  "nutrition": {
+    "servingSize": "1 large bowl with 2 rotis (half recipe)",
+    "calories": 340,
+    "proteinG": 11,
+    "carbsG": 56,
+    "fatG": 9,
+    "fiberG": 11
+  },
+  "dietary": ["plant-based", "soy-free", "nut-free"],
+  "proteinSources": ["peas", "whole wheat roti"],
+  "portable": false,
+  "makeAhead": true
+}

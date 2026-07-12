@@ -1,0 +1,86 @@
+{
+  "slug": "classic-kachumber-salad",
+  "title": "Classic Kachumber Salad",
+  "description": "Onion, tomato, cucumber salad with lemon and coriander—the everyday Indian side for lunch, dinner, or a light evening snack.",
+  "explanation": [
+    "Kachumber adds raw vegetable volume, crunch, and brightness next to dal-rice or sabzi-roti plates. It is a side, not a full main.",
+    "Standard version includes onion, so it is not Jain or no-onion/no-garlic. Soy-free, nut-free, and gluten-free as written."
+  ],
+  "ingredients": [
+    "1 large Cucumber, finely diced",
+    "2 Tomatoes, finely diced",
+    "1 medium Onion, finely chopped",
+    "1 Green Chilli, minced (optional)",
+    "Juice of 1 Lemon",
+    "1/2 tsp Roasted Cumin powder",
+    "1/4 tsp Chaat Masala (optional)",
+    "Salt to taste",
+    "Handful of Coriander leaves, chopped"
+  ],
+  "instructions": [
+    "Dice cucumber, tomato, and onion to a similar small size. Scoop out watery tomato seeds if the salad should stay crisp longer.",
+    "Combine vegetables in a bowl with optional green chilli.",
+    "Add lemon juice, roasted cumin, optional chaat masala, and salt.",
+    "Toss well. Fold in coriander.",
+    "Serve immediately alongside a main, or as a light evening snack."
+  ],
+  "stepNotes": [
+    "Salt draws water—dress just before serving when possible.",
+    "For less sharpness, rinse chopped onion under cold water and drain.",
+    "English or Japanese cucumbers need no peeling; field cucumbers may.",
+    "Chaat masala is optional; lemon and cumin alone are enough.",
+    "This is meant to stack with a main plate, not replace it."
+  ],
+  "variationSections": [
+    {
+      "title": "Vegetable add-ins",
+      "items": [
+        "Grated carrot, radish, or capsicum for more color.",
+        "Pomegranate arils for sweetness.",
+        "Boiled corn kernels for a heartier side."
+      ]
+    },
+    {
+      "title": "Onion-free note",
+      "items": [
+        "For Jain or no-onion versions, skip onion and use extra cucumber, tomato, carrot, and coriander (variation only—not this default recipe).",
+        "A pinch of hing in the lemon dressing can add savoriness without onion."
+      ]
+    }
+  ],
+  "tags": [
+    "lunch",
+    "dinner",
+    "evening-snack",
+    "side",
+    "salad",
+    "vegetable-forward",
+    "no-cook",
+    "easy",
+    "WFPB",
+    "low-calorie",
+    "high fiber"
+  ],
+  "mealTypes": ["lunch", "dinner", "evening-snack"],
+  "role": "side",
+  "servings": 2,
+  "prepTime": "10 mins",
+  "cookTime": "0 mins",
+  "prepMinutes": 10,
+  "cookMinutes": 0,
+  "cost": "Rs 30 for 2 people",
+  "costInr": 30,
+  "image": "/images/items/recipes/classic-kachumber-salad.jpg",
+  "nutrition": {
+    "servingSize": "1 side bowl (half recipe)",
+    "calories": 55,
+    "proteinG": 2,
+    "carbsG": 11,
+    "fatG": 0,
+    "fiberG": 3
+  },
+  "dietary": ["plant-based", "soy-free", "nut-free", "gluten-free", "oil-free"],
+  "proteinSources": [],
+  "portable": true,
+  "makeAhead": false
+}

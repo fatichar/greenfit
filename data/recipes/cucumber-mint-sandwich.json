@@ -57,6 +57,7 @@
     "summer"
   ],
   "mealTypes": ["tea-time", "evening-snack"],
+  "role": "snack",
   "servings": 3,
   "prepTime": "15 mins",
   "cookTime": "0 mins",

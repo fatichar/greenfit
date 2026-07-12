@@ -59,6 +59,7 @@
     "weight-loss"
   ],
   "mealTypes": ["lunch", "evening-snack", "travel-snack"],
+  "role": "light-main",
   "servings": 2,
   "prepTime": "10 mins",
   "cookTime": "0 mins",

@@ -1,0 +1,90 @@
+{
+  "slug": "lauki-sabzi-dal-rice",
+  "title": "Lauki Sabzi with Dal and Rice",
+  "description": "A complete no-onion, no-garlic plate: soft bottle-gourd sabzi, simple dal, and rice. Everyday, light, and Jain-friendly.",
+  "explanation": [
+    "This is a full lunch or dinner plate, not a side alone. Lauki keeps the meal high-volume and gentle on digestion; dal adds protein and body; rice makes it filling without heavy masala.",
+    "Flavor comes from hing, cumin, tomato, and turmeric rather than onion or garlic, so the plate stays suitable for Jain and no-onion/no-garlic households."
+  ],
+  "ingredients": [
+    "2 cups Lauki (bottle gourd), peeled and cubed",
+    "1 medium Tomato, chopped",
+    "1/2 cup Yellow Moong Dal or Toor Dal, rinsed",
+    "1 cup Uncooked Rice (or 3 cups cooked)",
+    "1 tsp Cumin Seeds",
+    "1/4 tsp Certified gluten-free Asafoetida (Hing)",
+    "1/2 tsp Turmeric, divided",
+    "1/2 tsp Coriander powder",
+    "1 Green Chilli, slit (optional)",
+    "1.5 tbsp Oil, divided",
+    "Salt to taste",
+    "Lemon wedges and coriander to serve"
+  ],
+  "instructions": [
+    "Cook rice as usual and keep warm. Boil or pressure-cook dal with water, a pinch of turmeric, and salt until soft; mash lightly and keep pourable.",
+    "Heat 1 tbsp oil in a pan. Add cumin and hing; when aromatic, add tomato and optional chilli. Cook until tomato softens.",
+    "Add lauki, remaining turmeric, coriander powder, and salt. Stir 1–2 minutes.",
+    "Cover and cook on low–medium heat until lauki is tender, 10–12 minutes, adding a splash of water if the pan dries.",
+    "Temper the dal lightly with remaining oil, cumin, and hing if you like a separate tadka. Plate rice, dal, and lauki sabzi. Finish with lemon and coriander."
+  ],
+  "stepNotes": [
+    "Choose young lauki with soft seeds; large spongy pieces cook unevenly.",
+    "Keep sabzi slightly moist rather than dry so it pairs well with rice.",
+    "Moong dal is lighter; toor dal is more traditional with rice—use what you digest well.",
+    "Skip green chilli for a milder Jain plate; black pepper works at the end instead.",
+    "Batch-cook dal and rice; make the sabzi fresh so the vegetable stays bright."
+  ],
+  "variationSections": [
+    {
+      "title": "Seasonal vegetable swaps",
+      "items": [
+        "Use turai, tinda, or cabbage with the same hing-cumin-tomato base.",
+        "Add a handful of peas for color and sweetness.",
+        "Stir chopped spinach into the dal in the last few minutes."
+      ]
+    },
+    {
+      "title": "Plate adjustments",
+      "items": [
+        "For fewer calories, serve more sabzi and less rice.",
+        "For more protein, increase the dal portion or add a side of sprouts.",
+        "Serve with kachumber or cut fruit when you want extra produce volume."
+      ]
+    }
+  ],
+  "tags": [
+    "lunch",
+    "dinner",
+    "main",
+    "Jain",
+    "no-onion-no-garlic",
+    "high fiber",
+    "comfort",
+    "easy",
+    "WFPB",
+    "budget",
+    "vegetable-forward"
+  ],
+  "mealTypes": ["lunch", "dinner"],
+  "role": "main",
+  "servings": 2,
+  "prepTime": "15 mins",
+  "cookTime": "30 mins",
+  "prepMinutes": 15,
+  "cookMinutes": 30,
+  "cost": "Rs 55 for 2 people",
+  "costInr": 55,
+  "image": "/images/items/recipes/lauki-sabzi-dal-rice.jpg",
+  "nutrition": {
+    "servingSize": "1 plate with rice and dal (half recipe)",
+    "calories": 380,
+    "proteinG": 12,
+    "carbsG": 68,
+    "fatG": 7,
+    "fiberG": 9
+  },
+  "dietary": ["plant-based", "jain", "no-onion-no-garlic", "soy-free", "nut-free", "gluten-free"],
+  "proteinSources": ["moong dal", "toor dal", "rice"],
+  "portable": false,
+  "makeAhead": true
+}

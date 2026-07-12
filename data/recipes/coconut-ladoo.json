@@ -57,6 +57,7 @@
     "gluten-free"
   ],
   "mealTypes": ["festival", "craving", "tea-time"],
+  "role": "snack",
   "servings": 10,
   "prepTime": "10 mins",
   "cookTime": "10 mins",

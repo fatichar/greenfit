@@ -1,0 +1,89 @@
+{
+  "slug": "turai-sabzi-roti",
+  "title": "Turai Sabzi with Roti",
+  "description": "Soft ridge-gourd sabzi cooked without onion or garlic, plated with rotis as a light complete meal.",
+  "explanation": [
+    "Turai (ridge gourd) is mild, watery, and perfect for evenings when you want vegetables without a heavy curry. This version uses hing and tomato so it stays Jain and no-onion/no-garlic.",
+    "Roti is included so the recipe is a full main, not only a side sabzi."
+  ],
+  "ingredients": [
+    "3 cups Turai (ridge gourd), peeled and sliced",
+    "1 Tomato, chopped",
+    "1/2 tsp Mustard Seeds",
+    "1/2 tsp Cumin Seeds",
+    "1/4 tsp Asafoetida (Hing)",
+    "1/2 tsp Turmeric",
+    "1/2 tsp Coriander powder",
+    "1 Green Chilli, slit (optional)",
+    "1 tbsp Oil",
+    "Salt to taste",
+    "Coriander and lemon",
+    "4 Rotis for serving"
+  ],
+  "instructions": [
+    "Heat oil. Add mustard seeds, then cumin and hing. Add optional chilli.",
+    "Add tomato, turmeric, coriander powder, and salt. Cook until tomato softens.",
+    "Add turai slices. Stir 1–2 minutes.",
+    "Cover and cook on low–medium heat until turai is soft and translucent, 10–12 minutes. Uncover near the end if too watery.",
+    "Finish with lemon and coriander. Serve with hot rotis."
+  ],
+  "stepNotes": [
+    "Peel thick ridges; young turai needs less peeling.",
+    "If turai tastes bitter, discard it—bitterness does not cook out reliably.",
+    "Do not drown the pan in water; turai releases moisture.",
+    "Soft, slightly glossy pieces are done; mushy turai loses character.",
+    "A spoon of grated coconut at the end gives a gentle South Indian lean."
+  ],
+  "variationSections": [
+    {
+      "title": "Vegetable swaps",
+      "items": [
+        "Use lauki or tinda with the same tempering.",
+        "Add a few soaked chana dal pieces cooked with the sabzi for more body.",
+        "Mix in chopped spinach in the last minutes."
+      ]
+    },
+    {
+      "title": "Plate adjustments",
+      "items": [
+        "Millet roti for a gluten-free variation.",
+        "Add a small bowl of plain dal when you need more protein.",
+        "Serve with cut fruit for a lighter evening plate."
+      ]
+    }
+  ],
+  "tags": [
+    "lunch",
+    "dinner",
+    "main",
+    "Jain",
+    "no-onion-no-garlic",
+    "vegetable-forward",
+    "light",
+    "easy",
+    "WFPB",
+    "high fiber"
+  ],
+  "mealTypes": ["lunch", "dinner"],
+  "role": "main",
+  "servings": 2,
+  "prepTime": "15 mins",
+  "cookTime": "20 mins",
+  "prepMinutes": 15,
+  "cookMinutes": 20,
+  "cost": "Rs 45 for 2 people",
+  "costInr": 45,
+  "image": "/images/items/recipes/turai-sabzi-roti.jpg",
+  "nutrition": {
+    "servingSize": "1 plate with 2 rotis (half recipe)",
+    "calories": 320,
+    "proteinG": 9,
+    "carbsG": 52,
+    "fatG": 9,
+    "fiberG": 8
+  },
+  "dietary": ["plant-based", "jain", "no-onion-no-garlic", "soy-free", "nut-free"],
+  "proteinSources": ["whole wheat roti"],
+  "portable": false,
+  "makeAhead": true
+}

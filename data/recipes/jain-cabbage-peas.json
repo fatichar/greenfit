@@ -59,6 +59,7 @@
     "weight-loss"
   ],
   "mealTypes": ["lunch", "dinner"],
+  "role": "side",
   "servings": 2,
   "prepTime": "10 mins",
   "cookTime": "15 mins",

@@ -1,0 +1,91 @@
+{
+  "slug": "mixed-seasonal-sabzi-thali",
+  "title": "Mixed Seasonal Sabzi Thali",
+  "description": "A complete Jain-friendly thali plate: hing-tempered above-ground seasonal vegetables, simple dal, and rice—no onion, no garlic, no wheat.",
+  "explanation": [
+    "This is one recipe for a full plate so the diet builder can treat it as a single main. Change the vegetable mix with the season; keep the structure: sabzi + dal + rice.",
+    "No onion, garlic, or root vegetables. Hing, cumin, tomato, curry leaves, and lemon carry the flavor. Gluten-free as written when using certified gluten-free hing."
+  ],
+  "ingredients": [
+    "3 cups Mixed Seasonal Vegetables, chopped (e.g. cabbage, beans, pumpkin, peas)",
+    "1 Tomato, chopped",
+    "1/2 cup Toor Dal or Moong Dal, rinsed",
+    "1 cup Uncooked Rice (or 3 cups cooked)",
+    "1 tsp Cumin Seeds",
+    "1/2 tsp Mustard Seeds",
+    "1/4 tsp Certified gluten-free Asafoetida (Hing)",
+    "8–10 Curry Leaves (optional)",
+    "1/2 tsp Turmeric, divided",
+    "1 tsp Coriander powder",
+    "1.5 tbsp Oil, divided",
+    "Salt to taste",
+    "Lemon wedges and coriander"
+  ],
+  "instructions": [
+    "Cook rice. Pressure-cook or boil dal with water, a pinch of turmeric, and salt until soft; mash lightly.",
+    "Heat 1 tbsp oil. Add mustard seeds, cumin, hing, and curry leaves. Add tomato and cook until soft.",
+    "Add mixed vegetables, remaining turmeric, coriander powder, and salt. Stir well.",
+    "Cover and cook until vegetables are tender, 10–15 minutes, adding small splashes of water only if needed.",
+    "Temper dal with remaining oil and a pinch of cumin/hing if desired. Plate rice, dal, and sabzi. Finish with lemon and coriander."
+  ],
+  "stepNotes": [
+    "Cut denser vegetables (pumpkin, beans) smaller so they cook with softer ones (cabbage, peas).",
+    "Keep some vegetable texture; the plate should not become one mushy mix.",
+    "If using watery vegetables like lauki, cook uncovered at the end to reduce liquid.",
+    "Salt the sabzi lightly—dal and rice also carry salt.",
+    "This plate is designed as a complete main; sides like fruit or kachumber are optional extras."
+  ],
+  "variationSections": [
+    {
+      "title": "Seasonal vegetable maps",
+      "items": [
+        "Summer: lauki, turai, beans, pumpkin.",
+        "Monsoon: cabbage, cauliflower, beans, corn.",
+        "Winter: matar, gobi, cabbage, methi leaves."
+      ]
+    },
+    {
+      "title": "Flavor without onion or garlic",
+      "items": [
+        "Add a little extra roasted cumin powder if you want more warmth.",
+        "Finish with roasted cumin powder and lemon.",
+        "A spoon of fresh grated coconut works well with beans and cabbage."
+      ]
+    }
+  ],
+  "tags": [
+    "lunch",
+    "dinner",
+    "main",
+    "thali",
+    "Jain",
+    "no-onion-no-garlic",
+    "gluten-free",
+    "vegetable-forward",
+    "seasonal",
+    "WFPB",
+    "budget"
+  ],
+  "mealTypes": ["lunch", "dinner"],
+  "role": "main",
+  "servings": 2,
+  "prepTime": "20 mins",
+  "cookTime": "30 mins",
+  "prepMinutes": 20,
+  "cookMinutes": 30,
+  "cost": "Rs 60 for 2 people",
+  "costInr": 60,
+  "image": "/images/items/recipes/mixed-seasonal-sabzi-thali.jpg",
+  "nutrition": {
+    "servingSize": "1 thali plate with rice and dal (half recipe)",
+    "calories": 400,
+    "proteinG": 13,
+    "carbsG": 72,
+    "fatG": 7,
+    "fiberG": 11
+  },
+  "dietary": ["plant-based", "jain", "no-onion-no-garlic", "soy-free", "nut-free", "gluten-free"],
+  "proteinSources": ["dal", "rice", "peas"],
+  "portable": false,
+  "makeAhead": true
+}

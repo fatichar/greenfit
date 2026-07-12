@@ -58,6 +58,7 @@
     "budget"
   ],
   "mealTypes": ["travel-snack", "evening-snack", "tea-time"],
+  "role": "snack",
   "servings": 8,
   "prepTime": "10 mins",
   "cookTime": "0 mins",

@@ -1,0 +1,40 @@
+{
+  "slug": "chole-jeera-rice",
+  "title": "Chole with Jeera Rice",
+  "description": "Warm chickpea masala with cumin rice—a pantry-friendly North Indian main for lunch or dinner.",
+  "explanation": ["This is the hot, substantial counterpart to the existing chickpea salad. Use cooked chickpeas for a weeknight version or batch-cook dried chickpeas ahead."],
+  "ingredients": [
+    "2 cups Cooked Chickpeas",
+    "1 Onion, finely chopped",
+    "2 Tomatoes, chopped",
+    "1 tsp Ginger-garlic paste",
+    "1 tsp Chole Masala",
+    "1/2 tsp Cumin Seeds",
+    "1 cup Basmati or Regular Rice",
+    "1.5 tbsp Oil, divided",
+    "Salt, lemon, and coriander"
+  ],
+  "instructions": [
+    "Cook rice; heat a little oil with cumin and fold it through the cooked rice.",
+    "Heat remaining oil and cook onion, ginger-garlic, and tomato until the masala is thick.",
+    "Add chole masala, salt, and chickpeas with a splash of water. Simmer 10 minutes.",
+    "Mash a few chickpeas against the pan for a thicker gravy if wanted.",
+    "Finish with lemon and coriander; serve with jeera rice."
+  ],
+  "tags": ["North Indian", "lunch", "dinner", "main", "chickpeas", "gluten-free", "budget", "WFPB"],
+  "mealTypes": ["lunch", "dinner"],
+  "role": "main",
+  "servings": 2,
+  "prepTime": "15 mins",
+  "cookTime": "30 mins",
+  "prepMinutes": 15,
+  "cookMinutes": 30,
+  "cost": "Rs 65 for 2 people",
+  "costInr": 65,
+  "image": "/images/items/recipes/chole-jeera-rice.jpg",
+  "nutrition": {"servingSize": "1 bowl chole with rice (half recipe)", "calories": 470, "proteinG": 18, "carbsG": 82, "fatG": 8, "fiberG": 16},
+  "dietary": ["plant-based", "soy-free", "nut-free", "gluten-free"],
+  "proteinSources": ["chickpeas"],
+  "portable": false,
+  "makeAhead": true
+}

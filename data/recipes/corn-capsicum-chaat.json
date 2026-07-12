@@ -1,0 +1,86 @@
+{
+  "slug": "corn-capsicum-chaat",
+  "title": "Corn Capsicum Chaat",
+  "description": "Sweet corn and capsicum tossed with onion, tomato, lemon, and chaat masala—a produce-led snack or light lunch.",
+  "explanation": [
+    "This chaat uses vegetables as the bulk instead of fried sev or puri. Corn brings sweetness and energy; capsicum adds crunch and color.",
+    "Standard version includes onion, so it is not Jain or no-onion/no-garlic. Nut-free, soy-free, and gluten-free as written."
+  ],
+  "ingredients": [
+    "1.5 cups Boiled or steamed Sweet Corn kernels",
+    "1 Capsicum (any color), finely diced",
+    "1 small Onion, finely chopped",
+    "1 Tomato, diced",
+    "1 Green Chilli, minced (optional)",
+    "Juice of 1 Lemon",
+    "1 tsp Chaat Masala",
+    "1/2 tsp Roasted Cumin powder",
+    "Salt to taste",
+    "Coriander leaves",
+    "Optional: 1 boiled Potato, diced, for a fuller bowl"
+  ],
+  "instructions": [
+    "Boil or steam corn until tender; cool slightly. Dice capsicum, onion, and tomato.",
+    "Combine corn, capsicum, onion, tomato, and optional chilli and potato in a bowl.",
+    "Add lemon, chaat masala, roasted cumin, and salt. Toss well.",
+    "Finish with coriander. Serve immediately as a snack or light lunch."
+  ],
+  "stepNotes": [
+    "Use fresh or frozen corn; drain well so the chaat is not watery.",
+    "Raw capsicum should be finely diced for easier eating.",
+    "Chaat masala varies in saltiness—taste before adding more salt.",
+    "Optional potato makes it more filling for lunch.",
+    "Best eaten fresh; capsicum softens if it sits in lemon too long."
+  ],
+  "variationSections": [
+    {
+      "title": "Produce upgrades",
+      "items": [
+        "Add cucumber or pomegranate for more freshness.",
+        "Use grilled corn for a smoky edge.",
+        "Mix in boiled chickpeas when you want more protein."
+      ]
+    },
+    {
+      "title": "Onion-free note",
+      "items": [
+        "Skip onion and add extra capsicum, tomato, and coriander for a no-onion variation (not the default).",
+        "A little hing in the lemon mix can add savoriness."
+      ]
+    }
+  ],
+  "tags": [
+    "evening-snack",
+    "tea-time",
+    "lunch",
+    "snack",
+    "chaat",
+    "vegetable-forward",
+    "easy",
+    "WFPB",
+    "high fiber",
+    "corn"
+  ],
+  "mealTypes": ["evening-snack", "tea-time"],
+  "role": "snack",
+  "servings": 2,
+  "prepTime": "15 mins",
+  "cookTime": "10 mins",
+  "prepMinutes": 15,
+  "cookMinutes": 10,
+  "cost": "Rs 45 for 2 people",
+  "costInr": 45,
+  "image": "/images/items/recipes/corn-capsicum-chaat.jpg",
+  "nutrition": {
+    "servingSize": "1 bowl (half recipe)",
+    "calories": 160,
+    "proteinG": 5,
+    "carbsG": 32,
+    "fatG": 2,
+    "fiberG": 5
+  },
+  "dietary": ["plant-based", "soy-free", "nut-free", "gluten-free"],
+  "proteinSources": ["corn"],
+  "portable": true,
+  "makeAhead": false
+}

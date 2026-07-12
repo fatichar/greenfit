@@ -1,0 +1,83 @@
+{
+  "slug": "soy-curd-fruit-bowl",
+  "title": "Soy Curd Fruit Bowl",
+  "description": "Unsweetened soy curd topped with seasonal fruit—a light main for breakfast, post-workout recovery, or evening snack. Contains soy; nut-free as written.",
+  "explanation": [
+    "This is the soy-based fruit-and-curd path for recovery and breakfast. It is intentionally separate from peanut curd so soy-free and nut-free filters stay honest.",
+    "Use plain unsweetened soy curd. Sweetness should come from fruit, not sugar-heavy flavored yogurts."
+  ],
+  "ingredients": [
+    "1.5 cups Unsweetened Soy Curd (soy yogurt)",
+    "1.5 cups Mixed Seasonal Fruit, chopped",
+    "1/2 tsp Lemon juice (optional)",
+    "1/4 tsp Cardamom powder or Cinnamon (optional)",
+    "1 tsp Flaxseed powder or Chia seeds (optional)",
+    "Few Mint leaves"
+  ],
+  "instructions": [
+    "If soy curd is very thick or sour, whisk briefly until smooth. Divide into two bowls.",
+    "Top each bowl with chopped seasonal fruit.",
+    "Add optional lemon, cardamom or cinnamon, and flax or chia.",
+    "Garnish with mint. Eat soon after assembling."
+  ],
+  "stepNotes": [
+    "Choose unsweetened soy curd; check the label for added sugar.",
+    "If curd is watery, drain in a sieve for 10 minutes for a thicker bowl.",
+    "Post-workout: eat within a comfortable window after training; no need to rush if appetite is low.",
+    "Do not mix peanut curd into this recipe—use a separate peanut-curd recipe if needed.",
+    "Skip optional seeds if you want the simplest fruit-and-curd bowl."
+  ],
+  "variationSections": [
+    {
+      "title": "Fruit toppings by season",
+      "items": [
+        "Summer: mango, banana, chickoo.",
+        "Winter: orange, pomegranate, apple, guava.",
+        "Banana and papaya work most of the year."
+      ]
+    },
+    {
+      "title": "Texture upgrades",
+      "items": [
+        "Optional seeds for fiber (still nut-free).",
+        "A spoon of granola only if gluten-free is not required.",
+        "Keep nuts out of the default bowl so nut-free stays accurate."
+      ]
+    }
+  ],
+  "tags": [
+    "breakfast",
+    "post-workout",
+    "evening-snack",
+    "fruit",
+    "light main",
+    "recovery",
+    "no-cook",
+    "easy",
+    "WFPB",
+    "high fiber",
+    "Jain"
+  ],
+  "mealTypes": ["breakfast", "post-workout", "evening-snack"],
+  "role": "light-main",
+  "servings": 2,
+  "prepTime": "8 mins",
+  "cookTime": "0 mins",
+  "prepMinutes": 8,
+  "cookMinutes": 0,
+  "cost": "Rs 70 for 2 people",
+  "costInr": 70,
+  "image": "/images/items/recipes/soy-curd-fruit-bowl.jpg",
+  "nutrition": {
+    "servingSize": "1 bowl (half recipe)",
+    "calories": 180,
+    "proteinG": 10,
+    "carbsG": 24,
+    "fatG": 5,
+    "fiberG": 4
+  },
+  "dietary": ["plant-based", "jain", "no-onion-no-garlic", "nut-free", "gluten-free"],
+  "proteinSources": ["soy curd"],
+  "portable": true,
+  "makeAhead": false
+}

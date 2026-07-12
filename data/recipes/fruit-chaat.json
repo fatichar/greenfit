@@ -1,0 +1,86 @@
+{
+  "slug": "fruit-chaat",
+  "title": "Fruit Chaat",
+  "description": "Zingy Indian-style fruit snack with chaat masala, lemon, and mint. Light fuel for breakfast, evening snack, tea-time, or pre-workout.",
+  "explanation": [
+    "Fruit chaat is more seasoned than a plain fruit bowl and portioned as a snack rather than a large meal side. It is a produce-led alternative to fried namkeen.",
+    "Default is Jain, no-onion/no-garlic, soy-free, nut-free, and gluten-free. Use firmer fruits so the chaat does not turn watery."
+  ],
+  "ingredients": [
+    "2 cups Mixed Fruit, diced (apple, papaya, banana, pomegranate, guava, or seasonal mix)",
+    "Juice of 1/2 Lemon",
+    "1/2 tsp Chaat Masala",
+    "1/4 tsp Roasted Cumin powder",
+    "Pinch of Black Salt",
+    "1/4 tsp Red chilli powder (optional)",
+    "Fresh Mint, chopped",
+    "Coriander leaves (optional)"
+  ],
+  "instructions": [
+    "Dice fruit into even, bite-size pieces and place in a mixing bowl.",
+    "Add lemon juice, chaat masala, roasted cumin, black salt, and optional chilli powder.",
+    "Toss gently until every piece is lightly coated.",
+    "Fold in mint and coriander. Taste and adjust lemon or chaat masala.",
+    "Serve immediately while fruit is crisp."
+  ],
+  "stepNotes": [
+    "Add banana last so it does not turn mushy.",
+    "Pomegranate arils add crunch without nuts.",
+    "For pre-workout, keep chilli mild and portion moderate.",
+    "If fruit is very sweet, extra lemon keeps the chaat bright.",
+    "Do not prepare hours ahead; juices collect at the bottom."
+  ],
+  "variationSections": [
+    {
+      "title": "Seasonal chaat mixes",
+      "items": [
+        "Summer: mango, watermelon, muskmelon.",
+        "Winter: guava, orange segments, apple, pomegranate.",
+        "Add cucumber for a lighter, more hydrating snack."
+      ]
+    },
+    {
+      "title": "Chaat finishes",
+      "items": [
+        "A drizzle of thin mint chutney for evening snack.",
+        "Skip black salt if you prefer a cleaner fruit taste.",
+        "Keep portion smaller before workouts than as an evening snack."
+      ]
+    }
+  ],
+  "tags": [
+    "breakfast",
+    "evening-snack",
+    "tea-time",
+    "pre-workout",
+    "fruit",
+    "snack",
+    "no-cook",
+    "easy",
+    "WFPB",
+    "Jain",
+    "high fiber"
+  ],
+  "mealTypes": ["breakfast", "evening-snack", "tea-time", "pre-workout"],
+  "role": "snack",
+  "servings": 2,
+  "prepTime": "10 mins",
+  "cookTime": "0 mins",
+  "prepMinutes": 10,
+  "cookMinutes": 0,
+  "cost": "Rs 50 for 2 people",
+  "costInr": 50,
+  "image": "/images/items/recipes/fruit-chaat.jpg",
+  "nutrition": {
+    "servingSize": "1 snack bowl (half recipe)",
+    "calories": 100,
+    "proteinG": 1,
+    "carbsG": 25,
+    "fatG": 0,
+    "fiberG": 4
+  },
+  "dietary": ["plant-based", "jain", "no-onion-no-garlic", "soy-free", "nut-free", "gluten-free", "oil-free"],
+  "proteinSources": [],
+  "portable": true,
+  "makeAhead": false
+}

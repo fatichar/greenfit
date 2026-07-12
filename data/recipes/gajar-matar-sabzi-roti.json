@@ -1,0 +1,90 @@
+{
+  "slug": "gajar-matar-sabzi-roti",
+  "title": "Gajar Matar Sabzi with Roti",
+  "description": "Sweet carrots and green peas in a simple home-style masala, plated with rotis as a complete vegetable-forward meal.",
+  "explanation": [
+    "Gajar-matar is a winter staple in many North Indian kitchens. Treating it as a full plate with roti keeps vegetables at the center of lunch or dinner rather than as a tiny side.",
+    "Carrots bring natural sweetness; peas add color and a little protein. Keep the masala light so the vegetables stay the focus."
+  ],
+  "ingredients": [
+    "3 cups Carrots, diced",
+    "1 cup Green Peas (fresh or frozen)",
+    "1 Onion, finely chopped",
+    "1 Tomato, chopped",
+    "1 tsp Ginger-garlic paste",
+    "1/2 tsp Cumin Seeds",
+    "1/2 tsp Turmeric",
+    "1 tsp Coriander powder",
+    "1/2 tsp Red chilli powder",
+    "1/2 tsp Garam Masala",
+    "1.5 tbsp Oil",
+    "Salt to taste",
+    "Coriander leaves",
+    "4 Rotis for serving"
+  ],
+  "instructions": [
+    "Heat oil, crackle cumin, and saute onion until soft. Add ginger-garlic and cook until fragrant.",
+    "Add tomato and dry spices with salt. Cook until the tomato breaks down.",
+    "Add carrots and a splash of water. Cover and cook 6–8 minutes until carrots start to soften.",
+    "Add peas and cook uncovered until both vegetables are tender and the masala clings, 5–7 minutes.",
+    "Finish with garam masala and coriander. Serve with hot rotis."
+  ],
+  "stepNotes": [
+    "Dice carrots evenly so they cook at the same rate.",
+    "Frozen peas go in later than fresh peas; no need to thaw if you cook a little longer.",
+    "Avoid too much water—this should be a semi-dry sabzi for roti, not a curry.",
+    "A pinch of sugar is unnecessary if carrots are sweet; use lemon if the dish tastes flat.",
+    "Double the batch for lunch boxes; it reheats well."
+  ],
+  "variationSections": [
+    {
+      "title": "Vegetable add-ins",
+      "items": [
+        "Add beans or cauliflower florets for a mixed winter sabzi.",
+        "Use purple carrots or include a little beet for color.",
+        "Stir in chopped spinach at the end for more greens."
+      ]
+    },
+    {
+      "title": "Plate adjustments",
+      "items": [
+        "Millet roti for a gluten-free variation.",
+        "Add a bowl of dal when you want more protein.",
+        "Serve with kachumber or cut fruit for extra raw produce."
+      ]
+    }
+  ],
+  "tags": [
+    "lunch",
+    "dinner",
+    "main",
+    "North Indian",
+    "vegetable-forward",
+    "winter",
+    "easy",
+    "high fiber",
+    "WFPB"
+  ],
+  "mealTypes": ["lunch", "dinner"],
+  "role": "main",
+  "servings": 2,
+  "prepTime": "15 mins",
+  "cookTime": "25 mins",
+  "prepMinutes": 15,
+  "cookMinutes": 25,
+  "cost": "Rs 55 for 2 people",
+  "costInr": 55,
+  "image": "/images/items/recipes/gajar-matar-sabzi-roti.jpg",
+  "nutrition": {
+    "servingSize": "1 plate with 2 rotis (half recipe)",
+    "calories": 370,
+    "proteinG": 12,
+    "carbsG": 60,
+    "fatG": 10,
+    "fiberG": 13
+  },
+  "dietary": ["plant-based", "soy-free", "nut-free"],
+  "proteinSources": ["peas", "whole wheat roti"],
+  "portable": false,
+  "makeAhead": true
+}

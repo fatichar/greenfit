@@ -1,0 +1,40 @@
+{
+  "slug": "kaddu-chana-dal-rice",
+  "title": "Kaddu Chana Dal with Rice",
+  "description": "Sweet-savory pumpkin and chana dal served with rice—a seasonal, filling Indian comfort plate.",
+  "explanation": ["Pumpkin gives the dal volume and a naturally mellow flavour while chana dal keeps the plate more substantial than a plain sabzi-and-rice meal."],
+  "ingredients": [
+    "3/4 cup Chana Dal, soaked 30 minutes if possible",
+    "3 cups Kaddu (pumpkin), cubed",
+    "1 cup Uncooked Rice (or 3 cups cooked)",
+    "1 Tomato, chopped",
+    "1 tsp Cumin Seeds",
+    "1/2 tsp Turmeric",
+    "1 tsp Coriander powder",
+    "1 tbsp Oil",
+    "Salt, lemon, and coriander"
+  ],
+  "instructions": [
+    "Cook rice and keep warm. Pressure-cook chana dal until tender but not mushy.",
+    "Heat oil, add cumin and tomato, then cook until soft.",
+    "Add pumpkin, turmeric, coriander powder, salt, and a splash of water. Cover until pumpkin is tender.",
+    "Fold in the cooked dal and simmer 5 minutes so the flavours combine.",
+    "Finish with lemon and coriander; serve with rice."
+  ],
+  "tags": ["lunch", "dinner", "main", "pumpkin", "seasonal", "gluten-free", "high fiber", "WFPB"],
+  "mealTypes": ["lunch", "dinner"],
+  "role": "main",
+  "servings": 2,
+  "prepTime": "15 mins",
+  "cookTime": "30 mins",
+  "prepMinutes": 15,
+  "cookMinutes": 30,
+  "cost": "Rs 55 for 2 people",
+  "costInr": 55,
+  "image": "/images/items/recipes/kaddu-chana-dal-rice.jpg",
+  "nutrition": {"servingSize": "1 plate with rice (half recipe)", "calories": 430, "proteinG": 15, "carbsG": 78, "fatG": 6, "fiberG": 12},
+  "dietary": ["plant-based", "jain", "no-onion-no-garlic", "soy-free", "nut-free", "gluten-free"],
+  "proteinSources": ["chana dal"],
+  "portable": false,
+  "makeAhead": true
+}

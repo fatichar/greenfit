@@ -61,6 +61,7 @@
     "no-cook"
   ],
   "mealTypes": ["evening-snack", "tea-time", "lunch"],
+  "role": "light-main",
   "servings": 2,
   "prepTime": "10 mins",
   "cookTime": "0 mins",

@@ -63,6 +63,7 @@
     "budget"
   ],
   "mealTypes": ["breakfast", "tea-time", "evening-snack"],
+  "role": "main",
   "servings": 2,
   "prepTime": "10 mins",
   "cookTime": "15 mins",

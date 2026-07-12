@@ -58,6 +58,7 @@
     "gluten-free"
   ],
   "mealTypes": ["tea-time", "evening-snack", "travel-snack", "craving"],
+  "role": "snack",
   "servings": 4,
   "prepTime": "5 mins",
   "cookTime": "12 mins",

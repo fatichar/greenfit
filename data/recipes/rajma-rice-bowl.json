@@ -65,6 +65,7 @@
     "meal-prep"
   ],
   "mealTypes": ["lunch", "dinner"],
+  "role": "main",
   "servings": 3,
   "prepTime": "15 mins",
   "cookTime": "40 mins",

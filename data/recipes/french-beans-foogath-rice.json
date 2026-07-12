@@ -1,0 +1,90 @@
+{
+  "slug": "french-beans-foogath-rice",
+  "title": "French Beans Foogath with Rice",
+  "description": "South Indian-style French beans stir-cooked with coconut, mustard, and curry leaves—no onion or garlic—served with rice.",
+  "explanation": [
+    "Foogath is a simple vegetable stir-fry that keeps beans bright and lightly coconut-sweet. With rice, it becomes a complete gluten-free, Jain-friendly main.",
+    "Use tender French beans. Fresh grated coconut is ideal; frozen grated coconut works when thawed."
+  ],
+  "ingredients": [
+    "3 cups French Beans, finely chopped",
+    "1/2 cup Fresh Grated Coconut",
+    "1 cup Uncooked Rice (or 3 cups cooked)",
+    "1/2 tsp Mustard Seeds",
+    "1/2 tsp Urad Dal (optional)",
+    "1/4 tsp Certified gluten-free Asafoetida (Hing)",
+    "8–10 Curry Leaves",
+    "1–2 Dried Red Chillies (optional)",
+    "1/2 tsp Turmeric",
+    "1 tbsp Oil",
+    "Salt to taste",
+    "Lemon wedges"
+  ],
+  "instructions": [
+    "Cook rice and keep warm.",
+    "Heat oil. Add mustard seeds; when they pop, add optional urad dal, dried chilli, hing, and curry leaves.",
+    "Add beans, turmeric, and salt. Stir well.",
+    "Cover and cook on low heat until beans are tender-crisp, 8–10 minutes, sprinkling a little water only if needed.",
+    "Stir in grated coconut and cook 1–2 minutes uncovered. Serve over rice with lemon."
+  ],
+  "stepNotes": [
+    "Chop beans small so they cook quickly and evenly.",
+    "Keep some bite; overcooked foogath tastes dull.",
+    "Coconut goes in at the end so it stays fragrant.",
+    "Skip urad dal if you do not have it—the dish still works.",
+    "A complete plate can add a small bowl of sambar or plain dal when extra protein is needed."
+  ],
+  "variationSections": [
+    {
+      "title": "Vegetable swaps",
+      "items": [
+        "Use cabbage or ivy gourd (tindora) with the same tempering.",
+        "Mix beans with peas for color and sweetness.",
+        "Cluster beans can replace French beans if you prefer a stronger flavor (different recipe experience)."
+      ]
+    },
+    {
+      "title": "Plate adjustments",
+      "items": [
+        "Brown rice or millets instead of white rice.",
+        "Add steamed toor dal on the side for more protein.",
+        "Serve with cucumber slices or cut fruit for more produce."
+      ]
+    }
+  ],
+  "tags": [
+    "lunch",
+    "dinner",
+    "main",
+    "South Indian",
+    "Jain",
+    "no-onion-no-garlic",
+    "gluten-free",
+    "vegetable-forward",
+    "coconut",
+    "easy",
+    "WFPB"
+  ],
+  "mealTypes": ["lunch", "dinner"],
+  "role": "main",
+  "servings": 2,
+  "prepTime": "15 mins",
+  "cookTime": "25 mins",
+  "prepMinutes": 15,
+  "cookMinutes": 25,
+  "cost": "Rs 55 for 2 people",
+  "costInr": 55,
+  "image": "/images/items/recipes/french-beans-foogath-rice.jpg",
+  "nutrition": {
+    "servingSize": "1 plate with rice (half recipe)",
+    "calories": 390,
+    "proteinG": 9,
+    "carbsG": 64,
+    "fatG": 12,
+    "fiberG": 9
+  },
+  "dietary": ["plant-based", "jain", "no-onion-no-garlic", "soy-free", "nut-free", "gluten-free"],
+  "proteinSources": ["rice", "beans"],
+  "portable": false,
+  "makeAhead": true
+}

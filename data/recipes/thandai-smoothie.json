@@ -60,6 +60,7 @@
     "sweet"
   ],
   "mealTypes": ["festival", "craving", "tea-time"],
+  "role": "snack",
   "servings": 2,
   "prepTime": "15 mins",
   "cookTime": "0 mins",
