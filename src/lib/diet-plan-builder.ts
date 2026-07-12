@@ -24,7 +24,7 @@ export const MEAL_SLOTS: Array<{ id: MealType; label: string; icon: string; help
 export const DEFAULT_INPUTS: DietBuilderInputs = {
   heightCm: 170,
   weightKg: 70,
-  gender: "other",
+  gender: "",
   age: 30,
   goal: "maintain",
   targetWeightKg: null,

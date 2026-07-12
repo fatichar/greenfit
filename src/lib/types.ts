@@ -180,7 +180,7 @@ export type ServingMode = "household" | "metric";
 export type DietBuilderInputs = {
   heightCm: number;
   weightKg: number;
-  gender: "female" | "male" | "other";
+  gender: "" | "female" | "male" | "other";
   age: number;
   goal: DietBuilderGoal;
   targetWeightKg: number | null;
