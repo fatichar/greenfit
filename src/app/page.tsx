@@ -158,11 +158,11 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       <section className="border-b bg-[linear-gradient(180deg,#ffffff_0%,#f4fbef_100%)]">
-        <div className="mx-auto max-w-7xl px-4 pt-12 sm:px-6 lg:px-8 lg:pt-16">
-          <p className="text-sm font-medium tracking-wide text-primary">
+        <div className="mx-auto max-w-7xl px-4 pt-8 sm:px-6 sm:pt-12 lg:px-8 lg:pt-16">
+          <p className="hidden text-sm font-medium tracking-wide text-primary sm:block">
             Plant-based nutrition for everyday Indian eating
           </p>
-          <h1 className="mt-3 max-w-3xl font-heading text-4xl font-semibold leading-tight text-foreground sm:text-5xl lg:text-6xl">
+          <h1 className="max-w-3xl font-heading text-4xl font-semibold leading-tight text-foreground sm:mt-3 sm:text-5xl lg:text-6xl">
             Nutrition, made practical
           </h1>
         </div>

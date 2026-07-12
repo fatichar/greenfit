@@ -67,60 +67,13 @@ export function HeroCarousel({ slides }: { slides: HeroSlide[] }) {
       aria-roledescription="carousel"
       aria-label="What you can do on GreenFit"
     >
-      <div className="relative mx-auto grid w-full min-w-0 max-w-7xl items-center gap-8 px-4 py-10 sm:px-6 md:grid-cols-[0.95fr_1.05fr] md:gap-12 lg:gap-14 lg:px-8 lg:py-14">
-        <div className="grid min-w-0">
-          {slides.map((slide, slideIndex) => {
-            const isActive = slideIndex === index;
-            return (
-              <div
-                key={slide.id}
-                className={cn(
-                  "col-start-1 row-start-1 flex flex-col gap-6",
-                  transitionClass,
-                  isActive ? "z-10 opacity-100" : "pointer-events-none opacity-0"
-                )}
-                aria-hidden={!isActive}
-                id={`hero-slide-${slide.id}`}
-                role="tabpanel"
-                aria-labelledby={`hero-tab-${slide.id}`}
-              >
-                <div className="flex flex-col gap-4">
-                  <h2 className="max-w-xl font-heading text-2xl font-semibold leading-snug text-foreground sm:text-3xl lg:text-[2rem] lg:leading-tight">
-                    {slide.title}
-                  </h2>
-                  <p className="max-w-xl text-base leading-7 text-muted-foreground sm:text-lg sm:leading-8">
-                    {slide.body}
-                  </p>
-                </div>
-                <div className="flex flex-col gap-3 sm:flex-row">
-                  <Link
-                    href={slide.primaryCta.href}
-                    className={cn(buttonVariants({ size: "lg" }), "w-full sm:w-auto")}
-                    tabIndex={isActive ? 0 : -1}
-                    data-umami-event="CTA Click"
-                    data-umami-event-cta={`${slide.primaryCta.label} (Hero carousel)`}
-                  >
-                    {slide.primaryCta.label}
-                    <ArrowRight data-icon="inline-end" />
-                  </Link>
-                  {slide.secondaryCta ? (
-                    <Link
-                      href={slide.secondaryCta.href}
-                      className={cn(buttonVariants({ size: "lg", variant: "outline" }), "w-full sm:w-auto")}
-                      tabIndex={isActive ? 0 : -1}
-                      data-umami-event="CTA Click"
-                      data-umami-event-cta={`${slide.secondaryCta.label} (Hero carousel)`}
-                    >
-                      {slide.secondaryCta.label}
-                    </Link>
-                  ) : null}
-                </div>
-              </div>
-            );
-          })}
-        </div>
-
-        <div className="min-w-0">
+      {/*
+        Mobile order: image → controls → text (carousel is obvious above the fold).
+        Desktop: text | image on row 1, controls full-width on row 2.
+      */}
+      <div className="relative mx-auto grid w-full min-w-0 max-w-7xl items-center gap-x-8 gap-y-5 px-4 py-10 sm:px-6 md:grid-cols-[0.95fr_1.05fr] md:gap-x-12 md:gap-y-6 lg:gap-x-14 lg:px-8 lg:py-14">
+        {/* Image — first on mobile */}
+        <div className="order-1 min-w-0 md:order-2 md:col-start-2 md:row-start-1">
           <div className="relative aspect-[16/10] w-full overflow-hidden rounded-xl border border-olive-200 bg-white shadow-sm">
             {slides.map((slide, slideIndex) => (
               <div
@@ -146,59 +99,114 @@ export function HeroCarousel({ slides }: { slides: HeroSlide[] }) {
             ))}
           </div>
         </div>
-      </div>
 
-      <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 pb-8 sm:px-6 lg:px-8">
-        <div className="flex flex-wrap items-center gap-2" role="tablist" aria-label="Carousel slides">
+        {/* Controls — under image on mobile; full-width bar under both columns on desktop */}
+        <div className="order-2 flex items-center justify-between gap-4 md:order-3 md:col-span-2">
+          <div className="flex flex-wrap items-center gap-2" role="tablist" aria-label="Carousel slides">
+            {slides.map((slide, slideIndex) => {
+              const selected = slideIndex === index;
+              return (
+                <button
+                  key={slide.id}
+                  type="button"
+                  role="tab"
+                  id={`hero-tab-${slide.id}`}
+                  aria-controls={`hero-slide-${slide.id}`}
+                  aria-selected={selected}
+                  aria-label={`Show slide ${slideIndex + 1}: ${slide.title}`}
+                  onClick={() => goTo(slideIndex)}
+                  className={cn(
+                    "h-2 rounded-full transition-all",
+                    selected ? "w-7 bg-primary" : "w-2 bg-olive-200 hover:bg-olive-700/40"
+                  )}
+                />
+              );
+            })}
+          </div>
+          <div className="flex items-center gap-1">
+            <button
+              type="button"
+              onClick={() => goTo(index - 1)}
+              className="inline-flex size-9 items-center justify-center rounded-md text-muted-foreground transition-colors hover:bg-olive-100 hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+              aria-label="Previous slide"
+            >
+              <ChevronLeft className="size-4" aria-hidden="true" />
+            </button>
+            <button
+              type="button"
+              onClick={() => goTo(index + 1)}
+              className="inline-flex size-9 items-center justify-center rounded-md text-muted-foreground transition-colors hover:bg-olive-100 hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+              aria-label="Next slide"
+            >
+              <ChevronRight className="size-4" aria-hidden="true" />
+            </button>
+            <button
+              type="button"
+              onClick={() => setUserPaused((current) => !current)}
+              className="ml-1 inline-flex size-9 items-center justify-center rounded-md text-muted-foreground transition-colors hover:bg-olive-100 hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+              aria-label={userPaused ? "Resume automatic slides" : "Pause automatic slides"}
+              aria-pressed={userPaused}
+            >
+              {userPaused ? <Play className="size-4" aria-hidden="true" /> : <Pause className="size-4" aria-hidden="true" />}
+            </button>
+            <p className="ml-1 text-xs font-medium tabular-nums text-muted-foreground" aria-live="polite">
+              {index + 1} / {count}
+            </p>
+          </div>
+        </div>
+
+        {/* Text + CTAs — last on mobile; left column on desktop */}
+        <div className="order-3 grid min-h-0 min-w-0 self-stretch md:order-1 md:col-start-1 md:row-start-1">
           {slides.map((slide, slideIndex) => {
-            const selected = slideIndex === index;
+            const isActive = slideIndex === index;
             return (
-              <button
+              <div
                 key={slide.id}
-                type="button"
-                role="tab"
-                id={`hero-tab-${slide.id}`}
-                aria-controls={`hero-slide-${slide.id}`}
-                aria-selected={selected}
-                aria-label={`Show slide ${slideIndex + 1}: ${slide.title}`}
-                onClick={() => goTo(slideIndex)}
                 className={cn(
-                  "h-2 rounded-full transition-all",
-                  selected ? "w-7 bg-primary" : "w-2 bg-olive-200 hover:bg-olive-700/40"
+                  "col-start-1 row-start-1 flex h-full min-h-0 flex-col gap-6",
+                  transitionClass,
+                  isActive ? "z-10 opacity-100" : "pointer-events-none opacity-0"
                 )}
-              />
+                aria-hidden={!isActive}
+                id={`hero-slide-${slide.id}`}
+                role="tabpanel"
+                aria-labelledby={`hero-tab-${slide.id}`}
+              >
+                <div className="flex flex-col gap-4">
+                  <h2 className="max-w-xl font-heading text-2xl font-semibold leading-snug text-foreground sm:text-3xl lg:text-[2rem] lg:leading-tight">
+                    {slide.title}
+                  </h2>
+                  <p className="max-w-xl text-base leading-7 text-muted-foreground sm:text-lg sm:leading-8">
+                    {slide.body}
+                  </p>
+                </div>
+                {/* mt-auto pins CTAs to the bottom of the tallest slide so they don’t jump */}
+                <div className="mt-auto flex flex-col gap-3 sm:flex-row">
+                  <Link
+                    href={slide.primaryCta.href}
+                    className={cn(buttonVariants({ size: "lg" }), "w-full sm:w-auto")}
+                    tabIndex={isActive ? 0 : -1}
+                    data-umami-event="CTA Click"
+                    data-umami-event-cta={`${slide.primaryCta.label} (Hero carousel)`}
+                  >
+                    {slide.primaryCta.label}
+                    <ArrowRight data-icon="inline-end" />
+                  </Link>
+                  {slide.secondaryCta ? (
+                    <Link
+                      href={slide.secondaryCta.href}
+                      className={cn(buttonVariants({ size: "lg", variant: "outline" }), "w-full sm:w-auto")}
+                      tabIndex={isActive ? 0 : -1}
+                      data-umami-event="CTA Click"
+                      data-umami-event-cta={`${slide.secondaryCta.label} (Hero carousel)`}
+                    >
+                      {slide.secondaryCta.label}
+                    </Link>
+                  ) : null}
+                </div>
+              </div>
             );
           })}
-        </div>
-        <div className="flex items-center gap-1">
-          <button
-            type="button"
-            onClick={() => goTo(index - 1)}
-            className="inline-flex size-9 items-center justify-center rounded-md text-muted-foreground transition-colors hover:bg-olive-100 hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-            aria-label="Previous slide"
-          >
-            <ChevronLeft className="size-4" aria-hidden="true" />
-          </button>
-          <button
-            type="button"
-            onClick={() => goTo(index + 1)}
-            className="inline-flex size-9 items-center justify-center rounded-md text-muted-foreground transition-colors hover:bg-olive-100 hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-            aria-label="Next slide"
-          >
-            <ChevronRight className="size-4" aria-hidden="true" />
-          </button>
-          <button
-            type="button"
-            onClick={() => setUserPaused((current) => !current)}
-            className="ml-1 inline-flex size-9 items-center justify-center rounded-md text-muted-foreground transition-colors hover:bg-olive-100 hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-            aria-label={userPaused ? "Resume automatic slides" : "Pause automatic slides"}
-            aria-pressed={userPaused}
-          >
-            {userPaused ? <Play className="size-4" aria-hidden="true" /> : <Pause className="size-4" aria-hidden="true" />}
-          </button>
-          <p className="ml-1 text-xs font-medium tabular-nums text-muted-foreground" aria-live="polite">
-            {index + 1} / {count}
-          </p>
         </div>
       </div>
     </div>
