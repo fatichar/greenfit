@@ -88,17 +88,61 @@ function NumberField({
   hint?: string;
   suffix?: string;
 }) {
+  const [text, setText] = useState(String(value));
+  const [focused, setFocused] = useState(false);
+
+  useEffect(() => {
+    if (!focused) setText(String(value));
+  }, [focused, value]);
+
+  function commit(raw: string) {
+    if (raw.trim() === "") {
+      setText(String(value));
+      return;
+    }
+
+    const parsed = Number(raw);
+    if (!Number.isFinite(parsed)) {
+      setText(String(value));
+      return;
+    }
+
+    const next =
+      min !== undefined || max !== undefined
+        ? clampNumber(parsed, min ?? Number.NEGATIVE_INFINITY, max ?? Number.POSITIVE_INFINITY, value)
+        : parsed;
+    onChange(next);
+    setText(String(next));
+  }
+
   return (
     <div className="flex flex-col gap-2">
       <Label>{label}</Label>
       <div className="relative">
         <Input
           type="number"
-          value={value}
+          value={text}
           min={min}
           max={max}
           step={step}
-          onChange={(event) => onChange(Number(event.target.value))}
+          onFocus={() => setFocused(true)}
+          onChange={(event) => {
+            const next = event.target.value;
+            setText(next);
+            // Keep parent state valid while typing; empty field stays empty in the UI.
+            if (next.trim() === "") return;
+            const parsed = Number(next);
+            if (!Number.isFinite(parsed)) return;
+            onChange(
+              min !== undefined || max !== undefined
+                ? clampNumber(parsed, min ?? Number.NEGATIVE_INFINITY, max ?? Number.POSITIVE_INFINITY, value)
+                : parsed
+            );
+          }}
+          onBlur={() => {
+            setFocused(false);
+            commit(text);
+          }}
           className={cn("h-10", suffix && "pr-12")}
         />
         {suffix ? (
@@ -634,6 +678,53 @@ function FiberTool() {
   );
 }
 
+function ServingCountInput({
+  value,
+  onChange,
+  label,
+}: {
+  value: number;
+  onChange: (value: number) => void;
+  label: string;
+}) {
+  const [text, setText] = useState(String(value));
+  const [focused, setFocused] = useState(false);
+
+  useEffect(() => {
+    if (!focused) setText(String(value));
+  }, [focused, value]);
+
+  return (
+    <Input
+      type="number"
+      min={0}
+      max={12}
+      value={text}
+      aria-label={`${label} servings`}
+      onFocus={() => setFocused(true)}
+      onChange={(event) => {
+        const next = event.target.value;
+        setText(next);
+        if (next.trim() === "") return;
+        const parsed = Number(next);
+        if (!Number.isFinite(parsed)) return;
+        onChange(clampNumber(parsed, 0, 12, value));
+      }}
+      onBlur={() => {
+        setFocused(false);
+        if (text.trim() === "" || !Number.isFinite(Number(text))) {
+          setText(String(value));
+          return;
+        }
+        const next = clampNumber(Number(text), 0, 12, value);
+        onChange(next);
+        setText(String(next));
+      }}
+      className="h-8 w-16 text-center"
+    />
+  );
+}
+
 function PlateProteinTool() {
   const [servings, setServings] = useState<Record<string, number>>(() =>
     Object.fromEntries(PLANT_FOODS.map((food) => [food.id, food.id === "dal" || food.id === "roti" ? 1 : 0]))
@@ -690,13 +781,10 @@ function PlateProteinTool() {
               >
                 −
               </Button>
-              <Input
-                type="number"
-                min={0}
-                max={12}
+              <ServingCountInput
                 value={servings[food.id] ?? 0}
-                onChange={(event) => setCount(food.id, Number(event.target.value))}
-                className="h-8 w-16 text-center"
+                onChange={(value) => setCount(food.id, value)}
+                label={food.name}
               />
               <Button
                 type="button"
