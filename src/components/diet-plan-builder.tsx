@@ -1,9 +1,8 @@
 "use client";
-/* eslint-disable react/no-unescaped-entities */
 
 import { useEffect, useMemo, useState } from "react";
 import type { Dispatch, ReactNode, SetStateAction } from "react";
-import { ArrowLeft, ArrowRight, Check, ChevronDown, ChevronUp, Download, Info, Minus, Plus, RotateCcw, ShieldCheck, Trash2, Utensils } from "lucide-react";
+import { ArrowLeft, ArrowRight, Check, ChevronDown, ChevronUp, Download, Info, Minus, Plus, RotateCcw, ShieldCheck, Trash2 } from "lucide-react";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -191,10 +190,13 @@ function ProgressMetric({ label, value, target, unit }: { label: string; value: 
 function TargetNumberInput({ value, min, max, onChange }: { value: number; min: number; max: number; onChange: (value: number) => void }) {
   const [text, setText] = useState(String(value));
   const [focused, setFocused] = useState(false);
+  const [prevValue, setPrevValue] = useState(value);
 
-  useEffect(() => {
-    if (!focused) setText(String(value));
-  }, [focused, value]);
+  // Sync draft text from parent when not editing (avoid setState-in-effect).
+  if (!focused && value !== prevValue) {
+    setPrevValue(value);
+    setText(String(value));
+  }
 
   return (
     <Input
@@ -227,13 +229,17 @@ function TargetNumberInput({ value, min, max, onChange }: { value: number; min: 
 }
 
 function NumberField({ label, value, min, max, onChange, placeholder }: { label: string; value: number | string; min?: number; max?: number; onChange: (value: number) => void; placeholder?: string }) {
-  const [text, setText] = useState(value === "" || value === null || value === undefined ? "" : String(value));
+  const displayFromValue = value === "" || value === null || value === undefined ? "" : String(value);
+  const [text, setText] = useState(displayFromValue);
   const [focused, setFocused] = useState(false);
+  const [prevValue, setPrevValue] = useState(value);
   const numericValue = typeof value === "number" && Number.isFinite(value) ? value : null;
 
-  useEffect(() => {
-    if (!focused) setText(value === "" || value === null || value === undefined ? "" : String(value));
-  }, [focused, value]);
+  // Sync draft text from parent when not editing (avoid setState-in-effect).
+  if (!focused && value !== prevValue) {
+    setPrevValue(value);
+    setText(displayFromValue);
+  }
 
   return (
     <Field label={label}>

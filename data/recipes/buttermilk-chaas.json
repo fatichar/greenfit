@@ -1,0 +1,87 @@
+{
+  "slug": "buttermilk-chaas",
+  "title": "Buttermilk (Chaas)",
+  "description": "Cool, spiced Indian buttermilk made from thick peanut or plant curd—dairy-like tang without milk. Perfect with spicy meals or as a light drink.",
+  "explanation": [
+    "Classic chaas is diluted curd whisked with salt, cumin, and herbs. Using well-set homemade cashew-almond curd keeps the body and tang closer to dairy buttermilk than thin soy milk alone.",
+    "This is a drink and a meal-cooler, not a protein shake. Pair with dal-rice or a heavy lunch when you miss the glass of chaas after a thali."
+  ],
+  "ingredients": [
+    "1 cup Thick Homemade Curd (cashew-almond; or unsweetened plant yogurt with body)",
+    "2–2.5 cups Cold Water (adjust for thickness)",
+    "1/2 tsp Roasted Cumin powder",
+    "1/4 tsp Black Salt (kala namak) or to taste",
+    "Salt to taste",
+    "1 Green Chilli, finely chopped (optional)",
+    "1 tsp Grated Ginger (optional)",
+    "2 tbsp Coriander leaves, chopped",
+    "Few Mint leaves, chopped (optional)",
+    "Ice cubes to serve"
+  ],
+  "instructions": [
+    "Whisk the curd until completely smooth with no lumps—use a whisk, mathani, or a few short blender pulses.",
+    "Add cold water gradually while whisking until you reach a pourable buttermilk consistency (slightly thinner than a lassi, not watery like plain water).",
+    "Stir in roasted cumin, black salt, and regular salt. Taste and adjust tang with a squeeze of lemon only if the curd was mild.",
+    "Add green chilli, ginger, coriander, and mint if using. Chill 15 minutes or pour over ice.",
+    "Serve immediately so herbs stay bright. Stir before each glass if it separates slightly."
+  ],
+  "stepNotes": [
+    "Start with thick curd; thin liquid yogurt makes flat, sour water instead of chaas.",
+    "Black salt adds the familiar edge many people associate with dairy chaas—use lightly.",
+    "Cashew-almond homemade curd gives the cleanest chaas. Soy curd works if unsweetened and well whisked; peanut curd will taste of peanut.",
+    "Do not boil plant curd for this drink—heat can split it. Keep everything cold.",
+    "Make the base without chilli for kids; offer chilli as a side muddle."
+  ],
+  "variationSections": [
+    {
+      "title": "Regional styles",
+      "items": [
+        "Gujarati-style: a pinch of sugar with cumin and ginger.",
+        "Punjabi mattha: more black salt, more mint, coarser whisk.",
+        "South Indian moru: curry leaves and mustard tempered in a spoon of oil, cooled, then stirred in."
+      ]
+    },
+    {
+      "title": "Thickness and use",
+      "items": [
+        "Thicker (less water) as a side raita-drink with rice.",
+        "Thinner over ice for summer hydration.",
+        "Blend with cucumber for a cooling cucumber chaas."
+      ]
+    }
+  ],
+  "tags": [
+    "drink",
+    "chaas",
+    "buttermilk",
+    "cooling",
+    "easy",
+    "no-cook",
+    "summer",
+    "Indian",
+    "side",
+    "dairy-free"
+  ],
+  "mealTypes": ["lunch", "dinner", "evening-snack", "tea-time"],
+  "role": "side",
+  "servings": 2,
+  "prepTime": "8 mins",
+  "cookTime": "0 mins",
+  "prepMinutes": 8,
+  "cookMinutes": 0,
+  "cost": "Rs 35 for 2 glasses",
+  "costInr": 35,
+  "image": "/images/items/recipes/buttermilk-chaas.jpg",
+  "nutrition": {
+    "servingSize": "1 tall glass (half recipe)",
+    "calories": 90,
+    "proteinG": 4,
+    "carbsG": 4,
+    "fatG": 7,
+    "fiberG": 1
+  },
+  "dietary": ["plant-based", "gluten-free", "jain", "no-onion-no-garlic"],
+  "proteinSources": ["plant curd", "cashews"],
+  "portable": true,
+  "makeAhead": true
+}

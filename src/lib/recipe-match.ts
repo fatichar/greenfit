@@ -102,7 +102,23 @@ const MEAL_ITEM_ALIASES: Record<string, string> = {
   "fruit bowl": "seasonal-cut-fruit-bowl",
   "fruit chaat": "fruit-chaat",
   "soy curd": "soy-curd-fruit-bowl",
+  "peanut curd": "homemade-curd",
+  "peanut curd bowl": "homemade-curd",
+  "cashew curd": "homemade-curd",
+  "plant curd": "homemade-curd",
+  "homemade curd": "homemade-curd",
+  "dahi": "homemade-curd",
+  "curd": "homemade-curd",
+  "chaas": "buttermilk-chaas",
+  "buttermilk": "buttermilk-chaas",
+  "mattha": "buttermilk-chaas",
   "corn chaat": "corn-capsicum-chaat",
+
+  // Mains (dairy-crave / comfort)
+  "dal makhni": "dal-makhni",
+  "dal makhani": "dal-makhni",
+  "pizza": "veggie-pizza",
+  "veggie pizza": "veggie-pizza",
 
   // Sweets / extras
   "kheer": "plant-milk-kheer",
@@ -112,6 +128,10 @@ const MEAL_ITEM_ALIASES: Record<string, string> = {
   "thandai": "thandai-smoothie",
   "nice cream": "banana-nice-cream",
   "energy bites": "date-nut-energy-bites",
+  "gulab jamun": "gulab-jamun",
+  "gajar halwa": "gajar-halwa",
+  "gajar ka halwa": "gajar-halwa",
+  "carrot halwa": "gajar-halwa",
 };
 
 function slugToLabel(slug: string): string {

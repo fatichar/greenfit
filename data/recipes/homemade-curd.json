@@ -1,0 +1,105 @@
+{
+  "slug": "homemade-curd",
+  "title": "Homemade Curd",
+  "description": "Mild, slightly sour set dahi from cashew and almond milk—neutral flavor closer to dairy curd than peanut or plain soy. Everyday base for raita, curd rice, chaas, and marinades.",
+  "explanation": [
+    "Peanut curd is useful and cheap, but it always tastes of peanuts. Plain soy yogurt can taste beany. For dishes where you want the tang and cool of dahi without a competing nut or soy note—raita, curd rice, chaas, marinades, plain with rice—cashew plus blanched almond is the most reliable homemade base: creamy body, pale color, and a clean sour after a proper culture.",
+    "The method follows the same logic as dairy dahi and plant-curd guides: make a smooth milk, warm only to body temperature, inoculate with live culture, set warm, then chill hard. Slight sourness should come from fermentation time, not lemon juice."
+  ],
+  "ingredients": [
+    "1/2 cup Raw Cashews",
+    "1/2 cup Raw Almonds",
+    "3 cups Water (plus more for soaking)",
+    "2 tbsp Active plant yogurt or previous batch of this curd (live culture)",
+    "1/2 tsp Sugar or jaggery (feeds the culture; optional but helps a reliable set)",
+    "Pinch of Salt (optional)",
+    "Starter alternative: 2 probiotic capsules (dairy-free, with Lactobacillus) if you have no live yogurt"
+  ],
+  "instructions": [
+    "Soak cashews and almonds in water 6–8 hours or overnight. Drain. Blanch almonds: cover with boiling water 2 minutes, slip off skins, and discard skins. Rinse both nuts.",
+    "Blend nuts with 3 cups fresh water on high until completely silky (2–3 minutes). For the smoothest dahi, strain through muslin or a nut-milk bag into a clean pan, squeezing well. For a thicker Greek-style set, skip straining and use the full blend.",
+    "Warm the milk on low heat only until it is body-warm (about 38–42°C)—comfortable on a clean finger, never hot. Do not boil; boiling can make the set grainy and can kill a later starter if you reheat too high.",
+    "Cool a minute if it overheated. Whisk in sugar, optional salt, and starter until smooth (or open probiotic capsules and whisk in the powder). Pour into a clean glass or ceramic jar.",
+    "Incubate 8–12 hours in a warm, draft-free spot (oven with only the light on, Instant Pot yogurt mode, or jar wrapped in a thick towel). It should smell mildly sour and jiggle as one mass when tilted gently. For more tang, leave 1–2 hours longer once it has set.",
+    "Refrigerate at least 4–6 hours to firm and mellow. Stir only after chilling if you want a smoother spoonable yogurt. Use within 5–6 days; reserve 2 tbsp as starter for the next batch."
+  ],
+  "stepNotes": [
+    "Blanched almonds matter: skins add bitterness and beige color. Peeling is the difference between “nut milk” and mild white dahi.",
+    "Use only live culture. Heat-treated supermarket tubs will not set a new batch. Once you have a good jar, keep propagating from it.",
+    "If the milk is too thin, the curd will be watery—use less water next time (about 2½ cups) or hang the set curd in muslin 30–60 minutes.",
+    "If it has not set after 12 hours, it was too cool or the starter was weak. Move to a warmer spot rather than adding lemon.",
+    "Lemon juice alone makes sour cream-style liquid, not cultured curd, and you cannot use it as a starter for the next batch.",
+    "This recipe is soy-free and peanut-free. It is not nut-free—see variations for coconut or store soy options."
+  ],
+  "variationSections": [
+    {
+      "title": "Closer to dairy dahi",
+      "items": [
+        "Equal cashew and almond keeps flavor neutral; more cashew = creamier, more almond = slightly tangier edge for some palates.",
+        "Culture longer (up to 14 hours in warm weather watch carefully) for a sharper, more traditional sour.",
+        "Hang set curd for hung curd—thick raita, shrikhand base, or sandwich spreads."
+      ]
+    },
+    {
+      "title": "When peanut or soy is fine",
+      "items": [
+        "Peanut curd: use when the dish already likes peanut (some kadhi-style gravies, chutney-adjacent sides). Soak 1 cup peanuts, blend with ~3 cups water, strain, culture the same way.",
+        "Soy path: plain unsweetened soy milk + starter sets easily and is higher protein; best when you do not mind a light soy note (see Soy Curd Fruit Bowl).",
+        "Coconut milk sets rich but tastes of coconut—better for desserts than plain raita."
+      ]
+    },
+    {
+      "title": "Uses once set",
+      "items": [
+        "Plain with salt and roasted cumin.",
+        "Cucumber or boondi-style raita.",
+        "Curd rice with mustard, curry leaf, and ginger tempering.",
+        "Blend into chaas (see Buttermilk / Chaas recipe).",
+        "Tofu or vegetable marinades with ginger, chilli, and spices."
+      ]
+    },
+    {
+      "title": "Starter options",
+      "items": [
+        "Previous successful batch of this curd (best consistency).",
+        "Unsweetened plant yogurt labeled with live active cultures.",
+        "Dairy-free probiotic capsules emptied into the warm milk."
+      ]
+    }
+  ],
+  "tags": [
+    "curd",
+    "dahi",
+    "staple",
+    "make-ahead",
+    "fermented",
+    "Indian",
+    "side",
+    "dairy-free",
+    "comfort",
+    "batch-cook",
+    "raita"
+  ],
+  "mealTypes": ["breakfast", "lunch", "dinner", "evening-snack"],
+  "role": "side",
+  "servings": 4,
+  "prepTime": "25 mins",
+  "cookTime": "0 mins (plus 8–12 hrs set + chill)",
+  "prepMinutes": 25,
+  "cookMinutes": 0,
+  "cost": "Rs 90 for ~3 cups curd",
+  "costInr": 90,
+  "image": "/images/items/recipes/homemade-curd.jpg",
+  "nutrition": {
+    "servingSize": "1/2 cup (~120 g)",
+    "calories": 170,
+    "proteinG": 6,
+    "carbsG": 8,
+    "fatG": 14,
+    "fiberG": 2
+  },
+  "dietary": ["plant-based", "gluten-free", "jain", "no-onion-no-garlic", "soy-free"],
+  "proteinSources": ["cashews", "almonds"],
+  "portable": true,
+  "makeAhead": true
+}

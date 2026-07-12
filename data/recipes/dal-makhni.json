@@ -1,0 +1,103 @@
+{
+  "slug": "dal-makhni",
+  "title": "Dal Makhni",
+  "description": "Slow-simmered whole urad and rajma in a smoky tomato-cashew gravy—restaurant richness without butter or cream.",
+  "explanation": [
+    "Dal makhni’s soul is time: whole black urad breaks down into a silky body while a small amount of rajma adds texture. Dairy cream is replaced with blended cashews and a finish of butter or oil plus kasuri methi.",
+    "This is a full comfort main with rice or naan-style flatbread. Plan soaking the night before; the active cook is mostly gentle simmering."
+  ],
+  "ingredients": [
+    "3/4 cup Whole Black Urad Dal (sabut urad)",
+    "2 tbsp Rajma (kidney beans)",
+    "1 large Onion, finely chopped",
+    "3 Tomatoes, pureed (about 1.5 cups)",
+    "1 tbsp Ginger-garlic paste",
+    "1 tsp Cumin Seeds",
+    "1 tsp Kashmiri chilli powder",
+    "1/2 tsp Turmeric",
+    "1 tsp Coriander powder",
+    "1/2 tsp Garam Masala",
+    "1 tbsp Kasuri Methi, crushed",
+    "1/4 cup Cashews, soaked 20 minutes",
+    "2 tbsp Oil or Butter (plus more to finish)",
+    "Salt to taste",
+    "1/2 tsp Sugar or jaggery (optional, balances tomato)",
+    "Coriander leaves to garnish",
+    "Cooked rice or roti for serving"
+  ],
+  "instructions": [
+    "Soak urad and rajma together 8 hours or overnight. Drain. Pressure-cook with fresh water and a pinch of salt until very soft—urad should mash easily (usually 5–7 whistles, then natural release). Reserve cooking liquid.",
+    "Blend soaked cashews with 1/4 cup water into a smooth cream.",
+    "Heat oil or butter. Crackle cumin. Saute onion until deep golden. Add ginger-garlic; cook until raw smell goes.",
+    "Add tomato puree, turmeric, chilli, coriander, and salt. Cook until thick and oil separates at the edges.",
+    "Add cooked dal-rajma with enough cooking liquid for a loose gravy. Mash some dal against the pot. Simmer 20–30 minutes on low, stirring often so it does not stick.",
+    "Stir in cashew cream, garam masala, kasuri methi, optional sugar, and a small finish of butter. Simmer 5 more minutes until creamy. Garnish with coriander. Serve hot with rice or roti."
+  ],
+  "stepNotes": [
+    "Undercooked urad never becomes makhni—when in doubt, cook longer with more water.",
+    "Mashing a ladle of dal into the pot is the restaurant trick for body without dairy cream.",
+    "Kasuri methi is essential for the signature aroma; add it near the end so it stays fragrant.",
+    "If the gravy splits after cashew cream, lower the heat and stir continuously—do not boil hard.",
+    "Day-two dal makhni is better; thin with hot water when reheating."
+  ],
+  "variationSections": [
+    {
+      "title": "Richer or lighter",
+      "items": [
+        "Richer: extra cashew cream and a spoon of coconut milk at the end.",
+        "Lighter: skip butter finish; use 2 tbsp cashews only.",
+        "Smoky: a 2-second charcoal dhungar with a drop of oil (optional, careful)."
+      ]
+    },
+    {
+      "title": "No-onion / no-garlic",
+      "items": [
+        "Skip onion and garlic; use hing, more ginger, tomato, and kasuri methi.",
+        "Finish with a little extra cashew cream for body.",
+        "Still pair with rice or a plain roti."
+      ]
+    },
+    {
+      "title": "Serving ideas",
+      "items": [
+        "Jeera rice, plain basmati, or laccha-style paratha.",
+        "Onion rings and lemon on the side.",
+        "A small glass of chaas to cut the richness."
+      ]
+    }
+  ],
+  "tags": [
+    "lunch",
+    "dinner",
+    "protein",
+    "comfort",
+    "North Indian",
+    "restaurant-style",
+    "batch-cook",
+    "meal-prep",
+    "craving",
+    "high fiber"
+  ],
+  "mealTypes": ["lunch", "dinner", "craving"],
+  "role": "main",
+  "servings": 4,
+  "prepTime": "15 mins (plus overnight soak)",
+  "cookTime": "60 mins",
+  "prepMinutes": 15,
+  "cookMinutes": 60,
+  "cost": "Rs 100 for 4 people",
+  "costInr": 100,
+  "image": "/images/items/recipes/dal-makhni.jpg",
+  "nutrition": {
+    "servingSize": "1 bowl without rice (one-fourth recipe)",
+    "calories": 320,
+    "proteinG": 15,
+    "carbsG": 38,
+    "fatG": 12,
+    "fiberG": 12
+  },
+  "dietary": ["plant-based", "gluten-free"],
+  "proteinSources": ["urad dal", "rajma", "cashews"],
+  "portable": false,
+  "makeAhead": true
+}

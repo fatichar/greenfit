@@ -1,0 +1,88 @@
+{
+  "slug": "gulab-jamun",
+  "title": "Gulab Jamun",
+  "description": "Soft, syrup-soaked gulab jamun without khoya or milk powder—plant-milk solids and a classic rose-cardamom sugar syrup for the festival craving.",
+  "explanation": [
+    "Classic gulab jamun depends on khoya or milk powder for a porous, spongy crumb that drinks syrup. This version uses soy milk powder (or a cashew–semolina mix) so the dough fries pale-golden and soaks like the mithai-shop original.",
+    "Two non-negotiables: a soft dough that is not dry, and warm syrup so the jamuns absorb without collapsing. Do not rush the rest or the soak."
+  ],
+  "ingredients": [
+    "1 cup Soy Milk Powder (unsweetened)",
+    "1/4 cup All-purpose Flour (maida)",
+    "2 tbsp Fine Semolina (sooji/rava)",
+    "1/4 tsp Baking Powder",
+    "Pinch of Salt",
+    "2–3 tbsp Neutral Oil or melted Butter (for dough)",
+    "3–5 tbsp Warm Plant Milk or Water (as needed to bind)",
+    "Oil for deep frying",
+    "1.5 cups Sugar",
+    "1.5 cups Water (for syrup)",
+    "4 Green Cardamom pods, crushed",
+    "1 tsp Rose Water",
+    "Pinch of Saffron (optional)"
+  ],
+  "instructions": [
+    "Make syrup first: boil sugar, water, and cardamom 6–8 minutes until slightly sticky (one-string not required—just a light syrup). Switch off, add rose water and saffron. Keep warm, not boiling.",
+    "Mix soy milk powder, maida, sooji, baking powder, and salt. Rub in oil until sandy. Add warm plant milk a spoon at a time until a soft, crack-free dough forms—do not knead hard.",
+    "Rest dough 10–12 minutes covered. Grease palms and roll smooth balls with no cracks (cracks cause oil entry and burst jamuns).",
+    "Heat oil on medium-low. Test: a tiny dough scrap should rise slowly, not brown instantly. Fry jamuns, turning gently, until deep golden-brown all over (8–12 minutes).",
+    "Drain briefly on a rack, then soak in warm syrup at least 1–2 hours (overnight is best). Serve warm or at room temperature with a little extra syrup."
+  ],
+  "stepNotes": [
+    "If dough cracks while rolling, wet fingers and smooth—dry dough = hard jamuns.",
+    "High heat browns the outside and leaves the center raw; patience on medium-low is the real skill.",
+    "Syrup should be warm when jamuns go in. Ice-cold syrup will not soak; boiling syrup can break them.",
+    "Soy milk powder brands vary; if dough is sticky, dust a little maida. If dry, add milk by the teaspoon.",
+    "Leftover syrup keeps; rewarm jamuns gently in syrup before serving."
+  ],
+  "variationSections": [
+    {
+      "title": "No soy milk powder",
+      "items": [
+        "Cashew base: fine cashew powder + 2 tbsp maida + 2 tbsp sooji + oil + plant milk—slightly denser, still excellent.",
+        "Store-bought plant mawa if available: follow pack ratios and reduce extra flour.",
+        "Baked version: brush oil and bake at 180°C until golden, then soak longer—texture differs from fried."
+      ]
+    },
+    {
+      "title": "Flavor and finish",
+      "items": [
+        "Stuff a pistachio in the center before frying.",
+        "Finish with slivered almonds and a drop more rose water.",
+        "Serve with a scoop of banana nice cream for a modern plate."
+      ]
+    }
+  ],
+  "tags": [
+    "festival",
+    "craving",
+    "dessert",
+    "sweet",
+    "Indian sweets",
+    "mithai",
+    "make-ahead",
+    "celebration"
+  ],
+  "mealTypes": ["festival", "craving"],
+  "role": "snack",
+  "servings": 12,
+  "prepTime": "25 mins",
+  "cookTime": "25 mins",
+  "prepMinutes": 25,
+  "cookMinutes": 25,
+  "cost": "Rs 120 for 12 jamuns",
+  "costInr": 120,
+  "image": "/images/items/recipes/gulab-jamun.jpg",
+  "nutrition": {
+    "servingSize": "1 jamun with syrup",
+    "calories": 145,
+    "proteinG": 3,
+    "carbsG": 22,
+    "fatG": 5,
+    "fiberG": 0
+  },
+  "dietary": ["plant-based", "nut-free"],
+  "proteinSources": ["soy milk powder"],
+  "portable": true,
+  "makeAhead": true
+}

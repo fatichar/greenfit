@@ -90,10 +90,13 @@ function NumberField({
 }) {
   const [text, setText] = useState(String(value));
   const [focused, setFocused] = useState(false);
+  const [prevValue, setPrevValue] = useState(value);
 
-  useEffect(() => {
-    if (!focused) setText(String(value));
-  }, [focused, value]);
+  // Sync draft text from parent when not editing (avoid setState-in-effect).
+  if (!focused && value !== prevValue) {
+    setPrevValue(value);
+    setText(String(value));
+  }
 
   function commit(raw: string) {
     if (raw.trim() === "") {
@@ -689,10 +692,13 @@ function ServingCountInput({
 }) {
   const [text, setText] = useState(String(value));
   const [focused, setFocused] = useState(false);
+  const [prevValue, setPrevValue] = useState(value);
 
-  useEffect(() => {
-    if (!focused) setText(String(value));
-  }, [focused, value]);
+  // Sync draft text from parent when not editing (avoid setState-in-effect).
+  if (!focused && value !== prevValue) {
+    setPrevValue(value);
+    setText(String(value));
+  }
 
   return (
     <Input

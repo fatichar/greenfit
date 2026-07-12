@@ -1,0 +1,86 @@
+{
+  "slug": "gajar-halwa",
+  "title": "Gajar Halwa",
+  "description": "Slow-cooked carrot halwa with reduced plant milk, cashew cream, jaggery, and cardamom—winter comfort without khoya or ghee.",
+  "explanation": [
+    "Traditional gajar ka halwa builds body from milk reduction and khoya. Here, fortified soy or oat milk reduces with the carrots, and a small cashew paste stands in for mawa richness without dairy.",
+    "Red Delhi carrots (winter) give the best color and sweetness. Patience on low heat is what makes it taste like the festival version, not carrot porridge."
+  ],
+  "ingredients": [
+    "1 kg Red Carrots, peeled and finely grated",
+    "3 cups Unsweetened Soy Milk or Oat Milk",
+    "1/4 cup Cashews, soaked 20 minutes",
+    "1/4–1/3 cup Jaggery or Sugar (adjust to carrot sweetness)",
+    "3 tbsp Oil or Butter",
+    "1/2 tsp Cardamom powder",
+    "2 tbsp Chopped Almonds and Cashews for garnish",
+    "1 tbsp Raisins (optional)",
+    "Pinch of Saffron soaked in 1 tbsp warm plant milk (optional)"
+  ],
+  "instructions": [
+    "Blend soaked cashews with 3–4 tbsp plant milk into a smooth thick cream. Set aside.",
+    "Heat oil or butter in a wide heavy pan. Add grated carrot and saute 5–7 minutes until raw smell goes and carrots soften slightly.",
+    "Pour in the remaining plant milk. Cook on medium, stirring often, until milk largely reduces and carrots are soft (20–30 minutes).",
+    "Add jaggery and cashew cream. Cook on low, stirring, until the mixture thickens, leaves the sides, and looks glossy (10–15 minutes more).",
+    "Stir in cardamom, saffron milk, raisins, and half the nuts. Cook 2 minutes. Rest 10 minutes; it firms as it cools.",
+    "Serve warm topped with remaining nuts. Excellent chilled the next day."
+  ],
+  "stepNotes": [
+    "A wide pan evaporates milk faster than a deep pot—use the widest kadhai you have.",
+    "Add jaggery only after carrots are soft; early sugar can keep carrots from cooking evenly.",
+    "If the mix looks oily, keep stirring on low—the fat re-emulsifies as moisture drops.",
+    "Soy milk gives more protein and a dairy-adjacent body; oat milk is sweeter and softer.",
+    "For oil-lighter versions, reduce fat to 1 tbsp and rely more on cashew cream—stir carefully so it does not stick."
+  ],
+  "variationSections": [
+    {
+      "title": "Texture styles",
+      "items": [
+        "Soft mithai-shop: stop when still slightly moist; it thickens on cooling.",
+        "Drier barfi-style: cook longer and press into a greased tray; cool and cut squares.",
+        "Pressure-cooker shortcut: cook grated carrot with 1 cup milk 1 whistle, then open and reduce with remaining milk and cashew cream."
+      ]
+    },
+    {
+      "title": "Festive upgrades",
+      "items": [
+        "More saffron and silver leaf for Diwali plating.",
+        "Date paste for part of the jaggery.",
+        "A spoon of coconut milk at the end for extra richness (use sparingly)."
+      ]
+    }
+  ],
+  "tags": [
+    "festival",
+    "craving",
+    "dessert",
+    "sweet",
+    "winter",
+    "Indian sweets",
+    "comfort",
+    "make-ahead",
+    "carrot"
+  ],
+  "mealTypes": ["festival", "craving", "evening-snack"],
+  "role": "snack",
+  "servings": 6,
+  "prepTime": "20 mins",
+  "cookTime": "45 mins",
+  "prepMinutes": 20,
+  "cookMinutes": 45,
+  "cost": "Rs 110 for 6 servings",
+  "costInr": 110,
+  "image": "/images/items/recipes/gajar-halwa.jpg",
+  "nutrition": {
+    "servingSize": "1 small bowl (one-sixth recipe)",
+    "calories": 220,
+    "proteinG": 6,
+    "carbsG": 28,
+    "fatG": 10,
+    "fiberG": 4
+  },
+  "dietary": ["plant-based", "gluten-free", "jain", "no-onion-no-garlic"],
+  "proteinSources": ["soy milk", "cashews", "carrots"],
+  "portable": false,
+  "makeAhead": true
+}

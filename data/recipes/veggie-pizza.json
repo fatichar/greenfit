@@ -1,0 +1,99 @@
+{
+  "slug": "veggie-pizza",
+  "title": "Veggie Pizza",
+  "description": "Crisp homemade crust, tangy tomato sauce, and stretchy cashew mozzarella—the pizza night craving without dairy cheese.",
+  "explanation": [
+    "What people miss in pizza is usually melt and salt, not cow’s milk itself. A simple cashew mozzarella (or a good store-bought plant mozzarella) plus a hot oven gives stretch and browning that satisfy the craving.",
+    "This is a full meal-style pizza: vegetable-forward toppings, a yeasted base you can start the same evening, and clear swaps if you need gluten-free or nut-free."
+  ],
+  "ingredients": [
+    "2.25 cups All-purpose Flour or 50-50 atta + maida",
+    "1 tsp Instant Yeast",
+    "1 tsp Sugar",
+    "3/4 tsp Salt",
+    "1 tbsp Oil",
+    "3/4 cup Warm Water (approx)",
+    "1 cup Tomato Pizza Sauce (or cooked tomato-garlic-oregano puree)",
+    "1 cup Bell Peppers, sliced",
+    "1 small Onion, sliced",
+    "1 Tomato, sliced",
+    "1/2 cup Mushrooms or sweet corn (optional)",
+    "1/2 tsp Oregano and chilli flakes",
+    "Fresh basil or coriander to finish",
+    "Cashew mozzarella: 1/2 cup Cashews soaked 20 mins, 1/2 cup Water, 1 tbsp Tapioca starch or cornflour, 1 tbsp Nutritional Yeast, 1/2 tsp Salt, 1/2 tsp Lemon juice, 1/4 tsp Garlic powder"
+  ],
+  "instructions": [
+    "Dough: mix flour, yeast, sugar, and salt. Add oil and warm water to form a soft dough. Knead 6–8 minutes until smooth. Oil the bowl, cover, and rise 45–60 minutes until doubled.",
+    "Cashew mozzarella: blend soaked cashews, water, tapioca, nutritional yeast, salt, lemon, and garlic powder until silky. Cook in a nonstick pan on medium, stirring, 3–5 minutes until thick, stretchy, and glossy. Cool slightly.",
+    "Heat oven to the highest safe setting (230–250°C). Place a tray or pizza stone inside to preheat.",
+    "Punch dough, roll or stretch into 1–2 thin bases on parchment. Spread sauce, leaving a small rim.",
+    "Scatter vegetables. Dollop or spread warm cashew mozzarella. Sprinkle oregano and chilli flakes.",
+    "Bake 10–14 minutes until crust is golden and cheese spots brown. Finish with basil. Rest 2 minutes, slice, and serve hot."
+  ],
+  "stepNotes": [
+    "Thin crust needs a screaming-hot surface—preheat the tray so the base crisps.",
+    "Tapioca starch is what makes the cashew cheese stretch; without it you get a tasty cream, not melt.",
+    "Pat wet vegetables dry so the pizza does not steam.",
+    "If using store-bought mozzarella, check labels for casein or milk powder—many Indian processed cheese blends still contain dairy.",
+    "Dough can be made ahead and refrigerated after the first rise; bring to room temp before shaping."
+  ],
+  "variationSections": [
+    {
+      "title": "Cheese options",
+      "items": [
+        "Store-bought plant mozzarella shreds when available.",
+        "White bean + cashew blend for a lower-fat stretchy sauce.",
+        "Nut-free: potato-carrot “cheese” sauce with nutritional yeast and a little oil (different texture, still satisfying)."
+      ]
+    },
+    {
+      "title": "Crust and diet",
+      "items": [
+        "Gluten-free: use a trusted GF pizza mix or cauliflower base—follow pack liquid ratios.",
+        "Whole-wheat: 100% atta works but needs slightly more water and a bit more oil for tenderness.",
+        "No-onion/no-garlic: skip onion and garlic powder; load peppers, tomato, olives, oregano, and chilli."
+      ]
+    },
+    {
+      "title": "Topping themes",
+      "items": [
+        "BBQ tofu crumble and red onion.",
+        "Jalapeño-corn for a desi-cafe style pie.",
+        "Margherita: sauce, cashew mozzarella, tomato, basil only."
+      ]
+    }
+  ],
+  "tags": [
+    "craving",
+    "dinner",
+    "lunch",
+    "comfort",
+    "weekend",
+    "kid-friendly",
+    "Italian-inspired",
+    "party",
+    "main"
+  ],
+  "mealTypes": ["lunch", "dinner", "craving"],
+  "role": "main",
+  "servings": 3,
+  "prepTime": "25 mins (plus 1 hr rise)",
+  "cookTime": "15 mins",
+  "prepMinutes": 25,
+  "cookMinutes": 15,
+  "cost": "Rs 150 for 3 people",
+  "costInr": 150,
+  "image": "/images/items/recipes/veggie-pizza.jpg",
+  "nutrition": {
+    "servingSize": "1/3 pizza (one-third recipe)",
+    "calories": 480,
+    "proteinG": 14,
+    "carbsG": 68,
+    "fatG": 16,
+    "fiberG": 5
+  },
+  "dietary": ["plant-based"],
+  "proteinSources": ["cashews", "flour", "nutritional yeast"],
+  "portable": false,
+  "makeAhead": true
+}
