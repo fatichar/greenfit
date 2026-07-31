@@ -335,7 +335,7 @@ function getProductGroup(product: AffiliateSupplement): ProductGroupId {
     return "failed";
   }
 
-  return results.length ? "verified" : "untested";
+  return results.some((result) => result.status !== "pending") ? "verified" : "untested";
 }
 
 function TestResult({ source, result }: { source: string; result?: ThirdPartyTestResult }) {
@@ -349,7 +349,9 @@ function TestResult({ source, result }: { source: string; result?: ThirdPartyTes
   }
 
   const statusLabel =
-    result.status === "expired"
+    result.status === "pending"
+      ? "Listed, not rated"
+      : result.status === "expired"
       ? "Previous result"
       : result.status === "historical"
         ? "Batch result"

@@ -37,7 +37,7 @@ export type AffiliateProduct = {
 
 export type ThirdPartyTestResult = {
   result: string;
-  status: "active" | "expired" | "historical";
+  status: "active" | "expired" | "historical" | "pending";
   resultUrl: string;
   testedAt?: string;
   expiresAt?: string;

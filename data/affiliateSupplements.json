@@ -21,6 +21,7 @@
     "doseText": "2.2 mcg vitamin B12 and 300 mcg vitamin B9 per strip",
     "amazonUrl": "https://www.amazon.in/dp/B095LQW7KB",
     "asin": "B095LQW7KB",
+    "imageUrl": "https://m.media-amazon.com/images/I/71MFfcClcHL._SL1500_.jpg",
     "veganEvidence": "Amazon product name identifies the formulation as vegan and plant-based.",
     "sourceVerifiedAt": "2026-07-24",
     "unboxHealth": {
@@ -67,6 +68,7 @@
     "doseText": "600 IU (15 mcg) vitamin D3 from lichen per capsule",
     "amazonUrl": "https://www.amazon.in/dp/B09WDMQTWV",
     "asin": "B09WDMQTWV",
+    "imageUrl": "https://m.media-amazon.com/images/I/71mv-wKzYlL._SL1500_.jpg",
     "veganEvidence": "Amazon product name identifies plant-based lichen-sourced vitamin D3 with organic coconut oil.",
     "sourceVerifiedAt": "2026-07-24",
     "unboxHealth": {
@@ -87,6 +89,7 @@
     "doseText": "600 IU (15 mcg) vitamin D and 55 mcg vitamin K2 per strip",
     "amazonUrl": "https://www.amazon.in/dp/B095S82KLD",
     "asin": "B095S82KLD",
+    "imageUrl": "https://m.media-amazon.com/images/I/71gjdo2L2ML._AC_UL320_.jpg",
     "veganEvidence": "Unbox Health lists this formulation as plant-based; verify the current Amazon label before purchase.",
     "sourceVerifiedAt": "2026-07-24",
     "unboxHealth": {
@@ -107,6 +110,7 @@
     "doseText": "See current Amazon product label for calcium and vitamin D per tablet",
     "amazonUrl": "https://www.amazon.in/dp/B0843TZH8Q",
     "asin": "B0843TZH8Q",
+    "imageUrl": "https://m.media-amazon.com/images/I/61KoJukUbnL._SL1080_.jpg",
     "veganEvidence": "Amazon listing describes vegan calcium with lichen-derived vitamin D3 and vegan tablets.",
     "sourceVerifiedAt": "2026-07-24"
   },
@@ -119,6 +123,7 @@
     "doseText": "Plant-based calcium with magnesium; see current Amazon label for dose",
     "amazonUrl": "https://www.amazon.in/dp/B08SW7HLH4",
     "asin": "B08SW7HLH4",
+    "imageUrl": "https://m.media-amazon.com/images/I/41X47T40fiL._SY300_SX300_QL70_FMwebp_.jpg",
     "veganEvidence": "Amazon product name identifies plant-based algae calcium bone support.",
     "sourceVerifiedAt": "2026-07-24"
   },
@@ -131,6 +136,7 @@
     "doseText": "Algae calcium with D3, K2, zinc, and magnesium; see current label",
     "amazonUrl": "https://www.amazon.in/dp/B0951PRVYJ",
     "asin": "B0951PRVYJ",
+    "imageUrl": "https://m.media-amazon.com/images/I/51CsNzcEDoL._SL1000_.jpg",
     "veganEvidence": "Amazon product name identifies plant-based organic algae calcium.",
     "sourceVerifiedAt": "2026-07-24"
   },
@@ -203,6 +209,7 @@
     "doseText": "About 25 g plant protein per scoop",
     "amazonUrl": "https://www.amazon.in/dp/B0BLHF4HVG",
     "asin": "B0BLHF4HVG",
+    "imageUrl": "https://m.media-amazon.com/images/I/71xxTLOjIzL._SL1500_.jpg",
     "veganEvidence": "Amazon product name identifies pea and brown rice plant protein with no dairy ingredients listed in the title.",
     "sourceVerifiedAt": "2026-07-24",
     "trustified": {
@@ -222,6 +229,7 @@
     "doseText": "About 25 g pea protein per serving",
     "amazonUrl": "https://www.amazon.in/dp/B09BD14TNJ",
     "asin": "B09BD14TNJ",
+    "imageUrl": "https://m.media-amazon.com/images/I/71pFL9iWESL._AC_UL320_.jpg",
     "veganEvidence": "Amazon listing describes 100% vegetarian plant-based pea protein isolate.",
     "sourceVerifiedAt": "2026-07-24",
     "trustified": {
@@ -241,6 +249,7 @@
     "doseText": "About 22 g clean plant protein per serving",
     "amazonUrl": "https://www.amazon.in/dp/B0FG2W98TD",
     "asin": "B0FG2W98TD",
+    "imageUrl": "https://m.media-amazon.com/images/I/71WjmvW0j2L._SL1500_.jpg",
     "veganEvidence": "Amazon product name identifies the powder as 100% natural and vegan plant protein.",
     "sourceVerifiedAt": "2026-07-24",
     "trustified": {
@@ -260,6 +269,7 @@
     "doseText": "25 g fermented yeast protein per scoop",
     "amazonUrl": "https://www.amazon.in/dp/B0FLK3P3SM",
     "asin": "B0FLK3P3SM",
+    "imageUrl": "https://m.media-amazon.com/images/I/6177KWMWFwL._SL1500_.jpg",
     "veganEvidence": "Amazon product name identifies fermented yeast plant protein as vegan with no dairy.",
     "sourceVerifiedAt": "2026-07-24",
     "trustified": {
@@ -279,6 +289,7 @@
     "doseText": "About 24 g peanut protein per serve",
     "amazonUrl": "https://www.amazon.in/dp/B0D3QQYV26",
     "asin": "B0D3QQYV26",
+    "imageUrl": "https://m.media-amazon.com/images/I/71fN-z0CLtL._SL1500_.jpg",
     "veganEvidence": "Amazon listing describes 100% plant-based peanut protein powder.",
     "sourceVerifiedAt": "2026-07-24",
     "trustified": {
@@ -298,6 +309,7 @@
     "doseText": "See current Amazon product label for protein per scoop",
     "amazonUrl": "https://www.amazon.in/dp/B07ZM7CW2Z",
     "asin": "B07ZM7CW2Z",
+    "imageUrl": "https://m.media-amazon.com/images/I/71uSIoEOzRL._AC_UL320_.jpg",
     "veganEvidence": "Amazon listing describes plant-based soy protein isolate suitable for vegan diets.",
     "sourceVerifiedAt": "2026-07-24",
     "trustified": {
@@ -306,6 +318,155 @@
       "resultUrl": "https://www.trustified.in/passandfail/asitissoyisolate",
       "testedAt": "2026-05-27",
       "batch": "AS 6035"
+    }
+  },
+  {
+    "id": "zeroharm-vegan-omega",
+    "nutrient": "algal-omega-3",
+    "title": "Zeroharm Veg Omega DHA Capsules 400mg",
+    "brand": "Zeroharm",
+    "form": "Capsule",
+    "doseText": "See current Amazon product label",
+    "amazonUrl": "https://www.amazon.in/dp/B09WV663Q1",
+    "asin": "B09WV663Q1",
+    "imageUrl": "https://m.media-amazon.com/images/I/51lnY6ZvolL._SL1080_.jpg",
+    "veganEvidence": "Amazon listing identifies algae-based, plant-based omega-3 capsules.",
+    "sourceVerifiedAt": "2026-07-31",
+    "trustified": {
+      "result": "Failed",
+      "status": "historical",
+      "resultUrl": "https://www.trustified.in/passandfail/zeroharmomega"
+    },
+    "unboxHealth": {
+      "result": "Unrated / Pending",
+      "status": "pending",
+      "resultUrl": "https://www.unboxhealth.in/compare/nutrova-vs-zeroharm/5ccbc419-9b02-4e64-aec9-291f2642bbe9/4b534e46-38cf-477e-b730-10b5a2fc8a86"
+    }
+  },
+  {
+    "id": "zaveda-vegan-omega-3",
+    "nutrient": "algal-omega-3",
+    "title": "Zaveda Vegan Omega 3.6.9 Flax Seed Oil Capsules",
+    "brand": "Zaveda",
+    "form": "Capsule",
+    "doseText": "See current Amazon product label",
+    "amazonUrl": "https://www.amazon.in/dp/B0DPTJ1DC9",
+    "asin": "B0DPTJ1DC9",
+    "imageUrl": "https://m.media-amazon.com/images/I/61dzfheW+hL._SL1500_.jpg",
+    "veganEvidence": "Amazon product title identifies vegan flax seed oil capsules.",
+    "sourceVerifiedAt": "2026-07-31",
+    "trustified": {
+      "result": "Failed",
+      "status": "historical",
+      "resultUrl": "https://www.trustified.in/passandfail/zavedaomega3"
+    }
+  },
+  {
+    "id": "haleup-vegan-omega-3",
+    "nutrient": "algal-omega-3",
+    "title": "Haleup Vegan Omega-3 Capsules 500 mg",
+    "brand": "Haleup",
+    "form": "Capsule",
+    "doseText": "See current Amazon product label",
+    "amazonUrl": "https://www.amazon.in/dp/B0BG64DVKK",
+    "asin": "B0BG64DVKK",
+    "imageUrl": "https://m.media-amazon.com/images/I/61zTTaiQLVL._SL1080_.jpg",
+    "veganEvidence": "Amazon product title identifies vegan omega-3 capsules with vegan DHA/EPA.",
+    "sourceVerifiedAt": "2026-07-31",
+    "unboxHealth": {
+      "result": "D",
+      "status": "historical",
+      "resultUrl": "https://www.unboxhealth.in/explore/product/haleup-vegan-omega-3/03638657-0c65-4465-a118-d8e941665c89"
+    }
+  },
+  {
+    "id": "nutrova-vegan-omega-3",
+    "nutrient": "algal-omega-3",
+    "title": "Nutrova Complete Omega 3 Vegan and Gelatin-Free",
+    "brand": "Nutrova",
+    "form": "Capsule",
+    "doseText": "See current Amazon product label",
+    "amazonUrl": "https://www.amazon.in/dp/B08XXV7D4Z",
+    "asin": "B08XXV7D4Z",
+    "imageUrl": "https://m.media-amazon.com/images/I/51B6Cg-jKtL._SL1200_.jpg",
+    "veganEvidence": "Amazon product title identifies a vegan, gelatin-free algal omega-3 product.",
+    "sourceVerifiedAt": "2026-07-31",
+    "unboxHealth": {
+      "result": "Unrated / Pending",
+      "status": "pending",
+      "resultUrl": "https://www.unboxhealth.in/compare/nutrova-vs-zeroharm/5ccbc419-9b02-4e64-aec9-291f2642bbe9/4b534e46-38cf-477e-b730-10b5a2fc8a86"
+    }
+  },
+  {
+    "id": "wellbeing-nutrition-vegan-plant-protein",
+    "nutrient": "plant-protein",
+    "title": "Wellbeing Nutrition Vegan Plant Protein, Belgian Dark Chocolate",
+    "brand": "Wellbeing Nutrition",
+    "form": "Powder",
+    "doseText": "See current Amazon product label",
+    "amazonUrl": "https://www.amazon.in/dp/B0B34SJBM3",
+    "asin": "B0B34SJBM3",
+    "imageUrl": "https://m.media-amazon.com/images/I/81TGgFoZr3L._AC_UL320_.jpg",
+    "veganEvidence": "Amazon listing identifies the product as a vegan plant protein powder.",
+    "sourceVerifiedAt": "2026-07-31",
+    "unboxHealth": {
+      "result": "A",
+      "status": "historical",
+      "resultUrl": "https://www.unboxhealth.in/explore/product/wellbeing-nutrition-vegan-protein-belgian-dark-chocolate/fb178a31-6c80-4933-bda9-0894b1028d1e"
+    }
+  },
+  {
+    "id": "sparkfusion-plant-protein",
+    "nutrient": "plant-protein",
+    "title": "Sparkfusion Plant Protein Powder, Pea and Brown Rice",
+    "brand": "Sparkfusion",
+    "form": "Powder",
+    "doseText": "See current Amazon product label",
+    "amazonUrl": "https://www.amazon.in/dp/B0CGHNJFVR",
+    "asin": "B0CGHNJFVR",
+    "imageUrl": "https://m.media-amazon.com/images/I/51L0aMT5jqL.jpg",
+    "veganEvidence": "Amazon product title identifies pea and brown rice plant protein powder.",
+    "sourceVerifiedAt": "2026-07-31",
+    "unboxHealth": {
+      "result": "Unrated / Pending",
+      "status": "pending",
+      "resultUrl": "https://www.unboxhealth.in/compare/sparkfusion-vs-dame-health/a941a1ff-7fbc-43ae-8170-747ee8caf7ba/a3ffd0f9-f166-4dc4-9e77-2040bdc188b0"
+    }
+  },
+  {
+    "id": "dame-health-pea-protein",
+    "nutrient": "plant-protein",
+    "title": "Dame Health Women's Plant Protein",
+    "brand": "Dame Health",
+    "form": "Powder",
+    "doseText": "See current Amazon product label",
+    "amazonUrl": "https://www.amazon.in/dp/B0D84649B3",
+    "asin": "B0D84649B3",
+    "imageUrl": "https://m.media-amazon.com/images/I/41333xRzSxL._SX679_.jpg",
+    "veganEvidence": "Amazon product title identifies vegan pea protein isolate powder.",
+    "sourceVerifiedAt": "2026-07-31",
+    "unboxHealth": {
+      "result": "Unrated / Pending",
+      "status": "pending",
+      "resultUrl": "https://www.unboxhealth.in/compare/sparkfusion-vs-dame-health/a941a1ff-7fbc-43ae-8170-747ee8caf7ba/a3ffd0f9-f166-4dc4-9e77-2040bdc188b0"
+    }
+  },
+  {
+    "id": "rasayanam-plant-based-b12",
+    "nutrient": "vitamin-b12",
+    "title": "Rasayanam Plant-Based Vitamin B12",
+    "brand": "Rasayanam",
+    "form": "Capsule",
+    "doseText": "See current Amazon product label",
+    "amazonUrl": "https://www.amazon.in/dp/B0BGLKKDR3",
+    "asin": "B0BGLKKDR3",
+    "imageUrl": "https://m.media-amazon.com/images/I/71KyUlVDoCL._SL1500_.jpg",
+    "veganEvidence": "Amazon product title identifies 100% vegan vitamin B12 capsules.",
+    "sourceVerifiedAt": "2026-07-31",
+    "unboxHealth": {
+      "result": "Unrated / Pending",
+      "status": "pending",
+      "resultUrl": "https://www.unboxhealth.in/compare/wellbeing-nutrition-vs-rasayanam/a6111d21-7a10-4fe6-8426-c5441b29bbbe/9b555ca3-00af-4b92-bac1-d7146a5323e4"
     }
   }
 ]
