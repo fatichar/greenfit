@@ -136,12 +136,16 @@ export function SupplementDirectory({ products }: { products: AffiliateSupplemen
   return (
     <Tabs value={activeTab} onValueChange={setActiveTab} className="gap-6">
       <div className="sticky top-16 z-20 -mx-1 rounded-2xl border border-olive-800 bg-olive-700 p-2 shadow-md sm:p-3">
-        <p className="mb-2 px-1 text-xs font-semibold uppercase tracking-wide text-white">
+        <p
+          id="supplement-nutrient-label"
+          className="mb-2 px-1 text-xs font-semibold uppercase tracking-wide text-white"
+        >
           Choose a nutrient
         </p>
         <div className="overflow-x-auto pb-0.5">
           <TabsList
             variant="line"
+            aria-labelledby="supplement-nutrient-label"
             className="h-auto min-w-max gap-1.5 bg-transparent p-0 text-white group-data-horizontal/tabs:h-auto"
           >
             {nutrientOptions.map((nutrient) => (
@@ -149,9 +153,9 @@ export function SupplementDirectory({ products }: { products: AffiliateSupplemen
                 key={nutrient.value}
                 value={nutrient.value}
                 className={cn(
-                  "h-auto rounded-xl border-2 border-transparent !bg-white px-3.5 py-2.5 text-sm font-semibold !text-olive-800 shadow-none",
+                  "h-auto rounded-xl border-2 border-white/30 !bg-white px-3.5 py-2.5 text-sm font-semibold !text-olive-800 shadow-none transition-colors",
                   "hover:!bg-olive-50 hover:!text-olive-800",
-                  "data-active:!border-white data-active:!bg-olive-800 data-active:!text-white data-active:shadow-md data-active:ring-2 data-active:ring-white/80",
+                  "data-active:!border-white/70 data-active:!bg-olive-800 data-active:!text-white data-active:shadow-sm",
                   "after:hidden",
                 )}
               >
