@@ -1,0 +1,104 @@
+[
+  {
+    "slug": "cold-press-juicer",
+    "imagePath": "/images/devices/cold-press-juicer.png",
+    "name": "Cold-press juicer",
+    "category": "Juicing",
+    "bestFor": "Fresh vegetable juices, ginger shots, citrus blends, and using up leafy greens",
+    "whyItHelps": "A slow juicer is useful when you enjoy juice as an occasional add-on and want to work with fibrous produce such as celery, greens, and carrots.",
+    "lookFor": [
+      "A wide enough feed chute for your usual produce",
+      "Easy-to-remove parts and a cleaning brush",
+      "A reverse function for fibrous ingredients",
+      "A stable base and a service network you can actually use"
+    ],
+    "careNote": "Juice is not a replacement for whole fruit and vegetables. Rinse the screen immediately after use so pulp does not dry into the mesh.",
+    "bestForRecipes": ["Green juice", "Carrot-ginger juice", "Citrus-mint juice", "Pulp-enriched chutney"],
+    "amazonSearchUrl": "https://www.amazon.in/s?k=cold+press+juicer"
+  },
+  {
+    "slug": "high-speed-blender",
+    "imagePath": "/images/devices/high-speed-blender.png",
+    "name": "High-speed blender",
+    "category": "Blending",
+    "bestFor": "Smoothies, soups, sauces, nut pastes, hummus, and homemade plant milk",
+    "whyItHelps": "A strong blender can turn everyday staples into higher-protein breakfasts, creamy dals, dressings, and smooth sauces without relying on packaged versions.",
+    "lookFor": [
+      "A jar size that fits your regular batch size",
+      "A tamper or pulse control for thick mixtures",
+      "Dishwasher-safe or easy-to-rinse parts",
+      "A motor warranty and replacement jar availability"
+    ],
+    "careNote": "Do not run a blender empty or overfill it with hot liquids. Let steaming soups cool slightly and vent the lid according to the manufacturer instructions.",
+    "bestForRecipes": ["Banana-peanut smoothie", "Lentil soup", "Cashew cream", "Silken tofu dressing"],
+    "amazonSearchUrl": "https://www.amazon.in/s?k=high+speed+blender"
+  },
+  {
+    "slug": "personal-blender",
+    "imagePath": "/images/devices/personal-blender.png",
+    "name": "Personal blender",
+    "category": "Blending",
+    "bestFor": "Single-serve smoothies, soaked oats, quick chutneys, and desk-friendly breakfasts",
+    "whyItHelps": "A compact blender lowers the friction of making one serving, especially for smoothies built around fruit, soy milk, oats, seeds, and plant protein.",
+    "lookFor": [
+      "A cup that seals reliably for carrying",
+      "A blade assembly that can be cleaned fully",
+      "Enough power for frozen fruit and soaked nuts",
+      "A replacement cup option if the original cracks"
+    ],
+    "careNote": "Blend softer ingredients first, then add frozen items or ice. Wash the blade gasket and cup threads rather than only rinsing the main cup.",
+    "bestForRecipes": ["Berry-oat smoothie", "Mango chia lassi", "Coriander chutney", "Date-nut shake"],
+    "amazonSearchUrl": "https://www.amazon.in/s?k=personal+blender"
+  },
+  {
+    "slug": "food-processor",
+    "imagePath": "/images/devices/food-processor.png",
+    "name": "Food processor",
+    "category": "Prep",
+    "bestFor": "Chopping vegetables, grating, falafel mix, energy bites, and large-batch dips",
+    "whyItHelps": "A food processor makes plant-based batch cooking faster: shred vegetables, pulse beans, knead dough, and prepare several portions of a dip in one bowl.",
+    "lookFor": [
+      "A bowl large enough for your batch-cooking routine",
+      "A grating or slicing disc you will genuinely use",
+      "A pulse button and a secure locking lid",
+      "Storage for the blades so they stay safe and easy to find"
+    ],
+    "careNote": "Use short pulses for chopped vegetables so they do not turn watery. Dry the bowl and blade hub before storing to avoid trapped moisture.",
+    "bestForRecipes": ["Falafel mix", "Date-nut bites", "Carrot salad", "White-bean hummus"],
+    "amazonSearchUrl": "https://www.amazon.in/s?k=food+processor"
+  },
+  {
+    "slug": "electric-pressure-cooker",
+    "imagePath": "/images/devices/electric-pressure-cooker.png",
+    "name": "Electric pressure cooker",
+    "category": "Cooking",
+    "bestFor": "Dals, beans, chickpeas, brown rice, millet, and hands-off batch cooking",
+    "whyItHelps": "Pressure cooking makes legumes and whole grains more practical for weeknight meals, with less active stovetop time and easy batch portions.",
+    "lookFor": [
+      "A stainless-steel inner pot",
+      "Clear pressure, steam, and safety indicators",
+      "A keep-warm setting that can be switched off",
+      "Locally available sealing rings and service support"
+    ],
+    "careNote": "Follow the appliance manual for fill limits, soaking guidance, and natural versus quick release. Never force the lid open while the cooker is pressurized.",
+    "bestForRecipes": ["Rajma rice", "Simple dal tadka", "Moong khichdi", "Chana salad prep"],
+    "amazonSearchUrl": "https://www.amazon.in/s?k=electric+pressure+cooker"
+  },
+  {
+    "slug": "spice-grinder",
+    "imagePath": "/images/devices/spice-grinder.png",
+    "name": "Small spice grinder",
+    "category": "Prep",
+    "bestFor": "Fresh masalas, flax and seed blends, coffee-free spice mixes, and small chutney portions",
+    "whyItHelps": "A small grinder is handy when you want fresh spice blends or need to turn flax, sesame, or roasted legumes into a fine topping without using a large appliance.",
+    "lookFor": [
+      "A removable cup or a lid that seals well",
+      "A pulse control rather than only one long speed",
+      "A second cup if you also grind spices and nuts",
+      "A design that can be wiped dry without water reaching the motor"
+    ],
+    "careNote": "Grind dry ingredients only unless the manual explicitly supports wet use. Brush out spice dust between batches so flavors do not carry over.",
+    "bestForRecipes": ["Flaxseed sprinkle", "Garam masala", "Peanut podi", "Roasted chana powder"],
+    "amazonSearchUrl": "https://www.amazon.in/s?k=small+spice+grinder"
+  }
+]

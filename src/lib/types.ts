@@ -22,6 +22,19 @@ export type Product = {
   lastReviewed: string;
 };
 
+export type Device = {
+  slug: string;
+  imagePath: string;
+  name: string;
+  category: string;
+  bestFor: string;
+  whyItHelps: string;
+  lookFor: string[];
+  careNote: string;
+  bestForRecipes: string[];
+  amazonSearchUrl: string;
+};
+
 export type AffiliateProduct = {
   id: string;
   title: string;

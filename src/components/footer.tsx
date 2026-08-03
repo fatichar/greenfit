@@ -21,6 +21,7 @@ export function Footer() {
           <Link href="/diet-plans">Diet Plans</Link>
           <Link href="/guides">Guides</Link>
           <Link href="/supplements">Supplements</Link>
+          <Link href="/devices">Kitchen devices</Link>
           <Link href="/tools">Tools</Link>
         </div>
       </div>

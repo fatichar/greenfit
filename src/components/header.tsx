@@ -20,6 +20,7 @@ const navItems = [
   ["Guides", "/guides"],
   ["Recipes", "/recipes"],
   ["Supplements", "/supplements"],
+  ["Kitchen devices", "/devices"],
   ["Tools", "/tools"],
   ["About", "/about"],
 ];
