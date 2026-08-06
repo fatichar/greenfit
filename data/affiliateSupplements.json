@@ -34,6 +34,19 @@
     }
   },
   {
+    "id": "zynano-vitamin-d3-shots",
+    "nutrient": "vitamin-d3",
+    "title": "Zynano D3 Shots 60000 IU Oral Solution",
+    "brand": "Zynano",
+    "form": "Oral solution",
+    "doseText": "60000 IU cholecalciferol per 5 ml shot",
+    "amazonUrl": "https://www.amazon.in/dp/B0971639YT",
+    "asin": "B0971639YT",
+    "imageUrl": "https://m.media-amazon.com/images/I/71QekA0tJaL._SL1500_.jpg",
+    "veganEvidence": "Amazon product title identifies a vegetarian vitamin D3 oral solution.",
+    "sourceVerifiedAt": "2026-08-06"
+  },
+  {
     "id": "unived-d3-k2-90",
     "nutrient": "vitamin-d3",
     "title": "Unived D3 + K2 (MK-7)",
