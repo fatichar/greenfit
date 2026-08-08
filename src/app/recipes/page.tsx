@@ -1,4 +1,5 @@
 import { getRecipes } from "@/lib/data";
+import { getAvailableRecipeFilterLabels } from "@/lib/recipe-filters";
 import { RecipesClient } from "./client";
 
 export const metadata = {
@@ -8,9 +9,7 @@ export const metadata = {
 
 export default function RecipesPage() {
   const recipes = getRecipes();
-
-  // Extract unique tags
-  const allTags = Array.from(new Set(recipes.flatMap((recipe) => recipe.tags))).sort();
+  const filterTags = getAvailableRecipeFilterLabels(recipes.flatMap((recipe) => recipe.tags));
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
@@ -22,7 +21,7 @@ export default function RecipesPage() {
         </p>
       </div>
 
-      <RecipesClient recipes={recipes} allTags={allTags} />
+      <RecipesClient recipes={recipes} filterTags={filterTags} />
     </div>
   );
 }

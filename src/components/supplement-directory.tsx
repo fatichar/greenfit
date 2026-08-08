@@ -392,7 +392,7 @@ function AmazonButton({ product }: { product: AffiliateSupplement }) {
       data-umami-event="Outbound Product Click"
       data-umami-event-product-id={product.id}
       data-umami-event-product-category={product.nutrient}
-      data-umami-event-source-page="/supplements"
+      data-umami-event-source-page="/shop/supplement"
       className={buttonVariants({ size: "sm" })}
     >
       Amazon

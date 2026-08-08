@@ -70,7 +70,7 @@ export function DeviceCard({ device }: { device: Device }) {
           rel="nofollow sponsored noopener noreferrer"
           data-umami-event="Outbound Device Search"
           data-umami-event-device={device.slug}
-          data-umami-event-source-page="/devices"
+          data-umami-event-source-page="/shop/kitchen"
           className={cn(buttonVariants(), "w-full sm:w-auto")}
         >
           Search on Amazon

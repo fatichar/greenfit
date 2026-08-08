@@ -77,7 +77,7 @@ const offerings = [
     icon: UtensilsCrossed,
   },
   {
-    href: "/supplements",
+    href: "/shop/supplement",
     title: "Supplements",
     description: "Type-level notes on when a supplement is commonly considered, dosage context, and cautions.",
     icon: FlaskConical,

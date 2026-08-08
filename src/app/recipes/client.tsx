@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import type { MealType, Recipe } from "@/lib/types";
+import { recipeFilterScore } from "@/lib/recipe-filters";
 import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import { cn } from "@/lib/utils";
@@ -59,10 +60,11 @@ function recipeMatchesQuery(recipe: Recipe, query: string) {
 
 export function RecipesClient({
   recipes,
-  allTags,
+  filterTags,
 }: {
   recipes: Recipe[];
-  allTags: string[];
+  /** Curated high-importance filter labels (not the full tag dump). */
+  filterTags: string[];
 }) {
   const [selectedMealTypes, setSelectedMealTypes] = useState<MealType[]>([]);
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
@@ -96,11 +98,7 @@ export function RecipesClient({
         if (!mealHit) return { ...recipe, score: 0 };
       }
 
-      if (selectedTags.length === 0) {
-        return { ...recipe, score: 1 };
-      }
-
-      const score = recipe.tags.filter((tag) => selectedTags.includes(tag)).length;
+      const score = recipeFilterScore(recipe.tags, selectedTags);
       return { ...recipe, score };
     })
     .filter((recipe) => recipe.score > 0)
@@ -148,9 +146,9 @@ export function RecipesClient({
         </div>
 
         <div>
-          <h2 className="mb-3 text-lg font-semibold">Tags</h2>
+          <h2 className="mb-3 text-lg font-semibold">Filters</h2>
           <div className="flex flex-wrap gap-2">
-            {allTags.map((tag) => {
+            {filterTags.map((tag) => {
               const isSelected = selectedTags.includes(tag);
               return (
                 <button

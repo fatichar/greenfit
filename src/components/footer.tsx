@@ -20,9 +20,10 @@ export function Footer() {
         <div className="flex flex-wrap gap-4">
           <Link href="/diet-plans">Diet Plans</Link>
           <Link href="/guides">Guides</Link>
-          <Link href="/supplements">Supplements</Link>
-          <Link href="/devices">Kitchen devices</Link>
+          <Link href="/recipes">Recipes</Link>
+          <Link href="/shop">Shop</Link>
           <Link href="/tools">Tools</Link>
+          <Link href="/about">About</Link>
         </div>
       </div>
     </footer>

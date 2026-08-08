@@ -3,7 +3,21 @@ import { dietPlans, getGuides, getRecipes, products, supplements } from "@/lib/d
 import { siteUrl } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const staticRoutes = ["", "/products", "/devices", "/diet-plans", "/tools", "/guides", "/recipes", "/supplements", "/about"];
+  const staticRoutes = [
+    "",
+    "/products",
+    "/diet-plans",
+    "/tools",
+    "/guides",
+    "/recipes",
+    "/shop",
+    "/shop/supplement",
+    "/shop/exercise-fitness",
+    "/shop/kitchen",
+    "/shop/personal-care-beauty",
+    "/shop/books",
+    "/about",
+  ];
   const productRoutes = products.map((item) => `/products/${item.slug}`);
   const dietPlanRoutes = dietPlans.map((item) => `/diet-plans/${item.slug}`);
   const guideRoutes = getGuides().map((item) => `/guides/${item.slug}`);

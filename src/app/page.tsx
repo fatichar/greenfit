@@ -42,13 +42,13 @@ const heroSlides: HeroSlide[] = [
     primaryCta: { href: "/recipes", label: "View recipes" },
   },
   {
-    id: "affordable",
-    title: "Good planning doesn’t need a big budget",
-    body: "GreenFit is free to use. Plans lean on dals, chana, soy foods, and market staples—not boutique products or paid coaching packages.",
-    image: "/images/items/diet-plans/budget-diet.jpg",
-    imageAlt: "Affordable plant-based Indian meals built from everyday staples",
-    primaryCta: { href: "/diet-plans/build", label: "Start with a free plan" },
-    secondaryCta: { href: "/diet-plans", label: "Browse free plans" },
+    id: "shop",
+    title: "Useful products worth comparing",
+    body: "Supplements, kitchen devices, fitness gear, and books—with practical notes so you can choose what you will actually use, not another impulse buy.",
+    image: "/images/devices/plant-based-kitchen-devices.png",
+    imageAlt: "Plant-based kitchen devices with blender, juicer, pressure cooker, and fresh produce",
+    primaryCta: { href: "/shop", label: "Explore products" },
+    secondaryCta: { href: "/shop/supplement", label: "Compare supplements" },
   },
 ];
 
@@ -122,7 +122,7 @@ const features: Array<{
     cta: "View recipes",
   },
   {
-    href: "/supplements",
+    href: "/shop/supplement",
     title: "Supplements",
     description:
       "Type-by-type notes on dosage, timing, cautions, and when food alone may not be enough.",
