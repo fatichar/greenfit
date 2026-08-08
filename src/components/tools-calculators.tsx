@@ -27,13 +27,13 @@ const PROTEIN_RANGES: Record<ProteinGoal, { label: string; low: number; high: nu
     label: "General health",
     low: 0.8,
     high: 1.0,
-    note: "A practical baseline for most adults not in a hard cut or bulk.",
+    note: "A baseline for most adults who are not deliberately cutting or bulking.",
   },
   active: {
     label: "Active / satiety",
     low: 1.0,
     high: 1.4,
-    note: "Useful when training regularly or wanting fuller meals.",
+    note: "A good fit if you train regularly or want meals that keep you full.",
   },
   muscle: {
     label: "Muscle gain",
@@ -224,7 +224,7 @@ export const TOOL_ITEMS = [
     id: "calories",
     label: "Calories",
     title: "Calorie & TDEE estimate",
-    summary: "Mifflin–St Jeor BMR with activity and a simple goal adjustment for lose, maintain, gain, or muscle.",
+    summary: "Mifflin–St Jeor BMR with activity and a goal adjustment for losing, maintaining, gaining, or building muscle.",
   },
   {
     id: "macros",
@@ -254,7 +254,7 @@ export const TOOL_ITEMS = [
     id: "hydration",
     label: "Hydration",
     title: "Hydration estimate",
-    summary: "A rough daily fluid target from weight, activity, and heat—useful as a baseline only.",
+    summary: "A rough daily fluid target from weight, activity, and heat. Use it as a baseline only.",
   },
 ] as const;
 
@@ -455,7 +455,7 @@ function CalorieTool() {
           ? "About 300–500 kcal below maintenance is a common starting deficit."
           : goal === "gain" || goal === "muscle"
             ? "A modest surplus supports weight or muscle gain with fewer excess fat gains."
-            : "Maintenance is an estimate—adjust based on 2–3 weeks of weight trend.",
+            : "Maintenance is an estimate. Adjust based on 2–3 weeks of weight trend.",
     };
   }, [activity, age, goal, height, sex, weight]);
 
@@ -881,7 +881,7 @@ function HydrationTool() {
         <ResultBlock
           label="How to use this"
           value="Starting point"
-          detail="Thirst, urine colour, and medical conditions matter more than any fixed rule. Includes water from food and other drinks in a broad sense—adjust to comfort."
+          detail="Thirst, urine colour, and medical conditions matter more than any fixed rule. The estimate includes water from food and other drinks, so adjust to comfort."
           tone="mint"
         />
       </div>

@@ -1,7 +1,7 @@
 {
   "slug": "seasonal-cut-fruit-bowl",
   "title": "Seasonal Cut Fruit Bowl",
-  "description": "A simple mixed fruit bowl built from what is in season, brightened with lemon, chaat masala, and mint. First-class fruit course for any main meal slot.",
+  "description": "A mixed fruit bowl with lemon, chaat masala, and mint, built around whatever is in season.",
   "explanation": [
     "Fruit should be a deliberate plan item, not an afterthought. This one recipe covers breakfast, lunch finish, dinner side, or evening snack by changing the portion and the seasonal mix.",
     "Default bowl is nut-free, soy-free, gluten-free, Jain, and no-onion/no-garlic. Optional nuts or seeds stay in variations only."
@@ -22,7 +22,7 @@
   ],
   "stepNotes": [
     "Cut fruit just before eating when possible; apples and bananas brown if they sit.",
-    "Chaat masala is salty—start small.",
+    "Chaat masala is salty, so start small.",
     "Keep the bowl mostly fruit; spices are accents, not a coating.",
     "For lunch or dinner as a side, use a smaller portion than for breakfast.",
     "If packing ahead, keep lemon and spices separate and toss at serving time."
@@ -42,7 +42,7 @@
       "items": [
         "A spoon of pumpkin or sunflower seeds for crunch (still nut-free).",
         "A few almonds or walnuts only if nut-free is not required.",
-        "A dollop of soy curd turns this toward a breakfast bowl—see Soy Curd Fruit Bowl for the soy path."
+        "A dollop of soy curd turns this toward a breakfast bowl. See Soy Curd Fruit Bowl for the soy option."
       ]
     }
   ],

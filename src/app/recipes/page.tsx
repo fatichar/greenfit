@@ -4,7 +4,7 @@ import { RecipesClient } from "./client";
 
 export const metadata = {
   title: "Recipes",
-  description: "Easy and frugal plant-based recipes.",
+  description: "Affordable plant-based recipes for everyday meals, snacks, and celebrations.",
 };
 
 export default function RecipesPage() {
@@ -16,8 +16,8 @@ export default function RecipesPage() {
       <div className="mb-12">
         <h1 className="text-4xl font-bold tracking-tight text-foreground">Recipes</h1>
         <p className="mt-4 text-lg text-muted-foreground">
-          Easy, affordable plant-based recipes for breakfast, snacks, travel, tea time, cravings,
-          and festivals — tagged for search and ready for day-plan building.
+          Affordable plant-based recipes for breakfasts, snacks, travel, tea time, cravings, and festivals. Search by
+          ingredient or meal type, then add ideas to a day plan.
         </p>
       </div>
 

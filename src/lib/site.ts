@@ -4,4 +4,4 @@ export const siteUrl = (path = "") => `${SITE_URL}${path}`;
 
 export const SITE_NAME = "GreenFit";
 export const SITE_DESCRIPTION =
-  "Practical nutrition guidance with plant-based diet plans, vegan product checks, supplement comparisons, and evidence-based WFPB guides.";
+  "Plant-based diet plans, nutrition guides, recipes, and honest product checks for everyday Indian eating.";

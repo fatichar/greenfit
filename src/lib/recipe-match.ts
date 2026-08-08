@@ -159,7 +159,7 @@ export function findRecipeSlugForMealItem(
     if (slugToLabel(recipe.slug) === key) return recipe.slug;
   }
 
-  // Single short tokens (rice, roti, fruit) are too generic for fuzzy match —
+  // Single short tokens (rice, roti, fruit) are too generic for fuzzy matching.
   // they only link via aliases or exact title/slug above.
   const itemTokens = key.split(" ").filter(Boolean);
   if (itemTokens.length === 1 && key.length < 8) {

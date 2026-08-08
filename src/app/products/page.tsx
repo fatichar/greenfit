@@ -4,7 +4,7 @@ import { products } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "Plant-Based Product Guides",
-  description: "Browse practical plant-based product guides with nutrition notes, recipe ideas, and popular brands.",
+  description: "Browse plant-based product guides with nutrition notes, recipe ideas, and popular brands.",
   keywords: [
     "vegan products",
     "plant based groceries",
@@ -19,7 +19,7 @@ export default function ProductsPage() {
   return (
     <PageShell
       title="Product guides"
-      description="Explore practical plant-based staples with nutrition snapshots, recipe ideas, buying tips, and popular brand examples."
+      description="Explore plant-based staples with nutrition snapshots, recipe ideas, buying tips, and popular brand examples."
     >
       <ProductDirectory products={products} />
     </PageShell>

@@ -2,32 +2,32 @@ export const shopNavItems = [
   {
     title: "Overview",
     href: "/shop",
-    description: "All shop categories",
+    description: "Browse all categories",
   },
   {
     title: "Supplements",
     href: "/shop/supplement",
-    description: "Compare by nutrient and testing",
+    description: "Compare nutrients and test results",
   },
   {
     title: "Exercise & Fitness",
     href: "/shop/exercise-fitness",
-    description: "Cardio, strength, and home training",
+    description: "Cardio, strength, and home workouts",
   },
   {
     title: "Kitchen",
     href: "/shop/kitchen",
-    description: "Devices for plant-based cooking",
+    description: "Tools for plant-based cooking",
   },
   {
     title: "Personal Care",
     href: "/shop/personal-care-beauty",
-    description: "Everyday care and low-waste picks",
+    description: "Personal care and low-waste options",
   },
   {
     title: "Books",
     href: "/shop/books",
-    description: "Nutrition, training, and veganism",
+    description: "Nutrition, training, and vegan living",
   },
 ] as const;
 

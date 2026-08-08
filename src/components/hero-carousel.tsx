@@ -72,7 +72,7 @@ export function HeroCarousel({ slides }: { slides: HeroSlide[] }) {
         Desktop: text | image on row 1, controls full-width on row 2.
       */}
       <div className="relative mx-auto grid w-full min-w-0 max-w-7xl items-center gap-x-8 gap-y-5 px-4 py-10 sm:px-6 md:grid-cols-[0.95fr_1.05fr] md:gap-x-12 md:gap-y-6 lg:gap-x-14 lg:px-8 lg:py-14">
-        {/* Image — first on mobile */}
+        {/* Image comes first on mobile */}
         <div className="order-1 min-w-0 md:order-2 md:col-start-2 md:row-start-1">
           <div className="relative aspect-[16/10] w-full overflow-hidden rounded-xl border border-olive-200 bg-white shadow-sm">
             {slides.map((slide, slideIndex) => (
@@ -100,7 +100,7 @@ export function HeroCarousel({ slides }: { slides: HeroSlide[] }) {
           </div>
         </div>
 
-        {/* Controls — under image on mobile; full-width bar under both columns on desktop */}
+        {/* Controls sit under the image on mobile and span both columns on desktop */}
         <div className="order-2 flex items-center justify-between gap-4 md:order-3 md:col-span-2">
           <div className="flex flex-wrap items-center gap-2" role="tablist" aria-label="Carousel slides">
             {slides.map((slide, slideIndex) => {
@@ -155,7 +155,7 @@ export function HeroCarousel({ slides }: { slides: HeroSlide[] }) {
           </div>
         </div>
 
-        {/* Text + CTAs — last on mobile; left column on desktop */}
+        {/* Text and CTAs come last on mobile and sit in the left column on desktop */}
         <div className="order-3 grid min-h-0 min-w-0 self-stretch md:order-1 md:col-start-1 md:row-start-1">
           {slides.map((slide, slideIndex) => {
             const isActive = slideIndex === index;

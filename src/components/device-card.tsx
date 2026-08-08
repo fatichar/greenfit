@@ -73,7 +73,7 @@ export function DeviceCard({ device }: { device: Device }) {
           data-umami-event-source-page="/shop/kitchen"
           className={cn(buttonVariants(), "w-full sm:w-auto")}
         >
-          Search on Amazon
+          Find it on Amazon
           <ExternalLink data-icon="inline-end" />
         </a>
       </CardFooter>

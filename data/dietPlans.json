@@ -9,7 +9,7 @@
     "cuisineStyle": "Flexible",
     "mealCount": 4,
     "affordability": "Moderate",
-    "whoThisIsFor": "Active adults who struggle to reach protein targets using everyday foods.",
+    "whoThisIsFor": "Active adults who find it hard to reach protein targets with regular meals.",
     "explanation": [
       "Use this as a high-protein day template, not a fixed prescription. The meals are built around familiar foods so you can repeat the structure while changing the sabzi, dal, fruit, or grain based on what is available.",
       "The main idea is to place a protein anchor in every meal. Besan, tofu, dal, sprouts, soy curd, and soy chunks do the heavy lifting; rice, roti, fruit, and vegetables make the day easier to eat."
@@ -52,7 +52,7 @@
     "cuisineStyle": "Indian flexible",
     "mealCount": 4,
     "affordability": "Budget-friendly",
-    "whoThisIsFor": "People who want a simple calorie-aware pattern without extreme restrictions.",
+    "whoThisIsFor": "People who want a calorie-aware pattern without extreme restrictions.",
     "explanation": [
       "This plan keeps the day filling by using legumes, soup-style meals, salad, and a planned snack instead of relying on willpower. The goal is a modest calorie deficit with enough protein to protect energy and training.",
       "Treat the rice and roti portions as adjustable. The dal, rajma, chana, soy milk, and vegetables should stay consistent because they make the plan easier to follow."
@@ -95,7 +95,7 @@
     "cuisineStyle": "Flexible",
     "mealCount": 5,
     "affordability": "Moderate",
-    "whoThisIsFor": "Lifters who need higher calories without relying only on shakes.",
+    "whoThisIsFor": "Lifters who need more calories without relying on shakes alone.",
     "explanation": [
       "This is a higher-calorie template for people training hard and trying to gain weight slowly. The food volume can feel high, so the plan uses calorie-dense helpers like peanut butter, soy milk, rice, peanuts, and shakes.",
       "Use the workout meals as flexible timing markers. If you train in the morning, move the fruit and peanuts before training and keep the shake or soy chunk meal afterward."
@@ -139,7 +139,7 @@
     "cuisineStyle": "Indian staples",
     "mealCount": 3,
     "affordability": "Low cost",
-    "whoThisIsFor": "Students and families prioritizing low-cost, repeatable meals.",
+    "whoThisIsFor": "Students and families looking for low-cost meals they can repeat.",
     "explanation": [
       "This plan is built around low-cost staples that can be cooked in batches: besan, kala chana, masoor dal, rice, roti, and seasonal vegetables. It is intentionally simple so the same base can work across many weeks.",
       "The plan becomes easier when legumes are soaked, boiled, and stored ahead. Then each meal is mostly assembly, reheating, and adding fresh vegetables or chutney."
@@ -181,7 +181,7 @@
     "cuisineStyle": "Flexible",
     "mealCount": 3,
     "affordability": "Budget-friendly",
-    "whoThisIsFor": "Beginners who want a simple structure before tracking macros.",
+    "whoThisIsFor": "Beginners who want a clear structure before tracking macros.",
     "explanation": [
       "This is a starting pattern for people who want less decision-making. It gives you three familiar meals and enough structure to notice what keeps you full, energetic, and consistent.",
       "Do not worry about perfect macros on day one. First make the meals repeatable, then adjust portions or protein foods once the routine feels normal."

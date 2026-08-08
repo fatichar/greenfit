@@ -38,7 +38,7 @@ export function DeviceDirectory({ devices }: { devices: Device[] }) {
 
   return (
     <div className="flex flex-col gap-6">
-      <SearchBar value={query} onChange={setQuery} placeholder="Search blenders, juicers, prep, or cooking" />
+      <SearchBar value={query} onChange={setQuery} placeholder="Search blenders, juicers, prep, or cooking tools" />
       <FilterPanel
         category={category}
         status="All"
@@ -54,7 +54,7 @@ export function DeviceDirectory({ devices }: { devices: Device[] }) {
           ))}
         </div>
       ) : (
-        <EmptyState title="No devices found" description="Try a different device, use case, or recipe." />
+        <EmptyState title="No devices found" description="Try another device, use case, or recipe." />
       )}
     </div>
   );

@@ -260,7 +260,7 @@ export default async function RecipePage({ params }: { params: Promise<{ slug: s
                     >
                       {plan.title}
                     </Link>
-                    <span className="text-sm text-muted-foreground"> — {plan.goal}</span>
+                    <span className="text-sm text-muted-foreground">, {plan.goal}</span>
                   </li>
                 ))}
               </ul>

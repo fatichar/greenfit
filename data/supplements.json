@@ -9,7 +9,7 @@
     "toxicity": "No established upper limit and low toxicity risk, though rare acne-like reactions are reported.",
     "popularBrands": ["Deva", "Solgar", "Nature Made", "NOW Foods", "Jarrow Formulas"],
     "testingNotes": "Choose clear dosage labels and plant-based capsules or chewables. Blood work may include serum B12, methylmalonic acid, and homocysteine.",
-    "notes": "The highest-priority supplement for people eating fully plant-based because unfortified plant foods are not reliable B12 sources.",
+    "notes": "The one supplement people eating fully plant-based should plan for: unfortified plant foods are not reliable B12 sources.",
     "relatedGuide": "/guides/b12-guide",
     "lastReviewed": "2026-06-17"
   },
@@ -23,7 +23,7 @@
     "toxicity": "Toxicity is rare but possible with chronic very high doses; excess can raise blood calcium dangerously.",
     "popularBrands": ["Sports Research Vegan D3", "MaryRuth's", "Vitashine", "NOW Foods", "Doctor's Best Vegan D3"],
     "testingNotes": "Use 25-hydroxyvitamin D blood tests to personalize dosing, especially with limited sun exposure or known deficiency.",
-    "notes": "Most useful when sun exposure is low, blood levels are low, or a clinician recommends maintenance supplementation.",
+    "notes": "Consider it when sun exposure or blood levels are low, or when a clinician recommends maintenance supplementation.",
     "relatedGuide": "/guides/bone-health-guide",
     "lastReviewed": "2026-06-17"
   },
@@ -37,7 +37,7 @@
     "toxicity": "Generally safe at usual doses; high intakes may increase bleeding risk, especially with blood thinners or surgery.",
     "popularBrands": ["Nordic Naturals Algae Omega", "Ovega-3", "Deva", "Vegetology Opti3", "Sports Research Vegan Omega-3"],
     "testingNotes": "Prefer products with oxidation and contaminant testing. Read the back label for actual DHA plus EPA, not just total oil.",
-    "notes": "A direct plant-based source of long-chain omega-3s that bypasses the inefficient ALA-to-DHA conversion pathway.",
+    "notes": "A direct plant-based source of DHA and EPA, without relying on the body to convert ALA.",
     "relatedGuide": "/guides/omega-3-guide",
     "lastReviewed": "2026-06-17"
   },
@@ -51,7 +51,7 @@
     "toxicity": "Iron can accumulate and cause harm. Overdose is dangerous, especially for children, and some people should avoid supplemental iron.",
     "popularBrands": ["Solgar Gentle Iron", "NOW Iron", "Thorne Iron Bisglycinate", "Nature Made Iron", "Doctor's Best High Absorption Iron"],
     "testingNotes": "Review ferritin, hemoglobin, transferrin saturation, serum iron, and TIBC before supplementing. Do not rely on fatigue alone.",
-    "notes": "Useful when iron deficiency or low stores are confirmed; not a just-in-case supplement for plant-based diets.",
+    "notes": "Use it when iron deficiency or low stores are confirmed, not as a just-in-case supplement.",
     "relatedGuide": "/guides/iron-and-zinc-guide",
     "lastReviewed": "2026-06-27"
   },
@@ -65,7 +65,7 @@
     "toxicity": "Long-term high-dose zinc can cause nausea and copper deficiency, which may lead to anemia or neurological symptoms.",
     "popularBrands": ["NOW Zinc", "Thorne Zinc Picolinate", "Solgar Zinc", "Nature's Bounty Zinc", "Garden of Life Zinc"],
     "testingNotes": "Serum zinc can help but is imperfect. Interpret with diet pattern, symptoms, inflammation, and clinician advice.",
-    "notes": "Most useful when dietary zinc is consistently low, symptoms fit, or testing and clinical context support supplementation.",
+    "notes": "Consider it when dietary zinc is consistently low and testing or clinical context supports it.",
     "relatedGuide": "/guides/iron-and-zinc-guide",
     "lastReviewed": "2026-06-27"
   },
@@ -79,7 +79,7 @@
     "toxicity": "Well studied at standard doses for healthy adults, but people with kidney disease should consult a clinician first.",
     "popularBrands": ["Creapure suppliers", "Optimum Nutrition", "BulkSupplements", "NOW Sports", "Myprotein"],
     "testingNotes": "Look for single-ingredient powders and third-party sport certification if competing in tested sports.",
-    "notes": "Optional but useful for strength training, sprint performance, and lean-mass goals. Most creatine is synthetic and not animal-derived.",
+    "notes": "Optional for strength training, sprint performance, and lean-mass goals. Most creatine is synthetic rather than animal-derived.",
     "relatedGuide": null,
     "lastReviewed": "2026-06-17"
   }

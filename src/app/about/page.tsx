@@ -20,7 +20,7 @@ import { cn } from "@/lib/utils";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "GreenFit helps people adopt practical plant-based nutrition using evidence, accessible Indian foods, and transparent planning tools.",
+    "GreenFit helps people eat more plant-based food with evidence-aware guidance, familiar Indian ingredients, and transparent planning tools.",
   keywords: [
     "about GreenFit",
     "plant based nutrition mission",
@@ -34,19 +34,19 @@ const pillars = [
   {
     title: "Evidence with context",
     description:
-      "Guides cite sources and note limits. We prefer practical ranges and caveats over absolute claims.",
+      "Guides cite sources and state their limits. We use ranges and caveats instead of absolute claims.",
     icon: Scale,
   },
   {
     title: "Accessible Indian foods",
     description:
-      "Plans centre dals, chana, soy foods, millets, grains, vegetables, nuts, and realistic dairy swaps.",
+      "Plans start with dals, chana, soy foods, millets, grains, vegetables, nuts, and workable dairy swaps.",
     icon: Leaf,
   },
   {
     title: "Decisions, not noise",
     description:
-      "Each section exists to help you choose meals, targets, or supplements—not to sell a lifestyle brand.",
+      "Each section helps you choose meals, targets, or supplements. It is not here to sell a lifestyle brand.",
     icon: HeartHandshake,
   },
 ];
@@ -55,31 +55,31 @@ const offerings = [
   {
     href: "/diet-plans",
     title: "Diet plans",
-    description: "Example day structures for common goals, budgets, and regional preferences.",
+    description: "Example days for different goals, budgets, and regional preferences.",
     icon: ClipboardList,
   },
   {
     href: "/diet-plans/build",
     title: "Build my diet plan",
-    description: "A personal planner that suggests targets and lets you fill meals with recipes.",
+    description: "A planner that suggests targets and lets you fill your day with recipes.",
     icon: Sparkles,
   },
   {
     href: "/guides",
     title: "Guides",
-    description: "Nutrient and food explainers: protein, B12, iron, zinc, omega-3, bone health, dairy swaps.",
+    description: "Explainers on protein, B12, iron, zinc, omega-3, bone health, and dairy swaps.",
     icon: BookOpen,
   },
   {
     href: "/recipes",
     title: "Recipes",
-    description: "Simple plant-based Indian meals you can rotate into a weekly routine.",
+    description: "Plant-based Indian meals you can rotate through a week.",
     icon: UtensilsCrossed,
   },
   {
     href: "/shop/supplement",
     title: "Supplements",
-    description: "Type-level notes on when a supplement is commonly considered, dosage context, and cautions.",
+    description: "Notes on when a supplement may help, with dosage context and cautions.",
     icon: FlaskConical,
   },
   {
@@ -94,7 +94,7 @@ const principles = [
   "Lead with short, usable recommendations before long explanations.",
   "Prefer food patterns people can cook with Indian staples and markets.",
   "State when evidence is mixed, limited, or highly individual.",
-  "Treat supplements as tools for specific gaps—not as the foundation of a diet.",
+  "Treat supplements as tools for specific gaps, not as the foundation of a diet.",
   "Keep calculators and plans as estimates; they are not personalised medical care.",
   "Avoid fear-based messaging and miracle claims.",
 ];
@@ -120,12 +120,11 @@ export default function AboutPage() {
         <div className="mx-auto max-w-5xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
           <p className="text-sm font-medium tracking-wide text-primary">About GreenFit</p>
           <h1 className="mt-3 max-w-3xl font-heading text-4xl font-semibold leading-tight sm:text-5xl">
-            Practical plant-based nutrition, without the extremes
+            Plant-based nutrition without the extremes
           </h1>
           <p className="mt-5 max-w-3xl text-lg leading-8 text-muted-foreground">
-            GreenFit exists to make everyday plant-based eating clearer: realistic diet plans, evidence-aware guides,
-            useful tools, and Indian foods you can actually cook. We focus on decisions you face this week—not abstract
-            ideology.
+            GreenFit makes plant-based eating easier to act on: realistic plans, evidence-aware guides, useful tools,
+            and Indian foods you can cook. The focus is on decisions you face this week, not abstract ideology.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Link href="/diet-plans/build" className={cn(buttonVariants({ size: "lg" }), "w-full sm:w-auto")}>
@@ -145,7 +144,7 @@ export default function AboutPage() {
       <section className="mx-auto w-full max-w-5xl px-4 py-14 sm:px-6 lg:px-8">
         <h2 className="font-heading text-3xl font-semibold">What we stand for</h2>
         <p className="mt-3 max-w-2xl text-base leading-7 text-muted-foreground">
-          Three commitments shape the site. Everything else is in service of them.
+          Three commitments shape the site. Everything else supports them.
         </p>
         <div className="mt-8 grid gap-4 md:grid-cols-3">
           {pillars.map((pillar) => {
@@ -167,7 +166,7 @@ export default function AboutPage() {
         <div className="mx-auto w-full max-w-5xl px-4 py-14 sm:px-6 lg:px-8">
           <h2 className="font-heading text-3xl font-semibold">What you will find here</h2>
           <p className="mt-3 max-w-2xl text-base leading-7 text-muted-foreground">
-            GreenFit is a small set of focused tools and references—not a social feed.
+            GreenFit is a focused set of tools and references, not a social feed.
           </p>
           <div className="mt-8 grid gap-3 sm:grid-cols-2">
             {offerings.map((item) => {
@@ -197,7 +196,7 @@ export default function AboutPage() {
           <div>
             <h2 className="font-heading text-3xl font-semibold">How we work</h2>
             <p className="mt-3 text-base leading-7 text-muted-foreground">
-              Editorial habits matter as much as topics. These rules keep the content useful and restrained.
+              Editorial habits matter as much as the topics. These rules keep the content useful and measured.
             </p>
             <ul className="mt-6 grid gap-3">
               {principles.map((item) => (
@@ -251,7 +250,7 @@ export default function AboutPage() {
             <div>
               <h3 className="font-heading text-xl font-semibold">Start with something useful</h3>
               <p className="mt-1 text-sm text-muted-foreground">
-                Build a plan, read a guide, or open a calculator—whatever matches your next decision.
+                Build a plan, read a guide, or open a calculator. Start with the decision in front of you.
               </p>
             </div>
             <div className="flex flex-col gap-3 sm:flex-row">

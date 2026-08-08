@@ -82,12 +82,12 @@ const productGroups = [
   {
     id: "verified",
     title: "Verified products",
-    description: "Products with a matched third-party result that is not marked as failed.",
+    description: "Products with a matching third-party result that is not marked as failed.",
   },
   {
     id: "untested",
     title: "Untested products",
-    description: "Products with no matching Trustified or Unbox Health result.",
+    description: "Products without a matching Trustified or Unbox Health result.",
   },
   {
     id: "failed",
@@ -140,7 +140,7 @@ export function SupplementDirectory({ products }: { products: AffiliateSupplemen
           id="supplement-nutrient-label"
           className="mb-2 px-1 text-xs font-semibold uppercase tracking-wide text-white"
         >
-          Choose a nutrient
+          Choose a nutrient to compare
         </p>
         <div className="overflow-x-auto pb-0.5">
           <TabsList
@@ -179,7 +179,7 @@ export function SupplementDirectory({ products }: { products: AffiliateSupplemen
                 <div className="flex flex-col gap-1">
                   <h2 className="font-heading text-2xl font-semibold">{nutrient.label} supplements</h2>
                   <p className="text-sm leading-6 text-muted-foreground">
-                    Vegan or plant-based products found on Amazon India and checked against public
+                    Vegan or plant-based products listed on Amazon India, with available public
                     third-party test results.
                   </p>
                 </div>
@@ -220,8 +220,7 @@ export function SupplementDirectory({ products }: { products: AffiliateSupplemen
                         <SupplementProductList products={groupedProducts} />
                       ) : (
                         <p className="rounded-lg border border-dashed px-4 py-5 text-sm text-muted-foreground">
-                          No {group.title.toLowerCase()} with a current exact Amazon India product
-                          listing.
+                          No matching {group.title.toLowerCase()} are listed on Amazon India right now.
                         </p>
                       )}
                     </section>
@@ -298,8 +297,8 @@ function SupplementProductList({ products }: { products: AffiliateSupplement[] }
         ))}
       </div>
       <p className="text-xs leading-5 text-muted-foreground">
-        Product availability and formulations can change. The vegan evidence and marketplace source
-        were last checked on the date stored with each product.
+        Availability and formulations can change. Each product includes the date when its vegan evidence
+        and marketplace source were last checked.
       </p>
     </>
   );

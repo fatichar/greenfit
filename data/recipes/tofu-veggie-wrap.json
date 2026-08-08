@@ -1,10 +1,10 @@
 {
   "slug": "tofu-veggie-wrap",
   "title": "Spiced Tofu Veggie Wrap",
-  "description": "Portable high-protein wrap with masala tofu, crunchy vegetables, and a tangy sauce. Desk- and travel-friendly.",
+  "description": "A portable wrap filled with masala tofu, crunchy vegetables, and tangy sauce for lunch or travel.",
   "explanation": [
     "This wrap is designed for lunch boxes and travel days when you need something filling that holds up without a full kitchen. The tofu filling can be cooked ahead; assemble just before eating if you want maximum crunch.",
-    "Use any flatbread you have—roti, tortilla, or lavash. A dry filling travels better than a saucy one."
+    "Use any flatbread you have, such as roti, tortilla, or lavash. A dry filling travels better than a saucy one."
   ],
   "ingredients": [
     "200g Firm Tofu, crumbled or cubed",
@@ -31,7 +31,7 @@
     "Cook filling drier for travel; keep it softer for home lunch.",
     "Put sauce in the center, not near edges, to reduce leaks.",
     "If packing more than 2 hours ahead, keep wet veggies separate.",
-    "A second wrap freezes poorly—make fresh or refrigerate 1 day max."
+    "A second wrap freezes poorly. Make it fresh or refrigerate for one day at most."
   ],
   "variationSections": [
     {
@@ -46,7 +46,7 @@
       "title": "Travel tips",
       "items": [
         "Wrap in foil and keep upright in a lunch bag.",
-        "Skip tomato if packing for long hours—it releases water.",
+        "Skip tomato if packing for long hours because it releases water.",
         "Carry lemon and salt sachets to refresh before eating."
       ]
     }

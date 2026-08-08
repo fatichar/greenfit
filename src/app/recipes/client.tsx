@@ -114,7 +114,7 @@ export function RecipesClient({
           <h2 className="mb-3 text-lg font-semibold">Search</h2>
           <Input
             type="search"
-            placeholder="Ingredient, tag, protein…"
+            placeholder="Ingredient, tag, or protein"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             aria-label="Search recipes"
@@ -252,7 +252,7 @@ export function RecipesClient({
           <div className="flex min-h-[300px] flex-col items-center justify-center rounded-xl border border-dashed text-center">
             <h3 className="text-lg font-semibold">No recipes found</h3>
             <p className="mt-1 text-sm text-muted-foreground">
-              Try a different search or clear your filters.
+              Try another search or clear the filters.
             </p>
           </div>
         )}

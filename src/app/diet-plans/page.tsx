@@ -6,7 +6,7 @@ import { dietPlans } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "Diet Plans",
-  description: "Plant-based and vegan diet plan library with calories, protein targets, cuisine style, difficulty, and affordability for WFPB eating.",
+  description: "Plant-based diet plans with calorie and protein targets, regional styles, difficulty, and cost.",
   keywords: [
     "vegan diet plans",
     "plant based diet plans",
@@ -25,7 +25,7 @@ export default function DietPlansPage() {
         <div className="max-w-3xl">
         <h1 className="font-heading text-4xl font-semibold">Diet plans</h1>
         <p className="mt-3 text-lg leading-8 text-muted-foreground">
-          Practical example plans for common goals. These are not medically personalized.
+          Example plans for common goals, with calories, protein, cost, and regional preferences. They are not medical plans.
         </p>
         </div>
         <Link href="/diet-plans/build" className={buttonVariants({ size: "lg" })}>Build my diet plan</Link>

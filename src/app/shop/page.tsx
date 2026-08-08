@@ -15,7 +15,7 @@ import { allShopProducts, shopFeaturedProducts } from "@/lib/shop-products";
 
 export const metadata: Metadata = {
   title: "Shop plant-based products",
-  description: "Browse GreenFit's practical recommendations for supplements, exercise, kitchen devices, personal care, beauty, and books.",
+  description: "Browse GreenFit's recommendations for supplements, exercise, kitchen devices, personal care, beauty, and books.",
 };
 
 const shopCategories: Array<{
@@ -37,7 +37,7 @@ const shopCategories: Array<{
   {
     title: "Exercise & Fitness",
     href: "/shop/exercise-fitness",
-    description: "Find compact, practical equipment organized around how you want to move.",
+    description: "Find compact equipment organised around how you want to move.",
     detail: "Explore strength, bodyweight, small-space training, mobility, and recovery picks.",
     cta: "Explore fitness products",
     icon: Dumbbell,
@@ -53,7 +53,7 @@ const shopCategories: Array<{
   {
     title: "Personal Care & Beauty",
     href: "/shop/personal-care-beauty",
-    description: "Discover less-obvious products for practical everyday care.",
+    description: "Discover less-obvious products for everyday care.",
     detail: "Browse scalp care, oral care, skin tools, recovery, and low-waste alternatives.",
     cta: "Explore personal care",
     icon: Sparkles,
@@ -61,8 +61,8 @@ const shopCategories: Array<{
   {
     title: "Books",
     href: "/shop/books",
-    description: "Find useful reading for nutrition, movement, recovery, and sustainable habits.",
-    detail: "Start with books chosen for practical ideas rather than trend-driven promises.",
+    description: "Find reading on nutrition, movement, recovery, and sustainable habits.",
+        detail: "Start with books chosen for useful ideas rather than trend-driven promises.",
     cta: "Explore books",
     icon: BookOpen,
   },
@@ -75,7 +75,7 @@ export default function ShopPage() {
         <p className="text-sm font-medium tracking-wide text-primary">GreenFit shop</p>
         <h1 className="mt-3 font-heading text-4xl font-semibold leading-tight sm:text-5xl">Shop with a little more clarity</h1>
         <p className="mt-4 text-lg leading-8 text-muted-foreground">
-          Start with the kind of decision you are making. Each category has its own guidance, filters, and useful details to help you compare before you buy.
+          Start with the decision you are making. Each category has its own guidance and comparison tools.
         </p>
       </div>
 
@@ -118,7 +118,7 @@ export default function ShopPage() {
         itemSingular="pick"
         itemPlural="picks"
         title="Interesting discoveries"
-        description="A rotating handful of useful, less-obvious products from across the GreenFit shop. Visit a category for its complete guide."
+        description="A rotating handful of less-obvious products from across the GreenFit shop. Visit a category for the full guide."
         showTags={false}
         showThumbnails={false}
       />

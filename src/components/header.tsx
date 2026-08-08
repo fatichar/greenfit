@@ -30,27 +30,27 @@ const shopItems = [
   {
     label: "Supplements",
     href: "/shop/supplement",
-    description: "Compare nutrients, forms, and quality checks.",
+    description: "Compare forms, doses, and available quality checks.",
   },
   {
     label: "Exercise & Fitness",
     href: "/shop/exercise-fitness",
-    description: "Practical picks for strength, cardio, and mobility.",
+    description: "Equipment for strength, cardio, and mobility.",
   },
   {
     label: "Kitchen",
     href: "/shop/kitchen",
-    description: "Devices that make plant-based cooking easier.",
+    description: "Devices that make plant-based cooking less of a chore.",
   },
   {
     label: "Personal Care & Beauty",
     href: "/shop/personal-care-beauty",
-    description: "Simple checks for everyday care and beauty buys.",
+    description: "Checks for ingredients, vegan suitability, and value.",
   },
   {
     label: "Books",
     href: "/shop/books",
-    description: "Reading lists for nutrition, movement, and habits.",
+    description: "Books on nutrition, movement, and habits.",
   },
 ] as const;
 
@@ -153,7 +153,7 @@ export function Header() {
                   className="block rounded-lg px-3 py-2.5 transition hover:bg-muted"
                 >
                   <span className="font-medium">Shop overview</span>
-                  <span className="mt-0.5 block text-xs text-muted-foreground">Browse every GreenFit category.</span>
+                  <span className="mt-0.5 block text-xs text-muted-foreground">See all GreenFit categories.</span>
                 </Link>
                 <div className="my-1 border-t" />
                 {shopItems.map(({ label, href, description }) => (

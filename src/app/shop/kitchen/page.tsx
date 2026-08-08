@@ -8,7 +8,7 @@ import { kitchenFeaturedProducts, kitchenProducts } from "@/lib/shop-products";
 
 export const metadata: Metadata = {
   title: "Plant-Based Kitchen Devices",
-  description: "Practical guides to blenders, cold-press juicers, food processors, pressure cookers, and other devices useful for plant-based cooking.",
+  description: "Guides to blenders, cold-press juicers, food processors, pressure cookers, and other plant-based cooking tools.",
   keywords: [
     "plant based kitchen appliances",
     "vegan kitchen devices",
@@ -26,7 +26,7 @@ export default function KitchenPage() {
           <p className="text-sm font-medium tracking-wide text-primary">GreenFit shop · Kitchen</p>
           <h1 className="mt-3 font-heading text-4xl font-semibold">Devices that make plant-based cooking easier</h1>
           <p className="mt-3 text-lg leading-8 text-muted-foreground">
-            A practical shortlist of appliances for smoothies, homemade plant milk, legumes, sauces, batch prep, and the occasional fresh juice. Choose based on what you will use every week, not the longest feature list.
+            A focused shortlist of appliances for smoothies, homemade plant milk, legumes, sauces, batch prep, and the occasional fresh juice. Choose what you will use every week, not the appliance with the longest feature list.
           </p>
         </div>
         <Image
@@ -45,7 +45,7 @@ export default function KitchenPage() {
         sourcePage="Kitchen"
         itemSingular="device"
         itemPlural="devices"
-        description="Start with the underappreciated tools that make plant-based prep easier to repeat."
+        description="Start with the tools that make plant-based prep easier to repeat."
       />
       <div className="rounded-xl border border-olive-200 bg-olive-50/70 px-5 py-4 text-sm leading-6 text-olive-800">
         Buying note: appliance prices, availability, warranties, and specifications change. Treat the Amazon link as an example to inspect, then verify the current listing and return policy before buying.

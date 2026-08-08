@@ -53,7 +53,7 @@ export function ProductDirectory({ products }: { products: Product[] }) {
       <SearchBar
         value={query}
         onChange={setQuery}
-        placeholder="Search foods, recipes, nutrition notes, or brands"
+        placeholder="Search foods, recipes, notes, or brands"
       />
       <FilterPanel
         category={category}
@@ -70,7 +70,7 @@ export function ProductDirectory({ products }: { products: Product[] }) {
           ))}
         </div>
       ) : (
-        <EmptyState title="No products found" description="Try a different food, recipe, category, or brand." />
+        <EmptyState title="No products found" description="Try another food, recipe, category, or brand." />
       )}
     </div>
   );

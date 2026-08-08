@@ -4,7 +4,7 @@ import { getRecipes } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "Build my diet plan",
-  description: "Create a personalized plant-based Indian meal plan around your goals, routine, and budget.",
+  description: "Build a plant-based Indian meal plan around your goals, routine, and budget.",
 };
 
 export default function BuildDietPlanPage() {

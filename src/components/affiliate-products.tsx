@@ -67,7 +67,7 @@ function AffiliateProductCard({ product, sourcePage }: { product: AffiliateProdu
           data-umami-event-source-page={sourcePage}
           className={buttonVariants()}
         >
-          View on Amazon
+          See it on Amazon
           <ExternalLink data-icon="inline-end" />
         </a>
       </CardFooter>

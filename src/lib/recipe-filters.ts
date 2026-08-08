@@ -1,6 +1,6 @@
 /**
  * High-importance recipe filter chips shown on /recipes.
- * Keep this short — meal type already covers breakfast/lunch/dinner/snacks.
+ * Keep this short. Meal type already covers breakfast/lunch/dinner/snacks.
  * `match` can include aliases so one chip covers similar tags in recipe data.
  */
 export const recipeFilterGroups = [

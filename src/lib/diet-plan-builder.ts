@@ -17,7 +17,7 @@ export const MEAL_SLOTS: Array<{ id: MealType; label: string; icon: string; help
   { id: "breakfast", label: "Breakfast", icon: "◉", helper: "Start your day well" },
   { id: "brunch", label: "Brunch", icon: "◌", helper: "A flexible mid-morning meal" },
   { id: "lunch", label: "Lunch", icon: "◍", helper: "Your main midday meal" },
-  { id: "evening-snack", label: "Evening snack", icon: "◒", helper: "A simple bridge to dinner" },
+  { id: "evening-snack", label: "Evening snack", icon: "◒", helper: "A small bite before dinner" },
   { id: "dinner", label: "Dinner", icon: "◉", helper: "A satisfying final meal" },
 ];
 

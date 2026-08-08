@@ -1,10 +1,10 @@
-# Recipe Catalog Plan — Complementing “Build My Diet Plan”
+# Recipe Catalog Plan: Complementing “Build My Diet Plan”
 
 ## Purpose
 
 GreenFit’s USP is **Build my diet plan**. Recipes are not a standalone cookbook; they are the inventory users pick from when filling meal slots across a day and a week.
 
-This plan reviews the current recipe set against those meal slots, names gaps, and proposes a **first batch of new dishes** with fixed names, meal slots, roles, and dietary eligibility. It prioritizes **complete, everyday Indian meals** with stronger **vegetable and fruit** coverage—not more protein-centric dishes for their own sake.
+This plan reviews the current recipe set against those meal slots, names gaps, and proposes a **first batch of new dishes** with fixed names, meal slots, roles, and dietary eligibility. It prioritizes **complete, everyday Indian meals** with stronger **vegetable and fruit** coverage, rather than more protein-centric dishes for their own sake.
 
 ---
 
@@ -45,16 +45,16 @@ Related recipe tags also exist on the site (tea-time, travel-snack, craving, fes
 
 ## Principles
 
-1. **Complement the plan builder** — For each meal of the day, the catalog should provide enough recipes to build a complete meal and offer meaningful variety across a week.
-2. **Prefer complete mains for catalog variety** — A **main** is a single recipe that is a full plate or bowl (e.g. sabzi + roti, dal + rice + veg). Week generation swaps recipes **per selected item** within a slot’s suggestion list; multi-item “thalis” assembled from separate components do **not** stay coherent across days. Therefore this plan prioritizes **complete mains** for lunch/dinner choice, and treats components as optional manual add-ons.
-3. **Components are additive, not automatic thalis** — Sides (kachumber, cut fruit) improve the master plan when a user multi-selects them. Success is measured as “more vegetable/fruit **options and complete plates**,” not “the builder constructs coherent multi-item thalis every day of the week.”
-4. **Vegetables and fruit are first-class** — Indian seasonal vegetables and fruit should appear as real dishes and sides, not only as garnish in high-protein bowls.
-5. **Protein is already covered enough** — Existing dal, chana, rajma, tofu, besan, sprouts, and peanut recipes cover protein anchors. New work rebalances toward produce and complete veg-forward plates.
-6. **Seasonal fruit as one flexible pattern** — Prefer a seasonal cut-fruit bowl (plus a small set of fruit snacks) over many one-off fruit recipes. Seasonal swaps belong in recipe variations, not as separate approval items.
-7. **One canonical name per dish** — No “A or B” approval items. Seasonal or regional swaps go in variations after the recipe exists.
-8. **No substantial duplicates of existing recipes** — Do not re-approve “more vegetable” variants of chilla, poha, upma, or khichdi as new first-batch dishes; those can be variation sections on existing recipes later.
-9. **Dietary eligibility is explicit** — First-batch dishes declare Jain, no-onion-no-garlic, soy-free, nut-free, and gluten-free support (or lack of it) as accurate recipe metadata. This does not claim automatic filtering in the current builder.
-10. **Dish metadata before content** — Full recipe bodies start only after the approval matrix is accepted.
+1. **Complement the plan builder**: For each meal of the day, the catalog should provide enough recipes to build a complete meal and offer meaningful variety across a week.
+2. **Prefer complete mains for catalog variety**: A **main** is a single recipe that is a full plate or bowl (e.g. sabzi + roti, dal + rice + veg). Week generation swaps recipes **per selected item** within a slot’s suggestion list; multi-item “thalis” assembled from separate components do **not** stay coherent across days. Therefore this plan prioritizes **complete mains** for lunch/dinner choice, and treats components as optional manual add-ons.
+3. **Components are additive, not automatic thalis**: Sides (kachumber, cut fruit) improve the master plan when a user multi-selects them. Success is measured as “more vegetable/fruit **options and complete plates**,” not “the builder constructs coherent multi-item thalis every day of the week.”
+4. **Vegetables and fruit are first-class**: Indian seasonal vegetables and fruit should appear as real dishes and sides, not only as garnish in high-protein bowls.
+5. **Protein is already covered enough**: Existing dal, chana, rajma, tofu, besan, sprouts, and peanut recipes cover protein anchors. New work rebalances toward produce and complete veg-forward plates.
+6. **Seasonal fruit as one flexible pattern**: Prefer a seasonal cut-fruit bowl (plus a small set of fruit snacks) over many one-off fruit recipes. Seasonal swaps belong in recipe variations, not as separate approval items.
+7. **One canonical name per dish**: No “A or B” approval items. Seasonal or regional swaps go in variations after the recipe exists.
+8. **No substantial duplicates of existing recipes**: Do not re-approve “more vegetable” variants of chilla, poha, upma, or khichdi as new first-batch dishes; those can be variation sections on existing recipes later.
+9. **Dietary eligibility is explicit**: First-batch dishes declare Jain, no-onion-no-garlic, soy-free, nut-free, and gluten-free support (or lack of it) as accurate recipe metadata. This does not claim automatic filtering in the current builder.
+10. **Dish metadata before content**: Full recipe bodies start only after the approval matrix is accepted.
 
 ---
 
@@ -198,7 +198,7 @@ Lunch and dinner need the most new **mains**. Fruit and light sides are cross-sl
 
 ---
 
-## First batch — approval matrix
+## First batch: approval matrix
 
 Fifteen canonical dishes. Each row is one recipe to create after approval.
 
@@ -308,7 +308,7 @@ After the approved batch exists in the catalog **with the mealTypes and dietary 
 4. **Produce-led snacks:** At least three evening-snack options that are fruit or vegetable based (#11, #12, #14, #15).  
 5. **Recipe eligibility metadata:** Jain/no-onion-no-garlic, soy-free, nut-free, and gluten-free users can identify marked lunch and dinner paths from recipe metadata. Automatic affirmative filtering for these paths is not part of the current builder.  
 6. **Week variations:** A selected main rotates among comparable mains, with up to seven candidates; sides and snacks remain in their own role group. Multi-item stacks remain a manual master-plan choice.
-7. **Catalog tone:** Everyday Indian eating—seasonal sabzi and fruit first—while existing protein recipes remain available.
+7. **Catalog tone:** Everyday Indian eating, with seasonal sabzi and fruit first, while existing protein recipes remain available.
 
 ---
 

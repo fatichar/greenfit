@@ -5,8 +5,8 @@ import { affiliateSupplements } from "@/lib/data";
 import { supplementFeaturedProducts, supplementProducts, supplementTags } from "@/lib/shop-products";
 
 export const metadata: Metadata = {
-  title: "Vegan Supplement Products",
-  description: "Compare vegan supplement products sold on Amazon India with available Trustified and Unbox Health test results.",
+  title: "Vegan Supplements",
+  description: "Compare vegan supplements sold on Amazon India with available Trustified and Unbox Health results.",
   keywords: [
     "vegan supplements",
     "plant based protein",
