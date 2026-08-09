@@ -14,7 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/shop/supplement",
     "/shop/exercise-fitness",
     "/shop/kitchen",
-    "/shop/personal-care-beauty",
+    "/shop/wellness",
     "/shop/books",
     "/about",
   ];

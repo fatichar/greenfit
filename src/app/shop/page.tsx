@@ -15,7 +15,7 @@ import { allShopProducts, shopFeaturedProducts } from "@/lib/shop-products";
 
 export const metadata: Metadata = {
   title: "Shop plant-based products",
-  description: "Browse GreenFit's recommendations for supplements, exercise, kitchen devices, personal care, beauty, and books.",
+  description: "Browse GreenFit's recommendations for supplements, exercise, kitchen devices, wellness tools, and books.",
 };
 
 const shopCategories: Array<{
@@ -51,11 +51,11 @@ const shopCategories: Array<{
     icon: CookingPot,
   },
   {
-    title: "Personal Care & Beauty",
-    href: "/shop/personal-care-beauty",
-    description: "Discover less-obvious products for everyday care.",
-    detail: "Browse scalp care, oral care, skin tools, recovery, and low-waste alternatives.",
-    cta: "Explore personal care",
+    title: "Wellness",
+    href: "/shop/wellness",
+    description: "Practical tools for tracking, sun protection, oral care, and recovery.",
+    detail: "Kitchen scales, home health basics, and everyday essentials you are more likely to keep using.",
+    cta: "Explore wellness",
     icon: Sparkles,
   },
   {

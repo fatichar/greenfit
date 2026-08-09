@@ -43,9 +43,9 @@ const shopItems = [
     description: "Devices that make plant-based cooking less of a chore.",
   },
   {
-    label: "Personal Care & Beauty",
-    href: "/shop/personal-care-beauty",
-    description: "Checks for ingredients, vegan suitability, and value.",
+    label: "Wellness",
+    href: "/shop/wellness",
+    description: "Tracking tools, sun protection, oral care, and recovery.",
   },
   {
     label: "Books",

@@ -20,9 +20,9 @@ export const shopNavItems = [
     description: "Tools for plant-based cooking",
   },
   {
-    title: "Personal Care",
-    href: "/shop/personal-care-beauty",
-    description: "Personal care and low-waste options",
+    title: "Wellness",
+    href: "/shop/wellness",
+    description: "Tracking, oral care, and home health",
   },
   {
     title: "Books",
