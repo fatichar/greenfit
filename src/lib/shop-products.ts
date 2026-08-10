@@ -635,6 +635,16 @@ export const bookProducts: ShopProduct[] = [
     visual: "book",
   },
   {
+    id: "the-world-peace-diet",
+    name: "The World Peace Diet",
+    category: "Books",
+    tags: ["Veganism"],
+    description: "Will Tuttle's exploration of how food choices connect animal welfare, human health, spirituality, and a more peaceful society.",
+    detail: "A reflective ethics-focused read for people interested in the wider cultural and spiritual case for veganism.",
+    href: "https://www.amazon.in/World-Peace-Diet-Spiritual-Anniversary/dp/9359664235",
+    visual: "book",
+  },
+  {
     id: "plant-based-india",
     name: "Plant-Based India",
     category: "Books",
