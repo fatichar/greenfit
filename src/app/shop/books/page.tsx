@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 };
 
 /** Keep filters short so the page stays scannable. */
-const tags = ["Nutrition", "Training", "Veganism", "Cooking"];
+const tags = ["Nutrition", "Training", "Veganism", "Cooking", "Health"];
 
 export default function BooksPage() {
   return (
