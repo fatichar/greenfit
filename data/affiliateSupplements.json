@@ -689,5 +689,17 @@
     "imageUrl": "https://m.media-amazon.com/images/I/710tXH-OzVL._SL1500_.jpg",
     "veganEvidence": "Amazon product listing identifies pure creatine monohydrate; confirm current vegan suitability from the label.",
     "sourceVerifiedAt": "2026-08-06"
+  },
+  {
+    "id": "amazon-supplement-b0ds1xw834",
+    "nutrient": "other",
+    "title": "Supplement on Amazon (B0DS1XW834)",
+    "brand": "See current Amazon listing",
+    "form": "See current Amazon listing",
+    "doseText": "See current Amazon product label",
+    "amazonUrl": "https://www.amazon.in/dp/B0DS1XW834",
+    "asin": "B0DS1XW834",
+    "veganEvidence": "Confirm the ingredients, capsule material, and current vegan suitability from the Amazon listing and product label.",
+    "sourceVerifiedAt": "2026-08-18"
   }
 ]
