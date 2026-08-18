@@ -691,15 +691,15 @@
     "sourceVerifiedAt": "2026-08-06"
   },
   {
-    "id": "amazon-supplement-b0ds1xw834",
-    "nutrient": "other",
-    "title": "Supplement on Amazon (B0DS1XW834)",
-    "brand": "See current Amazon listing",
-    "form": "See current Amazon listing",
-    "doseText": "See current Amazon product label",
+    "id": "naturaltein-calcium-citrate-d3-k2",
+    "nutrient": "calcium",
+    "title": "NATURALTEIN Calcium Citrate with Vitamin D3 & K2",
+    "brand": "NATURALTEIN",
+    "form": "Tablet",
+    "doseText": "Calcium citrate with vitamins D3 and K2; see the current product label for amounts",
     "amazonUrl": "https://www.amazon.in/dp/B0DS1XW834",
     "asin": "B0DS1XW834",
-    "veganEvidence": "Confirm the ingredients, capsule material, and current vegan suitability from the Amazon listing and product label.",
+    "veganEvidence": "Confirm the current tablet ingredients and vegan suitability from the Amazon listing and product label.",
     "sourceVerifiedAt": "2026-08-18"
   }
 ]
