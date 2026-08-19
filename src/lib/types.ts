@@ -35,7 +35,7 @@ export type Device = {
   amazonSearchUrl: string;
 };
 
-export type AffiliateProduct = {
+export type CatalogProduct = {
   id: string;
   title: string;
   category: string;
@@ -57,7 +57,7 @@ export type ThirdPartyTestResult = {
   batch?: string;
 };
 
-export type AffiliateSupplement = {
+export type CatalogSupplement = {
   id: string;
   nutrient: string;
   title: string;

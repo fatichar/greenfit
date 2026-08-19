@@ -2,14 +2,14 @@ import fs from "node:fs";
 import path from "node:path";
 
 import dietPlansData from "../../data/dietPlans.json";
-import affiliateSupplementsData from "../../data/affiliateSupplements.json";
+import catalogSupplementsData from "../../data/supplement-catalog.json";
 import devicesData from "../../data/devices.json";
 import foodsData from "../../data/foods.json";
 import ingredientsData from "../../data/ingredients.json";
 import productsData from "../../data/products.json";
 import supplementsData from "../../data/supplements.json";
 import type {
-  AffiliateSupplement,
+  CatalogSupplement,
   DietPlan,
   Device,
   Food,
@@ -23,7 +23,7 @@ import type {
 export const products = productsData as Product[];
 export const devices = devicesData as Device[];
 export const supplements = supplementsData as Supplement[];
-export const affiliateSupplements = affiliateSupplementsData as AffiliateSupplement[];
+export const catalogSupplements = catalogSupplementsData as CatalogSupplement[];
 export const dietPlans = dietPlansData as DietPlan[];
 export const foods = foodsData as Food[];
 export const ingredients = ingredientsData as Ingredient[];

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { ShopShell } from "@/components/shop-shell";
 import { SupplementsPageContent } from "@/components/supplements-page-content";
-import { affiliateSupplements } from "@/lib/data";
+import { catalogSupplements } from "@/lib/data";
 import { supplementFeaturedProducts, supplementProducts, supplementTags } from "@/lib/shop-products";
 
 export const metadata: Metadata = {
@@ -33,7 +33,7 @@ export default function SupplementsPage() {
       <SupplementsPageContent
         products={supplementProducts}
         featuredProducts={supplementFeaturedProducts}
-        affiliateSupplements={affiliateSupplements}
+        catalogSupplements={catalogSupplements}
         tags={supplementTags}
       />
     </ShopShell>

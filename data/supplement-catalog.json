@@ -8,7 +8,7 @@
     "doseText": "1.1 mcg vitamin B12 per capsule",
     "amazonUrl": "https://www.amazon.in/dp/B07Y7P2S5T",
     "asin": "B07Y7P2S5T",
-    "imageUrl": "https://m.media-amazon.com/images/I/71kf+zcU5mL._AC_UL320_.jpg",
+    "imagePath": "/images/shop/supplements/himalayan-organics-plant-based-b12.jpg",
     "veganEvidence": "Amazon product name identifies the formulation as plant-based.",
     "sourceVerifiedAt": "2026-07-24"
   },
@@ -21,7 +21,7 @@
     "doseText": "2.2 mcg vitamin B12 and 300 mcg vitamin B9 per strip",
     "amazonUrl": "https://www.amazon.in/dp/B095LQW7KB",
     "asin": "B095LQW7KB",
-    "imageUrl": "https://m.media-amazon.com/images/I/71MFfcClcHL._SL1500_.jpg",
+    "imagePath": "/images/shop/supplements/wellbeing-nutrition-vegan-b12.jpg",
     "veganEvidence": "Amazon product name identifies the formulation as vegan and plant-based.",
     "sourceVerifiedAt": "2026-07-24",
     "unboxHealth": {
@@ -42,7 +42,7 @@
     "doseText": "60000 IU cholecalciferol per 5 ml shot",
     "amazonUrl": "https://www.amazon.in/dp/B0971639YT",
     "asin": "B0971639YT",
-    "imageUrl": "https://m.media-amazon.com/images/I/71QekA0tJaL._SL1500_.jpg",
+    "imagePath": "/images/shop/supplements/zynano-vitamin-d3-shots.jpg",
     "veganEvidence": "Amazon product title identifies a vegetarian vitamin D3 oral solution.",
     "sourceVerifiedAt": "2026-08-06"
   },
@@ -55,7 +55,7 @@
     "doseText": "600 IU vitamin D3 and 55 mcg vitamin K2",
     "amazonUrl": "https://www.amazon.in/dp/B09P8MD5TW",
     "asin": "B09P8MD5TW",
-    "imageUrl": "https://m.media-amazon.com/images/I/41wMuWYdBOL._AC_UL320_.jpg",
+    "imagePath": "/images/shop/supplements/unived-d3-k2-90.jpg",
     "veganEvidence": "Amazon product name identifies the product as plant-based and vegan.",
     "sourceVerifiedAt": "2026-07-24"
   },
@@ -68,7 +68,7 @@
     "doseText": "600 IU vitamin D3 per capsule",
     "amazonUrl": "https://www.amazon.in/dp/B09S3HDGVS",
     "asin": "B09S3HDGVS",
-    "imageUrl": "https://m.media-amazon.com/images/I/71yKzFgh75L._AC_UL320_.jpg",
+    "imagePath": "/images/shop/supplements/inlife-plant-based-d3-k2.jpg",
     "veganEvidence": "Amazon product name identifies lichen as the vitamin D3 source; verify the current capsule label.",
     "sourceVerifiedAt": "2026-07-24"
   },
@@ -81,7 +81,7 @@
     "doseText": "600 IU (15 mcg) vitamin D3 from lichen per capsule",
     "amazonUrl": "https://www.amazon.in/dp/B09WDMQTWV",
     "asin": "B09WDMQTWV",
-    "imageUrl": "https://m.media-amazon.com/images/I/71mv-wKzYlL._SL1500_.jpg",
+    "imagePath": "/images/shop/supplements/nutrazee-vegan-d3.jpg",
     "veganEvidence": "Amazon product name identifies plant-based lichen-sourced vitamin D3 with organic coconut oil.",
     "sourceVerifiedAt": "2026-07-24",
     "unboxHealth": {
@@ -102,7 +102,7 @@
     "doseText": "600 IU (15 mcg) vitamin D and 55 mcg vitamin K2 per strip",
     "amazonUrl": "https://www.amazon.in/dp/B095S82KLD",
     "asin": "B095S82KLD",
-    "imageUrl": "https://m.media-amazon.com/images/I/71gjdo2L2ML._AC_UL320_.jpg",
+    "imagePath": "/images/shop/supplements/wellbeing-nutrition-natural-d3.jpg",
     "veganEvidence": "Unbox Health lists this formulation as plant-based; verify the current Amazon label before purchase.",
     "sourceVerifiedAt": "2026-07-24",
     "unboxHealth": {
@@ -123,7 +123,7 @@
     "doseText": "See current Amazon product label for calcium and vitamin D per tablet",
     "amazonUrl": "https://www.amazon.in/dp/B0843TZH8Q",
     "asin": "B0843TZH8Q",
-    "imageUrl": "https://m.media-amazon.com/images/I/61KoJukUbnL._SL1080_.jpg",
+    "imagePath": "/images/shop/supplements/swisse-vegan-calcium-d3.jpg",
     "veganEvidence": "Amazon listing describes vegan calcium with lichen-derived vitamin D3 and vegan tablets.",
     "sourceVerifiedAt": "2026-07-24"
   },
@@ -136,7 +136,7 @@
     "doseText": "Plant-based calcium with magnesium; see current Amazon label for dose",
     "amazonUrl": "https://www.amazon.in/dp/B08SW7HLH4",
     "asin": "B08SW7HLH4",
-    "imageUrl": "https://m.media-amazon.com/images/I/41X47T40fiL._SY300_SX300_QL70_FMwebp_.jpg",
+    "imagePath": "/images/shop/supplements/origins-nutra-bone-alga.webp",
     "veganEvidence": "Amazon product name identifies plant-based algae calcium bone support.",
     "sourceVerifiedAt": "2026-07-24"
   },
@@ -149,7 +149,7 @@
     "doseText": "Algae calcium with D3, K2, zinc, and magnesium; see current label",
     "amazonUrl": "https://www.amazon.in/dp/B0951PRVYJ",
     "asin": "B0951PRVYJ",
-    "imageUrl": "https://m.media-amazon.com/images/I/51CsNzcEDoL._SL1000_.jpg",
+    "imagePath": "/images/shop/supplements/zyrocal-algae-calcium.jpg",
     "veganEvidence": "Amazon product name identifies plant-based organic algae calcium.",
     "sourceVerifiedAt": "2026-07-24"
   },
@@ -162,7 +162,7 @@
     "doseText": "500 mg DHA per serving",
     "amazonUrl": "https://www.amazon.in/Unived-Ovegha-Omega-3-Unflavoured-Capsules/dp/B00HH5GECE",
     "asin": "B00HH5GECE",
-    "imageUrl": "https://m.media-amazon.com/images/I/41FnKrWolHL._AC_UL320_.jpg",
+    "imagePath": "/images/shop/supplements/unived-ovegha-vegan-omega-3.jpg",
     "veganEvidence": "Amazon product name identifies algae oil and vegan capsules.",
     "sourceVerifiedAt": "2026-07-24",
     "trustified": {
@@ -189,7 +189,7 @@
     "doseText": "19 mg iron per tablet",
     "amazonUrl": "https://www.amazon.in/dp/B0CKTH4KB4",
     "asin": "B0CKTH4KB4",
-    "imageUrl": "https://m.media-amazon.com/images/I/51Orkmt56rL._SL1000_.jpg",
+    "imagePath": "/images/shop/supplements/vito-daily-iron-19.jpg",
     "veganEvidence": "Product name identifies the formulation as plant-based; verify the current Amazon label.",
     "sourceVerifiedAt": "2026-07-24",
     "unboxHealth": {
@@ -209,7 +209,7 @@
     "doseText": "See current Amazon product label",
     "amazonUrl": "https://www.amazon.in/dp/B0968L29V6",
     "asin": "B0968L29V6",
-    "imageUrl": "https://m.media-amazon.com/images/I/61Y9G3XXnLL._AC_UL320_.jpg",
+    "imagePath": "/images/shop/supplements/himalayan-organics-plant-based-zinc-c.jpg",
     "veganEvidence": "Amazon product name identifies the formulation as plant-based and the capsules as vegetarian.",
     "sourceVerifiedAt": "2026-07-24"
   },
@@ -222,7 +222,7 @@
     "doseText": "About 25 g plant protein per scoop",
     "amazonUrl": "https://www.amazon.in/dp/B0BLHF4HVG",
     "asin": "B0BLHF4HVG",
-    "imageUrl": "https://m.media-amazon.com/images/I/71xxTLOjIzL._SL1500_.jpg",
+    "imagePath": "/images/shop/supplements/nakpro-plant-protein.jpg",
     "veganEvidence": "Amazon product name identifies pea and brown rice plant protein with no dairy ingredients listed in the title.",
     "sourceVerifiedAt": "2026-07-24",
     "trustified": {
@@ -242,7 +242,7 @@
     "doseText": "About 25 g pea protein per serving",
     "amazonUrl": "https://www.amazon.in/dp/B09BD14TNJ",
     "asin": "B09BD14TNJ",
-    "imageUrl": "https://m.media-amazon.com/images/I/71pFL9iWESL._AC_UL320_.jpg",
+    "imagePath": "/images/shop/supplements/nutrabay-pea-protein-isolate.jpg",
     "veganEvidence": "Amazon listing describes 100% vegetarian plant-based pea protein isolate.",
     "sourceVerifiedAt": "2026-07-24",
     "trustified": {
@@ -262,7 +262,7 @@
     "doseText": "About 22 g clean plant protein per serving",
     "amazonUrl": "https://www.amazon.in/dp/B0FG2W98TD",
     "asin": "B0FG2W98TD",
-    "imageUrl": "https://m.media-amazon.com/images/I/71WjmvW0j2L._SL1500_.jpg",
+    "imagePath": "/images/shop/supplements/naturaltein-plant-protein.jpg",
     "veganEvidence": "Amazon product name identifies the powder as 100% natural and vegan plant protein.",
     "sourceVerifiedAt": "2026-07-24",
     "trustified": {
@@ -282,7 +282,7 @@
     "doseText": "25 g fermented yeast protein per scoop",
     "amazonUrl": "https://www.amazon.in/dp/B0FLK3P3SM",
     "asin": "B0FLK3P3SM",
-    "imageUrl": "https://m.media-amazon.com/images/I/6177KWMWFwL._SL1500_.jpg",
+    "imagePath": "/images/shop/supplements/mille-plant-protein-25g.jpg",
     "veganEvidence": "Amazon product name identifies fermented yeast plant protein as vegan with no dairy.",
     "sourceVerifiedAt": "2026-07-24",
     "trustified": {
@@ -302,7 +302,7 @@
     "doseText": "About 24 g peanut protein per serve",
     "amazonUrl": "https://www.amazon.in/dp/B0D3QQYV26",
     "asin": "B0D3QQYV26",
-    "imageUrl": "https://m.media-amazon.com/images/I/71fN-z0CLtL._SL1500_.jpg",
+    "imagePath": "/images/shop/supplements/alpino-supernatural-peanut-protein.jpg",
     "veganEvidence": "Amazon listing describes 100% plant-based peanut protein powder.",
     "sourceVerifiedAt": "2026-07-24",
     "trustified": {
@@ -322,7 +322,7 @@
     "doseText": "See current Amazon product label for protein per scoop",
     "amazonUrl": "https://www.amazon.in/dp/B07ZM7CW2Z",
     "asin": "B07ZM7CW2Z",
-    "imageUrl": "https://m.media-amazon.com/images/I/71uSIoEOzRL._AC_UL320_.jpg",
+    "imagePath": "/images/shop/supplements/asitis-soy-protein-isolate.jpg",
     "veganEvidence": "Amazon listing describes plant-based soy protein isolate suitable for vegan diets.",
     "sourceVerifiedAt": "2026-07-24",
     "trustified": {
@@ -342,7 +342,7 @@
     "doseText": "See current Amazon product label",
     "amazonUrl": "https://www.amazon.in/dp/B09WV663Q1",
     "asin": "B09WV663Q1",
-    "imageUrl": "https://m.media-amazon.com/images/I/51lnY6ZvolL._SL1080_.jpg",
+    "imagePath": "/images/shop/supplements/zeroharm-vegan-omega.jpg",
     "veganEvidence": "Amazon listing identifies algae-based, plant-based omega-3 capsules.",
     "sourceVerifiedAt": "2026-07-31",
     "trustified": {
@@ -365,7 +365,7 @@
     "doseText": "See current Amazon product label",
     "amazonUrl": "https://www.amazon.in/dp/B0DPTJ1DC9",
     "asin": "B0DPTJ1DC9",
-    "imageUrl": "https://m.media-amazon.com/images/I/61dzfheW+hL._SL1500_.jpg",
+    "imagePath": "/images/shop/supplements/zaveda-vegan-omega-3.jpg",
     "veganEvidence": "Amazon product title identifies vegan flax seed oil capsules.",
     "sourceVerifiedAt": "2026-07-31",
     "trustified": {
@@ -383,7 +383,7 @@
     "doseText": "See current Amazon product label",
     "amazonUrl": "https://www.amazon.in/dp/B0BG64DVKK",
     "asin": "B0BG64DVKK",
-    "imageUrl": "https://m.media-amazon.com/images/I/61zTTaiQLVL._SL1080_.jpg",
+    "imagePath": "/images/shop/supplements/haleup-vegan-omega-3.jpg",
     "veganEvidence": "Amazon product title identifies vegan omega-3 capsules with vegan DHA/EPA.",
     "sourceVerifiedAt": "2026-07-31",
     "unboxHealth": {
@@ -401,7 +401,7 @@
     "doseText": "See current Amazon product label",
     "amazonUrl": "https://www.amazon.in/dp/B08XXV7D4Z",
     "asin": "B08XXV7D4Z",
-    "imageUrl": "https://m.media-amazon.com/images/I/51B6Cg-jKtL._SL1200_.jpg",
+    "imagePath": "/images/shop/supplements/nutrova-vegan-omega-3.jpg",
     "veganEvidence": "Amazon product title identifies a vegan, gelatin-free algal omega-3 product.",
     "sourceVerifiedAt": "2026-07-31",
     "unboxHealth": {
@@ -419,7 +419,7 @@
     "doseText": "See current Amazon product label",
     "amazonUrl": "https://www.amazon.in/dp/B0B34SJBM3",
     "asin": "B0B34SJBM3",
-    "imageUrl": "https://m.media-amazon.com/images/I/81TGgFoZr3L._AC_UL320_.jpg",
+    "imagePath": "/images/shop/supplements/wellbeing-nutrition-vegan-plant-protein.jpg",
     "veganEvidence": "Amazon listing identifies the product as a vegan plant protein powder.",
     "sourceVerifiedAt": "2026-07-31",
     "unboxHealth": {
@@ -437,7 +437,7 @@
     "doseText": "See current Amazon product label",
     "amazonUrl": "https://www.amazon.in/dp/B0CGHNJFVR",
     "asin": "B0CGHNJFVR",
-    "imageUrl": "https://m.media-amazon.com/images/I/51L0aMT5jqL.jpg",
+    "imagePath": "/images/shop/supplements/sparkfusion-plant-protein.jpg",
     "veganEvidence": "Amazon product title identifies pea and brown rice plant protein powder.",
     "sourceVerifiedAt": "2026-07-31",
     "unboxHealth": {
@@ -455,7 +455,7 @@
     "doseText": "See current Amazon product label",
     "amazonUrl": "https://www.amazon.in/dp/B0D84649B3",
     "asin": "B0D84649B3",
-    "imageUrl": "https://m.media-amazon.com/images/I/41333xRzSxL._SX679_.jpg",
+    "imagePath": "/images/shop/supplements/dame-health-pea-protein.jpg",
     "veganEvidence": "Amazon product title identifies vegan pea protein isolate powder.",
     "sourceVerifiedAt": "2026-07-31",
     "unboxHealth": {
@@ -473,7 +473,7 @@
     "doseText": "See current Amazon product label",
     "amazonUrl": "https://www.amazon.in/dp/B0BGLKKDR3",
     "asin": "B0BGLKKDR3",
-    "imageUrl": "https://m.media-amazon.com/images/I/71KyUlVDoCL._SL1500_.jpg",
+    "imagePath": "/images/shop/supplements/rasayanam-plant-based-b12.jpg",
     "veganEvidence": "Amazon product title identifies 100% vegan vitamin B12 capsules.",
     "sourceVerifiedAt": "2026-07-31",
     "unboxHealth": {
@@ -491,7 +491,7 @@
     "doseText": "1500 mcg methylcobalamin per tablet",
     "amazonUrl": "https://www.amazon.in/dp/B0F6YRHYPB",
     "asin": "B0F6YRHYPB",
-    "imageUrl": "https://m.media-amazon.com/images/I/61CeIQI6IkL._SL1500_.jpg",
+    "imagePath": "/images/shop/supplements/body-reserve-methylcobalamin-b12.jpg",
     "veganEvidence": "Amazon product title identifies 120 vegetarian tablets.",
     "sourceVerifiedAt": "2026-08-06"
   },
@@ -504,7 +504,7 @@
     "doseText": "1500 mcg methylcobalamin per tablet",
     "amazonUrl": "https://www.amazon.in/dp/B0G5P4Q6YY",
     "asin": "B0G5P4Q6YY",
-    "imageUrl": "https://m.media-amazon.com/images/I/61fwFFiat3L._SL1500_.jpg",
+    "imagePath": "/images/shop/supplements/himalayan-organics-methylcobalamin-b12-1500.jpg",
     "veganEvidence": "Amazon product title identifies 120 vegetarian tablets.",
     "sourceVerifiedAt": "2026-08-06"
   },
@@ -517,7 +517,7 @@
     "doseText": "600 IU vitamin D3 and 55 mcg vitamin K2 per tablet",
     "amazonUrl": "https://www.amazon.in/dp/B0FFSV4Q9M",
     "asin": "B0FFSV4Q9M",
-    "imageUrl": "https://m.media-amazon.com/images/I/71k0y5rBZPL._SL1500_.jpg",
+    "imagePath": "/images/shop/supplements/tata-1mg-vegan-d3-k2.jpg",
     "veganEvidence": "Amazon product title identifies lichen-sourced vitamin D3 and vegetarian tablets.",
     "sourceVerifiedAt": "2026-08-06"
   },
@@ -530,7 +530,7 @@
     "doseText": "See current Amazon product label",
     "amazonUrl": "https://www.amazon.in/dp/B0D6GR36ZG",
     "asin": "B0D6GR36ZG",
-    "imageUrl": "https://m.media-amazon.com/images/I/71DrJGR7sCL._SL1500_.jpg",
+    "imagePath": "/images/shop/supplements/body-reserve-plant-based-d3-k2.jpg",
     "veganEvidence": "Amazon product title identifies a plant-based vitamin D3 formulation from lichen with vitamin K2 as MK7.",
     "sourceVerifiedAt": "2026-08-06"
   },
@@ -543,7 +543,7 @@
     "doseText": "See current Amazon product label",
     "amazonUrl": "https://www.amazon.in/dp/B0CG3BV947",
     "asin": "B0CG3BV947",
-    "imageUrl": "https://m.media-amazon.com/images/I/61QVVo-Rv0L._SL1500_.jpg",
+    "imagePath": "/images/shop/supplements/autoimmunity-care-vegan-omega-3.jpg",
     "veganEvidence": "Amazon product title identifies vegan omega-3 with algal oil.",
     "sourceVerifiedAt": "2026-08-06"
   },
@@ -556,7 +556,7 @@
     "doseText": "1000 mg algae oil and 500 mg DHA per serving",
     "amazonUrl": "https://www.amazon.in/dp/B0DPD9Y6TJ",
     "asin": "B0DPD9Y6TJ",
-    "imageUrl": "https://m.media-amazon.com/images/I/710-wWf7nPL._SL1500_.jpg",
+    "imagePath": "/images/shop/supplements/naturaltein-vegan-omega-3.jpg",
     "veganEvidence": "Amazon product title identifies an algae-source, plant-based omega-3 product.",
     "sourceVerifiedAt": "2026-08-06"
   },
@@ -569,7 +569,7 @@
     "doseText": "1000 mg algal oil and 400 mg DHA per serving",
     "amazonUrl": "https://www.amazon.in/dp/B0FBMCT17J",
     "asin": "B0FBMCT17J",
-    "imageUrl": "https://m.media-amazon.com/images/I/514Ltxt6dgL._SL1000_.jpg",
+    "imagePath": "/images/shop/supplements/tata-1mg-vegetarian-omega-3.jpg",
     "veganEvidence": "Amazon product title identifies vegetarian, plant-based omega-3 capsules.",
     "sourceVerifiedAt": "2026-08-06"
   },
@@ -582,7 +582,7 @@
     "doseText": "25 g protein per serving",
     "amazonUrl": "https://www.amazon.in/dp/B08X1T9THR",
     "asin": "B08X1T9THR",
-    "imageUrl": "https://m.media-amazon.com/images/I/61Pi-7SfLBL._SL1251_.jpg",
+    "imagePath": "/images/shop/supplements/origin-nutrition-plant-protein.jpg",
     "veganEvidence": "Amazon product title identifies a pea and pumpkin seed plant protein blend.",
     "sourceVerifiedAt": "2026-08-06"
   },
@@ -595,7 +595,7 @@
     "doseText": "24 g protein per serving",
     "amazonUrl": "https://www.amazon.in/dp/B0FKBD3P62",
     "asin": "B0FKBD3P62",
-    "imageUrl": "https://m.media-amazon.com/images/I/71kWpk1xqPL._SL1500_.jpg",
+    "imagePath": "/images/shop/supplements/superyou-fermented-yeast-protein.jpg",
     "veganEvidence": "Amazon product title identifies fermented yeast protein as vegan.",
     "sourceVerifiedAt": "2026-08-06"
   },
@@ -608,7 +608,7 @@
     "doseText": "25 g protein per scoop",
     "amazonUrl": "https://www.amazon.in/dp/B0FF973VPQ",
     "asin": "B0FF973VPQ",
-    "imageUrl": "https://m.media-amazon.com/images/I/711IJw-G5vL._SL1500_.jpg",
+    "imagePath": "/images/shop/supplements/whole-truth-plant-protein-isolate.jpg",
     "veganEvidence": "Amazon product title identifies pea and rice plant protein isolate.",
     "sourceVerifiedAt": "2026-08-06"
   },
@@ -621,7 +621,7 @@
     "doseText": "See current Amazon product label for elemental iron dose",
     "amazonUrl": "https://www.amazon.in/dp/B0FRG15Z9Q",
     "asin": "B0FRG15Z9Q",
-    "imageUrl": "https://m.media-amazon.com/images/I/71EPW8C11kL._SL1500_.jpg",
+    "imagePath": "/images/shop/supplements/rasayanam-iron-bisglycinate.jpg",
     "veganEvidence": "Amazon product details mention suitability for vegetarians; verify the current label.",
     "sourceVerifiedAt": "2026-08-06"
   },
@@ -634,7 +634,7 @@
     "doseText": "See current Amazon product label for zinc dose",
     "amazonUrl": "https://www.amazon.in/dp/B085KTJZ6K",
     "asin": "B085KTJZ6K",
-    "imageUrl": "https://m.media-amazon.com/images/I/51+MigdrPJL._SL1024_.jpg",
+    "imagePath": "/images/shop/supplements/healthyhey-zinc-citrate.jpg",
     "veganEvidence": "Amazon product title identifies 120 vegetarian zinc capsules.",
     "sourceVerifiedAt": "2026-08-06"
   },
@@ -647,7 +647,7 @@
     "doseText": "See current Amazon product label for zinc dose",
     "amazonUrl": "https://www.amazon.in/dp/B0CV82H1F1",
     "asin": "B0CV82H1F1",
-    "imageUrl": "https://m.media-amazon.com/images/I/71UhP21BLSL._SL1500_.jpg",
+    "imagePath": "/images/shop/supplements/inlife-zinc-picolinate-copper.jpg",
     "veganEvidence": "Amazon product title identifies 120 vegetarian zinc capsules.",
     "sourceVerifiedAt": "2026-08-06"
   },
@@ -660,7 +660,7 @@
     "doseText": "See current Amazon product label for serving size",
     "amazonUrl": "https://www.amazon.in/dp/B09NND1WCL",
     "asin": "B09NND1WCL",
-    "imageUrl": "https://m.media-amazon.com/images/I/61AYEw95v5L._SL1500_.jpg",
+    "imagePath": "/images/shop/supplements/naturaltein-vegan-creatine.jpg",
     "veganEvidence": "Amazon product title and details identify the formula as vegan.",
     "sourceVerifiedAt": "2026-08-06"
   },
@@ -673,7 +673,7 @@
     "doseText": "See current Amazon product label for serving size",
     "amazonUrl": "https://www.amazon.in/dp/B09QL69RFC",
     "asin": "B09QL69RFC",
-    "imageUrl": "https://m.media-amazon.com/images/I/714PuuQwAHL._SL1500_.jpg",
+    "imagePath": "/images/shop/supplements/nakpro-creatine-250g.jpg",
     "veganEvidence": "Amazon product listing identifies creatine monohydrate; confirm current vegan suitability from the label.",
     "sourceVerifiedAt": "2026-08-06"
   },
@@ -686,7 +686,7 @@
     "doseText": "See current Amazon product label for serving size",
     "amazonUrl": "https://www.amazon.in/dp/B0F3DGH1F8",
     "asin": "B0F3DGH1F8",
-    "imageUrl": "https://m.media-amazon.com/images/I/710tXH-OzVL._SL1500_.jpg",
+    "imagePath": "/images/shop/supplements/tata-1mg-creatine-250g.jpg",
     "veganEvidence": "Amazon product listing identifies pure creatine monohydrate; confirm current vegan suitability from the label.",
     "sourceVerifiedAt": "2026-08-06"
   }

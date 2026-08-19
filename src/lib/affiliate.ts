@@ -1,9 +1,9 @@
-import affiliateProductsData from "../../data/affiliateProducts.json";
-import type { AffiliateProduct } from "./types";
+import productCatalogData from "../../data/product-catalog.json";
+import type { CatalogProduct } from "./types";
 
 const amazonHostPattern = /(^|\.)amazon\./i;
 
-export const affiliateProducts = affiliateProductsData as AffiliateProduct[];
+export const productCatalog = productCatalogData as CatalogProduct[];
 
 export function getAmazonAssociatesTag() {
   return process.env.NEXT_PUBLIC_AMAZON_ASSOCIATES_TAG?.trim() || undefined;
@@ -39,10 +39,10 @@ export function hasExpectedAmazonAssociatesTag(url: string, tag = getAmazonAssoc
   return new URL(url).searchParams.get("tag") === tag;
 }
 
-export function getAffiliateProductsByTags(tags: string[], limit = 3) {
+export function getProductsByTags(tags: string[], limit = 3) {
   const normalizedTags = new Set(tags.map((tag) => tag.toLowerCase()));
 
-  return affiliateProducts
+  return productCatalog
     .filter((product) => product.tags.some((tag) => normalizedTags.has(tag.toLowerCase())))
     .slice(0, limit);
 }

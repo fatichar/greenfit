@@ -1,4 +1,4 @@
-import { affiliateSupplements, devices } from "@/lib/data";
+import { catalogSupplements, devices } from "@/lib/data";
 
 export type ShopProduct = {
   id: string;
@@ -14,8 +14,8 @@ export type ShopProduct = {
 };
 
 function getSupplement(id: string) {
-  const product = affiliateSupplements.find((item) => item.id === id);
-  if (!product) throw new Error(`Missing affiliate supplement: ${id}`);
+  const product = catalogSupplements.find((item) => item.id === id);
+  if (!product) throw new Error(`Missing catalog supplement: ${id}`);
   return product;
 }
 
@@ -40,7 +40,7 @@ function supplementProduct(
     description,
     detail,
     href: product.amazonUrl,
-    imageUrl: product.imageUrl,
+    imagePath: product.imagePath,
     visual: "supplement",
   };
 }
@@ -67,7 +67,7 @@ export const supplementTags = [
   "Creatine",
 ];
 
-function directorySupplementProduct(product: (typeof affiliateSupplements)[number]): ShopProduct {
+function directorySupplementProduct(product: (typeof catalogSupplements)[number]): ShopProduct {
   const tag = supplementTagLabels[product.nutrient] ?? product.nutrient;
   return {
     id: product.id,
@@ -122,7 +122,7 @@ export const supplementProducts: ShopProduct[] = [
     "Plain creatine monohydrate to evaluate separately from flavoured pre-workout blends.",
     "Look for a clearly stated serving, a short ingredient list, and current vegan suitability on the label.",
   ),
-  ...affiliateSupplements
+  ...catalogSupplements
     .filter((product) => !["unived-ovegha-vegan-omega-3", "origins-nutra-bone-alga", "naturaltein-vegan-creatine"].includes(product.id))
     .map(directorySupplementProduct),
 ];
@@ -422,7 +422,7 @@ export const bookProducts: ShopProduct[] = [
     description: "Matthew Walker's exploration of sleep, detailing how it impacts physical health, cognitive function, immune strength, and longevity.",
     detail: "An essential read for understanding how sleep affects training recovery, nutritional choices, and overall physical performance.",
     href: "https://www.amazon.in/Why-We-Sleep-Matthew-Walker/dp/0141983760",
-    imageUrl: "https://covers.openlibrary.org/b/id/15208018-L.jpg",
+    imagePath: "/images/shop/books/why-we-sleep.jpg",
     visual: "book",
   },
   {

@@ -17,7 +17,7 @@ import {
 } from "@/components/ui/table";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { withAmazonAssociatesTag } from "@/lib/affiliate";
-import type { AffiliateSupplement, ThirdPartyTestResult } from "@/lib/types";
+import type { CatalogSupplement, ThirdPartyTestResult } from "@/lib/types";
 import { cn } from "@/lib/utils";
 
 const nutrientOptions = [
@@ -74,7 +74,7 @@ const nutrientOptions = [
 
 type NutrientTabValue = (typeof nutrientOptions)[number]["value"];
 
-const affiliateDisclosure = "As an Amazon Associate, we may earn from qualifying purchases.";
+const amazonDisclosure = "As an Amazon Associate, we may earn from qualifying purchases.";
 const failedResults = new Set(["Failed", "D"]);
 const TAB_QUERY_KEY = "tab";
 
@@ -102,7 +102,7 @@ function isNutrientTabValue(value: string | null): value is NutrientTabValue {
   return nutrientOptions.some((option) => option.value === value);
 }
 
-export function SupplementDirectory({ products }: { products: AffiliateSupplement[] }) {
+export function SupplementDirectory({ products }: { products: CatalogSupplement[] }) {
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
@@ -193,7 +193,7 @@ export function SupplementDirectory({ products }: { products: AffiliateSupplemen
                 ) : null}
               </div>
               <div className="rounded-lg border border-olive-200 bg-olive-50 px-4 py-3 text-sm leading-6">
-                <p className="font-medium text-foreground">{affiliateDisclosure}</p>
+                <p className="font-medium text-foreground">{amazonDisclosure}</p>
                 <p className="text-muted-foreground">
                   Testing may apply to a specific batch or formulation. Open the linked result before
                   relying on it.
@@ -235,7 +235,7 @@ export function SupplementDirectory({ products }: { products: AffiliateSupplemen
   );
 }
 
-function SupplementProductList({ products }: { products: AffiliateSupplement[] }) {
+function SupplementProductList({ products }: { products: CatalogSupplement[] }) {
   return (
     <>
       <div className="hidden overflow-hidden rounded-lg border border-olive-200 bg-card md:block">
@@ -304,7 +304,7 @@ function SupplementProductList({ products }: { products: AffiliateSupplement[] }
   );
 }
 
-function ProductIdentity({ product }: { product: AffiliateSupplement }) {
+function ProductIdentity({ product }: { product: CatalogSupplement }) {
   return (
     <div className="flex items-start gap-3">
       {product.imageUrl || product.imagePath ? (
@@ -329,7 +329,7 @@ function ProductIdentity({ product }: { product: AffiliateSupplement }) {
   );
 }
 
-function getProductGroup(product: AffiliateSupplement): ProductGroupId {
+function getProductGroup(product: CatalogSupplement): ProductGroupId {
   const results = [product.trustified, product.unboxHealth].filter(
     (result): result is ThirdPartyTestResult => Boolean(result),
   );
@@ -382,7 +382,7 @@ function TestResult({ source, result }: { source: string; result?: ThirdPartyTes
   );
 }
 
-function AmazonButton({ product }: { product: AffiliateSupplement }) {
+function AmazonButton({ product }: { product: CatalogSupplement }) {
   return (
     <a
       href={withAmazonAssociatesTag(product.amazonUrl)}
