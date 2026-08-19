@@ -9,6 +9,7 @@ export type Confidence = "High" | "Medium" | "Low";
 
 export type Product = {
   slug: string;
+  imagePath?: string;
   name: string;
   category: string;
   bestFor: string;
@@ -24,6 +25,7 @@ export type Product = {
 
 export type Device = {
   slug: string;
+  icon?: "blender" | "chef-hat" | "citrus" | "cooking-pot" | "cup-soda" | "sparkles";
   imagePath: string;
   name: string;
   category: string;
@@ -33,9 +35,15 @@ export type Device = {
   careNote: string;
   bestForRecipes: string[];
   amazonSearchUrl: string;
+  shopOrder?: number;
+  shopTags?: string[];
+  shopDescription?: string;
+  shopDetail?: string;
+  featuredOrder?: number;
+  homepageFeaturedOrder?: number;
 };
 
-export type AffiliateProduct = {
+export type CatalogProduct = {
   id: string;
   title: string;
   category: string;
@@ -57,7 +65,7 @@ export type ThirdPartyTestResult = {
   batch?: string;
 };
 
-export type AffiliateSupplement = {
+export type CatalogSupplement = {
   id: string;
   nutrient: string;
   title: string;
@@ -72,10 +80,17 @@ export type AffiliateSupplement = {
   sourceVerifiedAt: string;
   trustified?: ThirdPartyTestResult;
   unboxHealth?: ThirdPartyTestResult;
+  shopOrder?: number;
+  shopTags?: string[];
+  shopDescription?: string;
+  shopDetail?: string;
+  featuredOrder?: number;
+  homepageFeaturedOrder?: number;
 };
 
 export type Supplement = {
   slug: string;
+  imagePath?: string;
   name: string;
   category: string;
   form: string;

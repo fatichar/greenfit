@@ -1,0 +1,598 @@
+[
+  {
+    "id": "why-we-sleep",
+    "name": "Why We Sleep",
+    "category": "Books",
+    "tags": [
+      "Health",
+      "Nutrition"
+    ],
+    "description": "Matthew Walker's exploration of sleep, detailing how it impacts physical health, cognitive function, immune strength, and longevity.",
+    "detail": "An essential read for understanding how sleep affects training recovery, nutritional choices, and overall physical performance.",
+    "href": "https://www.amazon.in/Why-We-Sleep-Matthew-Walker/dp/0141983760",
+    "imagePath": "/images/shop/books/why-we-sleep.jpg",
+    "visual": "book",
+    "featuredOrder": 1,
+    "homepageFeaturedOrder": 1
+  },
+  {
+    "id": "how-not-to-die",
+    "name": "How Not to Die",
+    "category": "Books",
+    "tags": [
+      "Nutrition",
+      "Health"
+    ],
+    "description": "Michael Greger’s overview of diet-related chronic disease and the plant foods he thinks matter most.",
+    "detail": "A practical starting point if you want research-backed food patterns rather than another short-term diet plan.",
+    "href": "https://www.amazon.in/s?k=How+Not+to+Die+Michael+Greger",
+    "imagePath": "/images/shop/books/how-not-to-die.jpg",
+    "visual": "book",
+    "featuredOrder": 2
+  },
+  {
+    "id": "the-proof-is-in-the-plants",
+    "name": "The Proof is in the Plants",
+    "category": "Books",
+    "tags": [
+      "Nutrition",
+      "Health"
+    ],
+    "description": "Simon Hill’s case for a mostly plant-based pattern, covering health, the environment, and daily eating.",
+    "detail": "Useful when you want a balanced, modern overview rather than a cookbook-first introduction.",
+    "href": "https://www.amazon.in/s?k=The+Proof+is+in+the+Plants+Simon+Hill",
+    "imagePath": "/images/shop/books/the-proof-is-in-the-plants.jpg",
+    "visual": "book",
+    "featuredOrder": 3
+  },
+  {
+    "id": "how-not-to-diet",
+    "name": "How Not to Diet",
+    "category": "Books",
+    "tags": [
+      "Nutrition",
+      "Health"
+    ],
+    "description": "A look at the evidence on sustainable weight loss, appetite, and food quality beyond calorie slogans.",
+    "detail": "Best treated as a reference for habits and food choices rather than a rigid meal prescription.",
+    "href": "https://www.amazon.in/s?k=How+Not+to+Diet+Michael+Greger",
+    "imagePath": "/images/shop/books/how-not-to-diet.jpg",
+    "visual": "book",
+    "featuredOrder": 4
+  },
+  {
+    "id": "the-china-study",
+    "name": "The China Study",
+    "category": "Books",
+    "tags": [
+      "Nutrition",
+      "Health"
+    ],
+    "description": "T. Colin Campbell’s book linking dietary patterns with long-term health outcomes and plant-forward eating.",
+    "detail": "A foundational text many people encounter early when exploring plant-based nutrition arguments.",
+    "href": "https://www.amazon.in/s?k=The+China+Study+T+Colin+Campbell",
+    "imagePath": "/images/shop/books/the-china-study.jpg",
+    "visual": "book",
+    "featuredOrder": 5
+  },
+  {
+    "id": "whole-rethinking-nutrition",
+    "name": "Whole: Rethinking the Science of Nutrition",
+    "category": "Books",
+    "tags": [
+      "Nutrition",
+      "Health"
+    ],
+    "description": "T. Colin Campbell’s follow-up on how reductionist nutrition research can overlook whole foods.",
+    "detail": "A denser companion to The China Study if you want more on how nutrition science is framed and measured.",
+    "href": "https://www.amazon.in/Whole-Rethinking-Nutrition-Colin-Campbell-ebook/dp/B00APDFVLU",
+    "imagePath": "/images/shop/books/whole-rethinking-nutrition.jpg",
+    "visual": "book"
+  },
+  {
+    "id": "fiber-fueled",
+    "name": "Fiber Fueled",
+    "category": "Books",
+    "tags": [
+      "Nutrition",
+      "Health"
+    ],
+    "description": "Will Bulsiewicz on fibre, the gut microbiome, and why plant diversity may matter more than single superfoods.",
+    "detail": "A practical read when digestion, bloating, or building a more plant-rich plate is the main question.",
+    "href": "https://www.amazon.in/dp/059308456X",
+    "imagePath": "/images/shop/books/fiber-fueled.jpg",
+    "visual": "book"
+  },
+  {
+    "id": "ultra-processed-people",
+    "name": "Ultra-Processed People",
+    "category": "Books",
+    "tags": [
+      "Nutrition",
+      "Health"
+    ],
+    "description": "Chris van Tulleken’s investigation of ultra-processed food, how it is designed, and its effects on appetite and health.",
+    "detail": "Useful when the problem is not “more willpower” but understanding the food environment around you.",
+    "href": "https://www.amazon.in/s?k=Ultra-Processed+People+Chris+van+Tulleken",
+    "imagePath": "/images/shop/books/ultra-processed-people.jpg",
+    "visual": "book"
+  },
+  {
+    "id": "vegan-for-life",
+    "name": "Vegan for Life",
+    "category": "Books",
+    "tags": [
+      "Nutrition",
+      "Veganism",
+      "Health"
+    ],
+    "description": "Jack Norris and Virginia Messina’s nutrition guide to staying healthy on a fully plant-based diet.",
+    "detail": "Strong on nutrients, planning, and day-to-day adequacy rather than recipes or ethics alone.",
+    "href": "https://www.amazon.in/Vegan-Life-Everything-Healthy-Plant-based-ebook/dp/B07XDRY8ZF",
+    "imagePath": "/images/shop/books/vegan-for-life.jpg",
+    "visual": "book"
+  },
+  {
+    "id": "forks-over-knives",
+    "name": "Forks Over Knives",
+    "category": "Books",
+    "tags": [
+      "Cooking",
+      "Nutrition"
+    ],
+    "description": "The companion-style introduction many people use after watching the film, focused on whole-food plant-based eating.",
+    "detail": "A lighter entry point if you want the broad idea before moving into denser nutrition books or Indian cookbooks.",
+    "href": "https://www.amazon.in/s?k=Forks+Over+Knives+book",
+    "imagePath": "/images/shop/books/forks-over-knives.jpg",
+    "visual": "book"
+  },
+  {
+    "id": "the-plant-based-athlete",
+    "name": "The Plant-Based Athlete",
+    "category": "Books",
+    "tags": [
+      "Training"
+    ],
+    "description": "Matt Frazier and Robert Cheeke on training, recovery, and fueling for active people eating plant-based.",
+    "detail": "Helpful if your interest in plant-based eating is tied to strength, endurance, or everyday training consistency.",
+    "href": "https://www.amazon.in/s?k=The+Plant-Based+Athlete+Matt+Frazier+Robert+Cheeke",
+    "imagePath": "/images/shop/books/the-plant-based-athlete.jpg",
+    "visual": "book"
+  },
+  {
+    "id": "finding-ultra",
+    "name": "Finding Ultra",
+    "category": "Books",
+    "tags": [
+      "Training"
+    ],
+    "description": "Rich Roll’s transformation story from midlife burnout into ultra-endurance sport and plant-based living.",
+    "detail": "A motivation-heavy memoir more than a training manual, useful if story and identity change are what you need first.",
+    "href": "https://www.amazon.in/s?k=Finding+Ultra+Rich+Roll",
+    "imagePath": "/images/shop/books/finding-ultra.jpg",
+    "visual": "book"
+  },
+  {
+    "id": "no-meat-athlete",
+    "name": "No Meat Athlete",
+    "category": "Books",
+    "tags": [
+      "Training"
+    ],
+    "description": "Matt Frazier’s practical guide to plant-based running, strength, and building an active life without meat.",
+    "detail": "A good bridge between beginner plant-based eating and more sport-specific nutrition books.",
+    "href": "https://www.amazon.in/s?k=No+Meat+Athlete+Run+on+Plants+Matt+Frazier",
+    "imagePath": "/images/shop/books/no-meat-athlete.jpg",
+    "visual": "book"
+  },
+  {
+    "id": "plant-based-sports-nutrition",
+    "name": "Plant-Based Sports Nutrition",
+    "category": "Books",
+    "tags": [
+      "Training",
+      "Nutrition"
+    ],
+    "description": "D. Enette Larson-Meyer and Matt Ruscigno on fueling, recovery, and performance for plant-based athletes.",
+    "detail": "More textbook-style than memoir, best when you want nutrient detail rather than inspiration alone.",
+    "href": "https://www.amazon.in/s?k=Plant-Based+Sports+Nutrition+Larson-Meyer",
+    "imagePath": "/images/shop/books/plant-based-sports-nutrition.jpg",
+    "visual": "book"
+  },
+  {
+    "id": "vegan-athletes-nutrition-handbook",
+    "name": "The Vegan Athlete's Nutrition Handbook",
+    "category": "Books",
+    "tags": [
+      "Training",
+      "Veganism"
+    ],
+    "description": "Nichole Dandrea-Russert’s essential guide to plant-based performance, everyday fueling, and recovery basics.",
+    "detail": "A compact handbook format when you want clear nutrition principles without a long narrative.",
+    "href": "https://www.amazon.in/s?k=The+Vegan+Athlete%27s+Nutrition+Handbook",
+    "imagePath": "/images/shop/books/vegan-athletes-nutrition-handbook.jpg",
+    "visual": "book"
+  },
+  {
+    "id": "thrive",
+    "name": "Thrive",
+    "category": "Books",
+    "tags": [
+      "Training"
+    ],
+    "description": "Brendan Brazier’s plant-based nutrition framework for energy, recovery, and high-performance everyday living.",
+    "detail": "One of the earlier mainstream plant-based athlete books; still useful for whole-food fueling ideas.",
+    "href": "https://www.amazon.in/s?k=Thrive+Brendan+Brazier",
+    "imagePath": "/images/shop/books/thrive.jpg",
+    "visual": "book"
+  },
+  {
+    "id": "shred-it",
+    "name": "Shred It!",
+    "category": "Books",
+    "tags": [
+      "Training"
+    ],
+    "description": "Robert Cheeke’s step-by-step guide to burning fat and building muscle on a whole-food, plant-based diet.",
+    "detail": "Especially relevant if your goal is body composition and strength rather than endurance alone.",
+    "href": "https://www.amazon.in/s?k=Shred+It+Robert+Cheeke",
+    "imagePath": "/images/shop/books/shred-it.jpg",
+    "visual": "book"
+  },
+  {
+    "id": "the-plantpower-way",
+    "name": "The Plantpower Way",
+    "category": "Books",
+    "tags": [
+      "Cooking",
+      "Training"
+    ],
+    "description": "Rich Roll and Julie Piatt’s family-friendly plant-based recipes and guidance for everyday cooking.",
+    "detail": "A cookbook-first companion to the plant-based athlete world when you need meals, not only theory.",
+    "href": "https://www.amazon.in/s?k=The+Plantpower+Way+Rich+Roll",
+    "imagePath": "/images/shop/books/the-plantpower-way.jpg",
+    "visual": "book"
+  },
+  {
+    "id": "the-satvic-revolution",
+    "name": "The Satvic Revolution",
+    "category": "Books",
+    "tags": [
+      "Nutrition"
+    ],
+    "description": "Subah and Harshvardhan Saraf on seven lifestyle habits aimed at simpler, more plant-forward daily living.",
+    "detail": "An India-rooted habits book for people who want structure around food, routine, and energy rather than only recipes.",
+    "href": "https://www.amazon.in/Satvic-Revolution-Life-Changing-Habits-Discover/dp/0143460382",
+    "imagePath": "/images/shop/books/the-satvic-revolution.jpg",
+    "visual": "book"
+  },
+  {
+    "id": "eating-animals",
+    "name": "Eating Animals",
+    "category": "Books",
+    "tags": [
+      "Veganism"
+    ],
+    "description": "Jonathan Safran Foer’s investigation of industrial animal agriculture, ethics, and the personal decision of what to eat.",
+    "detail": "A narrative-driven ethics book rather than a nutrition manual, useful for the values side of the shift.",
+    "href": "https://www.amazon.in/s?k=Eating+Animals+Jonathan+Safran+Foer",
+    "imagePath": "/images/shop/books/eating-animals.jpg",
+    "visual": "book"
+  },
+  {
+    "id": "animal-liberation-now",
+    "name": "Animal Liberation Now",
+    "category": "Books",
+    "tags": [
+      "Veganism"
+    ],
+    "description": "Peter Singer’s updated classic on animal ethics and why the case for reducing animal use still matters.",
+    "detail": "A denser philosophy-and-ethics read for people who want the intellectual foundation of modern animal advocacy.",
+    "href": "https://www.amazon.in/s?k=Animal+Liberation+Now+Peter+Singer",
+    "imagePath": "/images/shop/books/animal-liberation-now.jpg",
+    "visual": "book"
+  },
+  {
+    "id": "the-world-peace-diet",
+    "name": "The World Peace Diet",
+    "category": "Books",
+    "tags": [
+      "Veganism"
+    ],
+    "description": "Will Tuttle's exploration of how food choices connect animal welfare, human health, spirituality, and a more peaceful society.",
+    "detail": "A reflective ethics-focused read for people interested in the wider cultural and spiritual case for veganism.",
+    "href": "https://www.amazon.in/World-Peace-Diet-Spiritual-Anniversary/dp/9359664235",
+    "imagePath": "/images/shop/books/the-world-peace-diet.jpg",
+    "visual": "book"
+  },
+  {
+    "id": "plant-based-india",
+    "name": "Plant-Based India",
+    "category": "Books",
+    "tags": [
+      "Cooking"
+    ],
+    "description": "A strong introduction to fully vegan Indian cooking rooted in familiar regional dishes and techniques.",
+    "detail": "A good pick when you want plant-based meals to feel culturally familiar rather than like a separate cuisine.",
+    "href": "https://www.amazon.in/s?k=Plant-Based+India+Sheil+Shukla",
+    "imagePath": "/images/shop/books/plant-based-india.jpg",
+    "visual": "book"
+  },
+  {
+    "id": "the-modern-tiffin",
+    "name": "The Modern Tiffin",
+    "category": "Books",
+    "tags": [
+      "Cooking"
+    ],
+    "description": "A useful angle on portable plant-based meals when lunch needs to travel well and stay interesting.",
+    "detail": "Look for the recipes that fit your container, commute, reheating options, and weekly prep time.",
+    "href": "https://www.amazon.in/s?k=The+Modern+Tiffin+Priyanka+Naik",
+    "imagePath": "/images/shop/books/the-modern-tiffin.jpg",
+    "visual": "book"
+  },
+  {
+    "id": "feast-on-a-leaf",
+    "name": "Feast on a Leaf",
+    "category": "Books",
+    "tags": [
+      "Cooking"
+    ],
+    "description": "A less obvious regional pick for exploring the structure, variety, and hospitality of an Onam sadhya.",
+    "detail": "The book includes a vegan menu option, making it a useful bridge from traditional celebration cooking to plant-based hosting.",
+    "href": "https://www.amazon.in/s?k=Feast+on+a+Leaf+Onam+Sadhya+Cookbook",
+    "imagePath": "/images/shop/books/feast-on-a-leaf.jpg",
+    "visual": "book"
+  },
+  {
+    "id": "sexual-politics-of-meat",
+    "name": "The Sexual Politics of Meat",
+    "category": "Books",
+    "tags": [
+      "Veganism"
+    ],
+    "description": "Carol J. Adams’s classic linking the oppression of animals with patriarchal culture and how both show up in everyday food language.",
+    "detail": "A denser theory read for people who want feminist and cultural analysis, not only nutrition tips.",
+    "href": "https://www.amazon.in/s?k=The+Sexual+Politics+of+Meat+Carol+Adams",
+    "imagePath": "/images/shop/books/sexual-politics-of-meat.jpg",
+    "visual": "book"
+  },
+  {
+    "id": "this-is-vegan-propaganda",
+    "name": "This is Vegan Propaganda",
+    "category": "Books",
+    "tags": [
+      "Veganism"
+    ],
+    "description": "Ed Winters (Earthling Ed) on health, climate, animals, and the stories the meat industry sells.",
+    "detail": "A direct, contemporary ethics-and-impact book for people who want a clear case without academic jargon.",
+    "href": "https://www.amazon.in/s?k=This+is+Vegan+Propaganda+Ed+Winters",
+    "imagePath": "/images/shop/books/this-is-vegan-propaganda.jpg",
+    "visual": "book"
+  },
+  {
+    "id": "why-we-love-dogs-eat-pigs",
+    "name": "Why We Love Dogs, Eat Pigs, and Wear Cows",
+    "category": "Books",
+    "tags": [
+      "Veganism"
+    ],
+    "description": "Melanie Joy on “carnism”—why some animals are companions and others are dinner—and how social conditioning shapes that split.",
+    "detail": "One of the most accessible psychology-of-eating books for beginners questioning the status quo.",
+    "href": "https://www.amazon.in/s?k=Why+We+Love+Dogs+Eat+Pigs+and+Wear+Cows+Melanie+Joy",
+    "imagePath": "/images/shop/books/why-we-love-dogs-eat-pigs.jpg",
+    "visual": "book"
+  },
+  {
+    "id": "once-upon-a-time-we-ate-animals",
+    "name": "Once Upon a Time We Ate Animals",
+    "category": "Books",
+    "tags": [
+      "Veganism"
+    ],
+    "description": "Anthropologist Roanne van Voorst imagines a future without animal products and why that shift is both possible and necessary.",
+    "detail": "Hopeful and speculative rather than a how-to diet manual—good when you want the long view.",
+    "href": "https://www.amazon.in/s?k=Once+Upon+a+Time+We+Ate+Animals+Roanne+van+Voorst",
+    "imagePath": "/images/shop/books/once-upon-a-time-we-ate-animals.jpg",
+    "visual": "book"
+  },
+  {
+    "id": "we-are-the-weather",
+    "name": "We Are the Weather",
+    "category": "Books",
+    "tags": [
+      "Veganism"
+    ],
+    "description": "Jonathan Safran Foer on climate and the food on your plate—how even partial shifts away from animal products can matter.",
+    "detail": "Part memoir, part investigation; pairs well with Eating Animals if you want the climate angle next.",
+    "href": "https://www.amazon.in/s?k=We+Are+the+Weather+Jonathan+Safran+Foer",
+    "imagePath": "/images/shop/books/we-are-the-weather.jpg",
+    "visual": "book"
+  },
+  {
+    "id": "eat-for-the-planet",
+    "name": "Eat for the Planet",
+    "category": "Books",
+    "tags": [
+      "Veganism",
+      "Nutrition",
+      "Health"
+    ],
+    "description": "Gene Stone and Nil Zacharias on plant-based eating as a high-leverage climate action, not only a personal diet choice.",
+    "detail": "Useful when environment is your main reason for changing what you buy and cook.",
+    "href": "https://www.amazon.in/s?k=Eat+for+the+Planet+Gene+Stone",
+    "imagePath": "/images/shop/books/eat-for-the-planet.jpg",
+    "visual": "book"
+  },
+  {
+    "id": "beasts-of-burden",
+    "name": "Beasts of Burden",
+    "category": "Books",
+    "tags": [
+      "Veganism"
+    ],
+    "description": "Sunaura Taylor on the overlap of animal justice and disability justice—memoir, philosophy, and social critique in one.",
+    "detail": "A denser, more academic-feeling read for people who want intersectional animal ethics.",
+    "href": "https://www.amazon.in/s?k=Beasts+of+Burden+Sunaura+Taylor",
+    "imagePath": "/images/shop/books/beasts-of-burden.jpg",
+    "visual": "book"
+  },
+  {
+    "id": "aphro-ism",
+    "name": "APHRO-ISM",
+    "category": "Books",
+    "tags": [
+      "Veganism"
+    ],
+    "description": "Essays by Aph and Syl Ko on race, feminism, pop culture, and Black veganism—connecting animal advocacy to wider liberation.",
+    "detail": "Short essays rather than a single narrative; strong if you want culture and politics alongside diet.",
+    "href": "https://www.amazon.in/s?k=APHRO-ISM+Aph+Syl+Ko",
+    "imagePath": "/images/shop/books/aphro-ism.jpg",
+    "visual": "book"
+  },
+  {
+    "id": "an-immense-world",
+    "name": "An Immense World",
+    "category": "Books",
+    "tags": [
+      "Veganism"
+    ],
+    "description": "Ed Yong on how animals sense the world—not a vegan manifesto, but it deepens how you see non-human lives.",
+    "detail": "Science writing more than activism; still a natural companion to animal-ethics reading lists.",
+    "href": "https://www.amazon.in/s?k=An+Immense+World+Ed+Yong",
+    "imagePath": "/images/shop/books/an-immense-world.jpg",
+    "visual": "book"
+  },
+  {
+    "id": "be-more-vegan",
+    "name": "Be More Vegan",
+    "category": "Books",
+    "tags": [
+      "Veganism",
+      "Cooking"
+    ],
+    "description": "Niki Webster’s friendly starter for people—especially younger readers—who want a gradual, practical plant-based shift.",
+    "detail": "Hints, recipes, and lifestyle notes rather than a hard-edged ethics treatise.",
+    "href": "https://www.amazon.in/s?k=Be+More+Vegan+Niki+Webster",
+    "imagePath": "/images/shop/books/be-more-vegan.jpg",
+    "visual": "book"
+  },
+  {
+    "id": "veganomicon",
+    "name": "Veganomicon",
+    "category": "Books",
+    "tags": [
+      "Cooking"
+    ],
+    "description": "Isa Chandra Moskowitz and Terry Hope Romero’s classic “ultimate” vegan cookbook with hundreds of kitchen-tested recipes.",
+    "detail": "A long-running staple when you want technique notes and range, not a single-cuisine book.",
+    "href": "https://www.amazon.in/s?k=Veganomicon+Isa+Chandra",
+    "imagePath": "/images/shop/books/veganomicon.jpg",
+    "visual": "book"
+  },
+  {
+    "id": "the-korean-vegan-cookbook",
+    "name": "The Korean Vegan Cookbook",
+    "category": "Books",
+    "tags": [
+      "Cooking"
+    ],
+    "description": "Joanne Lee Molinaro’s recipes and family stories—Korean dishes reimagined plant-based, with memoir woven through.",
+    "detail": "As much identity and storytelling as technique; a strong pick if you want cuisine-specific cooking.",
+    "href": "https://www.amazon.in/s?k=The+Korean+Vegan+Cookbook+Joanne+Lee+Molinaro",
+    "imagePath": "/images/shop/books/the-korean-vegan-cookbook.jpg",
+    "visual": "book"
+  },
+  {
+    "id": "vegetable-kingdom",
+    "name": "Vegetable Kingdom",
+    "category": "Books",
+    "tags": [
+      "Cooking"
+    ],
+    "description": "Bryant Terry’s abundant vegan recipes with Afro-Asian roots, market produce, and a suggested soundtrack for each dish.",
+    "detail": "Food-justice framing plus cooking fundamentals—good if you want flavour and culture, not only macros.",
+    "href": "https://www.amazon.in/s?k=Vegetable+Kingdom+Bryant+Terry",
+    "imagePath": "/images/shop/books/vegetable-kingdom.jpg",
+    "visual": "book"
+  },
+  {
+    "id": "the-whole-vegetable",
+    "name": "The Whole Vegetable",
+    "category": "Books",
+    "tags": [
+      "Cooking"
+    ],
+    "description": "Sophie Gordon’s seasonal, waste-aware plant cooking that puts vegetables—and every usable part—at the centre.",
+    "detail": "Useful when you want creativity with produce rather than mock-meat recipes.",
+    "href": "https://www.amazon.in/s?k=The+Whole+Vegetable+Sophie+Gordon",
+    "imagePath": "/images/shop/books/the-whole-vegetable.jpg",
+    "visual": "book"
+  },
+  {
+    "id": "decolonize-your-diet",
+    "name": "Decolonize Your Diet",
+    "category": "Books",
+    "tags": [
+      "Cooking"
+    ],
+    "description": "Luz Calvo on plant-based Mexican-American cooking rooted in indigenous staples, health, and cultural connection.",
+    "detail": "More than a recipe dump—food as ancestry and healing, with practical dishes mixed in.",
+    "href": "https://www.amazon.in/s?k=Decolonize+Your+Diet+Luz+Calvo",
+    "imagePath": "/images/shop/books/decolonize-your-diet.jpg",
+    "visual": "book"
+  },
+  {
+    "id": "plant-based-on-a-budget",
+    "name": "Plant-Based on a Budget",
+    "category": "Books",
+    "tags": [
+      "Cooking"
+    ],
+    "description": "Toni Okamoto’s affordable, weeknight-friendly plant meals—built for real grocery bills and limited time.",
+    "detail": "A practical starter cookbook if cost is the main barrier to cooking more plants.",
+    "href": "https://www.amazon.in/s?k=Plant-Based+on+a+Budget+Toni+Okamoto",
+    "imagePath": "/images/shop/books/plant-based-on-a-budget.jpg",
+    "visual": "book"
+  },
+  {
+    "id": "everything-vegan-pregnancy",
+    "name": "The Everything Vegan Pregnancy Book",
+    "category": "Books",
+    "tags": [
+      "Nutrition",
+      "Veganism"
+    ],
+    "description": "Reed Mangels on vegan pregnancy nutrition, common questions, and planning through birth and early feeding.",
+    "detail": "Reference-style; still verify current medical guidance with a qualified clinician.",
+    "href": "https://www.amazon.in/s?k=Everything+Vegan+Pregnancy+Reed+Mangels",
+    "imagePath": "/images/shop/books/everything-vegan-pregnancy.jpg",
+    "visual": "book"
+  },
+  {
+    "id": "raising-vegan-kids",
+    "name": "The Smart Parent's Guide to Raising Vegan Kids",
+    "category": "Books",
+    "tags": [
+      "Veganism"
+    ],
+    "description": "Eric C. Lindstrom on plant-based family life—parties, travel, vegetables, and the social side of raising vegan kids.",
+    "detail": "Practical parenting tone more than a nutrition textbook.",
+    "href": "https://www.amazon.in/s?k=Smart+Parent+Guide+Raising+Vegan+Kids+Lindstrom",
+    "imagePath": "/images/shop/books/raising-vegan-kids.jpg",
+    "visual": "book"
+  },
+  {
+    "id": "v-is-for-vegan",
+    "name": "V is for Vegan",
+    "category": "Books",
+    "tags": [
+      "Veganism"
+    ],
+    "description": "Ruby Roth’s ABC picture book introducing kids to plant foods and kindness toward animals.",
+    "detail": "For young children (roughly ages 3–7); a conversation starter, not a nutrition guide for adults.",
+    "href": "https://www.amazon.in/s?k=V+is+for+Vegan+Ruby+Roth",
+    "imagePath": "/images/shop/books/v-is-for-vegan.jpg",
+    "visual": "book"
+  }
+]

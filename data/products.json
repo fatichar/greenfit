@@ -1,6 +1,7 @@
 [
   {
     "slug": "fortified-soy-milk",
+    "imagePath": "/images/items/products/fortified-soy-milk.jpg",
     "name": "Fortified Soy Milk",
     "category": "Milk Alternative",
     "bestFor": "Tea, coffee, cereal, smoothies, baking, and higher-protein dairy replacement",
@@ -15,6 +16,7 @@
   },
   {
     "slug": "plant-protein-powder",
+    "imagePath": "/images/items/products/plant-protein-powder.jpg",
     "name": "Plant Protein Powder",
     "category": "Protein Powder",
     "bestFor": "Convenient protein top-ups for training days, busy breakfasts, and low-protein meals",
@@ -29,6 +31,7 @@
   },
   {
     "slug": "masala-oats",
+    "imagePath": "/images/items/products/masala-oats-pack.jpg",
     "name": "Masala Oats",
     "category": "Ready Meal",
     "bestFor": "Fast savory breakfasts or snacks when paired with extra beans, tofu, or vegetables",
@@ -43,6 +46,7 @@
   },
   {
     "slug": "peanut-curd",
+    "imagePath": "/images/items/products/peanut-curd-culture.jpg",
     "name": "Peanut Curd",
     "category": "Curd Alternative",
     "bestFor": "Indian-style curd rice, raita, kadhi-style dishes, marinades, and tangy chutneys",

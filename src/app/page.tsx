@@ -45,7 +45,7 @@ const heroSlides: HeroSlide[] = [
     id: "shop",
     title: "Products worth a closer look",
     body: "Compare supplements, kitchen devices, fitness gear, and books with notes on what to check before you buy.",
-    image: "/images/devices/plant-based-kitchen-devices.png",
+    image: "/images/shop/kitchen-devices/plant-based-kitchen-devices.png",
     imageAlt: "Plant-based kitchen devices with blender, juicer, pressure cooker, and fresh produce",
     primaryCta: { href: "/shop", label: "Explore products" },
     secondaryCta: { href: "/shop/supplement", label: "Compare supplements" },

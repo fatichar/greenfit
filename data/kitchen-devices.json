@@ -1,0 +1,202 @@
+[
+  {
+    "slug": "cold-press-juicer",
+    "icon": "citrus",
+    "imagePath": "/images/shop/kitchen-devices/cold-press-juicer.png",
+    "name": "Cold-press juicer",
+    "category": "Juicing",
+    "bestFor": "Fresh vegetable juices, ginger shots, citrus blends, and using up leafy greens",
+    "whyItHelps": "A slow juicer suits occasional juice-making with fibrous produce such as celery, greens, and carrots.",
+    "lookFor": [
+      "A wide enough feed chute for your usual produce",
+      "Easy-to-remove parts and a cleaning brush",
+      "A reverse function for fibrous ingredients",
+      "A stable base and a service network you can actually use"
+    ],
+    "careNote": "Juice is not a replacement for whole fruit and vegetables. Rinse the screen immediately after use so pulp does not dry into the mesh.",
+    "bestForRecipes": [
+      "Green juice",
+      "Carrot-ginger juice",
+      "Citrus-mint juice",
+      "Pulp-enriched chutney"
+    ],
+    "amazonSearchUrl": "https://www.amazon.in/s?k=cold+press+juicer",
+    "shopOrder": 10,
+    "featuredOrder": 1,
+    "homepageFeaturedOrder": 1,
+    "shopTags": [
+      "Juicing",
+      "Prep"
+    ],
+    "shopDescription": "A slower juicing format for people who want to experiment with fresh vegetable and fruit combinations at home.",
+    "shopDetail": "Compare yield, cleaning time, feed-chute size, pulp handling, service support, and how often you will realistically use it."
+  },
+  {
+    "slug": "high-speed-blender",
+    "icon": "blender",
+    "imagePath": "/images/shop/kitchen-devices/high-speed-blender.png",
+    "name": "High-speed blender",
+    "category": "Blending",
+    "bestFor": "Smoothies, soups, sauces, nut pastes, hummus, and homemade plant milk",
+    "whyItHelps": "A strong blender turns familiar ingredients into higher-protein breakfasts, creamy dals, dressings, and smooth sauces.",
+    "lookFor": [
+      "A jar size that fits your regular batch size",
+      "A tamper or pulse control for thick mixtures",
+      "Dishwasher-safe or easy-to-rinse parts",
+      "A motor warranty and replacement jar availability"
+    ],
+    "careNote": "Do not run a blender empty or overfill it with hot liquids. Let steaming soups cool slightly and vent the lid according to the manufacturer instructions.",
+    "bestForRecipes": [
+      "Banana-peanut smoothie",
+      "Lentil soup",
+      "Cashew cream",
+      "Silken tofu dressing"
+    ],
+    "amazonSearchUrl": "https://www.amazon.in/s?k=high+speed+blender"
+  },
+  {
+    "slug": "personal-blender",
+    "icon": "cup-soda",
+    "imagePath": "/images/shop/kitchen-devices/personal-blender.png",
+    "name": "Personal blender",
+    "category": "Blending",
+    "bestFor": "Single-serve smoothies, soaked oats, quick chutneys, and desk-friendly breakfasts",
+    "whyItHelps": "A compact blender makes one-serving smoothies easier, especially with fruit, soy milk, oats, seeds, and plant protein.",
+    "lookFor": [
+      "A cup that seals reliably for carrying",
+      "A blade assembly that can be cleaned fully",
+      "Enough power for frozen fruit and soaked nuts",
+      "A replacement cup option if the original cracks"
+    ],
+    "careNote": "Blend softer ingredients first, then add frozen items or ice. Wash the blade gasket and cup threads rather than only rinsing the main cup.",
+    "bestForRecipes": [
+      "Berry-oat smoothie",
+      "Mango chia lassi",
+      "Coriander chutney",
+      "Date-nut shake"
+    ],
+    "amazonSearchUrl": "https://www.amazon.in/s?k=personal+blender"
+  },
+  {
+    "slug": "food-processor",
+    "icon": "chef-hat",
+    "imagePath": "/images/shop/kitchen-devices/food-processor.png",
+    "name": "Food processor",
+    "category": "Prep",
+    "bestFor": "Chopping vegetables, grating, falafel mix, energy bites, and large-batch dips",
+    "whyItHelps": "A food processor speeds up batch cooking: shred vegetables, pulse beans, knead dough, and make several portions of dip in one bowl.",
+    "lookFor": [
+      "A bowl large enough for your batch-cooking routine",
+      "A grating or slicing disc you will genuinely use",
+      "A pulse button and a secure locking lid",
+      "Storage for the blades so they stay safe and easy to find"
+    ],
+    "careNote": "Use short pulses for chopped vegetables so they do not turn watery. Dry the bowl and blade hub before storing to avoid trapped moisture.",
+    "bestForRecipes": [
+      "Falafel mix",
+      "Date-nut bites",
+      "Carrot salad",
+      "White-bean hummus"
+    ],
+    "amazonSearchUrl": "https://www.amazon.in/s?k=food+processor",
+    "shopOrder": 50,
+    "shopTags": [
+      "Prep",
+      "Batch cooking"
+    ],
+    "shopDescription": "Useful when chopping, grating, shredding, or blending vegetables and legumes is the part that stops you cooking.",
+    "shopDetail": "Compare bowl size, pulse control, included discs, storage footprint, and whether replacement parts are available."
+  },
+  {
+    "slug": "electric-pressure-cooker",
+    "icon": "cooking-pot",
+    "imagePath": "/images/shop/kitchen-devices/electric-pressure-cooker.png",
+    "name": "Electric pressure cooker",
+    "category": "Cooking",
+    "bestFor": "Dals, beans, chickpeas, brown rice, millet, and hands-off batch cooking",
+    "whyItHelps": "Pressure cooking makes legumes and whole grains easier to fit into weeknight meals, with less active stovetop time.",
+    "lookFor": [
+      "A stainless-steel inner pot",
+      "Clear pressure, steam, and safety indicators",
+      "A keep-warm setting that can be switched off",
+      "Locally available sealing rings and service support"
+    ],
+    "careNote": "Follow the appliance manual for fill limits, soaking guidance, and natural versus quick release. Never force the lid open while the cooker is pressurized.",
+    "bestForRecipes": [
+      "Rajma rice",
+      "Simple dal tadka",
+      "Moong khichdi",
+      "Chana salad prep"
+    ],
+    "amazonSearchUrl": "https://www.amazon.in/s?k=electric+pressure+cooker",
+    "shopOrder": 30,
+    "featuredOrder": 3,
+    "shopTags": [
+      "Batch cooking",
+      "Cooking"
+    ],
+    "shopDescription": "A practical shortcut for dal, rajma, chickpeas, grains, and batch prep without watching a stovetop pot.",
+    "shopDetail": "Prioritize service support, sealing-ring availability, useful capacity, and clear pressure-release guidance."
+  },
+  {
+    "slug": "spice-grinder",
+    "icon": "sparkles",
+    "imagePath": "/images/shop/kitchen-devices/spice-grinder.png",
+    "name": "Small spice grinder",
+    "category": "Prep",
+    "bestFor": "Fresh masalas, flax and seed blends, coffee-free spice mixes, and small chutney portions",
+    "whyItHelps": "A small grinder is handy for fresh spice blends and fine toppings made from flax, sesame, or roasted legumes.",
+    "lookFor": [
+      "A removable cup or a lid that seals well",
+      "A pulse control rather than only one long speed",
+      "A second cup if you also grind spices and nuts",
+      "A design that can be wiped dry without water reaching the motor"
+    ],
+    "careNote": "Grind dry ingredients only unless the manual explicitly supports wet use. Brush out spice dust between batches so flavors do not carry over.",
+    "bestForRecipes": [
+      "Flaxseed sprinkle",
+      "Garam masala",
+      "Peanut podi",
+      "Roasted chana powder"
+    ],
+    "amazonSearchUrl": "https://www.amazon.in/s?k=small+spice+grinder",
+    "shopOrder": 20,
+    "featuredOrder": 2,
+    "shopTags": [
+      "Prep",
+      "Small-space kitchen"
+    ],
+    "shopDescription": "A small grinder can make fresh masalas, seed blends, and roasted-legume toppings much easier to repeat.",
+    "shopDetail": "Use it for dry ingredients unless the manual explicitly supports wet blending, and clean between strong spice mixes."
+  },
+  {
+    "slug": "wonderchef-automatic-cooking-machine",
+    "icon": "cooking-pot",
+    "imagePath": "/images/shop/kitchen-devices/wonderchef-automatic-cooking-machine.jpg",
+    "name": "Wonderchef automatic cooking machine",
+    "category": "Cooking",
+    "bestFor": "Chopping, sautéing, guided cooking, and hands-off meal prep",
+    "whyItHelps": "An automatic cooking machine can reduce the active effort involved in chopping, sautéing, and following multi-step recipes.",
+    "lookFor": [
+      "A vessel capacity that fits your usual batch size",
+      "Pre-loaded recipes that match the meals you actually cook",
+      "Easy-to-clean blades, vessel, and lid components",
+      "Reliable service coverage and replacement parts"
+    ],
+    "careNote": "Check the manual for fill limits, hot-liquid handling, blade cleaning, and safe pressure or steam release before using guided cooking modes.",
+    "bestForRecipes": [
+      "Dal and curry bases",
+      "Chopped sabzi",
+      "Sauces and dips",
+      "Batch-cooked grains"
+    ],
+    "amazonSearchUrl": "https://www.amazon.in/Wonderchef-Automatic-Chopping-Saut%C3%A9ing-Pre-Loaded/dp/B0D3HWB5B7",
+    "shopOrder": 40,
+    "shopTags": [
+      "Cooking",
+      "Batch cooking"
+    ],
+    "shopDescription": "A hands-off option for chopping, sautéing, and guided cooking when meal prep feels like the hard part.",
+    "shopDetail": "Check the pre-loaded recipes, vessel capacity, cleaning steps, service coverage, and whether the guided modes fit your everyday meals."
+  }
+]

@@ -1,6 +1,7 @@
 [
   {
     "slug": "vitamin-b12",
+    "imagePath": "/images/items/supplements/vitamin-b12.jpg",
     "name": "Vitamin B12",
     "category": "Essential",
     "form": "Cyanocobalamin or methylcobalamin",
@@ -15,6 +16,7 @@
   },
   {
     "slug": "vitamin-d3",
+    "imagePath": "/images/items/supplements/vegan-d3.jpg",
     "name": "Vitamin D3",
     "category": "Conditional",
     "form": "Lichen-derived cholecalciferol for vegan D3",
@@ -29,6 +31,7 @@
   },
   {
     "slug": "algal-omega-3",
+    "imagePath": "/images/items/supplements/algal-omega-3.jpg",
     "name": "Algal Omega-3 DHA/EPA",
     "category": "Conditional",
     "form": "Algal oil DHA and EPA",
@@ -43,6 +46,7 @@
   },
   {
     "slug": "iron",
+    "imagePath": "/images/items/supplements/iron.jpg",
     "name": "Iron",
     "category": "Conditional",
     "form": "Ferrous bisglycinate, ferrous sulfate, ferrous fumarate, or clinician-recommended forms",
@@ -57,6 +61,7 @@
   },
   {
     "slug": "zinc",
+    "imagePath": "/images/items/supplements/zinc.jpg",
     "name": "Zinc",
     "category": "Conditional",
     "form": "Zinc citrate, picolinate, gluconate, or bisglycinate",
@@ -71,6 +76,7 @@
   },
   {
     "slug": "creatine-monohydrate",
+    "imagePath": "/images/items/supplements/creatine-monohydrate.jpg",
     "name": "Creatine Monohydrate",
     "category": "Performance",
     "form": "Plain creatine monohydrate powder",

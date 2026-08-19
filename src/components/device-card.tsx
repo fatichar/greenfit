@@ -13,25 +13,26 @@ import { Badge } from "@/components/ui/badge";
 import { buttonVariants } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { withAmazonAssociatesTag } from "@/lib/affiliate";
+import { getVersionedImagePath } from "@/lib/images";
 import type { Device } from "@/lib/types";
 import { cn } from "@/lib/utils";
 
 const deviceIcons: Record<string, LucideIcon> = {
-  "cold-press-juicer": Citrus,
-  "high-speed-blender": Blender,
-  "personal-blender": CupSoda,
-  "food-processor": ChefHat,
-  "electric-pressure-cooker": CookingPot,
-  "spice-grinder": Sparkles,
+  blender: Blender,
+  "chef-hat": ChefHat,
+  citrus: Citrus,
+  "cooking-pot": CookingPot,
+  "cup-soda": CupSoda,
+  sparkles: Sparkles,
 };
 
 export function DeviceCard({ device }: { device: Device }) {
-  const Icon = deviceIcons[device.slug] ?? deviceIcons["food-processor"];
+  const Icon = deviceIcons[device.icon ?? "chef-hat"];
 
   return (
     <Card className="h-full">
       <Image
-        src={device.imagePath}
+        src={getVersionedImagePath(device.imagePath)}
         alt=""
         width={1024}
         height={1024}

@@ -3,7 +3,8 @@ import Image from "next/image";
 import { DeviceDirectory } from "@/components/device-directory";
 import { ShopProductCarousel } from "@/components/shop-product-carousel";
 import { ShopShell } from "@/components/shop-shell";
-import { devices } from "@/lib/data";
+import { kitchenDevices } from "@/lib/data";
+import { getVersionedImagePath } from "@/lib/images";
 import { kitchenFeaturedProducts, kitchenProducts } from "@/lib/shop-products";
 
 export const metadata: Metadata = {
@@ -30,7 +31,7 @@ export default function KitchenPage() {
           </p>
         </div>
         <Image
-          src="/images/devices/plant-based-kitchen-devices.png"
+          src={getVersionedImagePath("/images/shop/kitchen-devices/plant-based-kitchen-devices.png")}
           alt="Blender, cold-press juicer, and pressure cooker surrounded by leafy greens, citrus, carrots, chickpeas, and lentils"
           width={1600}
           height={1000}
@@ -50,7 +51,7 @@ export default function KitchenPage() {
       <div className="rounded-xl border border-olive-200 bg-olive-50/70 px-5 py-4 text-sm leading-6 text-olive-800">
         Buying note: appliance prices, availability, warranties, and specifications change. Treat the Amazon link as an example to inspect, then verify the current listing and return policy before buying.
       </div>
-      <DeviceDirectory devices={devices} />
+      <DeviceDirectory devices={kitchenDevices} />
       <p className="text-sm leading-6 text-muted-foreground">
         Amazon Associate disclosure: GreenFit may earn from qualifying purchases. Product links are provided as examples, not endorsements or a substitute for checking fit, safety, warranty, and after-sales support.
       </p>

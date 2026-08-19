@@ -3,18 +3,18 @@
 import { Suspense } from "react";
 import { ShopProductCarousel } from "@/components/shop-product-carousel";
 import { SupplementDirectory } from "@/components/supplement-directory";
-import type { AffiliateSupplement } from "@/lib/types";
+import type { CatalogSupplement } from "@/lib/types";
 import type { ShopProduct } from "@/lib/shop-products";
 
 export function SupplementsPageContent({
   products,
   featuredProducts,
-  affiliateSupplements,
+  catalogSupplements,
   tags,
 }: {
   products: ShopProduct[];
   featuredProducts: ShopProduct[];
-  affiliateSupplements: AffiliateSupplement[];
+  catalogSupplements: CatalogSupplement[];
   tags: string[];
 }) {
   return (
@@ -36,7 +36,7 @@ export function SupplementsPageContent({
           <p className="mt-1 text-sm leading-6 text-muted-foreground">Choose a supplement type, then review verified, untested, and failed or low-rated product groups.</p>
         </div>
         <Suspense fallback={<div className="h-40 animate-pulse rounded-2xl border border-olive-200 bg-muted/40" />}>
-          <SupplementDirectory products={affiliateSupplements} />
+          <SupplementDirectory products={catalogSupplements} />
         </Suspense>
       </section>
     </div>

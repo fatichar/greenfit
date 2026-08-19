@@ -1,0 +1,117 @@
+[
+  {
+    "id": "kitchen-scale",
+    "name": "Digital kitchen scale",
+    "category": "Wellness",
+    "tags": [
+      "Tracking",
+      "Everyday essentials"
+    ],
+    "description": "Makes portioning dals, tofu, oats, and homemade meals more consistent when you care about protein or calories.",
+    "detail": "Look for 1 g precision, a tare function, a flat platform that fits a bowl, and batteries or USB power you can actually replace.",
+    "href": "https://www.amazon.in/s?k=digital+kitchen+scale+food",
+    "imagePath": "/images/shop/wellness/kitchen-scale.jpg",
+    "visual": "beauty",
+    "featuredOrder": 1,
+    "homepageFeaturedOrder": 1
+  },
+  {
+    "id": "body-weight-scale",
+    "name": "Body weight scale",
+    "category": "Wellness",
+    "tags": [
+      "Tracking"
+    ],
+    "description": "A simple weekly check-in tool when body weight is one data point in a longer habit, not a daily obsession.",
+    "detail": "Prefer a stable platform, clear display, and consistent placement on a hard floor. Fancy body-composition claims are often less useful than a reliable weight trend.",
+    "href": "https://www.amazon.in/s?k=digital+body+weight+scale",
+    "imagePath": "/images/shop/wellness/body-weight-scale.jpg",
+    "visual": "beauty",
+    "featuredOrder": 5
+  },
+  {
+    "id": "mineral-sunscreen-spf-50",
+    "name": "Mineral sunscreen SPF 50",
+    "category": "Wellness",
+    "tags": [
+      "Sun protection",
+      "Everyday essentials"
+    ],
+    "description": "Daily sun protection is one of the highest-leverage skin-health habits—especially if you want zinc or titanium filters.",
+    "detail": "Check the current SPF/PA rating, full ingredient list, finish, reapplication guidance, and whether it suits your skin.",
+    "href": "https://www.amazon.in/s?k=mineral+sunscreen+spf+50+zinc+oxide",
+    "imagePath": "/images/shop/wellness/mineral-sunscreen-spf-50.jpg",
+    "visual": "beauty",
+    "featuredOrder": 2
+  },
+  {
+    "id": "electric-toothbrush",
+    "name": "Electric toothbrush",
+    "category": "Wellness",
+    "tags": [
+      "Oral care",
+      "Everyday essentials"
+    ],
+    "description": "A practical upgrade for consistent brushing—often more useful than another skincare gadget.",
+    "detail": "Compare brush-head availability, timer features, battery life, and replacement-head cost over a year.",
+    "href": "https://www.amazon.in/s?k=electric+toothbrush",
+    "imagePath": "/images/shop/wellness/electric-toothbrush.jpg",
+    "visual": "beauty",
+    "featuredOrder": 3
+  },
+  {
+    "id": "tongue-scraper",
+    "name": "Tongue scraper",
+    "category": "Wellness",
+    "tags": [
+      "Oral care"
+    ],
+    "description": "A small, low-cost oral-care tool many people add to a morning routine for fresher breath and cleaner mouthfeel.",
+    "detail": "Choose a smooth edge that is easy to clean—copper or stainless steel both work if you wash them after each use.",
+    "href": "https://www.amazon.in/s?k=copper+tongue+cleaner+scraper",
+    "imagePath": "/images/shop/wellness/tongue-scraper.jpg",
+    "visual": "beauty"
+  },
+  {
+    "id": "blood-pressure-monitor",
+    "name": "Blood pressure monitor",
+    "category": "Wellness",
+    "tags": [
+      "Tracking",
+      "Home health"
+    ],
+    "description": "Useful if you or a clinician wants home readings over time rather than a single clinic snapshot.",
+    "detail": "Prefer upper-arm cuffs with a validated size range, clear memory, and instructions you will actually follow. Wrist models are usually less reliable.",
+    "href": "https://www.amazon.in/s?k=digital+blood+pressure+monitor+upper+arm",
+    "imagePath": "/images/shop/wellness/blood-pressure-monitor.jpg",
+    "visual": "beauty",
+    "featuredOrder": 4
+  },
+  {
+    "id": "digital-thermometer",
+    "name": "Digital thermometer",
+    "category": "Wellness",
+    "tags": [
+      "Home health",
+      "Everyday essentials"
+    ],
+    "description": "A basic home kit item for checking fever quickly without guessing.",
+    "detail": "Look for a clear display, short read time, and a form factor you will keep somewhere obvious—oral, underarm, or forehead as labelled.",
+    "href": "https://www.amazon.in/s?k=digital+thermometer",
+    "imagePath": "/images/shop/wellness/digital-thermometer.jpg",
+    "visual": "beauty"
+  },
+  {
+    "id": "heating-pad",
+    "name": "Heating pad",
+    "category": "Wellness",
+    "tags": [
+      "Recovery"
+    ],
+    "description": "Simple heat for sore backs, tight shoulders, or menstrual discomfort when rest and movement alone are not enough.",
+    "detail": "Check auto-off safety, cover washability, size for the body area you care about, and whether the heat levels feel controllable.",
+    "href": "https://www.amazon.in/s?k=electric+heating+pad+pain+relief",
+    "imagePath": "/images/shop/wellness/heating-pad.jpg",
+    "visual": "beauty"
+  }
+]

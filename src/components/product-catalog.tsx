@@ -4,47 +4,48 @@ import { Badge } from "@/components/ui/badge";
 import { buttonVariants } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { withAmazonAssociatesTag } from "@/lib/affiliate";
-import type { AffiliateProduct } from "@/lib/types";
+import { getVersionedImagePath } from "@/lib/images";
+import type { CatalogProduct } from "@/lib/types";
 
-const affiliateDisclosure = "As an Amazon Associate, we may earn from qualifying purchases.";
+const amazonDisclosure = "As an Amazon Associate, we may earn from qualifying purchases.";
 
-type AffiliateProductsSectionProps = {
-  products: AffiliateProduct[];
+type ProductsSectionProps = {
+  products: CatalogProduct[];
   sourcePage: string;
   title?: string;
 };
 
-export function AffiliateProductsSection({
+export function ProductsSection({
   products,
   sourcePage,
   title = "Related product options",
-}: AffiliateProductsSectionProps) {
+}: ProductsSectionProps) {
   if (!products.length) return null;
 
   return (
-    <section className="flex flex-col gap-4" aria-labelledby="affiliate-products-heading">
+    <section className="flex flex-col gap-4" aria-labelledby="product-catalog-heading">
       <div className="flex flex-col gap-2">
-        <h2 id="affiliate-products-heading" className="font-heading text-2xl font-semibold">
+        <h2 id="product-catalog-heading" className="font-heading text-2xl font-semibold">
           {title}
         </h2>
-        <p className="text-sm leading-6 text-muted-foreground">{affiliateDisclosure}</p>
+        <p className="text-sm leading-6 text-muted-foreground">{amazonDisclosure}</p>
       </div>
       <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
         {products.map((product) => (
-          <AffiliateProductCard key={product.id} product={product} sourcePage={sourcePage} />
+          <ProductCard key={product.id} product={product} sourcePage={sourcePage} />
         ))}
       </div>
     </section>
   );
 }
 
-function AffiliateProductCard({ product, sourcePage }: { product: AffiliateProduct; sourcePage: string }) {
+function ProductCard({ product, sourcePage }: { product: CatalogProduct; sourcePage: string }) {
   const imageSrc = product.imagePath ?? product.imageUrl;
   const href = withAmazonAssociatesTag(product.amazonUrl);
 
   return (
     <Card className="h-full">
-      {imageSrc ? <AffiliateProductImage src={imageSrc} title={product.title} /> : null}
+      {imageSrc ? <ProductImage src={imageSrc} title={product.title} /> : null}
       <CardHeader>
         <div className="flex flex-wrap items-center gap-2">
           <Badge variant="secondary">{product.category}</Badge>
@@ -75,11 +76,11 @@ function AffiliateProductCard({ product, sourcePage }: { product: AffiliateProdu
   );
 }
 
-function AffiliateProductImage({ src, title }: { src: string; title: string }) {
+function ProductImage({ src, title }: { src: string; title: string }) {
   if (src.startsWith("/")) {
     return (
       <Image
-        src={src}
+        src={getVersionedImagePath(src)}
         alt=""
         width={900}
         height={675}

@@ -1,0 +1,200 @@
+[
+  {
+    "id": "walking-pad",
+    "name": "Walking pad",
+    "category": "Exercise & Fitness",
+    "tags": [
+      "Cardio",
+      "Small-space training"
+    ],
+    "description": "A convenient way to add walking at home when outdoor walks are hard to fit in.",
+    "detail": "Buy this only if you will walk most days. Check max speed, noise level, deck length, remote or app controls, and whether it stores flat under furniture.",
+    "href": "https://www.amazon.in/s?k=walking+pad+for+home",
+    "imagePath": "/images/shop/exercise/walking-pad.jpg",
+    "visual": "exercise",
+    "featuredOrder": 1
+  },
+  {
+    "id": "treadmill",
+    "name": "Treadmill",
+    "category": "Exercise & Fitness",
+    "tags": [
+      "Cardio"
+    ],
+    "description": "A dependable home cardio option when weather, safety, or schedule get in the way of outdoor running.",
+    "detail": "Prioritize continuous motor power, belt size, shock absorption, fold mechanism, and local service. Avoid models you will not have space to leave accessible.",
+    "href": "https://www.amazon.in/s?k=foldable+motorized+treadmill+for+home",
+    "imagePath": "/images/shop/exercise/treadmill.jpg",
+    "visual": "exercise",
+    "featuredOrder": 2,
+    "homepageFeaturedOrder": 1
+  },
+  {
+    "id": "cross-trainer",
+    "name": "Cross trainer",
+    "category": "Exercise & Fitness",
+    "tags": [
+      "Cardio"
+    ],
+    "description": "A lower-impact cardio option for steady sessions when running is uncomfortable.",
+    "detail": "Look for a smooth stride length, stable base, quiet drive, useful resistance levels, and a footprint you can live with long-term.",
+    "href": "https://www.amazon.in/s?k=cross+trainer+elliptical+home",
+    "imagePath": "/images/shop/exercise/cross-trainer.jpg",
+    "visual": "exercise",
+    "featuredOrder": 3
+  },
+  {
+    "id": "exercise-bike",
+    "name": "Exercise bike",
+    "category": "Exercise & Fitness",
+    "tags": [
+      "Cardio",
+      "Small-space training"
+    ],
+    "description": "Indoor cardio with a smaller footprint than most treadmills and less impact for many people.",
+    "detail": "Compare seat comfort, resistance type, max user weight, noise, and whether you prefer upright, spin, or recumbent geometry.",
+    "href": "https://www.amazon.in/s?k=magnetic+exercise+bike+home",
+    "imagePath": "/images/shop/exercise/exercise-bike.jpg",
+    "visual": "exercise",
+    "featuredOrder": 4
+  },
+  {
+    "id": "adjustable-dumbbells",
+    "name": "Adjustable dumbbells",
+    "category": "Exercise & Fitness",
+    "tags": [
+      "Strength & resistance",
+      "Small-space training"
+    ],
+    "description": "A space-saving pair for most upper- and lower-body dumbbell exercises as your strength increases.",
+    "detail": "Compare the weight range, adjustment speed, lock security, and whether the length still works for floor presses.",
+    "href": "https://www.amazon.in/s?k=adjustable+dumbbells+home+gym",
+    "imagePath": "/images/shop/exercise/adjustable-dumbbells.jpg",
+    "visual": "exercise",
+    "featuredOrder": 5
+  },
+  {
+    "id": "adjustable-bench",
+    "name": "Adjustable weight bench",
+    "category": "Exercise & Fitness",
+    "tags": [
+      "Strength & resistance"
+    ],
+    "description": "A bench opens up presses, rows, step-ups, and supported dumbbell exercises beyond floor work.",
+    "detail": "Check incline/decline options, pad firmness, footprint when flat, weight rating, and how stable it feels under load.",
+    "href": "https://www.amazon.in/s?k=adjustable+weight+bench+home+gym",
+    "imagePath": "/images/shop/exercise/adjustable-bench.jpg",
+    "visual": "exercise"
+  },
+  {
+    "id": "adjustable-kettlebell",
+    "name": "Adjustable kettlebell",
+    "category": "Exercise & Fitness",
+    "tags": [
+      "Strength & resistance",
+      "Small-space training"
+    ],
+    "description": "One compact load for swings, squats, carries, and presses as your routine develops.",
+    "detail": "Check the adjustment mechanism, lowest and highest loads, handle clearance, and how securely it locks.",
+    "href": "https://www.amazon.in/s?k=adjustable+kettlebell",
+    "imagePath": "/images/shop/exercise/adjustable-kettlebell.jpg",
+    "visual": "exercise"
+  },
+  {
+    "id": "suspension-trainer",
+    "name": "Suspension trainer",
+    "category": "Exercise & Fitness",
+    "tags": [
+      "Strength & resistance",
+      "Bodyweight training"
+    ],
+    "description": "Portable resistance for rows, presses, split squats, and core work without a large rack.",
+    "detail": "Look for reliable door or anchor hardware, comfortable handles, length adjustment, and clear load guidance.",
+    "href": "https://www.amazon.in/s?k=suspension+trainer+home+gym",
+    "imagePath": "/images/shop/exercise/suspension-trainer.jpg",
+    "visual": "exercise"
+  },
+  {
+    "id": "resistance-bands",
+    "name": "Resistance bands set",
+    "category": "Exercise & Fitness",
+    "tags": [
+      "Strength & resistance",
+      "Small-space training"
+    ],
+    "description": "A low-cost way to add resistance to rows, presses, squats, and mobility work at home.",
+    "detail": "Look for clearly labelled resistance levels, durable handles or loops, and anchors that match how you plan to train.",
+    "href": "https://www.amazon.in/s?k=resistance+bands+set+home+workout",
+    "imagePath": "/images/shop/exercise/resistance-bands.jpg",
+    "visual": "exercise"
+  },
+  {
+    "id": "pull-up-bar",
+    "name": "Doorway pull-up bar",
+    "category": "Exercise & Fitness",
+    "tags": [
+      "Bodyweight training",
+      "Strength & resistance"
+    ],
+    "description": "An entry point for pull-ups, hanging, and scapular work without a full rack.",
+    "detail": "Check your doorframe width and depth, the mounting style, rated load, and whether it needs permanent hardware.",
+    "href": "https://www.amazon.in/s?k=doorway+pull+up+bar",
+    "imagePath": "/images/shop/exercise/pull-up-bar.jpg",
+    "visual": "exercise"
+  },
+  {
+    "id": "parallettes",
+    "name": "Low parallettes",
+    "category": "Exercise & Fitness",
+    "tags": [
+      "Bodyweight training",
+      "Strength & resistance"
+    ],
+    "description": "Handles for incline push-ups, support holds, and wrist-friendlier bodyweight work.",
+    "detail": "Choose a stable base, non-slip feet, a comfortable grip diameter, and a height that matches your experience.",
+    "href": "https://www.amazon.in/s?k=low+parallettes+push+up+bars",
+    "imagePath": "/images/shop/exercise/parallettes.jpg",
+    "visual": "exercise"
+  },
+  {
+    "id": "yoga-mat",
+    "name": "Yoga mat",
+    "category": "Exercise & Fitness",
+    "tags": [
+      "Mobility & recovery",
+      "Small-space training"
+    ],
+    "description": "A foundation for floor work, mobility drills, bodyweight sessions, and recovery days.",
+    "detail": "Compare thickness, grip when sweaty, ease of rolling, and whether the mat stays put on your floor surface.",
+    "href": "https://www.amazon.in/s?k=yoga+mat+exercise",
+    "imagePath": "/images/shop/exercise/yoga-mat.jpg",
+    "visual": "exercise"
+  },
+  {
+    "id": "foam-roller",
+    "name": "Foam roller",
+    "category": "Exercise & Fitness",
+    "tags": [
+      "Mobility & recovery"
+    ],
+    "description": "For post-session work on the calves, quads, glutes, and upper back.",
+    "detail": "Choose a density that matches your tolerance, a length that fits your space, and a surface texture you will actually use.",
+    "href": "https://www.amazon.in/s?k=foam+roller+exercise",
+    "imagePath": "/images/shop/exercise/foam-roller.jpg",
+    "visual": "exercise"
+  },
+  {
+    "id": "jump-rope",
+    "name": "Jump rope",
+    "category": "Exercise & Fitness",
+    "tags": [
+      "Cardio",
+      "Small-space training"
+    ],
+    "description": "A compact conditioning tool for short sessions when outdoor cardio is hard to fit in.",
+    "detail": "Look for adjustable length, comfortable handles, and a rope weight that matches your current skill level.",
+    "href": "https://www.amazon.in/s?k=skipping+rope+weighted",
+    "imagePath": "/images/shop/exercise/jump-rope.jpg",
+    "visual": "exercise"
+  }
+]

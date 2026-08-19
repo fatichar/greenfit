@@ -18,6 +18,7 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { buttonVariants } from "@/components/ui/button";
 import { withAmazonAssociatesTag } from "@/lib/affiliate";
+import { getVersionedImagePath } from "@/lib/images";
 import type { ShopProduct } from "@/lib/shop-products";
 import { cn } from "@/lib/utils";
 
@@ -246,15 +247,16 @@ function ProductThumbnail({ product, sourcePage }: { product: ShopProduct; sourc
 function ProductArtwork({ product, compact = false, reducedMotion = false }: { product: ShopProduct; compact?: boolean; reducedMotion?: boolean }) {
   const Icon = visualIcons[product.visual];
   const imageSrc = product.imagePath ?? product.imageUrl;
+  const renderedImageSrc = imageSrc?.startsWith("/") ? getVersionedImagePath(imageSrc) : imageSrc;
 
   return (
     <div className={cn("relative overflow-hidden rounded-xl bg-[linear-gradient(135deg,#edf9df_0%,#f7fff3_100%)]", compact ? "h-full w-full" : "aspect-[4/3] w-full", !reducedMotion && "transition-opacity duration-500") }>
-      {imageSrc ? (
-        imageSrc.startsWith("/") ? (
-          <Image src={imageSrc} alt="" fill sizes={compact ? "(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw" : "(max-width: 767px) 100vw, 45vw"} className="object-contain p-5" />
+      {renderedImageSrc ? (
+        renderedImageSrc.startsWith("/") ? (
+          <Image src={renderedImageSrc} alt="" fill sizes={compact ? "(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw" : "(max-width: 767px) 100vw, 45vw"} className="object-contain p-5" />
         ) : (
           // eslint-disable-next-line @next/next/no-img-element
-          <img src={imageSrc} alt="" className="h-full w-full object-contain p-5" loading="lazy" />
+          <img src={renderedImageSrc} alt="" className="h-full w-full object-contain p-5" loading="lazy" />
         )
       ) : (
         <div className="flex h-full items-center justify-center text-primary">

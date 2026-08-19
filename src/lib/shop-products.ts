@@ -1,4 +1,7 @@
-import { affiliateSupplements, devices } from "@/lib/data";
+import { catalogSupplements, kitchenDevices } from "@/lib/data";
+import booksData from "../../data/books.json";
+import exerciseData from "../../data/exercise.json";
+import wellnessData from "../../data/wellness.json";
 
 export type ShopProduct = {
   id: string;
@@ -11,38 +14,14 @@ export type ShopProduct = {
   imagePath?: string;
   imageUrl?: string;
   visual: "supplement" | "exercise" | "kitchen" | "beauty" | "book";
+  featuredOrder?: number;
+  homepageFeaturedOrder?: number;
 };
 
-function getSupplement(id: string) {
-  const product = affiliateSupplements.find((item) => item.id === id);
-  if (!product) throw new Error(`Missing affiliate supplement: ${id}`);
-  return product;
-}
-
 function getDevice(slug: string) {
-  const device = devices.find((item) => item.slug === slug);
+  const device = kitchenDevices.find((item) => item.slug === slug);
   if (!device) throw new Error(`Missing device: ${slug}`);
   return device;
-}
-
-function supplementProduct(
-  id: string,
-  tags: string[],
-  description: string,
-  detail: string,
-): ShopProduct {
-  const product = getSupplement(id);
-  return {
-    id: product.id,
-    name: product.title,
-    category: "Supplements",
-    tags,
-    description,
-    detail,
-    href: product.amazonUrl,
-    imageUrl: product.imageUrl,
-    visual: "supplement",
-  };
 }
 
 const supplementTagLabels: Record<string, string> = {
@@ -67,838 +46,73 @@ export const supplementTags = [
   "Creatine",
 ];
 
-function directorySupplementProduct(product: (typeof affiliateSupplements)[number]): ShopProduct {
+function catalogSupplementProduct(product: (typeof catalogSupplements)[number]): ShopProduct {
   const tag = supplementTagLabels[product.nutrient] ?? product.nutrient;
   return {
     id: product.id,
     name: product.title,
     category: "Supplements",
-    tags: [tag, product.form],
-    description: product.veganEvidence,
-    detail: `${product.form} · ${product.doseText} Check the current listing and any available test result before buying.`,
+    tags: product.shopTags ?? [tag, product.form],
+    description: product.shopDescription ?? product.veganEvidence,
+    detail: product.shopDetail ?? `${product.form} · ${product.doseText} Check the current listing and any available test result before buying.`,
     href: product.amazonUrl,
     imagePath: product.imagePath,
     imageUrl: product.imageUrl,
     visual: "supplement",
+    featuredOrder: product.featuredOrder,
+    homepageFeaturedOrder: product.homepageFeaturedOrder,
   };
 }
 
-function deviceProduct(
-  slug: string,
-  tags: string[],
-  description: string,
-  detail: string,
-): ShopProduct {
+function deviceProduct(slug: string): ShopProduct {
   const device = getDevice(slug);
+  if (!device.shopTags || !device.shopDescription || !device.shopDetail) {
+    throw new Error(`Missing shop catalog fields for kitchen device: ${slug}`);
+  }
+
   return {
     id: device.slug,
     name: device.name,
     category: "Kitchen",
-    tags,
-    description,
-    detail,
+    tags: device.shopTags,
+    description: device.shopDescription,
+    detail: device.shopDetail,
     href: device.amazonSearchUrl,
     imagePath: device.imagePath,
     visual: "kitchen",
+    featuredOrder: device.featuredOrder,
+    homepageFeaturedOrder: device.homepageFeaturedOrder,
   };
 }
 
-export const supplementProducts: ShopProduct[] = [
-  supplementProduct(
-    "unived-ovegha-vegan-omega-3",
-    ["Omega-3", "Algae-based"],
-    "A plant-based DHA option worth comparing with standard fish-oil listings.",
-    "Check the labelled DHA amount, serving size, capsule material, and current vegan evidence.",
-  ),
-  supplementProduct(
-    "origins-nutra-bone-alga",
-    ["Calcium", "Algae-based"],
-    "An algae-derived calcium option to compare with more familiar supplements.",
-    "Compare elemental calcium, added vitamin D or K, serving size, and whether the label suits your diet.",
-  ),
-  supplementProduct(
-    "naturaltein-vegan-creatine",
-    ["Creatine", "Training"],
-    "Plain creatine monohydrate to evaluate separately from flavoured pre-workout blends.",
-    "Look for a clearly stated serving, a short ingredient list, and current vegan suitability on the label.",
-  ),
-  ...affiliateSupplements
-    .filter((product) => !["unived-ovegha-vegan-omega-3", "origins-nutra-bone-alga", "naturaltein-vegan-creatine"].includes(product.id))
-    .map(directorySupplementProduct),
+const orderedSupplementCatalog = [
+  ...catalogSupplements.filter((product) => product.shopOrder !== undefined).sort((left, right) => (left.shopOrder ?? 0) - (right.shopOrder ?? 0)),
+  ...catalogSupplements.filter((product) => product.shopOrder === undefined),
 ];
 
-export const exerciseProducts: ShopProduct[] = [
-  {
-    id: "walking-pad",
-    name: "Walking pad",
-    category: "Exercise & Fitness",
-    tags: ["Cardio", "Small-space training"],
-    description: "A convenient way to add walking at home when outdoor walks are hard to fit in.",
-    detail: "Buy this only if you will walk most days. Check max speed, noise level, deck length, remote or app controls, and whether it stores flat under furniture.",
-    href: "https://www.amazon.in/s?k=walking+pad+for+home",
-    imagePath: "/images/shop/exercise/walking-pad.jpg",
-    visual: "exercise",
-  },
-  {
-    id: "treadmill",
-    name: "Treadmill",
-    category: "Exercise & Fitness",
-    tags: ["Cardio"],
-    description: "A dependable home cardio option when weather, safety, or schedule get in the way of outdoor running.",
-    detail: "Prioritize continuous motor power, belt size, shock absorption, fold mechanism, and local service. Avoid models you will not have space to leave accessible.",
-    href: "https://www.amazon.in/s?k=foldable+motorized+treadmill+for+home",
-    imagePath: "/images/shop/exercise/treadmill.jpg",
-    visual: "exercise",
-  },
-  {
-    id: "cross-trainer",
-    name: "Cross trainer",
-    category: "Exercise & Fitness",
-    tags: ["Cardio"],
-    description: "A lower-impact cardio option for steady sessions when running is uncomfortable.",
-    detail: "Look for a smooth stride length, stable base, quiet drive, useful resistance levels, and a footprint you can live with long-term.",
-    href: "https://www.amazon.in/s?k=cross+trainer+elliptical+home",
-    imagePath: "/images/shop/exercise/cross-trainer.jpg",
-    visual: "exercise",
-  },
-  {
-    id: "exercise-bike",
-    name: "Exercise bike",
-    category: "Exercise & Fitness",
-    tags: ["Cardio", "Small-space training"],
-    description: "Indoor cardio with a smaller footprint than most treadmills and less impact for many people.",
-    detail: "Compare seat comfort, resistance type, max user weight, noise, and whether you prefer upright, spin, or recumbent geometry.",
-    href: "https://www.amazon.in/s?k=magnetic+exercise+bike+home",
-    imagePath: "/images/shop/exercise/exercise-bike.jpg",
-    visual: "exercise",
-  },
-  {
-    id: "adjustable-dumbbells",
-    name: "Adjustable dumbbells",
-    category: "Exercise & Fitness",
-    tags: ["Strength & resistance", "Small-space training"],
-    description: "A space-saving pair for most upper- and lower-body dumbbell exercises as your strength increases.",
-    detail: "Compare the weight range, adjustment speed, lock security, and whether the length still works for floor presses.",
-    href: "https://www.amazon.in/s?k=adjustable+dumbbells+home+gym",
-    imagePath: "/images/shop/exercise/adjustable-dumbbells.jpg",
-    visual: "exercise",
-  },
-  {
-    id: "adjustable-bench",
-    name: "Adjustable weight bench",
-    category: "Exercise & Fitness",
-    tags: ["Strength & resistance"],
-    description: "A bench opens up presses, rows, step-ups, and supported dumbbell exercises beyond floor work.",
-    detail: "Check incline/decline options, pad firmness, footprint when flat, weight rating, and how stable it feels under load.",
-    href: "https://www.amazon.in/s?k=adjustable+weight+bench+home+gym",
-    imagePath: "/images/shop/exercise/adjustable-bench.jpg",
-    visual: "exercise",
-  },
-  {
-    id: "adjustable-kettlebell",
-    name: "Adjustable kettlebell",
-    category: "Exercise & Fitness",
-    tags: ["Strength & resistance", "Small-space training"],
-    description: "One compact load for swings, squats, carries, and presses as your routine develops.",
-    detail: "Check the adjustment mechanism, lowest and highest loads, handle clearance, and how securely it locks.",
-    href: "https://www.amazon.in/s?k=adjustable+kettlebell",
-    imagePath: "/images/shop/exercise/adjustable-kettlebell.jpg",
-    visual: "exercise",
-  },
-  {
-    id: "suspension-trainer",
-    name: "Suspension trainer",
-    category: "Exercise & Fitness",
-    tags: ["Strength & resistance", "Bodyweight training"],
-    description: "Portable resistance for rows, presses, split squats, and core work without a large rack.",
-    detail: "Look for reliable door or anchor hardware, comfortable handles, length adjustment, and clear load guidance.",
-    href: "https://www.amazon.in/s?k=suspension+trainer+home+gym",
-    imagePath: "/images/shop/exercise/suspension-trainer.jpg",
-    visual: "exercise",
-  },
-  {
-    id: "resistance-bands",
-    name: "Resistance bands set",
-    category: "Exercise & Fitness",
-    tags: ["Strength & resistance", "Small-space training"],
-    description: "A low-cost way to add resistance to rows, presses, squats, and mobility work at home.",
-    detail: "Look for clearly labelled resistance levels, durable handles or loops, and anchors that match how you plan to train.",
-    href: "https://www.amazon.in/s?k=resistance+bands+set+home+workout",
-    imagePath: "/images/shop/exercise/resistance-bands.jpg",
-    visual: "exercise",
-  },
-  {
-    id: "pull-up-bar",
-    name: "Doorway pull-up bar",
-    category: "Exercise & Fitness",
-    tags: ["Bodyweight training", "Strength & resistance"],
-    description: "An entry point for pull-ups, hanging, and scapular work without a full rack.",
-    detail: "Check your doorframe width and depth, the mounting style, rated load, and whether it needs permanent hardware.",
-    href: "https://www.amazon.in/s?k=doorway+pull+up+bar",
-    imagePath: "/images/shop/exercise/pull-up-bar.jpg",
-    visual: "exercise",
-  },
-  {
-    id: "parallettes",
-    name: "Low parallettes",
-    category: "Exercise & Fitness",
-    tags: ["Bodyweight training", "Strength & resistance"],
-    description: "Handles for incline push-ups, support holds, and wrist-friendlier bodyweight work.",
-    detail: "Choose a stable base, non-slip feet, a comfortable grip diameter, and a height that matches your experience.",
-    href: "https://www.amazon.in/s?k=low+parallettes+push+up+bars",
-    imagePath: "/images/shop/exercise/parallettes.jpg",
-    visual: "exercise",
-  },
-  {
-    id: "yoga-mat",
-    name: "Yoga mat",
-    category: "Exercise & Fitness",
-    tags: ["Mobility & recovery", "Small-space training"],
-    description: "A foundation for floor work, mobility drills, bodyweight sessions, and recovery days.",
-    detail: "Compare thickness, grip when sweaty, ease of rolling, and whether the mat stays put on your floor surface.",
-    href: "https://www.amazon.in/s?k=yoga+mat+exercise",
-    imagePath: "/images/shop/exercise/yoga-mat.jpg",
-    visual: "exercise",
-  },
-  {
-    id: "foam-roller",
-    name: "Foam roller",
-    category: "Exercise & Fitness",
-    tags: ["Mobility & recovery"],
-    description: "For post-session work on the calves, quads, glutes, and upper back.",
-    detail: "Choose a density that matches your tolerance, a length that fits your space, and a surface texture you will actually use.",
-    href: "https://www.amazon.in/s?k=foam+roller+exercise",
-    imagePath: "/images/shop/exercise/foam-roller.jpg",
-    visual: "exercise",
-  },
-  {
-    id: "jump-rope",
-    name: "Jump rope",
-    category: "Exercise & Fitness",
-    tags: ["Cardio", "Small-space training"],
-    description: "A compact conditioning tool for short sessions when outdoor cardio is hard to fit in.",
-    detail: "Look for adjustable length, comfortable handles, and a rope weight that matches your current skill level.",
-    href: "https://www.amazon.in/s?k=skipping+rope+weighted",
-    imagePath: "/images/shop/exercise/jump-rope.jpg",
-    visual: "exercise",
-  },
-];
+export const supplementProducts: ShopProduct[] = orderedSupplementCatalog.map(catalogSupplementProduct);
 
-export const kitchenProducts: ShopProduct[] = [
-  deviceProduct(
-    "cold-press-juicer",
-    ["Juicing", "Prep"],
-    "A slower juicing format for people who want to experiment with fresh vegetable and fruit combinations at home.",
-    "Compare yield, cleaning time, feed-chute size, pulp handling, service support, and how often you will realistically use it.",
-  ),
-  deviceProduct(
-    "spice-grinder",
-    ["Prep", "Small-space kitchen"],
-    "A small grinder can make fresh masalas, seed blends, and roasted-legume toppings much easier to repeat.",
-    "Use it for dry ingredients unless the manual explicitly supports wet blending, and clean between strong spice mixes.",
-  ),
-  deviceProduct(
-    "electric-pressure-cooker",
-    ["Batch cooking", "Cooking"],
-    "A practical shortcut for dal, rajma, chickpeas, grains, and batch prep without watching a stovetop pot.",
-    "Prioritize service support, sealing-ring availability, useful capacity, and clear pressure-release guidance.",
-  ),
-  {
-    id: "wonderchef-automatic-cooking-machine",
-    name: "Wonderchef automatic cooking machine",
-    category: "Kitchen",
-    tags: ["Cooking", "Batch cooking"],
-    description: "A hands-off option for chopping, sautéing, and guided cooking when meal prep feels like the hard part.",
-    detail: "Check the pre-loaded recipes, vessel capacity, cleaning steps, service coverage, and whether the guided modes fit your everyday meals.",
-    href: "https://www.amazon.in/Wonderchef-Automatic-Chopping-Saut%C3%A9ing-Pre-Loaded/dp/B0D3HWB5B7",
-    imagePath: "/images/shop/kitchen/wonderchef-automatic-cooking-machine.jpg",
-    visual: "kitchen",
-  },
-  deviceProduct(
-    "food-processor",
-    ["Prep", "Batch cooking"],
-    "Useful when chopping, grating, shredding, or blending vegetables and legumes is the part that stops you cooking.",
-    "Compare bowl size, pulse control, included discs, storage footprint, and whether replacement parts are available.",
-  ),
-];
+export const exerciseProducts = exerciseData as ShopProduct[];
 
-export const wellnessProducts: ShopProduct[] = [
-  {
-    id: "kitchen-scale",
-    name: "Digital kitchen scale",
-    category: "Wellness",
-    tags: ["Tracking", "Everyday essentials"],
-    description: "Makes portioning dals, tofu, oats, and homemade meals more consistent when you care about protein or calories.",
-    detail: "Look for 1 g precision, a tare function, a flat platform that fits a bowl, and batteries or USB power you can actually replace.",
-    href: "https://www.amazon.in/s?k=digital+kitchen+scale+food",
-    imagePath: "/images/shop/wellness/kitchen-scale.jpg",
-    visual: "beauty",
-  },
-  {
-    id: "body-weight-scale",
-    name: "Body weight scale",
-    category: "Wellness",
-    tags: ["Tracking"],
-    description: "A simple weekly check-in tool when body weight is one data point in a longer habit, not a daily obsession.",
-    detail: "Prefer a stable platform, clear display, and consistent placement on a hard floor. Fancy body-composition claims are often less useful than a reliable weight trend.",
-    href: "https://www.amazon.in/s?k=digital+body+weight+scale",
-    imagePath: "/images/shop/wellness/body-weight-scale.jpg",
-    visual: "beauty",
-  },
-  {
-    id: "mineral-sunscreen-spf-50",
-    name: "Mineral sunscreen SPF 50",
-    category: "Wellness",
-    tags: ["Sun protection", "Everyday essentials"],
-    description: "Daily sun protection is one of the highest-leverage skin-health habits—especially if you want zinc or titanium filters.",
-    detail: "Check the current SPF/PA rating, full ingredient list, finish, reapplication guidance, and whether it suits your skin.",
-    href: "https://www.amazon.in/s?k=mineral+sunscreen+spf+50+zinc+oxide",
-    imagePath: "/images/shop/wellness/mineral-sunscreen-spf-50.jpg",
-    visual: "beauty",
-  },
-  {
-    id: "electric-toothbrush",
-    name: "Electric toothbrush",
-    category: "Wellness",
-    tags: ["Oral care", "Everyday essentials"],
-    description: "A practical upgrade for consistent brushing—often more useful than another skincare gadget.",
-    detail: "Compare brush-head availability, timer features, battery life, and replacement-head cost over a year.",
-    href: "https://www.amazon.in/s?k=electric+toothbrush",
-    imagePath: "/images/shop/wellness/electric-toothbrush.jpg",
-    visual: "beauty",
-  },
-  {
-    id: "tongue-scraper",
-    name: "Tongue scraper",
-    category: "Wellness",
-    tags: ["Oral care"],
-    description: "A small, low-cost oral-care tool many people add to a morning routine for fresher breath and cleaner mouthfeel.",
-    detail: "Choose a smooth edge that is easy to clean—copper or stainless steel both work if you wash them after each use.",
-    href: "https://www.amazon.in/s?k=copper+tongue+cleaner+scraper",
-    imagePath: "/images/shop/wellness/tongue-scraper.jpg",
-    visual: "beauty",
-  },
-  {
-    id: "blood-pressure-monitor",
-    name: "Blood pressure monitor",
-    category: "Wellness",
-    tags: ["Tracking", "Home health"],
-    description: "Useful if you or a clinician wants home readings over time rather than a single clinic snapshot.",
-    detail: "Prefer upper-arm cuffs with a validated size range, clear memory, and instructions you will actually follow. Wrist models are usually less reliable.",
-    href: "https://www.amazon.in/s?k=digital+blood+pressure+monitor+upper+arm",
-    imagePath: "/images/shop/wellness/blood-pressure-monitor.jpg",
-    visual: "beauty",
-  },
-  {
-    id: "digital-thermometer",
-    name: "Digital thermometer",
-    category: "Wellness",
-    tags: ["Home health", "Everyday essentials"],
-    description: "A basic home kit item for checking fever quickly without guessing.",
-    detail: "Look for a clear display, short read time, and a form factor you will keep somewhere obvious—oral, underarm, or forehead as labelled.",
-    href: "https://www.amazon.in/s?k=digital+thermometer",
-    imagePath: "/images/shop/wellness/digital-thermometer.jpg",
-    visual: "beauty",
-  },
-  {
-    id: "heating-pad",
-    name: "Heating pad",
-    category: "Wellness",
-    tags: ["Recovery"],
-    description: "Simple heat for sore backs, tight shoulders, or menstrual discomfort when rest and movement alone are not enough.",
-    detail: "Check auto-off safety, cover washability, size for the body area you care about, and whether the heat levels feel controllable.",
-    href: "https://www.amazon.in/s?k=electric+heating+pad+pain+relief",
-    imagePath: "/images/shop/wellness/heating-pad.jpg",
-    visual: "beauty",
-  },
-];
+export const kitchenProducts: ShopProduct[] = [...kitchenDevices]
+  .filter((device) => device.shopOrder !== undefined)
+  .sort((left, right) => (left.shopOrder ?? 0) - (right.shopOrder ?? 0))
+  .map((device) => deviceProduct(device.slug));
+export const wellnessProducts = wellnessData as ShopProduct[];
 
-export const bookProducts: ShopProduct[] = [
-  {
-    id: "why-we-sleep",
-    name: "Why We Sleep",
-    category: "Books",
-    tags: ["Health", "Nutrition"],
-    description: "Matthew Walker's exploration of sleep, detailing how it impacts physical health, cognitive function, immune strength, and longevity.",
-    detail: "An essential read for understanding how sleep affects training recovery, nutritional choices, and overall physical performance.",
-    href: "https://www.amazon.in/Why-We-Sleep-Matthew-Walker/dp/0141983760",
-    imageUrl: "https://covers.openlibrary.org/b/id/15208018-L.jpg",
-    visual: "book",
-  },
-  {
-    id: "how-not-to-die",
-    name: "How Not to Die",
-    category: "Books",
-    tags: ["Nutrition", "Health"],
-    description: "Michael Greger’s overview of diet-related chronic disease and the plant foods he thinks matter most.",
-    detail: "A practical starting point if you want research-backed food patterns rather than another short-term diet plan.",
-    href: "https://www.amazon.in/s?k=How+Not+to+Die+Michael+Greger",
-    imagePath: "/images/shop/books/how-not-to-die.jpg",
-    visual: "book",
-  },
-  {
-    id: "the-proof-is-in-the-plants",
-    name: "The Proof is in the Plants",
-    category: "Books",
-    tags: ["Nutrition", "Health"],
-    description: "Simon Hill’s case for a mostly plant-based pattern, covering health, the environment, and daily eating.",
-    detail: "Useful when you want a balanced, modern overview rather than a cookbook-first introduction.",
-    href: "https://www.amazon.in/s?k=The+Proof+is+in+the+Plants+Simon+Hill",
-    imagePath: "/images/shop/books/the-proof-is-in-the-plants.jpg",
-    visual: "book",
-  },
-  {
-    id: "how-not-to-diet",
-    name: "How Not to Diet",
-    category: "Books",
-    tags: ["Nutrition", "Health"],
-    description: "A look at the evidence on sustainable weight loss, appetite, and food quality beyond calorie slogans.",
-    detail: "Best treated as a reference for habits and food choices rather than a rigid meal prescription.",
-    href: "https://www.amazon.in/s?k=How+Not+to+Diet+Michael+Greger",
-    imagePath: "/images/shop/books/how-not-to-diet.jpg",
-    visual: "book",
-  },
-  {
-    id: "the-china-study",
-    name: "The China Study",
-    category: "Books",
-    tags: ["Nutrition", "Health"],
-    description: "T. Colin Campbell’s book linking dietary patterns with long-term health outcomes and plant-forward eating.",
-    detail: "A foundational text many people encounter early when exploring plant-based nutrition arguments.",
-    href: "https://www.amazon.in/s?k=The+China+Study+T+Colin+Campbell",
-    imagePath: "/images/shop/books/the-china-study.jpg",
-    visual: "book",
-  },
-  {
-    id: "whole-rethinking-nutrition",
-    name: "Whole: Rethinking the Science of Nutrition",
-    category: "Books",
-    tags: ["Nutrition", "Health"],
-    description: "T. Colin Campbell’s follow-up on how reductionist nutrition research can overlook whole foods.",
-    detail: "A denser companion to The China Study if you want more on how nutrition science is framed and measured.",
-    href: "https://www.amazon.in/Whole-Rethinking-Nutrition-Colin-Campbell-ebook/dp/B00APDFVLU",
-    imagePath: "/images/shop/books/whole-rethinking-nutrition.jpg",
-    visual: "book",
-  },
-  {
-    id: "fiber-fueled",
-    name: "Fiber Fueled",
-    category: "Books",
-    tags: ["Nutrition", "Health"],
-    description: "Will Bulsiewicz on fibre, the gut microbiome, and why plant diversity may matter more than single superfoods.",
-    detail: "A practical read when digestion, bloating, or building a more plant-rich plate is the main question.",
-    href: "https://www.amazon.in/dp/059308456X",
-    imagePath: "/images/shop/books/fiber-fueled.jpg",
-    visual: "book",
-  },
-  {
-    id: "ultra-processed-people",
-    name: "Ultra-Processed People",
-    category: "Books",
-    tags: ["Nutrition", "Health"],
-    description: "Chris van Tulleken’s investigation of ultra-processed food, how it is designed, and its effects on appetite and health.",
-    detail: "Useful when the problem is not “more willpower” but understanding the food environment around you.",
-    href: "https://www.amazon.in/s?k=Ultra-Processed+People+Chris+van+Tulleken",
-    imagePath: "/images/shop/books/ultra-processed-people.jpg",
-    visual: "book",
-  },
-  {
-    id: "vegan-for-life",
-    name: "Vegan for Life",
-    category: "Books",
-    tags: ["Nutrition", "Veganism", "Health"],
-    description: "Jack Norris and Virginia Messina’s nutrition guide to staying healthy on a fully plant-based diet.",
-    detail: "Strong on nutrients, planning, and day-to-day adequacy rather than recipes or ethics alone.",
-    href: "https://www.amazon.in/Vegan-Life-Everything-Healthy-Plant-based-ebook/dp/B07XDRY8ZF",
-    imagePath: "/images/shop/books/vegan-for-life.jpg",
-    visual: "book",
-  },
-  {
-    id: "forks-over-knives",
-    name: "Forks Over Knives",
-    category: "Books",
-    tags: ["Cooking", "Nutrition"],
-    description: "The companion-style introduction many people use after watching the film, focused on whole-food plant-based eating.",
-    detail: "A lighter entry point if you want the broad idea before moving into denser nutrition books or Indian cookbooks.",
-    href: "https://www.amazon.in/s?k=Forks+Over+Knives+book",
-    imagePath: "/images/shop/books/forks-over-knives.jpg",
-    visual: "book",
-  },
-  {
-    id: "the-plant-based-athlete",
-    name: "The Plant-Based Athlete",
-    category: "Books",
-    tags: ["Training"],
-    description: "Matt Frazier and Robert Cheeke on training, recovery, and fueling for active people eating plant-based.",
-    detail: "Helpful if your interest in plant-based eating is tied to strength, endurance, or everyday training consistency.",
-    href: "https://www.amazon.in/s?k=The+Plant-Based+Athlete+Matt+Frazier+Robert+Cheeke",
-    imagePath: "/images/shop/books/the-plant-based-athlete.jpg",
-    visual: "book",
-  },
-  {
-    id: "finding-ultra",
-    name: "Finding Ultra",
-    category: "Books",
-    tags: ["Training"],
-    description: "Rich Roll’s transformation story from midlife burnout into ultra-endurance sport and plant-based living.",
-    detail: "A motivation-heavy memoir more than a training manual, useful if story and identity change are what you need first.",
-    href: "https://www.amazon.in/s?k=Finding+Ultra+Rich+Roll",
-    imagePath: "/images/shop/books/finding-ultra.jpg",
-    visual: "book",
-  },
-  {
-    id: "no-meat-athlete",
-    name: "No Meat Athlete",
-    category: "Books",
-    tags: ["Training"],
-    description: "Matt Frazier’s practical guide to plant-based running, strength, and building an active life without meat.",
-    detail: "A good bridge between beginner plant-based eating and more sport-specific nutrition books.",
-    href: "https://www.amazon.in/s?k=No+Meat+Athlete+Run+on+Plants+Matt+Frazier",
-    imagePath: "/images/shop/books/no-meat-athlete.jpg",
-    visual: "book",
-  },
-  {
-    id: "plant-based-sports-nutrition",
-    name: "Plant-Based Sports Nutrition",
-    category: "Books",
-    tags: ["Training", "Nutrition"],
-    description: "D. Enette Larson-Meyer and Matt Ruscigno on fueling, recovery, and performance for plant-based athletes.",
-    detail: "More textbook-style than memoir, best when you want nutrient detail rather than inspiration alone.",
-    href: "https://www.amazon.in/s?k=Plant-Based+Sports+Nutrition+Larson-Meyer",
-    imagePath: "/images/shop/books/plant-based-sports-nutrition.jpg",
-    visual: "book",
-  },
-  {
-    id: "vegan-athletes-nutrition-handbook",
-    name: "The Vegan Athlete's Nutrition Handbook",
-    category: "Books",
-    tags: ["Training", "Veganism"],
-    description: "Nichole Dandrea-Russert’s essential guide to plant-based performance, everyday fueling, and recovery basics.",
-    detail: "A compact handbook format when you want clear nutrition principles without a long narrative.",
-    href: "https://www.amazon.in/s?k=The+Vegan+Athlete%27s+Nutrition+Handbook",
-    imagePath: "/images/shop/books/vegan-athletes-nutrition-handbook.jpg",
-    visual: "book",
-  },
-  {
-    id: "thrive",
-    name: "Thrive",
-    category: "Books",
-    tags: ["Training"],
-    description: "Brendan Brazier’s plant-based nutrition framework for energy, recovery, and high-performance everyday living.",
-    detail: "One of the earlier mainstream plant-based athlete books; still useful for whole-food fueling ideas.",
-    href: "https://www.amazon.in/s?k=Thrive+Brendan+Brazier",
-    imagePath: "/images/shop/books/thrive.jpg",
-    visual: "book",
-  },
-  {
-    id: "shred-it",
-    name: "Shred It!",
-    category: "Books",
-    tags: ["Training"],
-    description: "Robert Cheeke’s step-by-step guide to burning fat and building muscle on a whole-food, plant-based diet.",
-    detail: "Especially relevant if your goal is body composition and strength rather than endurance alone.",
-    href: "https://www.amazon.in/s?k=Shred+It+Robert+Cheeke",
-    imagePath: "/images/shop/books/shred-it.jpg",
-    visual: "book",
-  },
-  {
-    id: "the-plantpower-way",
-    name: "The Plantpower Way",
-    category: "Books",
-    tags: ["Cooking", "Training"],
-    description: "Rich Roll and Julie Piatt’s family-friendly plant-based recipes and guidance for everyday cooking.",
-    detail: "A cookbook-first companion to the plant-based athlete world when you need meals, not only theory.",
-    href: "https://www.amazon.in/s?k=The+Plantpower+Way+Rich+Roll",
-    imagePath: "/images/shop/books/the-plantpower-way.jpg",
-    visual: "book",
-  },
-  {
-    id: "the-satvic-revolution",
-    name: "The Satvic Revolution",
-    category: "Books",
-    tags: ["Nutrition"],
-    description: "Subah and Harshvardhan Saraf on seven lifestyle habits aimed at simpler, more plant-forward daily living.",
-    detail: "An India-rooted habits book for people who want structure around food, routine, and energy rather than only recipes.",
-    href: "https://www.amazon.in/Satvic-Revolution-Life-Changing-Habits-Discover/dp/0143460382",
-    imagePath: "/images/shop/books/the-satvic-revolution.jpg",
-    visual: "book",
-  },
-  {
-    id: "eating-animals",
-    name: "Eating Animals",
-    category: "Books",
-    tags: ["Veganism"],
-    description: "Jonathan Safran Foer’s investigation of industrial animal agriculture, ethics, and the personal decision of what to eat.",
-    detail: "A narrative-driven ethics book rather than a nutrition manual, useful for the values side of the shift.",
-    href: "https://www.amazon.in/s?k=Eating+Animals+Jonathan+Safran+Foer",
-    imagePath: "/images/shop/books/eating-animals.jpg",
-    visual: "book",
-  },
-  {
-    id: "animal-liberation-now",
-    name: "Animal Liberation Now",
-    category: "Books",
-    tags: ["Veganism"],
-    description: "Peter Singer’s updated classic on animal ethics and why the case for reducing animal use still matters.",
-    detail: "A denser philosophy-and-ethics read for people who want the intellectual foundation of modern animal advocacy.",
-    href: "https://www.amazon.in/s?k=Animal+Liberation+Now+Peter+Singer",
-    imagePath: "/images/shop/books/animal-liberation-now.jpg",
-    visual: "book",
-  },
-  {
-    id: "the-world-peace-diet",
-    name: "The World Peace Diet",
-    category: "Books",
-    tags: ["Veganism"],
-    description: "Will Tuttle's exploration of how food choices connect animal welfare, human health, spirituality, and a more peaceful society.",
-    detail: "A reflective ethics-focused read for people interested in the wider cultural and spiritual case for veganism.",
-    href: "https://www.amazon.in/World-Peace-Diet-Spiritual-Anniversary/dp/9359664235",
-    visual: "book",
-  },
-  {
-    id: "plant-based-india",
-    name: "Plant-Based India",
-    category: "Books",
-    tags: ["Cooking"],
-    description: "A strong introduction to fully vegan Indian cooking rooted in familiar regional dishes and techniques.",
-    detail: "A good pick when you want plant-based meals to feel culturally familiar rather than like a separate cuisine.",
-    href: "https://www.amazon.in/s?k=Plant-Based+India+Sheil+Shukla",
-    imagePath: "/images/shop/books/plant-based-india.jpg",
-    visual: "book",
-  },
-  {
-    id: "the-modern-tiffin",
-    name: "The Modern Tiffin",
-    category: "Books",
-    tags: ["Cooking"],
-    description: "A useful angle on portable plant-based meals when lunch needs to travel well and stay interesting.",
-    detail: "Look for the recipes that fit your container, commute, reheating options, and weekly prep time.",
-    href: "https://www.amazon.in/s?k=The+Modern+Tiffin+Priyanka+Naik",
-    imagePath: "/images/shop/books/the-modern-tiffin.jpg",
-    visual: "book",
-  },
-  {
-    id: "feast-on-a-leaf",
-    name: "Feast on a Leaf",
-    category: "Books",
-    tags: ["Cooking"],
-    description: "A less obvious regional pick for exploring the structure, variety, and hospitality of an Onam sadhya.",
-    detail: "The book includes a vegan menu option, making it a useful bridge from traditional celebration cooking to plant-based hosting.",
-    href: "https://www.amazon.in/s?k=Feast+on+a+Leaf+Onam+Sadhya+Cookbook",
-    imagePath: "/images/shop/books/feast-on-a-leaf.jpg",
-    visual: "book",
-  },
-  // From The Humane League's vegan reading list (thehumaneleague.org/article/vegan-books)
-  {
-    id: "sexual-politics-of-meat",
-    name: "The Sexual Politics of Meat",
-    category: "Books",
-    tags: ["Veganism"],
-    description: "Carol J. Adams’s classic linking the oppression of animals with patriarchal culture and how both show up in everyday food language.",
-    detail: "A denser theory read for people who want feminist and cultural analysis, not only nutrition tips.",
-    href: "https://www.amazon.in/s?k=The+Sexual+Politics+of+Meat+Carol+Adams",
-    imagePath: "/images/shop/books/sexual-politics-of-meat.jpg",
-    visual: "book",
-  },
-  {
-    id: "this-is-vegan-propaganda",
-    name: "This is Vegan Propaganda",
-    category: "Books",
-    tags: ["Veganism"],
-    description: "Ed Winters (Earthling Ed) on health, climate, animals, and the stories the meat industry sells.",
-    detail: "A direct, contemporary ethics-and-impact book for people who want a clear case without academic jargon.",
-    href: "https://www.amazon.in/s?k=This+is+Vegan+Propaganda+Ed+Winters",
-    imagePath: "/images/shop/books/this-is-vegan-propaganda.jpg",
-    visual: "book",
-  },
-  {
-    id: "why-we-love-dogs-eat-pigs",
-    name: "Why We Love Dogs, Eat Pigs, and Wear Cows",
-    category: "Books",
-    tags: ["Veganism"],
-    description: "Melanie Joy on “carnism”—why some animals are companions and others are dinner—and how social conditioning shapes that split.",
-    detail: "One of the most accessible psychology-of-eating books for beginners questioning the status quo.",
-    href: "https://www.amazon.in/s?k=Why+We+Love+Dogs+Eat+Pigs+and+Wear+Cows+Melanie+Joy",
-    imagePath: "/images/shop/books/why-we-love-dogs-eat-pigs.jpg",
-    visual: "book",
-  },
-  {
-    id: "once-upon-a-time-we-ate-animals",
-    name: "Once Upon a Time We Ate Animals",
-    category: "Books",
-    tags: ["Veganism"],
-    description: "Anthropologist Roanne van Voorst imagines a future without animal products and why that shift is both possible and necessary.",
-    detail: "Hopeful and speculative rather than a how-to diet manual—good when you want the long view.",
-    href: "https://www.amazon.in/s?k=Once+Upon+a+Time+We+Ate+Animals+Roanne+van+Voorst",
-    imagePath: "/images/shop/books/once-upon-a-time-we-ate-animals.jpg",
-    visual: "book",
-  },
-  {
-    id: "we-are-the-weather",
-    name: "We Are the Weather",
-    category: "Books",
-    tags: ["Veganism"],
-    description: "Jonathan Safran Foer on climate and the food on your plate—how even partial shifts away from animal products can matter.",
-    detail: "Part memoir, part investigation; pairs well with Eating Animals if you want the climate angle next.",
-    href: "https://www.amazon.in/s?k=We+Are+the+Weather+Jonathan+Safran+Foer",
-    imagePath: "/images/shop/books/we-are-the-weather.jpg",
-    visual: "book",
-  },
-  {
-    id: "eat-for-the-planet",
-    name: "Eat for the Planet",
-    category: "Books",
-    tags: ["Veganism", "Nutrition", "Health"],
-    description: "Gene Stone and Nil Zacharias on plant-based eating as a high-leverage climate action, not only a personal diet choice.",
-    detail: "Useful when environment is your main reason for changing what you buy and cook.",
-    href: "https://www.amazon.in/s?k=Eat+for+the+Planet+Gene+Stone",
-    imagePath: "/images/shop/books/eat-for-the-planet.jpg",
-    visual: "book",
-  },
-  {
-    id: "beasts-of-burden",
-    name: "Beasts of Burden",
-    category: "Books",
-    tags: ["Veganism"],
-    description: "Sunaura Taylor on the overlap of animal justice and disability justice—memoir, philosophy, and social critique in one.",
-    detail: "A denser, more academic-feeling read for people who want intersectional animal ethics.",
-    href: "https://www.amazon.in/s?k=Beasts+of+Burden+Sunaura+Taylor",
-    imagePath: "/images/shop/books/beasts-of-burden.jpg",
-    visual: "book",
-  },
-  {
-    id: "aphro-ism",
-    name: "APHRO-ISM",
-    category: "Books",
-    tags: ["Veganism"],
-    description: "Essays by Aph and Syl Ko on race, feminism, pop culture, and Black veganism—connecting animal advocacy to wider liberation.",
-    detail: "Short essays rather than a single narrative; strong if you want culture and politics alongside diet.",
-    href: "https://www.amazon.in/s?k=APHRO-ISM+Aph+Syl+Ko",
-    imagePath: "/images/shop/books/aphro-ism.jpg",
-    visual: "book",
-  },
-  {
-    id: "an-immense-world",
-    name: "An Immense World",
-    category: "Books",
-    tags: ["Veganism"],
-    description: "Ed Yong on how animals sense the world—not a vegan manifesto, but it deepens how you see non-human lives.",
-    detail: "Science writing more than activism; still a natural companion to animal-ethics reading lists.",
-    href: "https://www.amazon.in/s?k=An+Immense+World+Ed+Yong",
-    imagePath: "/images/shop/books/an-immense-world.jpg",
-    visual: "book",
-  },
-  {
-    id: "be-more-vegan",
-    name: "Be More Vegan",
-    category: "Books",
-    tags: ["Veganism", "Cooking"],
-    description: "Niki Webster’s friendly starter for people—especially younger readers—who want a gradual, practical plant-based shift.",
-    detail: "Hints, recipes, and lifestyle notes rather than a hard-edged ethics treatise.",
-    href: "https://www.amazon.in/s?k=Be+More+Vegan+Niki+Webster",
-    imagePath: "/images/shop/books/be-more-vegan.jpg",
-    visual: "book",
-  },
-  {
-    id: "veganomicon",
-    name: "Veganomicon",
-    category: "Books",
-    tags: ["Cooking"],
-    description: "Isa Chandra Moskowitz and Terry Hope Romero’s classic “ultimate” vegan cookbook with hundreds of kitchen-tested recipes.",
-    detail: "A long-running staple when you want technique notes and range, not a single-cuisine book.",
-    href: "https://www.amazon.in/s?k=Veganomicon+Isa+Chandra",
-    imagePath: "/images/shop/books/veganomicon.jpg",
-    visual: "book",
-  },
-  {
-    id: "the-korean-vegan-cookbook",
-    name: "The Korean Vegan Cookbook",
-    category: "Books",
-    tags: ["Cooking"],
-    description: "Joanne Lee Molinaro’s recipes and family stories—Korean dishes reimagined plant-based, with memoir woven through.",
-    detail: "As much identity and storytelling as technique; a strong pick if you want cuisine-specific cooking.",
-    href: "https://www.amazon.in/s?k=The+Korean+Vegan+Cookbook+Joanne+Lee+Molinaro",
-    imagePath: "/images/shop/books/the-korean-vegan-cookbook.jpg",
-    visual: "book",
-  },
-  {
-    id: "vegetable-kingdom",
-    name: "Vegetable Kingdom",
-    category: "Books",
-    tags: ["Cooking"],
-    description: "Bryant Terry’s abundant vegan recipes with Afro-Asian roots, market produce, and a suggested soundtrack for each dish.",
-    detail: "Food-justice framing plus cooking fundamentals—good if you want flavour and culture, not only macros.",
-    href: "https://www.amazon.in/s?k=Vegetable+Kingdom+Bryant+Terry",
-    imagePath: "/images/shop/books/vegetable-kingdom.jpg",
-    visual: "book",
-  },
-  {
-    id: "the-whole-vegetable",
-    name: "The Whole Vegetable",
-    category: "Books",
-    tags: ["Cooking"],
-    description: "Sophie Gordon’s seasonal, waste-aware plant cooking that puts vegetables—and every usable part—at the centre.",
-    detail: "Useful when you want creativity with produce rather than mock-meat recipes.",
-    href: "https://www.amazon.in/s?k=The+Whole+Vegetable+Sophie+Gordon",
-    imagePath: "/images/shop/books/the-whole-vegetable.jpg",
-    visual: "book",
-  },
-  {
-    id: "decolonize-your-diet",
-    name: "Decolonize Your Diet",
-    category: "Books",
-    tags: ["Cooking"],
-    description: "Luz Calvo on plant-based Mexican-American cooking rooted in indigenous staples, health, and cultural connection.",
-    detail: "More than a recipe dump—food as ancestry and healing, with practical dishes mixed in.",
-    href: "https://www.amazon.in/s?k=Decolonize+Your+Diet+Luz+Calvo",
-    imagePath: "/images/shop/books/decolonize-your-diet.jpg",
-    visual: "book",
-  },
-  {
-    id: "plant-based-on-a-budget",
-    name: "Plant-Based on a Budget",
-    category: "Books",
-    tags: ["Cooking"],
-    description: "Toni Okamoto’s affordable, weeknight-friendly plant meals—built for real grocery bills and limited time.",
-    detail: "A practical starter cookbook if cost is the main barrier to cooking more plants.",
-    href: "https://www.amazon.in/s?k=Plant-Based+on+a+Budget+Toni+Okamoto",
-    imagePath: "/images/shop/books/plant-based-on-a-budget.jpg",
-    visual: "book",
-  },
-  {
-    id: "everything-vegan-pregnancy",
-    name: "The Everything Vegan Pregnancy Book",
-    category: "Books",
-    tags: ["Nutrition", "Veganism"],
-    description: "Reed Mangels on vegan pregnancy nutrition, common questions, and planning through birth and early feeding.",
-    detail: "Reference-style; still verify current medical guidance with a qualified clinician.",
-    href: "https://www.amazon.in/s?k=Everything+Vegan+Pregnancy+Reed+Mangels",
-    imagePath: "/images/shop/books/everything-vegan-pregnancy.jpg",
-    visual: "book",
-  },
-  {
-    id: "raising-vegan-kids",
-    name: "The Smart Parent's Guide to Raising Vegan Kids",
-    category: "Books",
-    tags: ["Veganism"],
-    description: "Eric C. Lindstrom on plant-based family life—parties, travel, vegetables, and the social side of raising vegan kids.",
-    detail: "Practical parenting tone more than a nutrition textbook.",
-    href: "https://www.amazon.in/s?k=Smart+Parent+Guide+Raising+Vegan+Kids+Lindstrom",
-    imagePath: "/images/shop/books/raising-vegan-kids.jpg",
-    visual: "book",
-  },
-  {
-    id: "v-is-for-vegan",
-    name: "V is for Vegan",
-    category: "Books",
-    tags: ["Veganism"],
-    description: "Ruby Roth’s ABC picture book introducing kids to plant foods and kindness toward animals.",
-    detail: "For young children (roughly ages 3–7); a conversation starter, not a nutrition guide for adults.",
-    href: "https://www.amazon.in/s?k=V+is+for+Vegan+Ruby+Roth",
-    imagePath: "/images/shop/books/v-is-for-vegan.jpg",
-    visual: "book",
-  },
-];
+export const bookProducts = booksData as ShopProduct[];
+
+function selectFeaturedProducts(products: ShopProduct[]) {
+  return products
+    .filter((product) => product.featuredOrder !== undefined)
+    .toSorted((left, right) => (left.featuredOrder ?? 0) - (right.featuredOrder ?? 0));
+}
+
+function selectHomepageProducts(products: ShopProduct[]) {
+  return products
+    .filter((product) => product.homepageFeaturedOrder !== undefined)
+    .toSorted((left, right) => (left.homepageFeaturedOrder ?? 0) - (right.homepageFeaturedOrder ?? 0));
+}
 
 export const allShopProducts: ShopProduct[] = [
   ...supplementProducts,
@@ -908,28 +122,9 @@ export const allShopProducts: ShopProduct[] = [
   ...bookProducts,
 ];
 
-export const supplementFeaturedProducts = supplementProducts.slice(0, 5);
-export const exerciseFeaturedProducts = [
-  exerciseProducts.find((p) => p.id === "walking-pad")!,
-  exerciseProducts.find((p) => p.id === "treadmill")!,
-  exerciseProducts.find((p) => p.id === "cross-trainer")!,
-  exerciseProducts.find((p) => p.id === "exercise-bike")!,
-  exerciseProducts.find((p) => p.id === "adjustable-dumbbells")!,
-];
-export const kitchenFeaturedProducts = kitchenProducts.slice(0, 3);
-export const wellnessFeaturedProducts = [
-  wellnessProducts.find((p) => p.id === "kitchen-scale")!,
-  wellnessProducts.find((p) => p.id === "mineral-sunscreen-spf-50")!,
-  wellnessProducts.find((p) => p.id === "electric-toothbrush")!,
-  wellnessProducts.find((p) => p.id === "blood-pressure-monitor")!,
-  wellnessProducts.find((p) => p.id === "body-weight-scale")!,
-];
-export const bookFeaturedProducts = bookProducts.slice(0, 5);
-
-export const shopFeaturedProducts = [
-  supplementProducts[0],
-  exerciseProducts[1],
-  kitchenProducts[0],
-  wellnessProducts[0],
-  bookProducts[0], // "Why We Sleep" can be featured on shop home
-];
+export const supplementFeaturedProducts = selectFeaturedProducts(supplementProducts);
+export const exerciseFeaturedProducts = selectFeaturedProducts(exerciseProducts);
+export const kitchenFeaturedProducts = selectFeaturedProducts(kitchenProducts);
+export const wellnessFeaturedProducts = selectFeaturedProducts(wellnessProducts);
+export const bookFeaturedProducts = selectFeaturedProducts(bookProducts);
+export const shopFeaturedProducts = selectHomepageProducts(allShopProducts);
