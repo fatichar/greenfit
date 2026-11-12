@@ -7,6 +7,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { getProductsByTags } from "@/lib/affiliate";
 import { getProduct, products } from "@/lib/data";
 import { getProductImage } from "@/lib/images";
+import { canonicalAlternates } from "@/lib/site";
 
 export function generateStaticParams() {
   return products.map((product) => ({ slug: product.slug }));
@@ -16,9 +17,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const product = getProduct(slug);
 
+  if (!product) return { title: "Food guide" };
+
   return {
-    title: product ? `${product.name} food guide` : "Food guide",
-    description: product?.notes,
+    alternates: canonicalAlternates(`/products/${product.slug}`),
+    title: `${product.name} food guide`,
+    description: product.notes,
   };
 }
 

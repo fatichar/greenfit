@@ -16,8 +16,10 @@ import {
 import { DisclaimerBox } from "@/components/disclaimer-box";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { canonicalAlternates } from "@/lib/site";
 
 export const metadata: Metadata = {
+  alternates: canonicalAlternates("/about"),
   title: "About",
   description:
     "GreenFit helps people eat more plant-based food with evidence-aware guidance, familiar Indian ingredients, and transparent planning tools.",

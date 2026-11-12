@@ -14,6 +14,7 @@ import {
 import { HeroCarousel, type HeroSlide } from "@/components/hero-carousel";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { canonicalAlternates } from "@/lib/site";
 
 const heroSlides: HeroSlide[] = [
   {
@@ -53,6 +54,7 @@ const heroSlides: HeroSlide[] = [
 ];
 
 export const metadata: Metadata = {
+  alternates: canonicalAlternates("/"),
   title: "GreenFit | Nutrition, made practical",
   description:
     "Plant-based diet plans, evidence-based guides, recipes, and nutrition tools for everyday Indian eating.",

@@ -7,7 +7,32 @@ import { findDietPlansForRecipe } from "@/lib/recipe-match";
 import { JsonLd } from "@/components/json-ld";
 import { Badge } from "@/components/ui/badge";
 import { InfoDisclosureList } from "@/components/info-disclosure";
-import { SITE_NAME, siteUrl } from "@/lib/site";
+import { SITE_NAME, canonicalAlternates, siteUrl } from "@/lib/site";
+import type { MealType } from "@/lib/types";
+
+/** schema.org recipeCategory for each meal type; null for types that are not a dish category. */
+const RECIPE_CATEGORY_BY_MEAL_TYPE: Record<MealType, string | null> = {
+  breakfast: "Breakfast",
+  brunch: "Brunch",
+  lunch: "Lunch",
+  dinner: "Dinner",
+  "pre-workout": "Snack",
+  "post-workout": "Snack",
+  "evening-snack": "Snack",
+  "travel-snack": "Snack",
+  "tea-time": "Snack",
+  craving: "Snack",
+  festival: null,
+};
+
+function recipeCategories(mealTypes: MealType[]) {
+  const categories = new Set<string>();
+  for (const mealType of mealTypes) {
+    const category = RECIPE_CATEGORY_BY_MEAL_TYPE[mealType];
+    if (category) categories.add(category);
+  }
+  return categories.size > 0 ? [...categories] : undefined;
+}
 
 export async function generateStaticParams() {
   return getRecipes().map((recipe) => ({
@@ -21,6 +46,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!recipe) return {};
 
   return {
+    alternates: canonicalAlternates(`/recipes/${recipe.slug}`),
     title: recipe.title,
     description: recipe.description,
   };
@@ -51,10 +77,13 @@ export default async function RecipePage({ params }: { params: Promise<{ slug: s
     },
     prepTime: durationToIsoDuration(recipe.prepTime),
     cookTime: durationToIsoDuration(recipe.cookTime),
+    recipeYield: [String(recipe.servings), `${recipe.servings} ${recipe.servings === 1 ? "serving" : "servings"}`],
+    recipeCategory: recipeCategories(recipe.mealTypes),
     recipeIngredient: recipe.ingredients,
-    recipeInstructions: recipe.instructions.map((instruction) => ({
+    recipeInstructions: recipe.instructions.map((instruction, index) => ({
       "@type": "HowToStep",
       text: instruction,
+      url: siteUrl(`/recipes/${recipe.slug}#step-${index + 1}`),
     })),
     keywords: recipe.tags.join(", "),
     nutrition: {
@@ -225,7 +254,7 @@ export default async function RecipePage({ params }: { params: Promise<{ slug: s
           <h2 className="text-2xl font-bold tracking-tight mb-6">Instructions</h2>
           <ol className="space-y-6">
             {recipe.instructions.map((step, i) => (
-              <li key={i} className="flex items-start">
+              <li id={`step-${i + 1}`} key={i} className="flex scroll-mt-24 items-start">
                 <span className="mr-4 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary text-primary-foreground text-sm font-bold shadow-sm">
                   {i + 1}
                 </span>

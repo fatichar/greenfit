@@ -6,8 +6,10 @@ import { ShopShell } from "@/components/shop-shell";
 import { kitchenDevices } from "@/lib/data";
 import { getVersionedImagePath } from "@/lib/images";
 import { kitchenFeaturedProducts, kitchenProducts } from "@/lib/shop-products";
+import { canonicalAlternates } from "@/lib/site";
 
 export const metadata: Metadata = {
+  alternates: canonicalAlternates("/shop/kitchen"),
   title: "Plant-Based Kitchen Devices",
   description: "Guides to blenders, cold-press juicers, food processors, pressure cookers, and other plant-based cooking tools.",
   keywords: [

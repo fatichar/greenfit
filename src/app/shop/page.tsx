@@ -12,8 +12,10 @@ import {
 import { ShopProductCarousel } from "@/components/shop-product-carousel";
 import { ShopShell } from "@/components/shop-shell";
 import { allShopProducts, shopFeaturedProducts } from "@/lib/shop-products";
+import { canonicalAlternates } from "@/lib/site";
 
 export const metadata: Metadata = {
+  alternates: canonicalAlternates("/shop"),
   title: "Shop plant-based products",
   description: "Browse GreenFit's recommendations for supplements, exercise, kitchen devices, wellness tools, and books.",
 };

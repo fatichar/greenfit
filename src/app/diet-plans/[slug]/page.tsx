@@ -9,6 +9,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { dietPlans, getDietPlan, getRecipes } from "@/lib/data";
 import { getDietPlanImage } from "@/lib/images";
 import { buildMealItemRecipeMap } from "@/lib/recipe-match";
+import { canonicalAlternates } from "@/lib/site";
 
 export function generateStaticParams() {
   return dietPlans.map((plan) => ({ slug: plan.slug }));
@@ -18,9 +19,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const plan = getDietPlan(slug);
 
+  if (!plan) return { title: "Diet plan" };
+
   return {
-    title: plan?.title ?? "Diet plan",
-    description: plan?.goal,
+    alternates: canonicalAlternates(`/diet-plans/${plan.slug}`),
+    title: plan.title,
+    description: plan.goal,
   };
 }
 

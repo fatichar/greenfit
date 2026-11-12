@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { ToolsCalculators } from "@/components/tools-calculators";
+import { canonicalAlternates } from "@/lib/site";
 
 export const metadata: Metadata = {
+  alternates: canonicalAlternates("/tools"),
   title: "Nutrition Tools",
   description:
     "Nutrition calculators for protein, calories, macros, fiber, BMI, hydration, and plate protein estimates.",

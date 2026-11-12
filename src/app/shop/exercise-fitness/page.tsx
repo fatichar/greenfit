@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { ShopCategoryPage } from "@/components/shop-category-page";
 import { exerciseFeaturedProducts, exerciseProducts } from "@/lib/shop-products";
+import { canonicalAlternates } from "@/lib/site";
 
 export const metadata: Metadata = {
+  alternates: canonicalAlternates("/shop/exercise-fitness"),
   title: "Exercise & Fitness products",
   description: "Guidance for choosing exercise equipment for strength, cardio, mobility, and recovery.",
 };

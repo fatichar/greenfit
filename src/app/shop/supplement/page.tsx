@@ -3,8 +3,10 @@ import { ShopShell } from "@/components/shop-shell";
 import { SupplementsPageContent } from "@/components/supplements-page-content";
 import { catalogSupplements } from "@/lib/data";
 import { supplementFeaturedProducts, supplementProducts, supplementTags } from "@/lib/shop-products";
+import { canonicalAlternates } from "@/lib/site";
 
 export const metadata: Metadata = {
+  alternates: canonicalAlternates("/shop/supplement"),
   title: "Vegan Supplements",
   description: "Compare vegan supplements sold on Amazon India with available Trustified and Unbox Health results.",
   keywords: [
