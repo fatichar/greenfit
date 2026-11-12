@@ -10,7 +10,7 @@ import { getProductsByTags } from "@/lib/affiliate";
 import { getGuide, getGuides } from "@/lib/data";
 import { getGuideImage } from "@/lib/images";
 import { MarkdownContent } from "@/lib/markdown";
-import { SITE_NAME, siteUrl } from "@/lib/site";
+import { SITE_NAME, canonicalAlternates, siteUrl } from "@/lib/site";
 
 export function generateStaticParams() {
   return getGuides().map((guide) => ({ slug: guide.slug }));
@@ -20,10 +20,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const guide = getGuide(slug);
 
+  if (!guide) return { title: "Nutrition guide" };
+
   return {
-    alternates: { canonical: `/guides/${slug}` },
-    title: guide?.title ?? "Nutrition guide",
-    description: guide?.summary,
+    alternates: canonicalAlternates(`/guides/${guide.slug}`),
+    title: guide.title,
+    description: guide.summary,
   };
 }
 

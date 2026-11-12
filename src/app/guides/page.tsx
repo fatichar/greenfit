@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { GuideCard } from "@/components/guide-card";
 import { getGuides } from "@/lib/data";
+import { canonicalAlternates } from "@/lib/site";
 
 export const metadata: Metadata = {
-  alternates: { canonical: "/guides" },
+  alternates: canonicalAlternates("/guides"),
   title: "Nutrition Guides",
   description: "Evidence-aware guides to plant-based nutrition, protein, B12, calcium, dairy swaps, omega-3, iron, and zinc.",
   keywords: [

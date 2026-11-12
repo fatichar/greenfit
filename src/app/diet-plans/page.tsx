@@ -3,9 +3,10 @@ import { DietPlanCard } from "@/components/diet-plan-card";
 import Link from "next/link";
 import { buttonVariants } from "@/components/ui/button";
 import { dietPlans } from "@/lib/data";
+import { canonicalAlternates } from "@/lib/site";
 
 export const metadata: Metadata = {
-  alternates: { canonical: "/diet-plans" },
+  alternates: canonicalAlternates("/diet-plans"),
   title: "Diet Plans",
   description: "Plant-based diet plans with calorie and protein targets, regional styles, difficulty, and cost.",
   keywords: [

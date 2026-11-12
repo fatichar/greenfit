@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { ShopCategoryPage } from "@/components/shop-category-page";
 import { wellnessFeaturedProducts, wellnessProducts } from "@/lib/shop-products";
+import { canonicalAlternates } from "@/lib/site";
 
 export const metadata: Metadata = {
-  alternates: { canonical: "/shop/wellness" },
+  alternates: canonicalAlternates("/shop/wellness"),
   title: "Wellness products",
   description: "Practical wellness tools for tracking, sun protection, oral care, recovery, and home health—chosen for real use, not vanity gadgets.",
 };

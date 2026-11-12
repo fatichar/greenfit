@@ -8,16 +8,19 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { getProductsByTags } from "@/lib/affiliate";
 import { getSupplement, supplements } from "@/lib/data";
 import { getSupplementImage } from "@/lib/images";
+import { canonicalAlternates } from "@/lib/site";
 
 export function generateStaticParams() { return supplements.map((supplement) => ({ slug: supplement.slug })); }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const supplement = getSupplement(slug);
+  if (!supplement) return { title: "Supplement guide" };
+
   return {
-    alternates: { canonical: `/supplements/${slug}` },
-    title: supplement ? `${supplement.name} supplement guide` : "Supplement guide",
-    description: supplement?.notes,
+    alternates: canonicalAlternates(`/supplements/${supplement.slug}`),
+    title: `${supplement.name} supplement guide`,
+    description: supplement.notes,
   };
 }
 

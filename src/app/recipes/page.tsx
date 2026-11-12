@@ -1,9 +1,11 @@
+import type { Metadata } from "next";
 import { getRecipes } from "@/lib/data";
 import { getAvailableRecipeFilterLabels } from "@/lib/recipe-filters";
 import { RecipesClient } from "./client";
+import { canonicalAlternates } from "@/lib/site";
 
-export const metadata = {
-  alternates: { canonical: "/recipes" },
+export const metadata: Metadata = {
+  alternates: canonicalAlternates("/recipes"),
   title: "Recipes",
   description: "Affordable plant-based recipes for everyday meals, snacks, and celebrations.",
 };

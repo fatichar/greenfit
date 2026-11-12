@@ -7,7 +7,32 @@ import { findDietPlansForRecipe } from "@/lib/recipe-match";
 import { JsonLd } from "@/components/json-ld";
 import { Badge } from "@/components/ui/badge";
 import { InfoDisclosureList } from "@/components/info-disclosure";
-import { SITE_NAME, siteUrl } from "@/lib/site";
+import { SITE_NAME, canonicalAlternates, siteUrl } from "@/lib/site";
+import type { MealType } from "@/lib/types";
+
+/** schema.org recipeCategory for each meal type; null for types that are not a dish category. */
+const RECIPE_CATEGORY_BY_MEAL_TYPE: Record<MealType, string | null> = {
+  breakfast: "Breakfast",
+  brunch: "Brunch",
+  lunch: "Lunch",
+  dinner: "Dinner",
+  "pre-workout": "Snack",
+  "post-workout": "Snack",
+  "evening-snack": "Snack",
+  "travel-snack": "Snack",
+  "tea-time": "Snack",
+  craving: "Snack",
+  festival: null,
+};
+
+function recipeCategories(mealTypes: MealType[]) {
+  const categories = new Set<string>();
+  for (const mealType of mealTypes) {
+    const category = RECIPE_CATEGORY_BY_MEAL_TYPE[mealType];
+    if (category) categories.add(category);
+  }
+  return categories.size > 0 ? [...categories] : undefined;
+}
 
 export async function generateStaticParams() {
   return getRecipes().map((recipe) => ({
@@ -21,7 +46,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!recipe) return {};
 
   return {
-    alternates: { canonical: `/recipes/${recipe.slug}` },
+    alternates: canonicalAlternates(`/recipes/${recipe.slug}`),
     title: recipe.title,
     description: recipe.description,
   };
@@ -52,8 +77,8 @@ export default async function RecipePage({ params }: { params: Promise<{ slug: s
     },
     prepTime: durationToIsoDuration(recipe.prepTime),
     cookTime: durationToIsoDuration(recipe.cookTime),
-    recipeYield: recipe.servings,
-    recipeCategory: recipe.mealTypes.map((mealType) => mealType.replace(/-/g, " ")),
+    recipeYield: [String(recipe.servings), `${recipe.servings} ${recipe.servings === 1 ? "serving" : "servings"}`],
+    recipeCategory: recipeCategories(recipe.mealTypes),
     recipeIngredient: recipe.ingredients,
     recipeInstructions: recipe.instructions.map((instruction, index) => ({
       "@type": "HowToStep",
