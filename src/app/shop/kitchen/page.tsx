@@ -8,6 +8,7 @@ import { getVersionedImagePath } from "@/lib/images";
 import { kitchenFeaturedProducts, kitchenProducts } from "@/lib/shop-products";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/shop/kitchen" },
   title: "Plant-Based Kitchen Devices",
   description: "Guides to blenders, cold-press juicers, food processors, pressure cookers, and other plant-based cooking tools.",
   keywords: [

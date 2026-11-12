@@ -5,6 +5,7 @@ import { buttonVariants } from "@/components/ui/button";
 import { dietPlans } from "@/lib/data";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/diet-plans" },
   title: "Diet Plans",
   description: "Plant-based diet plans with calorie and protein targets, regional styles, difficulty, and cost.",
   keywords: [

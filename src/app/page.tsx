@@ -53,6 +53,7 @@ const heroSlides: HeroSlide[] = [
 ];
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/" },
   title: "GreenFit | Nutrition, made practical",
   description:
     "Plant-based diet plans, evidence-based guides, recipes, and nutrition tools for everyday Indian eating.",

@@ -3,6 +3,7 @@ import { getAvailableRecipeFilterLabels } from "@/lib/recipe-filters";
 import { RecipesClient } from "./client";
 
 export const metadata = {
+  alternates: { canonical: "/recipes" },
   title: "Recipes",
   description: "Affordable plant-based recipes for everyday meals, snacks, and celebrations.",
 };

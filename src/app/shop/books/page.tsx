@@ -3,6 +3,7 @@ import { ShopCategoryPage } from "@/components/shop-category-page";
 import { bookFeaturedProducts, bookProducts } from "@/lib/shop-products";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/shop/books" },
   title: "Nutrition and fitness books",
   description: "Find books on plant-based nutrition, cooking, movement, and sustainable healthy habits.",
 };

@@ -14,7 +14,11 @@ export function generateStaticParams() { return supplements.map((supplement) => 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const supplement = getSupplement(slug);
-  return { title: supplement ? `${supplement.name} supplement guide` : "Supplement guide", description: supplement?.notes };
+  return {
+    alternates: { canonical: `/supplements/${slug}` },
+    title: supplement ? `${supplement.name} supplement guide` : "Supplement guide",
+    description: supplement?.notes,
+  };
 }
 
 export default async function SupplementDetailPage({ params }: { params: Promise<{ slug: string }> }) {

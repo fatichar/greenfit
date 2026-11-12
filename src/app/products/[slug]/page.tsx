@@ -17,6 +17,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const product = getProduct(slug);
 
   return {
+    alternates: { canonical: `/products/${slug}` },
     title: product ? `${product.name} food guide` : "Food guide",
     description: product?.notes,
   };

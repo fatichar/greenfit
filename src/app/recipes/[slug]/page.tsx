@@ -21,6 +21,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!recipe) return {};
 
   return {
+    alternates: { canonical: `/recipes/${recipe.slug}` },
     title: recipe.title,
     description: recipe.description,
   };
@@ -51,10 +52,13 @@ export default async function RecipePage({ params }: { params: Promise<{ slug: s
     },
     prepTime: durationToIsoDuration(recipe.prepTime),
     cookTime: durationToIsoDuration(recipe.cookTime),
+    recipeYield: recipe.servings,
+    recipeCategory: recipe.mealTypes.map((mealType) => mealType.replace(/-/g, " ")),
     recipeIngredient: recipe.ingredients,
-    recipeInstructions: recipe.instructions.map((instruction) => ({
+    recipeInstructions: recipe.instructions.map((instruction, index) => ({
       "@type": "HowToStep",
       text: instruction,
+      url: siteUrl(`/recipes/${recipe.slug}#step-${index + 1}`),
     })),
     keywords: recipe.tags.join(", "),
     nutrition: {
@@ -225,7 +229,7 @@ export default async function RecipePage({ params }: { params: Promise<{ slug: s
           <h2 className="text-2xl font-bold tracking-tight mb-6">Instructions</h2>
           <ol className="space-y-6">
             {recipe.instructions.map((step, i) => (
-              <li key={i} className="flex items-start">
+              <li id={`step-${i + 1}`} key={i} className="flex scroll-mt-24 items-start">
                 <span className="mr-4 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary text-primary-foreground text-sm font-bold shadow-sm">
                   {i + 1}
                 </span>

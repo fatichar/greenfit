@@ -3,6 +3,7 @@ import { DietPlanBuilder } from "@/components/diet-plan-builder";
 import { getRecipes } from "@/lib/data";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/diet-plans/build" },
   title: "Build my diet plan",
   description: "Build a plant-based Indian meal plan around your goals, routine, and budget.",
 };

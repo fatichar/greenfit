@@ -14,6 +14,7 @@ import { ShopShell } from "@/components/shop-shell";
 import { allShopProducts, shopFeaturedProducts } from "@/lib/shop-products";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/shop" },
   title: "Shop plant-based products",
   description: "Browse GreenFit's recommendations for supplements, exercise, kitchen devices, wellness tools, and books.",
 };

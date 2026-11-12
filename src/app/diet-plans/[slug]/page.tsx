@@ -19,6 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const plan = getDietPlan(slug);
 
   return {
+    alternates: { canonical: `/diet-plans/${slug}` },
     title: plan?.title ?? "Diet plan",
     description: plan?.goal,
   };

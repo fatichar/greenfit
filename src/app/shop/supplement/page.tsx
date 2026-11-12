@@ -5,6 +5,7 @@ import { catalogSupplements } from "@/lib/data";
 import { supplementFeaturedProducts, supplementProducts, supplementTags } from "@/lib/shop-products";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/shop/supplement" },
   title: "Vegan Supplements",
   description: "Compare vegan supplements sold on Amazon India with available Trustified and Unbox Health results.",
   keywords: [

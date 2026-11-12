@@ -3,6 +3,7 @@ import { ProductDirectory } from "@/components/product-directory";
 import { products } from "@/lib/data";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/products" },
   title: "Plant-Based Product Guides",
   description: "Browse plant-based product guides with nutrition notes, recipe ideas, and popular brands.",
   keywords: [

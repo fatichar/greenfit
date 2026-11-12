@@ -21,6 +21,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const guide = getGuide(slug);
 
   return {
+    alternates: { canonical: `/guides/${slug}` },
     title: guide?.title ?? "Nutrition guide",
     description: guide?.summary,
   };
